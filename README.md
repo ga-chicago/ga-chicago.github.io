@@ -12,3 +12,6 @@ http://ga-chicago.github.io
 
 ###Workshops/Events
 - **HTML/CSS Basics 6/4/15**: https://github.com/ga-chicago/HTML-CSS-Basics
+
+###Examples
+- Using Javascript FileReader to convert images to base64: https://github.com/ga-chicago/FileReader_Base64_Upload
