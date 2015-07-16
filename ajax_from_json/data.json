@@ -1,4 +1,8 @@
 {
   "message": "dat fake ajax y'all",
-  "students": ["Matt", "Jim", "Eric", "Isaac", "Kate", "Brad", "Tristan"]
+  "students": ["Matt", "Jim", "Eric", "Isaac", "Kate", "Brad", "Tristan"],
+  "numeral": 42,
+  "objectTest": {
+    "someKey": "someValue"
+  }
 }
