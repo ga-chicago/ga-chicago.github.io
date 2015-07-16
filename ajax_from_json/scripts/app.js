@@ -3,7 +3,7 @@ $(document).ready(function() {
   $.getJSON("http://ga-chicago.github.io/ajax_from_json/data.json", function(data) {
     
      //console.log(data);
-     console.log(data.students);
+     console.log(students);
   
      for (var student in data.students) {
         
