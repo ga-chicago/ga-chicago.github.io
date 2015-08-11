@@ -1,0 +1,13 @@
+CREATE DATABASE sinatrasongs;
+\c sinatrasongs;
+CREATE TABLE songs (id SERIAL PRIMARY KEY, title varchar(255), album varchar(255), release_year integer);
+INSERT INTO songs (title,album,release_year) VALUES ('You Go to My Head','The Voice of Frank Sinatra',1946);
+INSERT INTO songs (title,album,release_year) VALUES ('Someone to Watch Over Me','The Voice of Frank Sinatra',1946);
+INSERT INTO songs (title,album,release_year) VALUES ('You Go to My Head','Dedicated to You',1950);
+INSERT INTO songs (title,album,release_year) VALUES ('Strange Music','Dedicated to You',1950);
+INSERT INTO songs (title,album,release_year) VALUES ('Where Are You?','Where Are You?',1957);
+INSERT INTO songs (title,album,release_year) VALUES ('Lonely Town','Where Are You?',1957);
+INSERT INTO songs (title,album,release_year) VALUES ('It Worries Me','Where Are You?',1957);
+INSERT INTO songs (title,album,release_year) VALUES ('Mood Indigo','In the Wee Small Hours',1955);
+INSERT INTO songs (title,album,release_year) VALUES ('Deep in a Dream','In the Wee Small Hours',1955);
+INSERT INTO songs (title,album,release_year) VALUES ('Last Night When We Were Young','In the Wee Small Hours',1955);

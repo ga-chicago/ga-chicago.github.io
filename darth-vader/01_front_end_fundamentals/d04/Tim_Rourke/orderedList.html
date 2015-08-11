@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%;">
+<head>
+  <meta charset="UTF-8">
+  <title>Morning Exercise: Ordered List</title>
+</head>
+<body style="height:100%;background-image:linear-gradient(to bottom, #444, #222);background-repeat:no-repeat;padding:0;margin:0;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;color:#1188ff;">
+
+  <div class="wrapper" style="margin:4em auto;max-width:40em;">
+
+    <ol>
+      <h1>SHARKS ARE <span style="color:#ee0000;">AWESOME!!!!!1</span></h1>
+      <h2>HERE IS WHY:</h2>
+      <li style="color:#1188ff;margin-bottom:0.5em;margin-left:0;">BIG ASS TEETH</li>
+      <li style="color:#1199ff;margin-bottom:0.5em;margin-left:1em;">THEY NEVER SLEEP</li>
+      <li style="color:#11aaff;margin-bottom:0.5em;margin-left:2em;">NOM NOM NOM</li>
+      <li style="color:#11bbff;margin-bottom:0.5em;margin-left:3em;">THEY CUT YOU WITH THEIR SKIN</li>
+      <li style="color:#11ccff;margin-bottom:0.5em;margin-left:4em;">SHARK IN SPANISH IS "TIBURÓN"</li>
+      <li style="color:#11ddff;margin-bottom:0.5em;margin-left:5em;">TIBURÓN!</li>
+      <li style="color:#11eeff;margin-bottom:0.5em;margin-left:6em;">YOUR MOM IS SCARED OF THEM</li>
+      <li style="color:#11ffff;margin-bottom:0.5em;margin-left:7em;">AMERICA</li>
+    </ol>
+
+  </div>
+
+  <script>
+
+    var listArray = [];
+
+    var list = document.querySelectorAll('ol')[0].children;
+
+    for (var i = 0; i < list.length; i++) {
+      var item = list[i];
+      if (item.tagName == "LI") {
+        listArray.push(item);
+      }
+    }
+
+    for (var li in listArray) {
+      console.log(listArray[li]);
+    }
+
+  </script>
+
+</body>
+</html>

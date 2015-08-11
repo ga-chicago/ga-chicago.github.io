@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+
+  function getRandomInt(min, max) {
+    return parseInt(Math.ceil(Math.random() * Math.ceil(min) * Math.floor(max)));
+  }
+
+  var randomNumber;
+
+  randomNumber = getRandomInt(1,6);
+
+  alert('dice: ' + randomNumber);
+
+  alert('cards: ' + getRandomInt(1, 52));
+
+  </script>
+</body>
+</html>

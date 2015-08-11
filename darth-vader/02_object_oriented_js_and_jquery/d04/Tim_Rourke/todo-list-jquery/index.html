@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tim's Todos</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">Tim's Todos</h1>
+
+    <form id="addTodo">
+      <label for="dateDue">
+        Date due
+        <input type="date" name="dateDue" id="dateDue">
+      </label>
+      <label for="itemText">
+        Task
+        <input type="text" name="itemText" id="itemText">
+      </label>
+      <input type="hidden" name="todoCreated" id="todoCreated">
+      <input type="hidden" name="todoId" id="todoId">
+      <input type="submit">
+    </form>
+
+  </header>
+  <main class="todo-list">
+    <ul id="todoList">
+      <li data-id="sampleitemid" class="todo-item clearfix">
+        <span class="todo-item__date-created"><span class="label__created">Created</span>July 7, 2015</span>
+        <span class="todo-item__date-due"><span class="label__due">Due</span>July 7, 2015</span>
+        <span class="todo-item__text"><span class="label__task">Task</span>This is an example item. Edit or delete it to get started!</span>
+        <div class="todo-item__controls">
+          <button class="todo-item__edit" type="button">Edit</button>
+          <button class="todo-item__remove" type="button">Remove</button>
+        </div>
+      </li>
+    </ul>
+  </main>
+
+  <script src="./scripts/app.js"></script>
+
+</body>
+</html>

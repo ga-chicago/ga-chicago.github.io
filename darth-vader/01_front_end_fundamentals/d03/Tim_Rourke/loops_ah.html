@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Basics</title>
+  <style>
+    html {
+      font-family:'Helvetica Neue', Helvetica, sans-serif;
+    }
+    #simpleArray,
+    #awesomePainters {
+      color:orange;
+      font-weight:700;
+    }
+    #primeListUL {
+      color:purple;
+      font-style:italic;
+    }
+    .fieldName {
+      margin-right:1em;
+      text-transform:uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <ul id="simpleArray">
+    <li>dog</li>
+    <li>cat</li>
+    <li>hamburger</li>
+    <li>spaceship</li>
+    <li>grandpa</li>
+    <li>jumbojet</li>
+  </ul>
+
+  <ul id="awesomePainters">
+    <li>
+      <h1><span class="fieldName">Painter:</span>Johannes Vermeer</h1>
+      <ul>
+        <li><span class="fieldName">Title:</span>The Art of Painting</li>
+        <li><span class="fieldName">Date:</span>1666 &mdash; 1668</li>
+        <li><span class="fieldName">Link:</span><a href="https://www.google.com/culturalinstitute/u/0/asset-viewer/the-art-of-painting/lAHeqBoLaePtEA?projectId=art-project">See the painting</a></li>
+      </ul>
+    </li>
+    <li>
+      <h1><span class="fieldName">Painter:</span>Rembrandt Harmensz van Rijn</h1>
+      <ul>
+        <li><span class="fieldName">Title:</span>The Jewish Bride</li>
+        <li><span class="fieldName">Date:</span>c1665 &mdash; c1669</li>
+        <li><span class="fieldName">Link:</span><a href="https://www.google.com/culturalinstitute/u/0/asset-viewer/isaac-and-rebecca-known-as-the-jewish-bride/hAERFV8rdOOssw?projectId=art-project">See the painting</a></li>
+      </ul>
+    </li>
+    <li>
+      <h1><span class="fieldName">Painter:</span>Titian</h1>
+      <ul>
+        <li><span class="fieldName">Title:</span>The Tribute Money</li>
+        <li><span class="fieldName">Date:</span>c1516</li>
+        <li><span class="fieldName">Link:</span><a href="https://www.google.com/culturalinstitute/u/0/asset-viewer/the-tribute-money/KwGBZUkhototqw?projectId=art-project">See the painting</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul id="primeListUL">
+
+  </ul>
+
+  <article id="primeCalculator">
+    <h1>Prime Calculator</h1>
+    <p><em>Note: Use this tool to see my array of numbers.</em></p>
+    <p>This little tool calculates primes. Simply enter the highest number you'd like to check, and this tool will return a handy list of primes found within the range of 0 (zero) to the maximum number entered.</p>
+    <form action="#" id="listPrimes">
+      <label for="maxPrimes">
+        Max number to calculate
+        <input type="number" min="1" step="1" name="maxPrimes" id="maxPrimes" placeholder="Max number">
+        <input type="submit" value="Calculate Primes">
+      </label>
+      <label for="primeNumbersResult">
+        Result
+        <textarea name="primeNumbersResult" id="primeNumbersResult" cols="60" rows="10"></textarea>
+      </label>
+    </form>
+  </article>
+
+  <script>
+
+    var primeCalculator = document.getElementById('listPrimes');
+
+    var primeNumbersResultField = document.getElementById('primeNumbersResult');
+
+    function listPrimes(maxNum) {
+      for (var i = 0; i <= maxNum; i++) {
+        var result = [];
+        for (var j = 0; j < i; j++) {
+            if (i%j == 0 || i == 1) {
+              result.push(j);
+            }
+        }
+        if (result.length && result.length < 2) {
+          listOfPrimes.push(i);
+        }
+      }
+      return false;
+    }
+
+    primeCalculator.onsubmit = function() {
+      primeNumbersResultField.value = "";
+
+      var maxNum = document.getElementById('maxPrimes').value;
+
+      var listOfPrimes = [];
+
+      var primeListUL = document.getElementById('primeListUL');
+
+      var primeLIlist = "";
+
+      for (var i = 0; i <= maxNum; i++) {
+        var result = [];
+        for (var j = 0; j < i; j++) {
+            if (i%j == 0 || i == 1) {
+              result.push(j);
+            }
+        }
+        if (result.length && result.length < 2) {
+          listOfPrimes.push(i);
+        }
+      }
+
+      for (var i = 0; i < listOfPrimes.length; i++) {
+        var html = "<li>" + listOfPrimes[i] + "</li>"
+        primeLIlist += html;
+      }
+
+      primeListUL.innerHTML = primeLIlist;
+
+      primeNumbersResultField.value = listOfPrimes.toString();
+
+      return false;
+    }
+
+  </script>
+
+</body>
+</html>

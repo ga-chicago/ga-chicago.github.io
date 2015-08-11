@@ -1,0 +1,140 @@
+body {
+  font-size: 1em;
+  line-height: 1.375em;
+  margin: 0 auto; }
+
+h1 {
+  font-size: 2.1875em;
+  line-height: 1.257142858em;
+  margin-top: 1.25714286em;
+  margin-bottom: 0.62857143em; }
+
+h2 {
+  font-size: 1.6875em;
+  line-height: 1.62962963em;
+  margin-top: 1.62962963em;
+  margin-bottom: 0.81481482em; }
+
+h3 {
+  font-size: 1.3125em;
+  line-height: 1.047619048em;
+  margin-top: 1.04761905em;
+  margin-bottom: 1.04761905em; }
+
+h4 {
+  font-size: 1em;
+  line-height: 1.375em;
+  margin-top: 1.375em;
+  margin-bottom: 1.375em; }
+
+p, ul, ol, pre, table, blockquote {
+  margin-top: 1.375em;
+  margin-bottom: 1.375em; }
+
+/* Sanitation */
+hr {
+  border: 1px solid;
+  margin: -1px 0; }
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+b, strong, em, small, code {
+  line-height: 1; }
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em; }
+
+sub {
+  top: 0.4em; }
+
+.clearfix:after, .site-header:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix, .site-header {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html .clearfix, * html .site-header {
+  height: 1%; }
+
+.clearfix, .site-header {
+  display: block; }
+
+/* close commented backslash hack */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #eae5f2;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  color: #444; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #057ff5; }
+
+a {
+  color: #057ff5; }
+
+.wrapper {
+  margin: 2em auto;
+  width: 80%;
+  max-width: 30em; }
+
+.site-branding {
+  margin-top: 0;
+  float: left;
+  display: block;
+  max-width: 4em; }
+
+.site-navigation__primary {
+  float: right; }
+
+.site-navigation ul {
+  margin: 0;
+  padding: 0; }
+
+.nav-item {
+  list-style-type: none; }
+
+.device-tablet,
+.device-laptop {
+  display: none; }
+
+@media all and (min-width: 480px) {
+  .device-phone {
+    display: none; }
+
+  .device-tablet {
+    display: block; } }
+@media all and (min-width: 600px) {
+  .device-phone {
+    display: none; }
+
+  .device-tablet {
+    display: none; }
+
+  .device-laptop {
+    display: block; } }
+
+/*# sourceMappingURL=style.css.map */

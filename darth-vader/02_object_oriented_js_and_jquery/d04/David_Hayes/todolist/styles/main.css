@@ -1,0 +1,99 @@
+header {
+  background-color: blue;
+  color: white;
+  width: 94.5%;
+  border-radius: 15px;
+  margin: 0 auto 2% auto;
+  padding: 5% 0 5% 5%;
+  text-indent: 5%;
+}
+h1 {
+  font-family: "Verdana", sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+}
+section {
+  background-color: #DDDDDD;
+  height: 100px;
+  width: 30%;
+  position: relative;
+  float:left;
+  border: solid 2px gray;
+  border-radius: 15px;
+  padding: 5%;
+  font-family: "Verdana","sans-serif";
+}
+aside {
+  background-color: #FFFFFF;
+  height: 600px;
+  width:50%;
+  float:right;
+  position: relative;
+  border: solid 2px blue;
+  border-radius: 15px;
+  margin-right: .5%;
+  padding-left: 25px;
+  padding-top: 25px;
+  font-family: "Verdana","sans-serif";
+  font-weight: 600;
+}
+#center {
+  background-color: white;
+  height: 600px;
+  width: 2%;
+  float: left;
+  position: relative;
+  border: solid 2px gray;
+  margin: 0 .5%;
+}
+#comp-col {
+  margin-left: -10px;
+  margin-top: 18px;
+}
+.completed {
+  border-radius: 4px;
+  height: 2em;
+  width: 2em;
+  font-size: .8em;
+  float:left;
+  margin-left: -15px;
+  margin-top: 5px;
+  background-color: lightgray;
+  padding: 5px 0 0 5px;
+}
+#wrapper {
+  max-width: 1000px;
+  margin: 15px auto;
+  overflow: auto;
+}
+#check-complete {
+  border: solid 3px green;
+  height: 600px; 
+}
+input {
+  border-radius: 10px;
+  height: 2em;
+  width: 16em;
+  font-size: .8em;
+}
+button {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  height: 2.2em;
+}
+footer {
+  clear: both;
+  background-color: brown;
+  height: 150px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+li {
+  font-size: 1em;
+  line-height: 1.91;
+  font-weight: 300;
+}

@@ -1,0 +1,67 @@
+header {
+  width: 50%;
+  height: 50px;
+  border: 2px solid rgba(85, 0, 0, 1);
+  color: black;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #F1C820;
+}
+
+body {
+  background-color: #FFF7AA;
+}
+
+main {
+  width: 95%;
+  margin: 0 auto;
+  height: 400px;
+
+}
+
+#background {
+  padding-top: 30px;
+  width: 80%;
+  height: 350px;
+  margin: 0 auto;
+  background-color: #D4CA6A;
+}
+
+aside {
+  width: 20%;
+  height: 200px;
+  position: relative;
+  color: black;
+  float: left;
+  text-align: center;
+  border: 2px solid rgba(85, 0, 0, 1);
+  margin-top: 15px;
+  margin-right: 10px;
+  background-color: #F1C820;
+}
+
+section {
+  position: relative;
+  text-align: center;
+  float: left;
+  width: 70%;
+  border: 2px solid rgba(85, 0, 0, 1);
+  margin-left: 1.75%;
+  color: black;
+  margin-top: 15px;
+  height: 200px;
+  background-color: #F1C820;
+}
+
+input {
+  border-radius: 10px;
+}
+
+button {
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.5);
+  margin-top: 20px;
+  position: relative;
+  color: white;
+}

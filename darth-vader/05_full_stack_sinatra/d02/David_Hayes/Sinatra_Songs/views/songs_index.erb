@@ -1,0 +1,11 @@
+<h3>A Selection of Frank Sinatra Recordings</h3>
+
+<ol>
+  <% @songs.each do |song| %>
+
+    <li>"<%= song.title %>" was released in <%= song.release_year %> on the
+      album <em><%= song.album %></em>.
+    </li>
+
+  <% end %>
+</ol>

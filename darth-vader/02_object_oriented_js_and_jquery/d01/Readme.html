@@ -1,0 +1,1015 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>How the Internet Works, Objects in JS | WDI Darth Vader</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.2.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../02_object_oriented_js_and_jquery/d02/index.html" />
+    
+    
+    <link rel="prev" href="../../02_object_oriented_js_and_jquery/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="2.1" data-basepath="../.." data-revision="Mon Aug 10 2015 20:19:42 GMT-0500 (CDT)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction &amp; Syllabus
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="introduction/holidays.html">
+            
+                
+                    <a href="../../introduction/holidays.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        Student Holidays
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2" data-path="introduction/homework_submission.html">
+            
+                
+                    <a href="../../introduction/homework_submission.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        Homework Submission
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3" data-path="introduction/required_software.html">
+            
+                
+                    <a href="../../introduction/required_software.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                        Required Software
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4" data-path="introduction/library.html">
+            
+                
+                    <a href="../../introduction/library.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                        Class Library
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5" data-path="introduction/required_software.html">
+            
+                
+                    <a href="../../introduction/required_software.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                        Required Software
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6" data-path="introduction/course_outline.html">
+            
+                
+                    <a href="../../introduction/course_outline.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.</b>
+                        
+                        Course Outline
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7" data-path="videos/index.html">
+            
+                
+                    <a href="../../videos/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.</b>
+                        
+                        All Videos/Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_front_end_fundamentals/readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Front End Fundamentals
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_front_end_fundamentals/d01/Readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Objects, Command Line, &amp; Git
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_front_end_fundamentals/d02/Readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/d02/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Git, Introduction to Javascript, Data Types
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_front_end_fundamentals/d03/Readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Arrays, Loops, Logic
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01_front_end_fundamentals/d04/Readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/d04/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Function, REPS, Second Pass Friday
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="videos/01.html">
+            
+                
+                    <a href="../../videos/01.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_object_oriented_js_and_jquery/index.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Object-Oriented Javascript
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1" data-path="02_object_oriented_js_and_jquery/d01/Readme.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        How the Internet Works, Objects in JS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_object_oriented_js_and_jquery/d02/index.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d02/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Typography, Style Guides, CSS Box Model, Wireframing
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_object_oriented_js_and_jquery/d03/Readme.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Javascript Constructors
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_object_oriented_js_and_jquery/d04/Readme.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d04/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        jQuery
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02_object_oriented_js_and_jquery/d05/Readme.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d05/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Second Pass Friday
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="videos/02.html">
+            
+                
+                    <a href="../../videos/02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_mastering_front_end/readme.html">
+            
+                
+                    <a href="../../03_mastering_front_end/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Project #1
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_mastering_front_end/d01/Readme.html">
+            
+                
+                    <a href="../../03_mastering_front_end/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        HTTP &amp; Ajax
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_mastering_front_end/d03/Readme.html">
+            
+                
+                    <a href="../../03_mastering_front_end/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Responsive Design
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="videos/03.html">
+            
+                
+                    <a href="../../videos/03.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04_ruby/readme.html">
+            
+                
+                    <a href="../../04_ruby/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Ruby
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_ruby/d01/Readme.html">
+            
+                
+                    <a href="../../04_ruby/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Ruby 101: Data Types, Control Flow, and Logic
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_ruby/intro_to_ruby.html">
+            
+                
+                    <a href="../../04_ruby/intro_to_ruby.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Intro to Ruby
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_ruby/enumeration_in_ruby.html">
+            
+                
+                    <a href="../../04_ruby/enumeration_in_ruby.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Enumeration in Ruby
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_ruby/d02/Readme.html">
+            
+                
+                    <a href="../../04_ruby/d02/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Objects, Classes, &amp; Inheritance
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_ruby/classes_in_ruby.html">
+            
+                
+                    <a href="../../04_ruby/classes_in_ruby.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Classes in Depth
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="04_ruby/d03/Readme.html">
+            
+                
+                    <a href="../../04_ruby/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        MVC and Sinatra
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="04_ruby/d04/Readme.html">
+            
+                
+                    <a href="../../04_ruby/d04/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        Second Pass Friday
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="videos/04.html">
+            
+                
+                    <a href="../../videos/04.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_full_stack_sinatra/readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Full Stack Sinatra
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_full_stack_sinatra/d01/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Datbases &amp; SQL
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_full_stack_sinatra/d02/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d02/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Models, ORMs and ActiveRecord
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05_full_stack_sinatra/d03/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        CRUD &amp; Controllers
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05_full_stack_sinatra/d04/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d04/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Server Side Authentiation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05_full_stack_sinatra/d05/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d05/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Second Pass Friday
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="videos/05.html">
+            
+                
+                    <a href="../../videos/05.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06_full_stack_project/index.html">
+            
+                
+                    <a href="../../06_full_stack_project/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Project #2
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06_full_stack_project/d01/Readme.html">
+            
+                
+                    <a href="../../06_full_stack_project/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Live Websites
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="videos/06.html">
+            
+                
+                    <a href="../../videos/06.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07_ruby_on_rails/Readme.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Ruby on Rails
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07_ruby_on_rails/digital_ocean.html">
+            
+            <span><b>7.1.</b> Building a webserver</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07_ruby_on_rails/d01/Readme.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Live Websites
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="videos/07.html">
+            
+                
+                    <a href="../../videos/07.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >WDI Darth Vader</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="object-oriented-javascript-and-jquery">Object-oriented Javascript and jQuery</h1>
+<h1 id="week-2-day-1">Week 2, Day 1</h1>
+<h3 id="block-1-how-the-internet-works">Block 1: How the Internet Works</h3>
+<ul>
+<li>Understand the difference between a <em>client</em> and a <em>server</em></li>
+<li>Be able to build URLs</li>
+<li>Have a fundamental knowledge of security</li>
+</ul>
+<h4 id="osi-model">OSI Model</h4>
+<p><img src="https://github.com/ga-students/WDI_Chi_Darth_Vader/blob/master/02_object_oriented_js_and_jquery/osi_7_layers.png"></p>
+<h4 id="network-ports-glossary">Network Ports + Glossary</h4>
+<p><a href="https://github.com/ga-students/WDI_Chi_Darth_Vader/blob/master/02_object_oriented_js_and_jquery/networking_ports_and_glossary.md" target="_blank">See this markdown page</a>.</p>
+<h4 id="uri-url-structure">URI/URL Structure</h4>
+<p><code>protocol://subdomain.domain.com:port/resource</code></p>
+<ul>
+<li><a href="http://google.com:80" target="_blank">http://google.com:80</a></li>
+<li><a href="https://yahoo.com/news" target="_blank">https://yahoo.com/news</a></li>
+<li>ftp://user@website.com/my_directory</li>
+<li>ssh://root@ga.co/delete_all_the_things</li>
+<li>mysql://dbadmin@somesite.com:3306/my_db</li>
+<li>mongo://dbadmin@anothersite.com/new_db</li>
+</ul>
+<h3 id="block-2-objects-in-javascript">Block 2: Objects in Javascript</h3>
+<ul>
+<li>Ability = method (a function owned by an object) = verb</li>
+<li>Attribute = property = noun</li>
+<li>Objects contain a <strong>key</strong> with an associated <strong>value</strong>.</li>
+<li>Attributes must be numbers, strings, arrays, or other objects</li>
+<li>Abilties must be functions</li>
+<li><code>var obj = {};</code> or <code>var obj = new Object();</code></li>
+<li>Does an Object contain an attribute or ability? Check using <code>myObject.hasOwnProperty(&quot;nameOfProperty&quot;);</code></li>
+<li>More here: <a href="https://github.com/ga-students/WDI_Chi_Darth_Vader/blob/master/02_object_oriented_js_and_jquery/javascript_objects.md" target="_blank"></a></li>
+</ul>
+<h4 id="example">Example</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// best practice</span>
+<span class="hljs-keyword">var</span> james = {
+
+    name: <span class="hljs-string">&quot;James&quot;</span>,
+    age: <span class="hljs-number">31</span>,
+    saySomething: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;yolo is a no go&quot;</span>);
+    },
+    isCool: <span class="hljs-literal">false</span>,
+    friends: [<span class="hljs-string">&quot;Tom&quot;</span>, <span class="hljs-string">&quot;Marion&quot;</span>, <span class="hljs-string">&quot;Angie&quot;</span>, <span class="hljs-string">&quot;all y&apos;al&quot;</span>],
+    goOutside: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;/me goes outside!!!!!&quot;</span>);
+    }
+};
+
+<span class="hljs-comment">// old school</span>
+<span class="hljs-keyword">var</span> james = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>();
+james.name = <span class="hljs-string">&quot;James&quot;</span>;
+james.saySomething = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;yolo is a no go&quot;</span>);
+};
+james.isCool = <span class="hljs-literal">false</span>;
+
+<span class="hljs-comment">// array vs object</span>
+<span class="hljs-keyword">var</span> arr = [];
+<span class="hljs-keyword">var</span> obj = {};
+</code></pre>
+<h3 id="block-3-object-lab">Block 3: Object Lab</h3>
+<ul>
+<li><a href="https://github.com/ga-students/WDI_Chi_Darth_Vader/blob/master/02_object_oriented_js_and_jquery/d01/ASSIGNMENT_FILES/lab/objects_objects_everywhere.md" target="_blank">Lab is here!</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../02_object_oriented_js_and_jquery/index.html" class="navigation navigation-prev " aria-label="Previous page: Object-Oriented Javascript"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../02_object_oriented_js_and_jquery/d02/index.html" class="navigation navigation-next " aria-label="Next page: Typography, Style Guides, CSS Box Model, Wireframing"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

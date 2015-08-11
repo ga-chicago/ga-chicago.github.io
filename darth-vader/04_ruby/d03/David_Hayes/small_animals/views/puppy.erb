@@ -1,0 +1,23 @@
+<h3>This is puppy.erb</h3>
+<p></p>
+<script>
+
+$(document).ready(function() {
+  var p = $('p');
+
+  $.ajax({
+    type: 'get',
+    dataType: 'json',
+    url: '/puppy',
+    success: function(data) {
+      console.log(data);
+      $(p).html(data.name);
+    },
+    error: function(err) {
+      console.log(err);
+      $(p).html('An error occured');
+    }
+  });
+});
+
+</script>

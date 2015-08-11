@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <title>Build your own adventure!</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+    var input = new Array(5);
+    input[0] = prompt("Enter a name");
+    input[1] = prompt("Enter a place");
+    input[2] = prompt("Enter an animal");
+    input[3] = prompt("Enter a vehicle");
+    input[4] = confirm("Do you like pizza?");
+
+    if (input[4] == true){
+      console.log(input[0] + " went to " + input[1] + " where they were surprised to see a rather large " + input[2] + " driving a " + input[3] + "! " + input[0] + " decided it was too crazy at " + input[1] + ". So " + input[0] + " went to go get pizza.");
+    }
+    else {
+      console.log(input[0] + " went to " + input[1] + " where they were surprised to see a rather large " + input[2] + " driving a " + input[3] + "! " + input[0] + " decided it was too crazy at " + input[1] + ". So " + input[0] + " went to go get burgers.");
+
+    }
+    </script>
+  </body>
+</html>

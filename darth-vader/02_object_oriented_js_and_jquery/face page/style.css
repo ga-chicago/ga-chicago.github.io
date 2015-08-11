@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url(chicago_skyline.jpg);
+  background-size: contain;
+}
+
+header {
+  width: 95%;
+  margin: 0 auto;
+  background-color: rgb(46, 77, 167);
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+aside {
+  width: 25%;
+  height: 250px;
+  float: left;
+  background-color: rgba(255, 255, 255, .6);
+}
+
+#profile_pic {
+  width: 33%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+section {
+  width: 73%;
+  height: 250px;
+  float: right;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  background-color: rgba(225,255,255, .6);
+}
+
+button {
+  display: inline;
+  width: 30%;
+  margin: 1.6%;
+  float: left;
+  background-color: rgba(225,255,255, .8);
+  border: 2px black solid;
+}
+
+footer {
+  width: 95%;
+  height: 30px;
+  margin: 0 auto;
+  clear: both;
+  background-color: rgb(46, 77, 167);
+}
+
+
+h1,
+h2,
+h3,
+small {
+  font-family: "Verdana", sans-serif;
+}
+
+
+h2 {
+  margin: 0 auto;
+}

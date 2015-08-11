@@ -1,0 +1,15 @@
+html, body {
+	height:100%;
+}
+
+body {
+	margin:0;
+	padding:2em;
+	color:#444;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+}
+
+a {
+	color:#E818FA;
+}

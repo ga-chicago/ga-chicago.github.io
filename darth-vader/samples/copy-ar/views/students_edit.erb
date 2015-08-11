@@ -1,0 +1,16 @@
+
+<h1>Students: Edit</h1>
+
+<h4>Student #<%= @student.id %></h4>
+
+<form class="" action="/students/edit" method="post">
+  <input type="hidden" name="id" value="<%= @student.id %>">
+  <input type="text" name="name" value="<%= @student.name %>">
+  <input type="text" name="email" value="<%= @student.email %>">
+  <input type="submit" value="Update Student">
+</form>
+
+<form class="" action="/students/destroy" method="post">
+  <input type="hidden" name="id" value="<%= @student.id %>">
+  <input type="submit" value="Delete Student">
+</form>

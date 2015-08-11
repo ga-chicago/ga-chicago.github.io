@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adventure.js</title>
+</head>
+<body>
+
+  <script>
+  var answers = [];
+  answers[4] = false;
+
+  alert("Welcome to Timmy's magical adventure to space, where we launch you in a small box into a dark alley and pretend we're NASA.");
+
+  var name = prompt('What is your name?');
+
+  name = name.toString();
+
+  answers[0] = confirm("Have you ever been to space before?");
+
+  // Find out if user's been to space
+  if (answers[0] == true) {
+    answers[1] = confirm('And did you like it, you magical beast?');
+  } else {
+    answers[1] = confirm("I don't believe you at all! Are you lying?");
+  }
+
+  // Find out what user would fly to space?
+  if (answers[1] == true) {
+    answers[2] = prompt('HA, I thought so, you\'re a stinky liar pants! What kind of vehicle did you take?');
+  } else {
+    answers[2] = prompt('Well, fine. If you had gone to space, what would you want to fly to space in?');
+  }
+
+  // Find out where user would go in their rocket
+  if (answers[1] == true) {
+    answers[3] = prompt('What planet did you go to?');
+  } else {
+    answers[3] = prompt('Where would you go if you could fly somewhere?');
+  }
+
+  // Find out how bad the user wants to go there
+  while (!answers[4] || answers[4] < 1 || answers[4] > 10) {
+    answers[4] = prompt('On a scale of 1 to 10, 10 being the highest, how bad do you want to go to space?');
+    if (answers[4] < 1) {
+      alert('less than one!');
+      answers[4] = prompt('On a scale of 1 to 10, 10 being the highest, how bad do you want to go to space?');
+    } else if (answers[4] > 10) {
+      alert('more than 10!');
+      answers[4] = prompt('On a scale of 1 to 10, 10 being the highest, how bad do you want to go to space?');
+    }
+  }
+
+  var storyString = "Hi there, " + name + "!";
+
+  if (answers[0] == true) {
+    storyString += " Turns out you're a former astronaut! Neat!";
+    storyString += " You mentioned earlier that you flew a " + answers[2] + " to space. Sounds stupid. We're going to send you to 'space' in this rusty bucket.";
+  } else {
+    storyString += " We hear you've never seen the stars.";
+    storyString += " You mentioned earlier that you wanted to fly a " + answers[2] + " to space. That's the worst idea I've ever heard. Instead, you'll be taking your next trip in a broken toilet.";
+  }
+
+  storyString += " This is a budget flight, so unfortunately, we can't afford to send you to " + answers[3] + ". Instead, we're going to send you to Hoboken."
+
+  storyString += " Because of your interest level, this trip will cost you exactly $" + (answers[4]*10000) + ". You'll need to pay us or we'll take your mom's car for collateral.";
+
+  storyString += " Enjoy your trip!";
+
+  console.log(storyString);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Snoop a Loop</title>
+  </head>
+  <body>
+
+
+    <script>
+    ///iterate through a list of Snoop Dogg Tracks
+      var snoopTracks = ["what's my name", "murder was the case", "lay low", "beautiful"];
+
+      for (var i = 0; i < snoopTracks.length; i++) {
+        document.write(snoopTracks[i]);
+      }
+
+      for (var tracks in snoopTracks) {
+        document.write(snoopTracks[tracks]);
+      }
+
+      ///Write a for loop that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. "2 is even")
+      for (var i = 0; i <= 20; i++) {
+        if (i % 2 === 0) {
+            console.log(i + ' is even');
+        } else {
+            console.log(i + ' is odd');
+        }
+      }
+//// Fizzzzzzz Buzzzzzzzz: for an array of numbers, console log "Fizz" if a number is divisible by 5, console log "Buzz" if a number is divisible by 3, console log "FizzBuzz" if a number is divisible by both 5 and 3.
+      for (var i=1; i <= 101; i++)
+      {
+          if (i % 15 == 0)
+              console.log("FizzBuzz");
+          else if (i % 3 == 0)
+              console.log("Fizz");
+          else if (i % 5 == 0)
+              console.log("Buzz");
+          else
+              console.log(i);
+      }
+
+    </script>
+
+  </body>
+</html>

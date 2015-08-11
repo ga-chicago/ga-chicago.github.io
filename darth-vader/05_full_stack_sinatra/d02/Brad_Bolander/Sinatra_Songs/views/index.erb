@@ -1,0 +1,7 @@
+<h1>Here is my playlist:</h1>
+
+<% @songList.each do |song| %>
+
+<%= song.title %> | <%= song.artist %> | <%= song.album %> | <%= song.releaseyear %> <br><br>
+
+<% end %>

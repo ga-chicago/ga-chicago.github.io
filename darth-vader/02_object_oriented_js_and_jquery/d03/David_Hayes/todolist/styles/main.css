@@ -1,0 +1,135 @@
+body {
+  background-color: aliceblue;
+  width: 900px;
+  margin: 0 auto;
+}
+header {
+  background-color: blue;
+  color: white;
+  width: 100%%;
+  border-radius: 15px;
+  margin-bottom: 2%;
+  padding: 5% 0 5% 0;
+  text-indent: 5%;
+}
+h1 {
+  font-family: "Verdana", sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+section {
+  background-color: #DDDDDD;
+  position: relative;
+  float:left;
+  border: solid 2px gray;
+  border-radius: 15px;
+  padding: 5%;
+  font-family: "Verdana","sans-serif";
+}
+main {
+  height: 1000px;
+  width: 100%;
+  background-color: aliceblue;
+}
+input {
+  padding-left: 5px;
+  margin-right: 2px;
+  font-size: 1.5rem;
+  background-color: #FEFEFE;
+}
+
+#copyright {
+  margin: 2% 0 0 0;
+  width: 95%;
+  height: 30px;
+  padding: 2%;
+  background-color: blue;
+  border-radius: 15px;
+  color: white;
+  position:relative;
+
+}
+input {
+  margin-bottom: 10px;
+}
+#copyright p {
+  margin: 0;
+}
+#submit-form {
+  width: 33.5%;
+  padding-top: 2%;
+  margin-right: 3%;
+  margin-left: 0;
+}
+#submit-form button {
+  background-color: green;
+}
+#taskpane {
+  width: 49.5%;
+  height: 70%;
+  border: solid 2px green;
+  padding: 0 0 0 3%;
+  position:relative;
+  background-color: white;
+}
+#center {
+  background-color: white;
+  border: 0;
+  width: 2%;
+  float: left;
+  position: relative;
+  margin: 0 .5%;
+}
+#comp-col {
+  margin-left: -10px;
+  margin-top: 2%;
+}
+#todo-items {
+  width: 75%;
+  float: right;
+  background-color: white;
+  border: 0;
+}
+.completed {
+  height: 2em;
+  width: 2em;
+  font-size: .8em;
+  float:left;
+  margin-left: -15px;
+  margin-top: 5px;
+  padding: 5px 0 0 5px;
+  border: 0;
+}
+#wrapper {
+  width: 95%;
+  margin: 15px auto;
+  overflow: auto;
+}
+#check-complete {
+  height: 600px;
+}
+input {
+  border-radius: 10px;
+  height: 2em;
+  width: 16em;
+  font-size: .8em;
+}
+button {
+  border-radius: 5px;
+  background-color: lightgray;
+  color: white;
+  height: 2.2em;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 0;
+}
+li {
+  font-size: 1em;
+  line-height: 1.91;
+  font-weight: 300;
+}

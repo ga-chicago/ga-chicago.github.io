@@ -1,0 +1,101 @@
+html {
+  height:100%;
+}
+
+body{
+  height: 100%;
+  background-image: url("https://andersonair.ca/wp-content/uploads/2014/02/clouds-blue-sky-blurred-background-backdrop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  margin: 0;
+  border-width: medium;
+  background-color: #3b5998;
+  border-color: #3b5998;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.mainName{
+  padding-top: 12px;
+  padding-left: 20px;
+  color: white;
+  font-family: verdana;
+  font-size: 60px;
+}
+
+aside{
+  width: 30%;
+  height: 400px;
+  background-color: #3b5998;
+  opacity: .7;
+  float: left;
+}
+h2{
+  text-align: center;
+  font-family: verdana;
+  color: white;
+  font-size: 30px;
+  text-decoration: underline;
+}
+.profile_pic {
+  margin: 0 auto;
+  width: 240px;
+  height: 240px;
+  background-image: url("http://i.imgur.com/n5vHKaB.jpg");
+  background-size: 105%;
+  border-radius: 20%;
+  border: 9px solid white;
+
+
+}
+
+
+section{
+  width: 68%;
+  height: 400px;
+  background-color: #3b5998;
+  opacity: .7;
+  float:right;
+}
+.buttons {
+  margin: 0 auto;
+  display: block;
+}
+button {
+  width: 29%;
+  border: 5px solid white;
+  background color: white;
+  padding: 1%;
+  margin: 1.7%;
+  font-size: 20px;
+  font-family: verdana;
+  border-radius: 9px;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+   }
+
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: #3b5998;
+  padding:1em;
+}
+h4{
+  background-color:#3b5998;
+  color: white;
+}

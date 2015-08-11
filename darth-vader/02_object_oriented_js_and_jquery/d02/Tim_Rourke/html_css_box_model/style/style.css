@@ -1,0 +1,48 @@
+body {
+  font-family: "Calibri", "Arial", sans-serif;
+  margin: 0px;
+}
+#wrapper {
+  width: 90%;
+  margin: 15px auto;
+}
+header {
+  border: 3px dashed navy;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+nav {
+  border: 3px dashed orange;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+section {
+  border: 3px dashed green;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+aside {
+  border: 3px dashed purple;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+footer {
+  clear: both;
+  border: 3px dashed red;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* create a side-to-side line */
+.menu ul {
+  padding: 0px;
+}
+.menu li {
+  display: inline-block;
+  list-style: none;
+}

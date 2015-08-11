@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <title>Build your own adventure!</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    // add your custom Javascript here
+    var libs = [];
+    libs[0] = prompt("What is the kings name?");
+    libs[1] = prompt("What does your king want to buy?");
+    libs[2] = prompt("What is the brand of that product?");
+    libs[3] = prompt("What is the price of that product (in dollars)?");
+    libs[4] = confirm("Is the king a nice guy?");
+
+    var story = "Once upon a time, King " + libs[0] + " went to the store to buy a " + libs[1] + ". " + libs[0] + " asked the cashier to hand him a box of " + libs[2] + "s.  The cashier responded \"" + libs[0] + ", that will be $" + libs[3] + ", please.\"  At which " + libs[0] + " said \"Do YOU know who I am???  I am the friggin' King!!! And King's don't pay for anything!\"\r\nThe Cashier politely sighed and responded \"Yes, I know you are the king.  You say this to me every week and I give you the " + libs[1] + "s every time.  I was thinking that maybe you could be a bit more humble!\"\r\n";
+    var lastpara = ["The king took two steps back and exclaimed, \"How dare you tell me this!!!  You will be banished from the kingdom and never come back again!!!", "At this, the king laughed and explained, \"Hahahaha my dear you are beautiful and deserve to be my Queen... Will you marry me????\" and the cashier said yes and since SCOTUS legalized same sex marraige just a week before, they lived happily ever after!!!"];
+
+    if (libs[4] === false) {
+      console.log(story + lastpara[0]);
+    } else {
+      console.log(story + lastpara[1]);
+    }
+    </script>
+  </body>
+</html>

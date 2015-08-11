@@ -1,0 +1,41 @@
+.main-content {
+  padding-top: 15%;
+  height: 400px;
+  width: 105%;
+  margin-top: -3%;
+  margin-left: -3%;
+  background-image: url("9SSLfCT.jpg");
+  border-bottom: 1px solid gray;
+
+}
+
+.input-wrapper {
+  border-radius: 50px;
+  border: 1px solid gray;
+  float: left;
+  position: relative;
+  height: 260px;
+  background-color: rgba(230, 88, 105, 0.39);
+  width: 30%;
+  margin-left: 35%;
+  padding-left: 50px;
+  color: rgb(58, 43, 122);
+  padding-bottom: 8%;
+}
+
+.submit-button {
+  margin-left: 20%;
+  position: relative;
+  float: left;
+  color: rgb(32, 24, 66);
+  background-color: rgba(129, 33, 36, 0.31)
+}
+
+input {
+  border-radius: 5px;
+}
+
+body {
+  font-family: Verdana;
+  background-color: rgba(62, 64, 255, 0.5);
+}

@@ -1,0 +1,41 @@
+h1 {
+  border: 3px dotted cyan;
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+body {
+ font-size: 16px;
+ width: 75%;
+ margin: 0 auto;
+ background-color: rgba(0, 0, 0, 0.5);
+ background-size: cover;
+ b
+}
+
+h2 {
+  border: 3px dotted cyan;
+  text-align: center;
+}
+
+.contentWrapper {
+ border: 3px dotted cyan;
+}
+
+.block {
+ margin: 10px;
+ background-color: rgba(0, 0, 0, 0.3);
+ text-align: center;
+}
+
+.blockHeader {
+  border: 3px dotted cyan;
+  width: 15%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+ border: 3px dotted cyan;
+}

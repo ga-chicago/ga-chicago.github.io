@@ -1,0 +1,20 @@
+
+
+body {
+	font-size: 16px;
+}
+.headline {
+	font-size: 3rem; /*300% */
+}
+.byline {
+	font-size: 1.5rem; /* 150% */
+}
+.nav-item {
+	font-size: 1rem;
+}
+.body-copy {
+	font-size: 1rem;
+}
+.sub {
+	font-size: .75rem;
+}

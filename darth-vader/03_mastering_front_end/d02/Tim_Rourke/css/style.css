@@ -1,0 +1,35 @@
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 1em;
+  background: linear-gradient(to bottom, #faeaed, #ffcfe7);
+  color: #38f;
+  font-family: Georgia, serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: hotpink; }
+
+.wrapper {
+  width: 30em;
+  margin: 0 auto; }
+
+.block {
+  border: 1px solid hotpink; }
+
+.block-one {
+  padding: 1em;
+  background-color: white; }
+  .block-one ul {
+    list-style: none; }
+  .block-one li::before {
+    content: '>';
+    color: #38f;
+    margin-left: -1em;
+    padding-right: 0.5em; }
+
+/*# sourceMappingURL=style.css.map */

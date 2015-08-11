@@ -1,0 +1,65 @@
+html {
+	font-family: verdana, sans-serif; 
+}
+
+body {
+	background-image: url(../bgr.jpeg);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+a {
+	text-decoration: none;	
+	color: black;
+}
+header {
+	background-color: blue;
+	color: white;
+}
+
+header>h1 {	
+	vertical-align: middle;
+	padding: 10px 0	;
+	margin: 0;
+}
+
+
+img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	text-align: center;
+	display: block;
+	margin: 0 auto 20px auto;
+
+}
+
+aside {
+	background-color: rgba(255,255,255,.6);
+	margin-top: 10px;	
+	text-align: center;
+}
+
+section {
+	background-color: rgba(255,255,255,.6);
+	margin-top: 10px;
+	min-height: 400px;
+}
+
+section ul {
+	text-align: center;
+}
+section li {
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 0 10px;
+	background-color: rgba(255,255,255,.5);
+	border: 1px solid blue; 
+}
+
+footer {
+	margin: 10px;
+	background-color: blue;
+	min-height: 40px;
+	color: white;
+	text-align: center;
+}

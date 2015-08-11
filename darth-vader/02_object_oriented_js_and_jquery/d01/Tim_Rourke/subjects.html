@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subjects Object</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="instructions">
+    <h1>Subjects Object</h1>
+
+    <p>Using this simple HTML form, we can add and remove topics from our javascript object called 'subjects'.</p>
+
+    <p>Either using the form, or using JavaScript functions, we can add, remove, and list all topics available in our object's topics list.</p>
+
+    <p>To add a topic in JS, use the syntax <code>subjects.addTopic('your topic here');</code></p>
+
+    <p>To remove a topic in JS, use the syntax <code>subjects.removeTopic('topic to remove here');</code></p>
+
+    <p>To list the current available topics, use the syntax <code>subjects.listTopics();</code></p>
+  </div>
+
+  <ul id="topicsList"></ul>
+
+  <form action="" id="addTopic">
+    <label for="newTopic">
+      <input type="text" name="newTopic" id="newTopic">
+    </label>
+    <input type="submit" value="Add Topic">
+  </form>
+
+  <script src="subjects.js"></script>
+</body>
+</html>

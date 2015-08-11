@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <title>Build your own adventure!</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      var noun = [];
+      var verb = [];
+      noun[0] = prompt("Want to choose your adventure? Enter a name");
+      noun[1] = prompt("Enter a place like a field, a parking lot, or a planet");
+      noun[2] = prompt("Enter something you might see moving along a parade route or in furniture store.");
+      noun[3] = prompt("Enter something you can hold.");
+      var hr = prompt("Enter a hour of the day (0-23)");
+      verb[0] = prompt("What did you last night after dinner? I ____ (one word).");
+      verb[1] = prompt("Choose a present-tense verb for how a martian would get to the store.");
+      verb[2] = prompt("Enter a present-tense verb for movement. (e.g., flying, swimming, dancing)");
+      verb[3] = prompt("Choose a past-tense verb for something that's been done with an object.");
+      verb[4] = prompt("Enter a past-tense reaction to an event. (e.g., laughed, cried, sighed)");
+      if (noun[0] == 'Zelda') {
+        alert("All power to you. We bow in reverence!");
+        } else {
+        console.log(hr);
+        if (hr < 12) {
+          noun[4] = "morning";
+        } else if (hr < 18) {
+          noun[4] = "afternoon";
+        } else {
+          noun[4] = "evening";
+        }
+        console.log(noun[4]);
+        var msg = "Here is your adventure: One " + noun[4] + ", " + noun[0] + " was " + verb[2] +
+        " across an expansive " + noun[1] + " on a " + noun[2] + ". " + noun[0] + "  " + verb[4]
+        + " when the " + noun[2] + " died. " + noun[0] +
+        " finished the ride by stealing a " +  noun[3] + ". " + noun[0] + " " + verb[3] + " the " + noun[2] + ".";
+        alert(msg);
+      }
+
+        </script>
+  </body>
+</html>

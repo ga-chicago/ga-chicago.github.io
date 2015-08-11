@@ -1,0 +1,48 @@
+header {
+  background-color: lightgreen;
+  height: 200px;
+  width: 100%auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+section {
+  background-color: lightblue;
+  height: 400px;
+  position: relative;
+}
+#wrapper {
+  width: 95%;
+  margin 15px auto;
+  overflow: auto;
+}
+.left-half {
+  width: 49%;
+  float: left;
+  margin: 15px 0;
+}
+.right-half {
+  width: 49%;
+  float: right;
+  margin: 15px 0;
+}
+.left-third {
+  width: 32.5%;
+  float: left;
+  margin: 0 0 15px 0;
+}
+.center-third {
+  width: 32.5%;
+  float: left;
+  margin: 0 18px 15px 18px;
+}
+.right-third {
+  width: 32.5%;
+  float: right;
+  margin: 0 0 15px 0;
+}
+footer {
+  clear: both;
+  background-color: brown;
+  height: 150px;
+  margin: 0 auto;
+}

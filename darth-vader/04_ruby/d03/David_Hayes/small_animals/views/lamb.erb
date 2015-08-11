@@ -1,0 +1,21 @@
+<h3>This is lamb.erb</h3>
+
+<script>
+$(document).ready(function() {
+  var p = $('p');
+
+  $.ajax({
+    type: 'get',
+    dataType: 'json',
+    url: '/lamb',
+    success: function(data) {
+      console.log(data);
+      $(p).html(data.message);
+    },
+    error: function(err) {
+      console.log(err);
+      $(p).html('An error occured');
+    }
+  });
+});
+</script>

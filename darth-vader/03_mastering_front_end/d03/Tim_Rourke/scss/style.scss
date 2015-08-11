@@ -1,0 +1,90 @@
+@import 'variables';
+@import 'gridlover';
+@import 'extras';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height:100%;
+}
+
+body {
+  margin:0;
+  padding:0;
+  width:100%;
+  background-color:$body-background;
+  font-family:$body-font-family;
+  font-size:$base-font-size;
+  color:$body-text-color;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family:$header-font-family;
+  text-transform:uppercase;
+  font-weight:700;
+  color:$header-text-color;
+}
+
+a {
+  color:$link-color;
+}
+
+.wrapper {
+  margin:2em auto;
+  width:80%;
+  max-width:30em;
+}
+
+.site-header {
+  @extend .clearfix;
+}
+
+.site-branding {
+  margin-top:0;
+  float:left;
+  display:block;
+  max-width:4em;
+}
+
+.site-navigation__primary {
+  float:right;
+}
+
+.site-navigation ul {
+  margin:0;
+  padding:0;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.device-tablet,
+.device-laptop {
+  display:none;
+}
+
+@media all and (min-width:480px) {
+  .device-phone {
+    display:none;
+  }
+  .device-tablet {
+    display:block;
+  }
+}
+
+@media all and (min-width:600px) {
+  .device-phone {
+    display:none;
+  }
+  .device-tablet {
+    display:none;
+  }
+  .device-laptop {
+    display:block;
+  }
+}

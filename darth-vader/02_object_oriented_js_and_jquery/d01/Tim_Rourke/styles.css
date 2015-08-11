@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html, body {
+  height:100%;
+}
+
+body {
+  background-color:#444;
+  color:#ddd;
+}
+
+h1 {
+  color:pink;
+  margin-top:0;
+}
+
+code {
+  color:pink;
+}
+
+.instructions {
+  background-color:#555;
+  margin:1em;
+  padding:1em;
+  width:50%;
+  float:left;
+}
+
+#topicsList {
+  margin:1em;
+  padding:1em 1em 1em 2em;
+  position:absolute;
+  top:1em;
+  right:1em;
+  width:40%;
+}
+
+#topicsList li {
+  color:pink;
+}
+
+#topicsList li button {
+  margin-left:1em;
+  color:firebrick;
+}
+
+#addTopic {
+  position:absolute;
+  right:0em;
+  bottom:1em;
+  margin:1em;
+  padding:1em;
+  background-color:#222;
+  width:40%;
+}
+
+input[type="submit"] {
+  -webkit-appearance:none;
+  background-color:pink;
+  color:black;
+  border:none;
+  outline:none;
+}

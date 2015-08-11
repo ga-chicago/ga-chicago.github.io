@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snoop Loops</title>
+</head>
+<body>
+
+  <script>
+
+    var snoopTracks = [
+      'Lust For Life',
+      'Real Wild Child',
+      'The Passenger',
+      'Search &amp; Destroy',
+      'I Wanna Be Your Dog',
+      'China Girl',
+      'Funtime',
+      'Bang Bang'
+    ];
+
+    var htmlString = '<ul>';
+
+    for (var i = 0; i < snoopTracks.length; i++) {
+      htmlString += '<li>' + snoopTracks[i] + '</li>';
+    }
+
+    htmlString += '</ul>';
+
+    document.write(htmlString);
+
+    var htmlString2 = "<ul>";
+
+    for (var track in snoopTracks) {
+      htmlString2 += '<li>' + (parseInt(track)+1) + ': ' + snoopTracks[track] + '</li>';
+    }
+
+    htmlString2 += '</ul>';
+
+    document.write(htmlString2);
+
+    var arrayTo100 = [];
+
+    for (var i = 0; i < 100; i++) {
+      arrayTo100.push(i+1);
+    }
+
+    function fizzBuzz(numArray) {
+      for (var i = 0; i < numArray.length; i++) {
+        if ((numArray[i] % 3 == 0) && (numArray[i] % 5 == 0)) {
+          console.log('FizzBuzz');
+        } else if (numArray[i] % 5 == 0) {
+          console.log('Fizz');
+        } else if (numArray[i] % 3 == 0) {
+          console.log('Buzz')
+        } else {
+          console.log(numArray[i]);
+        }
+      }
+    }
+
+    fizzBuzz(arrayTo100);
+
+
+  </script>
+</body>
+</html>

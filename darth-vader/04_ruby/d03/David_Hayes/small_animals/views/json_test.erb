@@ -1,0 +1,95 @@
+<h3>Here's some small animals now!</h3>
+
+<p id='1'></p>
+<div id='a'></div>
+<p id='2'></p>
+<div id='b'></div>
+<p id='3'></p>
+<div id='c'></div>
+<p id='4'></p>
+<div id='d'></div>
+<p id='5'></p>
+<div id='e'></div>
+
+<script>
+// INEFFICIENT BUT QUICK DUPLICATION OF FUNCTIONS
+  $(document).ready(function() {
+
+    $.ajax({
+      type: 'get',
+      dataType: 'json',
+      url: '/kitten',
+      success: function(data) {
+        console.log(data);
+        $('#1').html(data.name);
+        $('#a').html('<img src="' + data.picture_url + '">');
+      },
+      error: function(err) {
+        console.log(err);
+        $(p).html('An error occured');
+      }
+    });
+
+    $.ajax({
+      type: 'get',
+      dataType: 'json',
+      url: '/puppy',
+      success: function(data) {
+        console.log(data);
+        $('#2').html(data.name);
+        $('#b').html('<img src="' + data.picture_url + '">');
+      },
+      error: function(err) {
+        console.log(err);
+        $(p).html('An error occured');
+      }
+    });
+
+    $.ajax({
+      type: 'get',
+      dataType: 'json',
+      url: '/bear_cub',
+      success: function(data) {
+        console.log(data);
+        $('#3').html(data.name);
+        $('#c').html('<img src="' + data.picture_url + '">');
+      },
+      error: function(err) {
+        console.log(err);
+        $(p).html('An error occured');
+      }
+    });
+
+    $.ajax({
+      type: 'get',
+      dataType: 'json',
+      url: '/chick',
+      success: function(data) {
+        console.log(data);
+        $('#4').html(data.name);
+        $('#d').html('<img src="' + data.picture_url + '">');
+      },
+      error: function(err) {
+        console.log(err);
+        $(p).html('An error occured');
+      }
+    });
+
+    $.ajax({
+      type: 'get',
+      dataType: 'json',
+      url: '/lamb',
+      success: function(data) {
+        console.log(data);
+        $('#5').html(data.name);
+        $('#e').html('<img src="' + data.picture_url + '">');
+      },
+      error: function(err) {
+        console.log(err);
+        $(p).html('An error occured');
+      }
+    });
+  });
+
+
+</script>

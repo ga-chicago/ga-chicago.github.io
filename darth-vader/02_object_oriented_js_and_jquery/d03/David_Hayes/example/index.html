@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <button>Click me to add an item</button>
+    <button>Click me to add an item</button>
+    <button>Click me to add an item</button>
+    <button>Click me to add an item</button>
+    <button>Click me to add an item</button>
+
+    <form>
+      <input name="someInput" type="text" placeholder="add some text" value="WOOOOOOOOOOOOOOOooooooooooooo....">
+      <input name="someInput" type="text" placeholder="what are ya buyin'" value="all the codes....">
+    </form>
+
+    <!-- part 1 -->
+    <section></section>
+
+    <!-- part 2 -->
+    <div class="meowington">
+      <ul>
+        <li class="fun">cats</li>
+        <li class="fun">dogs</li>
+        <li class="fun">goldfish</li>
+      </ul>
+    </div>
+
+    <!-- part 3 -->
+    <div id="winners">
+    </div>
+
+  </body>
+  <script type="text/javascript">
+    // when the page has finished... loading...
+    // the window object
+    // calls an event called "onload"
+    // anything inside of this function
+    // is exexcuted (or is ran) at that time
+    window.onload = function(event) {
+        var buttons = document.getElementsByTagName("button");
+        // tagName returns an [] of DOM elements
+
+        for (var btn in buttons) {
+          buttons[btn].innerHTML = "yolo is a no go.. don't click";
+        }
+
+        var list = document.getElementsByClassName("fun");
+        // className returns an [] of DOM elements
+        for (var li in list) {
+          list[li].innerHTML = list[li].innerHTML + " is super fun";
+        }
+
+        var winners = document.getElementById("winners");
+        winners.innerHTML = "WDI Darth Vader";
+
+    }
+  </script>
+</html>

@@ -1,0 +1,46 @@
+*, *::before, *::after {
+  box-sizing:border-box;
+}
+
+html, body {
+  height:100%;
+}
+
+$blue:#38f;
+
+body {
+  margin:0;
+  padding:1em;
+  background:linear-gradient(to bottom, #faeaed, lighten(hotpink, 20%));
+  color:$blue;
+  font-family:Georgia, serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color:hotpink;
+}
+
+.wrapper {
+  width:30em;
+  margin:0 auto;
+}
+
+.block {
+  border:1px solid hotpink;
+}
+
+.block-one {
+  padding:1em;
+  background-color:white;
+  ul {
+    list-style:none;
+  }
+  li {
+    &::before {
+      content: '>';
+      color:$blue;
+      margin-left:-1em;
+      padding-right:0.5em;
+    }
+  }
+}

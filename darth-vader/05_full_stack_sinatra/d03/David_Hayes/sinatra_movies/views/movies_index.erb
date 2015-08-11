@@ -1,0 +1,72 @@
+<h1>Movies List</h1>
+
+  <li><a href="/students/create">Create Movie</a></li>
+
+  <table>
+    <thead>
+      <th>
+        ID
+      </th>
+      <th>
+        Title
+      </th>
+      <th>
+        Release Year
+      </th>
+      <th>
+        Genre
+      </th>
+      <th>
+        Director
+      </th>
+      <th>
+        Starring
+      </th>
+      <th>
+        Co-Starring
+      </th>
+      <th>
+        Also Starring
+      </th>
+      <th>
+        Rating
+      </th>
+    </thead>
+
+    <tbody>
+      <% @movies.each do |movie| %>
+        <tr>
+          <td>
+            <%= movie.id %>
+          </td>
+          <td>
+            <%= movie.title %>
+          </td>
+          <td>
+            <%= movie.release_year %>
+          </td>
+          <td>
+            <%= movie.genre %>
+          </td>
+          <td>
+            <%= movie.director %>
+          </td>
+          <td>
+            <%= movie.star1 %>
+          </td>
+          <td>
+            <%= movie.star2 %>
+          </td>
+          <td>
+            <%= movie.star3 %>
+          </td>
+          <td>
+            <%= movie.rating %>
+          </td>
+          <td>
+            <a href="/movies/edit/<%= movies.id %>"></a>
+          </td>
+        </tr>
+        <% end %>
+    </tbody>
+  </table>

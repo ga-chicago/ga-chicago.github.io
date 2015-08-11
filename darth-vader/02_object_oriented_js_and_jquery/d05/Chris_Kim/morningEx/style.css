@@ -1,0 +1,76 @@
+body {
+  font-family: "Calibri", "Arial", sans-serif;
+  margin: 0px;
+  background-image: url("http://www.kgarner.com/blog/wp-content/uploads/2011/08/Chicago-skyline.jpg");
+}
+#wrapper {
+  width: 70%;
+  margin: 15px auto;
+}
+
+
+header {
+  background-color: blue;
+  height: 50px;
+  text-align: left;
+  color: white;
+  font-family: verdana;
+  font-size: 30px;
+  font-weight: bold;
+  border: 10px solid black;
+}
+
+.Left {
+  border: 10px solid black;
+  height: 300px;
+  width: 350px;
+  background-color: rgba(255, 255, 255, .7);
+  float: left;
+
+}
+
+h1 {
+  font-style: verdana;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin: 0 auto;
+  display: block;
+
+}
+
+.Right {
+  border: 10px solid black;
+  height: 300px;
+  width: 875px;
+  float: left;
+  background-color: rgba(255, 255, 255, .7);
+  text-align: center;
+  position: relative;
+
+}
+button {
+  border: 1px solid black;
+  height: 50px;
+  width: 200px;
+  margin-top: 20px;
+  background-color: lightgray;
+  font-family: verdana;
+  font-size: 20px;
+
+}
+
+footer {
+  clear: both;
+  background-color: blue;
+  height: 50px;
+  border: 10px solid black;
+  margin-left: auto;
+  margin-right: auto;
+
+}

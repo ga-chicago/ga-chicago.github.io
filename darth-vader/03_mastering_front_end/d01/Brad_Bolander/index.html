@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Web Forms</title>
+  </head>
+  <body>
+    <h1>Max Rebo Band Newsletter Sign Up</h1>
+
+    <form action="index.html" method="post">
+      <label for="firstName">First Name</label>
+      <input type="text"
+      id ="firstName"
+      name="fan_first_name"
+      placeholder="First Name"><br>
+
+      <label for="lastName">Last Name</label>
+      <input type="text"
+      id ="lastName"
+      name="fan_last_name"
+      placeholder="Last Name"><br>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments"
+       name="fan_comments"
+       placeholder="Comments">
+       </textarea><br>
+
+       <label for="shows">How many shows a year do you attend?</label>
+       <select id="shows" name="fan_shows_year">
+         <option value="smallFan">0-4</option>
+         <option value="goodFan">5-9</option>
+         <option value="greatFan">10+</option>
+       </select><br>
+
+       <label>Who is your favorite fan?</label><br>
+       <input type="radio" id="jabba" value="jabba" name="fav_fan">
+       <label for="jabba">Jabba the Hutt</label><br>
+
+       <input type="radio" id="boba" value="boba" name="fav_fan">
+       <label for="boba">Boba Fett</label><br>
+
+       <input type="radio" id="sbcrumb" value="sbcrumb" name="fav_fan">
+       <label for="sbcrumb">Salacious B Crumb</label><br>
+
+       <label>Who would you like to make a guest appearance?</label><br>
+       <input type="checkbox" id="jarjar" value="guest_jarjar" name="jarjar">
+       <label for="jarjar">Jar Jar Binks</label><br>
+
+       <input type="checkbox" id="nute" value="guest_nute" name="nute">
+       <label for="nute">Nute Gunray</label><br>
+
+       <input type="checkbox" id="grevous" value="guest_grevous" name="grevous">
+       <label for="grevous">General Grevous</label><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+body {
+background-image: url("http://images.sodahead.com/profiles/0/0/3/5/3/3/5/8/1/Chicago-Skyline-Night-98058813602.jpeg");
+}
+
+header {
+  background-color: blue;
+  height: 100px;
+}
+
+#headline {
+  color: white;
+  font-family: verdana, sans;
+  font-size: 3rem;
+  line-height: 200%;
+  margin-left: 4%;
+}
+
+#buttons {
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+    width: 30%;
+    border: 2px solid blue;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1%;
+    margin: 1.5%;
+    font-size: 1.5rem;
+}
+
+#name {
+  text-align: center;
+  font-family: verdana, sans;
+}
+
+#profilepic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+aside {
+  position: relative;
+  float: left;
+  height: 500px;
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 1% 0 1% 1%;
+}
+
+section {
+  position: relative;
+  float: left;
+  height: 500px;
+  width: 72%;
+  margin: 1% 1% 1% 1%;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+footer {
+  clear: both;
+  background-color: blue;
+  height: 50px;
+}

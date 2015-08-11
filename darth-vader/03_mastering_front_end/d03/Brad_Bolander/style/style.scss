@@ -1,0 +1,75 @@
+@import 'variables.scss';
+
+
+// Color variables
+$body-text: black;
+$body-background: white;
+$body-emphasis: navy;
+$body-sub: darkgray;
+
+//Font sizes
+$base-page-size: 16px;
+
+//DOM
+body {
+  font-size: $base-page-size;
+}
+
+#wrapper {
+  width: $wrapper-phone;
+  margin: auto;
+  background: $content-background;
+  padding: $size-1;
+}
+
+#phone {
+  display:none;
+  background: magenta;
+}
+
+#tablet {
+  display: none;
+  background: lime;
+}
+
+#laptop {
+  display: none;
+  background: pink;
+}
+
+@media (min-width: $device-phone) {
+  #phone {
+    display: block;
+  }
+
+}
+
+@media (min-width: $device-tablet) {
+  #phone {
+    display: none;
+  }
+
+  #tablet {
+    display: block;
+  }
+
+  .nav-item {
+    display: inline-block;
+    list-style: square;
+    border-bottom: 1px;
+  }
+}
+
+@media (min-width: $device-laptop) {
+  #phone {
+    display: none;
+  }
+
+  #tablet {
+    display: none;
+  }
+
+  #laptop {
+    display: block;
+  }
+}

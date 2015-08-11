@@ -1,0 +1,118 @@
+body {
+  font-size: 14px;
+  font-family: "Verdana";
+  max-width: 900px;
+  background-color: antiquewhite;
+  margin: 0 auto;
+}
+#wrapper {
+  width: 95%;
+  margin: 0 auto;
+  padding: 5% 15% 5% 10%;
+  background-color: #fefefa;
+}
+@media print {
+  body {
+    font-size: 11px;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+  }
+  #wrapper {
+    width: 700px;
+  margin-left: -1cm;
+  margin-right: 2cm;
+  margin-top: -1cm;
+  background-color: white;
+}
+}
+header {
+  text-align: center;
+}
+h1 {
+  font-size: 3em;
+  font-family: 'Noto Sans', "Verdana", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+#pg2header {
+  display: none;
+}
+@media print {
+  #pg2header {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    /*page-break-before: always;*/
+  }
+}
+#objective p {
+  margin-left: 1cm;
+}
+.organization {
+  font-size: 1em;
+  font-weight: 300;
+  text-indent: 1.5em;
+  margin-top: 0;
+}
+#contact-info {
+  font-family: 'Noto Serif', "Georgia", serif;
+}
+h1 span {
+  font-weight: 700;
+  color: maroon;
+}
+@media print {
+  #pg2header {
+    font-size: 1.2em;
+    margin: .2cm auto 1cm 0;
+  }
+  #pg2header span {
+  }
+}
+main {
+  font-family: 'Noto Serif', "Georgia", serif;
+}
+footer {
+  clear: both;
+  font-size: 1.5em;
+  font-family: "Verdana";
+  text-align: center;
+  margin-top: 3em;
+}
+h2{
+  margin-left: 1em;
+  font-size: 1.5em;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  padding-left: 10px;
+  border-bottom: solid 3px maroon;
+}
+p {
+  margin-left: 1.5em;
+}
+li {
+  margin-left: 1.5em;
+}
+li span {
+  float: right;
+}
+ul {
+  clear:both;
+}
+#volunteer {
+  visibility: hidden;
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+}
+#work-experience li {
+  font-weight: 700;
+}
+#education li {
+  font-weight: 700;
+}
+#work-experience h4 {
+  font-weight: 300;
+}

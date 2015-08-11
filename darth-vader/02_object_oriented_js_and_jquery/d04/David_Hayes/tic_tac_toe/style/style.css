@@ -1,0 +1,33 @@
+button {
+  height: 8em;
+  width: 8em;
+  font-weight: bold;
+  color: black;
+  border-radius: 9px;
+  font-size: 1rem;
+}
+#wrapper {
+  width: 900;
+  margin: 0 auto;
+}
+table {
+  margin: 0 auto;
+}
+body {
+  background-image: url("../assets/earthatnight.jpg");
+}
+h1 {
+  font-family: "Verdana", "sans-serif";
+  font-size: 3em;
+  text-align: center;
+  color: rgba(183, 191, 145,.7);
+}
+h3 {
+  font-family: "Verdana", "sans-serif";
+  font-size: 1.5em;
+  text-align: center;
+  color: rgba(183, 191, 145,.7);
+}
+.hover {
+  background-color: rgba(183, 191, 145, 1);
+}

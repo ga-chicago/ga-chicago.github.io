@@ -1,0 +1,11 @@
+#block_one {
+  width: 99%;
+  height: 300px;
+  background-color: slateblue; }
+  #block_one h1 {
+    color: brown;
+    font-size: 3rem; }
+  #block_one p {
+    font-size: .2rem; }
+
+/*# sourceMappingURL=styles.css.map */

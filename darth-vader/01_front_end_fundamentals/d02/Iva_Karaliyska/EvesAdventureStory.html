@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+
+  <script type="text/javascript">
+
+  var location;
+  location = prompt("A location?");
+  var perpose = prompt("Why you was there?");
+  var person = prompt("Who you run into?");
+  var reaction = prompt("What did they do?");
+  var reactiontwo = prompt("What else did they do?");
+  var myreaction = prompt("What did you do?");
+
+  var userLocation;
+  //Today I was at the Hall of Fame Street to see the celebrities's stars. //
+  //When I got there, I encountered Bruce Willis. He smiled at me and said "hi".//
+  //I will never forget  this day.//
+  if (location == 'Chicago') {
+    userLocation = "at home";
+  } else {
+    userLocation = "somewhere far, far away";
+  }
+  var story = "Today I was" + userLocation  + "to" +  perpose + " When I got there" +
+  "I encountered" + person + "He" + reaction + "and" + reactiontwo +
+  "I" + myreaction + ".";
+  //var story = "Today, you were " + userLocation;
+
+  console.log(story);
+  //alert(story);
+  </script>
+</body>
+
+
+</html>
