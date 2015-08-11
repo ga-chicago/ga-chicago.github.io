@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Videos &amp; Source Code | WDI Darth Vader</title>
+        <title>Building a webserver | WDI Darth Vader</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,10 +25,10 @@
         
     
     
-    <link rel="next" href="../04_ruby/readme.html" />
+    <link rel="next" href="../07_ruby_on_rails/d01/Readme.html" />
     
     
-    <link rel="prev" href="../03_mastering_front_end/d03/Readme.html" />
+    <link rel="prev" href="../07_ruby_on_rails/Readme.html" />
     
 
         
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="3.3" data-basepath=".." data-revision="Mon Aug 10 2015 20:36:22 GMT-0500 (CDT)">
+    <div class="book" data-level="7.1" data-basepath=".." data-revision="Mon Aug 10 2015 20:36:22 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -430,7 +430,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.3" data-path="videos/03.html">
+        <li class="chapter " data-level="3.3" data-path="videos/03.html">
             
                 
                     <a href="../videos/03.html">
@@ -769,7 +769,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1" data-path="07_ruby_on_rails/building_servers.html">
+        <li class="chapter active" data-level="7.1" data-path="07_ruby_on_rails/building_servers.html">
             
                 
                     <a href="../07_ruby_on_rails/building_servers.html">
@@ -924,7 +924,70 @@
                 
                     <section class="normal" id="section-">
                     
-                        
+                        <h2 id="building-servers">Building Servers</h2>
+<p><strong>Using Digital Ocean as our PaaS</strong></p>
+<p>By the end of this lesson, you will have a server configured with the following:</p>
+<ul>
+<li>Ruby &amp; Ruby-dev</li>
+<li>Nginx</li>
+<li>Unicorn</li>
+<li>Postgres (creates a root user and database)</li>
+</ul>
+<p>It will also have the following gems pre-installed:</p>
+<ul>
+<li>pg</li>
+<li>json</li>
+</ul>
+<p>Finally, it creates a default <code>/var/www/app</code> directory for you to start with.</p>
+<h2 id="important">Important!</h2>
+<ol>
+<li>Remove the default configuration for nginx: <code>rm -v /etc/nginx/sites-available/default</code></li>
+<li>You will need to create an nginx config file in <code>/etc/nginx/conf.d/default.conf</code></li>
+<li>You will need to edit your Unicorn configuration file in <code>/var/www/app/unicorn.rb</code></li>
+<li>Sample configuration files are included in this repository.</li>
+</ol>
+<h2 id="running-this-script">Running this script</h2>
+<ol>
+<li>Log into your droplet.</li>
+<li>Open a a new file in a text editor and copy the contents of <a href="https://github.com/code-for-coffee/nginx-unicorn-config/blob/master/provisioning_script/install.sh" target="_blank">Install.sh</a> into it. Example: <code>nano setup.sh</code></li>
+<li>Update this file&apos;s permissions - <code>chmod u+x setup.sh</code></li>
+<li>Run the script! <code>./setup.sh</code></li>
+<li>That&apos;s it. Enjoy!</li>
+</ol>
+<p>This script has been tested on Ubuntu 14.04.</p>
+<h2 id="starting-using-rack-difficulty-easy">Starting using Rack (Difficulty: Easy)</h2>
+<ol>
+<li>Stop the Nginx service - <code>service nginx stop</code></li>
+<li><code>bundle install</code> to install your required gems.</li>
+<li>Run <code>bundle exec rackup -p 80 --host 0.0.0.0</code> to run your application.</li>
+<li>To leave the server running after you logout, instead run <code>nohup bundle exec rackup -p 80 --host 0.0.0.0</code></li>
+</ol>
+<h2 id="starting-using-unicorn-nginx-difficulty-moderate">Starting using Unicorn + Nginx (Difficulty: Moderate)</h2>
+<ol>
+<li>Finally, you need to startup unicorn.</li>
+<li>Then run <code>bundle install</code> to install your gems.</li>
+<li>To do so, browse to your app directory. Then, run Unicorn:</li>
+</ol>
+<ul>
+<li><code>unicorn -c unicorn.rb -D</code></li>
+</ul>
+<p>Now you need to restart nginx.</p>
+<p><code>service nginx restart</code></p>
+<p>And that&apos;s it! Your server should be browsable by IP/domain on port 80 unless you modified the config scripts.</p>
+<h2 id="nginx-quick-guide">Nginx Quick Guide</h2>
+<ul>
+<li><code>service nginx start</code> (starts the nginx server)</li>
+<li><code>service nginx stop</code> (stops the nginx server)</li>
+<li><code>service nginx restart</code> (restarts the nginx server)</li>
+</ul>
+<h2 id="updated-your-app">Updated your app?</h2>
+<p>Have you made changes to your app but don&apos;t see them?</p>
+<ul>
+<li><code>bundle</code> from your app directory.</li>
+<li>Then, run: <code>unicorn -c unicorn.rb -D</code></li>
+<li>Finally, restart Nginx: <code>service nginx restart</code></li>
+</ul>
+
                     
                     </section>
                 
@@ -934,10 +997,10 @@
         </div>
 
         
-        <a href="../03_mastering_front_end/d03/Readme.html" class="navigation navigation-prev " aria-label="Previous page: Responsive Design"><i class="fa fa-angle-left"></i></a>
+        <a href="../07_ruby_on_rails/Readme.html" class="navigation navigation-prev " aria-label="Previous page: Ruby on Rails"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../04_ruby/readme.html" class="navigation navigation-next " aria-label="Next page: Ruby"><i class="fa fa-angle-right"></i></a>
+        <a href="../07_ruby_on_rails/d01/Readme.html" class="navigation navigation-next " aria-label="Next page: Getting started with Rails"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

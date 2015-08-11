@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Live Websites | WDI Darth Vader</title>
+        <title>Getting started with Rails | WDI Darth Vader</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -28,7 +28,7 @@
     <link rel="next" href="../../videos/07.html" />
     
     
-    <link rel="prev" href="../../07_ruby_on_rails/Readme.html" />
+    <link rel="prev" href="../../07_ruby_on_rails/building_servers.html" />
     
 
         
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="7.2" data-basepath="../.." data-revision="Mon Aug 10 2015 20:19:42 GMT-0500 (CDT)">
+    <div class="book" data-level="7.2" data-basepath="../.." data-revision="Mon Aug 10 2015 20:36:22 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -769,9 +769,17 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1" data-path="07_ruby_on_rails/digital_ocean.html">
+        <li class="chapter " data-level="7.1" data-path="07_ruby_on_rails/building_servers.html">
             
-            <span><b>7.1.</b> Building a webserver</span>
+                
+                    <a href="../../07_ruby_on_rails/building_servers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Building a webserver
+                    </a>
             
             
         </li>
@@ -785,7 +793,7 @@
                         
                             <b>7.2.</b>
                         
-                        Live Websites
+                        Getting started with Rails
                     </a>
             
             
@@ -916,7 +924,125 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="readme-md">Readme.md</h1>
+                        <hr>
+<p><strong>Ruby on Rails</strong></p>
+<h3>Getting Started</h3>
+
+<hr>
+<p><img style="width:25%; height: 25%" src="rails_logo.jpg" alt="Ruby on Rails Logo"></p>
+<hr>
+<h3 id="bookmarks">Bookmarks!</h3>
+<ul>
+<li><strong>Official Ruby on Rails website</strong>: <a href="http://rubyonrails.org/" target="_blank">http://rubyonrails.org/</a></li>
+<li><strong>Official Ruby on Rails Github repository</strong> (you should star this!): <a href="https://github.com/rails/rails" target="_blank">https://github.com/rails/rails</a></li>
+<li><strong>Official Rails Twitter</strong>: <a href="https://twitter.com/rails" target="_blank">https://twitter.com/rails</a></li>
+<li><strong>Getting Started with Rails</strong>: <a href="http://guides.rubyonrails.org/getting_started.html" target="_blank">http://guides.rubyonrails.org/getting_started.html</a></li>
+<li><strong>Official Command Line Documentation</strong>:  <a href="http://guides.rubyonrails.org/command_line.html" target="_blank">http://guides.rubyonrails.org/command_line.html</a></li>
+<li><strong>Rails for Zombies</strong>: <a href="http://railsforzombies.org/" target="_blank">http://railsforzombies.org/</a></li>
+<li><strong>Michael Hartl&apos;s Rails Tutorial</strong>: <a href="https://www.railstutorial.org/book/" target="_blank">https://www.railstutorial.org/book/</a></li>
+<li><strong>Learn Ruby and Rails</strong>: <a href="http://www.learnrubyandrails.com/" target="_blank">http://www.learnrubyandrails.com/</a></li>
+</ul>
+<hr>
+<h2 id="1-create-open-a-new-rails-project">1. Create &amp; open a new Rails project</h2>
+<p><strong>Note:</strong> If you do not have Rails installed, you must install the gem: <code>gem install rails</code>!</p>
+<p>This is a step-by-step guide to creating a new Rails application. Let&apos;s get started! To create a new rails app, you use the following syntax:</p>
+<ul>
+<li><code>rails new app_name -d postgresql -T</code></li>
+</ul>
+<p>Where <code>app_name</code> is the name of your application. For example, to create an app called <code>Coffee_Shop</code>, I would enter the following into my terminal: <code>rails new Coffee_Shop</code></p>
+<p>The <code>-d postgresql</code> tells rails to configure the application to use postgres</p>
+<p>The <code>-T</code> tells rails to ommit including the default rails testing framework</p>
+<p>This will create a new Ruby on Rails application in a new desdecent folder named after my app&apos;s name in the <code>rails new</code> command. Enter <code>ls</code> to see the folder and then <code>cd your_app_name</code> to move into your new app. To open your new Rails project, in <strong>atom</strong>, enter the following command: <code>atom .</code></p>
+<h2 id="2-updating-your-gemfile">2. Updating your Gemfile</h2>
+<p>Locate your application&apos;s <code>Gemfile</code>. Inside of it, you will comment out the following gem(s):</p>
+<ul>
+<li><code>gem &apos;coffee-rails&apos;, &apos;~&gt; 4.1.0&apos;</code></li>
+</ul>
+<p>You will also add the following gem(s):</p>
+<ul>
+<li><code>gem &apos;rspec-rails&apos;</code></li>
+</ul>
+<p>Once you&apos;ve edited your <code>Gemfile</code>, it is time to feel the ground shake and <code>bundle</code>!</p>
+<h2 id="3-working-with-your-project-locally">3. Working with your project locally</h2>
+<ul>
+<li>To view your project in the browser you will need to run a server (similar to <code>rack</code>).</li>
+<li>In your terminal, enter <code>rails server</code></li>
+<li>Unlike <code>rack</code>, your project will be served at: <code>http://localhost:3000/</code></li>
+<li><p>Note the difference in ports: <code>9292</code> vs <code>3000</code></p>
+</li>
+<li><p>To view your project in the console you will run <code>rails console</code></p>
+</li>
+<li>From this console, you can test out your models, for example.</li>
+</ul>
+<h2 id="4-generating-models">4. Generating Models</h2>
+<p>To generate a model for your project, you can run the following command:</p>
+<ul>
+<li><code>rails generate model Name product_name:string description:text</code></li>
+</ul>
+<p><strong>Note: because we strive for efficiency, we&apos;r going to start calling our rake commands in the <code>bin/</code> directory inside of our project!!!</strong></p>
+<h2 id="5-database-setup-creation">5. Database Setup/Creation</h2>
+<p>To automatically generate SQL database tables based on your models, you can run the following command:</p>
+<ul>
+<li><code>bin/rake db:create</code></li>
+</ul>
+<p>To run any changes in your migration scripts, you must run:</p>
+<ul>
+<li><code>bin/rake db:migrate</code></li>
+</ul>
+<p>Finally, to create test entries for RSpec tests, you must run the following command:</p>
+<ul>
+<li><code>bin/rake db:test:prepare</code></li>
+</ul>
+<h2 id="6-creating-routes-controllers">6. Creating Routes/Controllers</h2>
+<p>Create a controller to go along with our model.</p>
+<ul>
+<li><code>bin/rails generate controller roasts index show edit new</code></li>
+</ul>
+<p>Where <code>rails generate controller</code> specifies that we&apos;re creating a new controller. <code>roasts</code> is the name. <code>index show edit new</code> are the actions to be generated in our controller.</p>
+<p>We can also delete actions:</p>
+<ul>
+<li><p><code>bin/rails d controller roasts index show edit new</code></p>
+</li>
+<li><p><code>bin/rake routes</code> returns a list of routes in your Rails project.</p>
+</li>
+</ul>
+<h2 id="7-install-rspec-in-your-project">7. Install RSpec in your Project</h2>
+<p>Once you have included <code>rspec</code> in your project, you may generate unit test specs using the following command(s) in your termnial:</p>
+<p><code>rails generate rspec:install</code></p>
+<p>To run your tests in the command line:</p>
+<ul>
+<li><code>bin/rake spec</code></li>
+</ul>
+<h2 id="8-example-rspec-unit-test">8. Example RSpec Unit Test</h2>
+<pre><code class="lang-ruby"><span class="hljs-keyword">require</span> <span class="hljs-string">&apos;rails_helper&apos;</span>
+
+<span class="hljs-constant">RSpec</span>.describe <span class="hljs-constant">Object</span>, <span class="hljs-symbol">type:</span> <span class="hljs-symbol">:model</span> <span class="hljs-keyword">do</span>
+
+    describe <span class="hljs-string">&apos;given an object&apos;</span> <span class="hljs-keyword">do</span>
+        before <span class="hljs-keyword">do</span>
+            <span class="hljs-variable">@object</span> = <span class="hljs-constant">Object</span>.new()
+        <span class="hljs-keyword">end</span>
+
+        describe <span class="hljs-string">&apos;#to_s&apos;</span> <span class="hljs-keyword">do</span>
+            it <span class="hljs-string">&apos;returns an object is an &quot;Object&quot;&apos;</span> <span class="hljs-keyword">do</span>
+                expectation = <span class="hljs-variable">@object</span>.to_s <span class="hljs-comment"># should return &apos;Object&apos;</span>
+                actual = <span class="hljs-string">&apos;Object&apos;</span>
+                expect(expectation).to eq(actual)
+            <span class="hljs-keyword">end</span>
+        <span class="hljs-keyword">end</span>
+
+    <span class="hljs-keyword">end</span>
+
+<span class="hljs-keyword">end</span>
+</code></pre>
+<h4 id="misc">Misc</h4>
+<ul>
+<li>In RSpec, <code>.</code> is a class method and <code>#</code> is an instance method</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>Official Command Line Documentation</strong>:  <a href="http://guides.rubyonrails.org/command_line.html" target="_blank">http://guides.rubyonrails.org/command_line.html</a></li>
+</ul>
 
                     
                     </section>
@@ -927,7 +1053,7 @@
         </div>
 
         
-        <a href="../../07_ruby_on_rails/Readme.html" class="navigation navigation-prev " aria-label="Previous page: Ruby on Rails"><i class="fa fa-angle-left"></i></a>
+        <a href="../../07_ruby_on_rails/building_servers.html" class="navigation navigation-prev " aria-label="Previous page: Building a webserver"><i class="fa fa-angle-left"></i></a>
         
         
         <a href="../../videos/07.html" class="navigation navigation-next " aria-label="Next page: Videos &amp; Source Code"><i class="fa fa-angle-right"></i></a>
