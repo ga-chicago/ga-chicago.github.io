@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Objects, Command Line, &amp; Git | WDI Darth Vader</title>
+        <title>Digital Ocean Lab | WDI Darth Vader</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,10 +25,10 @@
         
     
     
-    <link rel="next" href="../../01_front_end_fundamentals/d02/Readme.html" />
+    <link rel="next" href="../../07_ruby_on_rails/building_servers.html" />
     
     
-    <link rel="prev" href="../../01_front_end_fundamentals/readme.html" />
+    <link rel="prev" href="../../07_ruby_on_rails/d01/digital_ocean.html" />
     
 
         
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="1.1" data-basepath="../.." data-revision="Tue Aug 11 2015 16:40:15 GMT-0500 (CDT)">
+    <div class="book" data-level="7.2" data-basepath="../.." data-revision="Tue Aug 11 2015 16:40:15 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -193,7 +193,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.1" data-path="01_front_end_fundamentals/d01/Readme.html">
+        <li class="chapter " data-level="1.1" data-path="01_front_end_fundamentals/d01/Readme.html">
             
                 
                     <a href="../../01_front_end_fundamentals/d01/Readme.html">
@@ -889,7 +889,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" data-path="07_ruby_on_rails/d01/digital_ocean_lab.html">
+        <li class="chapter active" data-level="7.2" data-path="07_ruby_on_rails/d01/digital_ocean_lab.html">
             
                 
                     <a href="../../07_ruby_on_rails/d01/digital_ocean_lab.html">
@@ -1124,45 +1124,52 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="front-end-fundamentals">Front End Fundamentals</h2>
-<p>Monday, June 29th</p>
-<hr>
-<p><strong>Block 1 &amp; 2: Orientation and Installfest</strong></p>
-<h3 id="lesson-notes">Lesson Notes</h3>
-<p><strong>Block 3: Objects</strong></p>
-<ul>
-<li>Understand how to humanize objects with attributes and abilities</li>
-<li>Understand what message-passing means</li>
+                        <h2 id="digital-ocean-lab">Digital Ocean - Lab</h2>
+<pre><code class="lang-bash">
+apt-get update
+<span class="hljs-comment"># updates the list of software our server knows about</span>
+
+apt-get install ruby-dev
+<span class="hljs-comment"># installs the tools we need for a ruby environment</span>
+
+apt-get install build-essential
+<span class="hljs-comment"># essential build tools such as GCC</span>
+
+apt-get install git
+<span class="hljs-comment"># what&apos;s going on with git right now?</span>
+
+<span class="hljs-comment">###--- postgres database!</span>
+apt-get install postgresql
+apt-get install postgresql-contrib
+
+<span class="hljs-comment"># create a user</span>
+sudo -u postgres createuser <span class="hljs-operator">-s</span> <span class="hljs-variable">$USER</span>
+createdb <span class="hljs-variable">$USER</span>
+touch ~/.psql_<span class="hljs-built_in">history</span>
+apt-get install libpq-dev
+gem install pg
+
+<span class="hljs-comment">###--- gems!</span>
+gem install json -v <span class="hljs-number">1.8</span>.<span class="hljs-number">2</span>
+gem install bundler
+</code></pre>
+<h2 id="how-do-we-get-an-app-on-here">HOW DO WE GET AN APP ON HERE?</h2>
+<ol>
+<li>We need a Git repository!<ul>
+<li>Use HTTPS</li>
+<li><em>Example</em>:  <a href="https://github.com/ga-chicago/wedding-rsvp.git" target="_blank">https://github.com/ga-chicago/wedding-rsvp.git</a></li>
 </ul>
-<p><strong>Block 4: Command Line + Git</strong></p>
-<ul>
-<li>Creating &amp; removing folders/files</li>
-<li>Navigating the file system</li>
-<li>Initialize and clone a Git Repository</li>
-<li>Utilize Git to push content to the internet</li>
+</li>
+<li>We also need a working database!<ul>
+<li>Opening PSQL</li>
+<li>Copy / run migrations + hit enter</li>
+<li>Exit with \q</li>
 </ul>
-<h3 id="after-hours">After Hours</h3>
-<p>This evening you will be introduced to the Markdown syntax that is used on Github and many other open source projects. You will use it frequently throughout WDI! You will also get some practice with the Mac OS Command Line by re-creating the Star Wars saga. We also recommend that you read Mozilla&apos;s <em>A Re-introction to Javascript</em> prior to tomorrow.</p>
-<h4 id="0-complete-pre-work-quizzes">0. Complete Pre-work Quizzes</h4>
-<p>The pre-work quizzes located here <strong>need</strong> to be completed tonight if you have not finished them already.</p>
-<ul>
-<li><a href="http://fundamentals.generalassemb.ly/" target="_blank">http://fundamentals.generalassemb.ly/</a></li>
-</ul>
-<h4 id="1-command-line-adventures-with-star-wars">1. Command Line Adventures with Star Wars</h4>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-This evening you will be challenged to re-create the Star Wars saga using the Mac OS X command line. This will be great practice for honing your terminal skills.</p>
-<h4 id="2-using-markdown-on-github">2. Using Markdown on GitHub</h4>
-<p>You will also need to use Markdown to update the Github repository that we created during class today.</p>
-<p>This evening you will be challenged to re-create the Star Wars saga using the Mac OS X command line. This will be great practice for honing your terminal skills.
-<a href="https://github.com/ga-students/WDI_Chi_Darth_Vader/blob/master/01_front_end_fundamentals/d01/ASSIGNMENT_FILES/after_hours/command_line_star_wars.md" target="_blank">https://github.com/ga-students/WDI_Chi_Darth_Vader/blob/master/01_front_end_fundamentals/d01/ASSIGNMENT_FILES/after_hours/command_line_star_wars.md</a></p>
-<h4 id="2-using-markdown-on-github-complete-by-wednesday">2. Using Markdown on GitHub (complete by Wednesday)</h4>
-<p>You will also need to use Markdown to update the Github repository that we created during class today.
-<a href="https://github.com/ga-students/WDI_Chi_Darth_Vader/blob/master/01_front_end_fundamentals/d01/ASSIGNMENT_FILES/after_hours/markdown.md" target="_blank">https://github.com/ga-students/WDI_Chi_Darth_Vader/blob/master/01_front_end_fundamentals/d01/ASSIGNMENT_FILES/after_hours/markdown.md</a></p>
-<h4 id="3-a-re-introduction-to-javascript">3. A Re-introduction to Javascript</h4>
-<p>Finally, we <strong>highly</strong> recommend that you read the following article prior to tomorrow <em>if you have time</em>!</p>
-<ul>
-<li>Mozilla&apos;s <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript" target="_blank">A Re-introduction to Javascript</a></li>
-</ul>
+</li>
+<li>Change into the directory</li>
+<li><code>bundle</code></li>
+<li><code>nohup bundle exec rackup -p 80 --host 0.0.0.0</code></li>
+</ol>
 
                     
                     </section>
@@ -1173,10 +1180,10 @@ This evening you will be challenged to re-create the Star Wars saga using the Ma
         </div>
 
         
-        <a href="../../01_front_end_fundamentals/readme.html" class="navigation navigation-prev " aria-label="Previous page: Front End Fundamentals"><i class="fa fa-angle-left"></i></a>
+        <a href="../../07_ruby_on_rails/d01/digital_ocean.html" class="navigation navigation-prev " aria-label="Previous page: Digital Ocean/PaaS"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../01_front_end_fundamentals/d02/Readme.html" class="navigation navigation-next " aria-label="Next page: Git, Introduction to Javascript, Data Types"><i class="fa fa-angle-right"></i></a>
+        <a href="../../07_ruby_on_rails/building_servers.html" class="navigation navigation-next " aria-label="Next page: Building a webserver"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
