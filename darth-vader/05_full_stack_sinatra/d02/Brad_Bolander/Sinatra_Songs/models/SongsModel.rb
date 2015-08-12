@@ -1,3 +1,3 @@
 class SongsModel < ActiveRecord::Base
-  self.table_name = 'couponlists'
+  self.table_name = 'song'
 end

@@ -1,0 +1,22 @@
+.col-md-12 .row .col-md-4.content-tab.one {
+  background-color: pink;
+  height: 50px;
+  border: 2px solid red; }
+
+.col-md-4.content-tab.one {
+  background-color: pink;
+  height: 50px;
+  border: 2px solid red; }
+
+.col-md-4.content-tab.one {
+  background-color: red;
+  height: 50px;
+  width: 50%;
+  border: 2px solid red; }
+
+.col-md-4.content-tab.three {
+  background-color: blue;
+  height: 50px;
+  border: 2px solid red; }
+
+/*# sourceMappingURL=style.css.map */

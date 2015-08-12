@@ -1,0 +1,14 @@
+.col-md-12.content {
+  position: relative;
+  float: left; }
+  .col-md-12.content .row .col-md-4.content-tab.one {
+    background-color: pink;
+    border: 2px solid red; }
+  .col-md-12.content .row .col-md-4.content-tab.two {
+    background-color: red;
+    border: 2px solid red; }
+  .col-md-12.content .row .col-md-4.content-tab.three {
+    background-color: blue;
+    border: 2px solid red; }
+
+/*# sourceMappingURL=s:style.css.map */

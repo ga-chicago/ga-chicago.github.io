@@ -1,0 +1,15 @@
+#best {
+  background-color: blue;
+  color: yellow;
+  font-size: 1.5rem; }
+  #best h1 {
+    font-size: 3rem; }
+
+#worst {
+  background-color: pink; }
+
+@media (min-width: 800px) {
+  #worst {
+    display: none; } }
+
+/*# sourceMappingURL=styles.css.map */
