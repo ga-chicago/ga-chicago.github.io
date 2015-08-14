@@ -1,0 +1,1567 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Authentication | WDI Darth Vader</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.2.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../videos/07.html" />
+    
+    
+    <link rel="prev" href="../../07_ruby_on_rails/d02/rails_form_helpers_lab.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="7.13" data-basepath="../.." data-revision="Fri Aug 14 2015 14:53:44 GMT-0500 (CDT)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction &amp; Syllabus
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="introduction/holidays.html">
+            
+                
+                    <a href="../../introduction/holidays.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        Student Holidays
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2" data-path="introduction/homework_submission.html">
+            
+                
+                    <a href="../../introduction/homework_submission.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        Homework Submission
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3" data-path="introduction/required_software.html">
+            
+                
+                    <a href="../../introduction/required_software.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                        Required Software
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4" data-path="introduction/library.html">
+            
+                
+                    <a href="../../introduction/library.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                        Class Library
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5" data-path="introduction/required_software.html">
+            
+                
+                    <a href="../../introduction/required_software.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                        Required Software
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6" data-path="introduction/course_outline.html">
+            
+                
+                    <a href="../../introduction/course_outline.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.</b>
+                        
+                        Course Outline
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7" data-path="videos/index.html">
+            
+                
+                    <a href="../../videos/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.</b>
+                        
+                        All Videos/Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_front_end_fundamentals/readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Front End Fundamentals
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_front_end_fundamentals/d01/Readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Objects, Command Line, &amp; Git
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_front_end_fundamentals/d02/Readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/d02/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Git, Introduction to Javascript, Data Types
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_front_end_fundamentals/d03/Readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Arrays, Loops, Logic
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01_front_end_fundamentals/d04/Readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/d04/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Function, REPS, Second Pass Friday
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="videos/01.html">
+            
+                
+                    <a href="../../videos/01.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_object_oriented_js_and_jquery/index.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Object-Oriented Javascript
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_object_oriented_js_and_jquery/d01/Readme.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        How the Internet Works, Objects in JS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_object_oriented_js_and_jquery/d02/index.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d02/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Typography, Style Guides, CSS Box Model, Wireframing
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_object_oriented_js_and_jquery/d03/Readme.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Javascript Constructors
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_object_oriented_js_and_jquery/d04/Readme.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d04/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        jQuery
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02_object_oriented_js_and_jquery/d05/Readme.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d05/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Second Pass Friday
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="videos/02.html">
+            
+                
+                    <a href="../../videos/02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_mastering_front_end/readme.html">
+            
+                
+                    <a href="../../03_mastering_front_end/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Project #1
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_mastering_front_end/d01/Readme.html">
+            
+                
+                    <a href="../../03_mastering_front_end/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        HTTP &amp; Ajax
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_mastering_front_end/d03/Readme.html">
+            
+                
+                    <a href="../../03_mastering_front_end/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Responsive Design
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="videos/03.html">
+            
+                
+                    <a href="../../videos/03.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04_ruby/readme.html">
+            
+                
+                    <a href="../../04_ruby/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Ruby
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_ruby/d01/Readme.html">
+            
+                
+                    <a href="../../04_ruby/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Ruby 101: Data Types, Control Flow, and Logic
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_ruby/intro_to_ruby.html">
+            
+                
+                    <a href="../../04_ruby/intro_to_ruby.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Intro to Ruby
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_ruby/enumeration_in_ruby.html">
+            
+                
+                    <a href="../../04_ruby/enumeration_in_ruby.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Enumeration in Ruby
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_ruby/d02/Readme.html">
+            
+                
+                    <a href="../../04_ruby/d02/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Objects, Classes, &amp; Inheritance
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_ruby/classes_in_ruby.html">
+            
+                
+                    <a href="../../04_ruby/classes_in_ruby.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Classes in Depth
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="04_ruby/d03/Readme.html">
+            
+                
+                    <a href="../../04_ruby/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        MVC and Sinatra
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="04_ruby/d04/Readme.html">
+            
+                
+                    <a href="../../04_ruby/d04/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        Second Pass Friday
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="videos/04.html">
+            
+                
+                    <a href="../../videos/04.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_full_stack_sinatra/readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Full Stack Sinatra
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_full_stack_sinatra/d01/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Datbases &amp; SQL
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_full_stack_sinatra/sql_postgres_cheatsheet.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/sql_postgres_cheatsheet.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Postgres Cheatsheet
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05_full_stack_sinatra/d02/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d02/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Models, ORMs and ActiveRecord
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05_full_stack_sinatra/d03/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        CRUD &amp; Controllers
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05_full_stack_sinatra/d04/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d04/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Server Side Authentiation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05_full_stack_sinatra/ruby_crud_controller.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/ruby_crud_controller.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        CRUD Controller Example
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05_full_stack_sinatra/ruby_crud_with_active_record.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/ruby_crud_with_active_record.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        CRUD with Active Record
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="05_full_stack_sinatra/ruby_erb_basics.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/ruby_erb_basics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        ERB (Embedded Ruby) Basics
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="05_full_stack_sinatra/ruby_parsing_json.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/ruby_parsing_json.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        Parsing JSON
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="05_full_stack_sinatra/d05/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d05/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        Second Pass Friday
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="videos/05.html">
+            
+                
+                    <a href="../../videos/05.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06_full_stack_project/index.html">
+            
+                
+                    <a href="../../06_full_stack_project/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Project #2
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06_full_stack_project/project_schedule.html">
+            
+                
+                    <a href="../../06_full_stack_project/project_schedule.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Schedule
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06_full_stack_project/d02/Readme.html">
+            
+                
+                    <a href="../../06_full_stack_project/d02/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Bootstrap
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06_full_stack_project/mandrill.html">
+            
+                
+                    <a href="../../06_full_stack_project/mandrill.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Sending Emails with Mandrill
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06_full_stack_project/d01/Readme.html">
+            
+                
+                    <a href="../../06_full_stack_project/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Authentication
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07_ruby_on_rails/Readme.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Ruby on Rails
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07_ruby_on_rails/d01/dev_workflow.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/dev_workflow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Developer Workflow
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07_ruby_on_rails/d01/digital_ocean.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/digital_ocean.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Digital Ocean/PaaS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07_ruby_on_rails/d01/digital_ocean_lab.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/digital_ocean_lab.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Digital Ocean Lab
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="07_ruby_on_rails/building_servers.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/building_servers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        Building a webserver
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="07_ruby_on_rails/d01/Readme.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        Getting started with Rails
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="07_ruby_on_rails/d01/rails_model_attr_types.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/rails_model_attr_types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        Rails Model Attributes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="07_ruby_on_rails/d01/rails_file_structure.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/rails_file_structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        Rails File Structure
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="07_ruby_on_rails/d01/sinatra_vs_rails.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/sinatra_vs_rails.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        Sinatra vs Rails
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="07_ruby_on_rails/d01/rails_generate_lab.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/rails_generate_lab.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        Rails Generate Lab
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="07_ruby_on_rails/d01/after_hours.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/after_hours.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                        Day 1 - After Hours
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="07_ruby_on_rails/d02/rails_form_helpers.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d02/rails_form_helpers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.11.</b>
+                        
+                        Rails Form Helpers
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="07_ruby_on_rails/d02/rails_form_helpers_lab.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d02/rails_form_helpers_lab.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.12.</b>
+                        
+                        Rails Form Helpers Lab
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.13" data-path="07_ruby_on_rails/d04/user_auth.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d04/user_auth.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.13.</b>
+                        
+                        Authentication
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="videos/07.html">
+            
+                
+                    <a href="../../videos/07.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.14.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="07_ruby_on_rails/d02/underscore.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d02/underscore.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Underscore.js
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="07_ruby_on_rails/d02/underscore-tpl.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d02/underscore-tpl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Templates
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="07_ruby_on_rails/d02/underscore-lab.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d02/underscore-lab.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Template Lab
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="08_backbone/Readme.html">
+            
+            <span><b>9.</b> Backbone.js</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="09_rails_project/Readme.html">
+            
+            <span><b>10.</b> Project #3</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="10_node_and_express/Readme.html">
+            
+            <span><b>11.</b> Node and Express.js</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="11_angular/Readme.html">
+            
+            <span><b>12.</b> Angular.js</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="12_captstone/Readme.html">
+            
+            <span><b>13.</b> Portfolio Project</span>
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >WDI Darth Vader</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="rails-authentication">Rails Authentication</h2>
+<p>The steps below are based on Ryan Bates&apos;s approach from <a href="http://railscasts.com/episodes/250-authentication-from-scratch-revised" target="_blank">
+Railscast #250 Authentication from Scratch (revised)</a>.</p>
+<h4 id="build-the-app">Build the app</h4>
+<ol>
+<li><code>rails new app_name -d postgresql -T</code></li>
+<li>Create a <code>user</code> model with a <code>name</code>, <code>email</code> and <code>password\_digest</code>: <code>rails generate model user name email password_digest</code>. Then, run <code>rake db:migrate</code> in the command line to migrate the database.</li>
+</ol>
+<pre><code>```ruby
+# config/routes.rb
+
+App_Name::Application.routes.draw do
+
+    get &apos;/signup&apos; =&gt; &apos;users#new&apos;
+    post &apos;/users&apos; =&gt; &apos;users#create&apos;
+
+end
+```
+</code></pre><ol>
+<li><p>Create a users controller:</p>
+<pre><code class="lang-ruby"> <span class="hljs-comment"># app/controllers/users_controller.rb</span>
+
+ <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UsersController</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ApplicationController</span></span></span>
+
+ <span class="hljs-keyword">end</span>
+</code></pre>
+</li>
+<li><p>Add a <strong>new</strong> action (for rendering the signup form) and a <strong>create</strong> action (for receiving the form and creating a user with the form&apos;s parameters.):</p>
+<pre><code class="lang-ruby"> <span class="hljs-comment"># app/controllers/users_controller.rb</span>
+
+ <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UsersController</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ApplicationController</span></span></span>
+
+     <span class="hljs-function"><span class="hljs-keyword">def</span> </span>new
+     <span class="hljs-keyword">end</span>
+
+     <span class="hljs-function"><span class="hljs-keyword">def</span> </span>create
+     <span class="hljs-keyword">end</span>
+
+ <span class="hljs-keyword">end</span>
+</code></pre>
+</li>
+<li><p>Now create the view file where we put the signup form.</p>
+<pre><code class="lang-html+erb"> <!-- app/views/users/new.html.erb -->
+
+ <h1>Signup!</h1>
+
+ <%= form_for="" :user,="" url:="" '="" users'="" do="" |f|="" %="">
+
+   Name: <%= f.text_field="" :name="" %="">
+   Email: <%= f.text_field="" :email="" %="">
+   Password: <%= f.password_field="" :password="" %="">
+   Password Confirmation: <%= f.password_field="" :password_confirmation="" %="">
+   <%= f.submit="" "Submit"="" %="">
+
+ <% end="" %="">
+</%></%=></%=></%=></%=></%=></%=></code></pre>
+<p>This view file is for the <strong>new</strong> action of the <strong>users controller</strong>. As a result, we save the file here: <code>/app/views/users/new.html.erb</code>. The file is called <strong>new</strong>.html.erb and it is saved inside the views folder, in a folder we created called <strong>users</strong>.</p>
+<p>That&apos;s the convention: view files are inside a folder with the same name as the controller and are named for the action they render.</p>
+</li>
+<li><p>Add logic to <strong>create</strong> action and add the private <code>user_params</code> method to sanitize the input from the form (this is a new Rails 4 thing and it&apos;s required). You might need to adjust the parameters inside the <code>.permit()</code> method based on how you setup your User model.</p>
+<pre><code class="lang-ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UsersController</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ApplicationController</span></span></span>
+
+ <span class="hljs-comment">#get</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> </span>new
+   <span class="hljs-comment"># render form to register</span>
+ <span class="hljs-keyword">end</span>
+
+ <span class="hljs-comment">#post</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> </span>create
+   <span class="hljs-comment"># post request</span>
+   user = <span class="hljs-constant">User</span>.new(user_params)
+   <span class="hljs-keyword">if</span> user.save
+     session[<span class="hljs-symbol">:user_id</span>] = user.id
+     redirect_to <span class="hljs-string">&apos;/&apos;</span>
+   <span class="hljs-keyword">else</span>
+     redirect_to <span class="hljs-string">&apos;/signup&apos;</span>
+   <span class="hljs-keyword">end</span>
+ <span class="hljs-keyword">end</span>
+
+private
+
+ <span class="hljs-function"><span class="hljs-keyword">def</span> </span>user_params
+   params.<span class="hljs-keyword">require</span>(<span class="hljs-symbol">:user</span>).permit(<span class="hljs-symbol">:name</span>, <span class="hljs-symbol">:email</span>, <span class="hljs-symbol">:password</span>, <span class="hljs-symbol">:password_confirmation</span>)
+ <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+</li>
+<li><p>Go to your Gemfile and uncomment the &apos;bcrypt&apos; gem. We need bcrypt to securely store passwords in our database.</p>
+<pre><code class="lang-ruby"> source <span class="hljs-string">&apos;https://rubygems.org&apos;</span>
+
+ <span class="hljs-comment"># Bundle edge Rails instead: gem &apos;rails&apos;, github: &apos;rails/rails&apos;</span>
+ gem <span class="hljs-string">&apos;rails&apos;</span>, <span class="hljs-string">&apos;4.0.4&apos;</span>
+
+ <span class="hljs-comment"># Use sqlite3 as the database for Active Record</span>
+ gem <span class="hljs-string">&apos;postgresql&apos;</span>
+
+ ...
+
+ <span class="hljs-comment"># Use ActiveModel has_secure_password</span>
+ gem <span class="hljs-string">&apos;bcrypt&apos;</span>, <span class="hljs-string">&apos;~&gt; 3.1.7&apos;</span>
+
+ ...
+</code></pre>
+</li>
+<li><p>Go to the User model file and add <code>has_secure_password</code>. This is the line of code that gives our User model authentication methods via bcrypt. No more having to manually do this like in Sinatra!</p>
+<pre><code class="lang-ruby"> <span class="hljs-comment"># app/models/user.rb</span>
+
+ <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Base</span></span></span>
+
+   has_secure_password
+
+ <span class="hljs-keyword">end</span>
+</code></pre>
+</li>
+<li><p>Run <code>bundle install</code> from the terminal then restart your rails server. We have made to Gemfile... so <code>bundle</code>!</p>
+</li>
+</ol>
+<ol>
+<li><p>Create a sessions controller. This is where we create (aka login) and destroy (aka logout) sessions.</p>
+<pre><code class="lang-ruby"><span class="hljs-comment"># app/controllers/sessions_controller.rb</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SessionsController</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ApplicationController</span></span></span>
+
+  <span class="hljs-comment">#get</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> </span>new
+    <span class="hljs-comment"># render the form</span>
+  <span class="hljs-keyword">end</span>
+
+  <span class="hljs-comment">#post</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> </span>create
+    <span class="hljs-comment"># post request for form</span>
+  <span class="hljs-keyword">end</span>
+
+  <span class="hljs-comment">#patch</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> </span>destroy
+    <span class="hljs-comment"># post request to destroy</span>
+  <span class="hljs-keyword">end</span>
+
+<span class="hljs-keyword">end</span>
+</code></pre>
+</li>
+<li><p>Create a form for user&apos;s to login with.</p>
+<pre><code class="lang-html+erb"><!-- app/views/sessions/new.html.erb -->
+
+<h1>Login</h1>
+
+<%= form_tag="" '="" login'="" do="" %="">
+
+  Email: <%= text_field_tag="" :email="" %="">
+  Password: <%= password_field_tag="" :password="" %="">
+  <%= submit_tag="" "Submit"="" %="">
+
+<% end="" %="">
+</%></%=></%=></%=></%=></code></pre>
+</li>
+<li><p>Update your routes file to include new routes for the sessions controller.</p>
+<pre><code class="lang-ruby"><span class="hljs-constant">App_Name::Application</span>.routes.draw <span class="hljs-keyword">do</span>
+
+  <span class="hljs-comment"># these routes are for showing users a login form, logging them in, and logging them out.</span>
+  get <span class="hljs-string">&apos;/login&apos;</span> =&gt; <span class="hljs-string">&apos;sessions#new&apos;</span>
+  post <span class="hljs-string">&apos;/login&apos;</span> =&gt; <span class="hljs-string">&apos;sessions#create&apos;</span>
+  get <span class="hljs-string">&apos;/logout&apos;</span> =&gt; <span class="hljs-string">&apos;sessions#destroy&apos;</span>
+
+  get <span class="hljs-string">&apos;/signup&apos;</span> =&gt; <span class="hljs-string">&apos;users#new&apos;</span>
+  post <span class="hljs-string">&apos;/users&apos;</span> =&gt; <span class="hljs-string">&apos;users#create&apos;</span>
+
+<span class="hljs-keyword">end</span>
+</code></pre>
+</li>
+<li><p>Update the sessions_controller with the logic to log users in and out.</p>
+<pre><code class="lang-ruby">  <span class="hljs-comment"># app/controllers/sessions_controller.rb</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> </span>create
+    user = <span class="hljs-constant">User</span>.find_by_email(params[<span class="hljs-symbol">:email</span>])
+    <span class="hljs-comment"># If the user exists AND the password entered is correct.</span>
+    <span class="hljs-keyword">if</span> user &amp;&amp; user.authenticate(params[<span class="hljs-symbol">:password</span>])
+      <span class="hljs-comment"># Save the user id inside the browser cookie. This is how we keep the user</span>
+      <span class="hljs-comment"># logged in when they navigate around our website.</span>
+      session[<span class="hljs-symbol">:user_id</span>] = user.id
+      redirect_to <span class="hljs-string">&apos;/&apos;</span>
+    <span class="hljs-keyword">else</span>
+    <span class="hljs-comment"># If user&apos;s login doesn&apos;t work, send them back to the login form.</span>
+      redirect_to <span class="hljs-string">&apos;/login&apos;</span>
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> </span>destroy
+    session[<span class="hljs-symbol">:user_id</span>] = <span class="hljs-keyword">nil</span>
+    redirect_to <span class="hljs-string">&apos;/login&apos;</span>
+  <span class="hljs-keyword">end</span>
+</code></pre>
+</li>
+<li><p>Update the application controller with new methods for authentication support, if they&apos;re logged in, and save their user object to a variable called @current_user. The <code>helper_method</code> line below current_user allows us to use <code>@current_user</code> in our view files. Authorize is for sending someone to the login page if they aren&apos;t logged in - this is how we keep certain pages our site secure: user&apos;s have to login before seeing them.</p>
+<pre><code class="lang-ruby"><span class="hljs-comment"># app/controllers/application_controller.rb</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ApplicationController</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActionController::Base</span></span></span>
+  <span class="hljs-comment"># Prevent CSRF attacks by raising an exception.</span>
+  <span class="hljs-comment"># For APIs, you may want to use :null_session instead.</span>
+  protect_from_forgery <span class="hljs-symbol">with:</span> <span class="hljs-symbol">:exception</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> </span>current_user
+    <span class="hljs-variable">@current_user</span> ||= <span class="hljs-constant">User</span>.find(session[<span class="hljs-symbol">:user_id</span>]) <span class="hljs-keyword">if</span> session[<span class="hljs-symbol">:user_id</span>]
+  <span class="hljs-keyword">end</span>
+  helper_method <span class="hljs-symbol">:current_user</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> </span>authorize
+    redirect_to <span class="hljs-string">&apos;/login&apos;</span> <span class="hljs-keyword">unless</span> current_user
+  <span class="hljs-keyword">end</span>
+
+<span class="hljs-keyword">end</span>
+</code></pre>
+</li>
+<li><p>Add a <code>before_filter</code> to any controller that you want to secure. This will force user&apos;s to login before they can see the actions in this controller.</p>
+<pre><code class="lang-ruby"><span class="hljs-comment"># app/controllers/some_controller.rb</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SomeController</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ApplicationController</span></span></span>
+
+  before_filter <span class="hljs-symbol">:authorize</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> </span>index
+  <span class="hljs-keyword">end</span>
+
+<span class="hljs-keyword">end</span>
+</code></pre>
+</li>
+<li><p>You can update your application layout file to show the user&apos;s name if they&apos;re logged in and some contextual links.</p>
+<pre><code class="lang-html+erb"><!-- app/views/layout/application.html.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App_Name</title>
+  <%= stylesheet_link_tag="" "application",="" media:="" "all",="" "data-turbolinks-track"=""> true %&gt;
+  <%= javascript_include_tag="" "application",="" "data-turbolinks-track"=""> true %&gt;
+  <%= csrf_meta_tags="" %="">
+</%=></%=></%=></head>
+<body>
+
+<% if="" current_user="" %="">
+  Signed in as <%= current_user.name="" %=""> | <%= link_to="" "Logout",="" '="" logout'="" %="">
+<% else="" %="">
+  <%= link_to="" 'Login',="" '="" login'="" %=""> | <%= link_to="" 'Signup',="" '="" signup'="" %="">
+<% end="" %="">
+
+<%= yield="" %="">
+
+</%=></%></%=></%=></%></%=></%=></%></body>
+</html>
+</code></pre>
+</li>
+</ol>
+<p>--
+All done! Feel free to fork and update this. Heavily modified from the original written by @thebucknerlife.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../07_ruby_on_rails/d02/rails_form_helpers_lab.html" class="navigation navigation-prev " aria-label="Previous page: Rails Form Helpers Lab"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../videos/07.html" class="navigation navigation-next " aria-label="Next page: Videos &amp; Source Code"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

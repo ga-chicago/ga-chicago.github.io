@@ -1,0 +1,24 @@
+@import 'normalize/normalize';
+@import 'skeleton/skeleton';
+
+*, *::before, *::after {
+	box-sizing:border-box;
+}
+
+.site-header, .site-footer {
+	padding:1em;
+}
+
+.wrapper {
+	@extend .container;
+	padding:1em;
+	width:100%;
+	max-width:80em;
+	margin:0 auto;
+}
+
+article {
+	@extend .columns;
+	@extend .four;
+	padding:1em;
+}
