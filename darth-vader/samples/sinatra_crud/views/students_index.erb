@@ -1,0 +1,14 @@
+
+<h3>All of the Students</h3>
+
+<ol>
+<% @students.each do |student| %>
+<!-- <%  %> embeding Ruby  -->
+
+ <li>
+    <%= student.name %> has an eamil of <%= student.email %>
+    <!-- in Ruby add " = " if you want to print out  the results -->
+ </li>
+
+<% end %>
+</ol>
