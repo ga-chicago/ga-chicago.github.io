@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Responsive Design | WDI Darth Vader</title>
+        <title>RESTful APIs | WDI Darth Vader</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,10 +25,10 @@
         
     
     
-    <link rel="next" href="../../videos/03.html" />
+    <link rel="next" href="../../videos/08.html" />
     
     
-    <link rel="prev" href="../../03_mastering_front_end/d01/Readme.html" />
+    <link rel="prev" href="../../08_restful_apis_backbonejs/d01/json_lab.html" />
     
 
         
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="3.2" data-basepath="../.." data-revision="Mon Aug 17 2015 16:52:29 GMT-0500 (CDT)">
+    <div class="book" data-level="9.3" data-basepath="../.." data-revision="Mon Aug 17 2015 16:52:29 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -415,7 +415,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.2" data-path="03_mastering_front_end/d03/Readme.html">
+        <li class="chapter " data-level="3.2" data-path="03_mastering_front_end/d03/Readme.html">
             
                 
                     <a href="../../03_mastering_front_end/d03/Readme.html">
@@ -1186,7 +1186,7 @@
             
         </li>
     
-        <li class="chapter " data-level="9.3" data-path="08_restful_apis_backbonejs/d01/restful.html">
+        <li class="chapter active" data-level="9.3" data-path="08_restful_apis_backbonejs/d01/restful.html">
             
                 
                     <a href="../../08_restful_apis_backbonejs/d01/restful.html">
@@ -1354,34 +1354,101 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="responsive-design">Responsive Design</h1>
-<h3 id="block-1-2-introduction-to-responsive-design">Block 1 &amp; 2: Introduction to Responsive Design</h3>
+                        <h2 id="restful-apis">RESTful APIs</h2>
+<p>REST stands for <em>Representational State Transfer</em>.</p>
+<p><img src="http_crud_restful_api.png" alt="REST"></p>
+<h4 id="actions">Actions</h4>
 <ul>
-<li>Understand the concept of Responsive Design</li>
-<li>Utilize media queries to build a responsive page</li>
-<li>Build a responsive style guide!</li>
+<li>Get All</li>
+<li>Get Individual By Id</li>
+<li>Create</li>
+<li>Update</li>
+<li>Destroy</li>
 </ul>
-<pre><code class="lang-scss"><span class="hljs-comment">// media queries using sass!</span>
-<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (min-width: <span class="hljs-variable">$device-phone</span>) {</span>
-  <span class="hljs-comment">/* changes go here */</span>
-}
-<span class="hljs-at_rule">@<span class="hljs-keyword">media</span> (max-width: <span class="hljs-variable">$device-phone</span>) {</span>
-  <span class="hljs-comment">/* changes go here */</span>
-}
+<h4 id="ruby-example-sinatra">Ruby Example (Sinatra)</h4>
+<pre><code class="lang-ruby"><span class="hljs-comment"># GET: List</span>
+get <span class="hljs-string">&apos;/api/cats&apos;</span> <span class="hljs-keyword">do</span>
+  <span class="hljs-constant">Cat</span>.all.to_json
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-comment"># GET: By Id</span>
+get <span class="hljs-string">&apos;/api/cats/:id&apos;</span> <span class="hljs-keyword">do</span>
+  puts params
+  <span class="hljs-constant">Cat</span>.find(params[<span class="hljs-symbol">:id</span>]).to_json
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-comment"># POST: Create</span>
+post <span class="hljs-string">&apos;/api/cats&apos;</span> <span class="hljs-keyword">do</span>
+  puts params
+  <span class="hljs-constant">Cat</span>.create({
+    <span class="hljs-symbol">:name</span> =&gt; params[<span class="hljs-symbol">:name</span>],
+    <span class="hljs-symbol">:breed</span> =&gt; params[<span class="hljs-symbol">:breed</span>]
+  }).to_json
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-comment"># PATCH: Update by Id</span>
+patch <span class="hljs-string">&apos;/api/cats/:id&apos;</span> <span class="hljs-keyword">do</span>
+  cat_args = { <span class="hljs-symbol">:name</span> =&gt; params[<span class="hljs-symbol">:name</span>], <span class="hljs-symbol">:breed</span> =&gt; params[<span class="hljs-symbol">:breed</span>] }
+
+  <span class="hljs-variable">@cat</span> = <span class="hljs-constant">Cat</span>.find(params[<span class="hljs-symbol">:id</span>])
+  <span class="hljs-variable">@cat</span>.update(cat_args)
+  <span class="hljs-variable">@cat</span>.to_json
+
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-comment"># PUT: Update by Id</span>
+put <span class="hljs-string">&apos;/api/cats/:id&apos;</span> <span class="hljs-keyword">do</span>
+  cat_args = { <span class="hljs-symbol">:name</span> =&gt; params[<span class="hljs-symbol">:name</span>], <span class="hljs-symbol">:breed</span> =&gt; params[<span class="hljs-symbol">:breed</span>] }
+
+  <span class="hljs-variable">@cat</span> = <span class="hljs-constant">Cat</span>.find(params[<span class="hljs-symbol">:id</span>])
+  <span class="hljs-variable">@cat</span>.update(cat_args)
+  <span class="hljs-variable">@cat</span>.to_json
+
+<span class="hljs-keyword">end</span>
+
+delete <span class="hljs-string">&apos;/api/cats/:id&apos;</span> <span class="hljs-keyword">do</span>
+  <span class="hljs-constant">Cat</span>.destroy(params[<span class="hljs-symbol">:id</span>]).to_json
+<span class="hljs-keyword">end</span>
 </code></pre>
-<h3 id="-a-href-https-github-com-ga-students-wdi-chi-darth-vader-tree-master-03-mastering-front-end-d03-instructors-in-class-code-a"><a href="https://github.com/ga-students/WDI_Chi_Darth_Vader/tree/master/03_mastering_front_end/d03/INSTRUCTORS" target="_blank">In-class Code</a></h3>
-<h4 id="references">References!</h4>
-<ul>
-<li><a href="http://alistapart.com/article/responsive-web-design" target="_blank">http://alistapart.com/article/responsive-web-design</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries" target="_blank">https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries</a></li>
-<li><a href="http://abookapart.com/products/responsive-web-design" target="_blank">http://abookapart.com/products/responsive-web-design</a></li>
-<li><a href="http://johnpolacek.github.io/scrolldeck.js/decks/responsive/" target="_blank">http://johnpolacek.github.io/scrolldeck.js/decks/responsive/</a></li>
-<li><a href="https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/index?hl=en" target="_blank">https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/index?hl=en</a></li>
-<li><a href="http://learn.shayhowe.com/advanced-html-css/responsive-web-design/" target="_blank">http://learn.shayhowe.com/advanced-html-css/responsive-web-design/</a></li>
-<li><a href="http://www.awwwards.com/websites/responsive-design/" target="_blank">http://www.awwwards.com/websites/responsive-design/</a></li>
-<li><a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/" target="_blank">https://css-tricks.com/snippets/css/media-queries-for-standard-devices/</a></li>
-<li><a href="https://github.com/ga-chicago/responsive_style_guide" target="_blank">https://github.com/ga-chicago/responsive_style_guide</a></li>
-</ul>
+<h4 id="example-project">Example Project</h4>
+<p>We created the following RESTful API: <a href="https://github.com/ga-chicago/RESTfulCats" target="_blank">https://github.com/ga-chicago/RESTfulCats</a></p>
+<h4 id="c-example">C# Example</h4>
+<pre><code class="lang-c#">// using CatsModel
+
+public CatsController {
+
+    [HttpGet]
+    public CatsModel List<CatsModel>(object cats) {
+        return Cats.all();
+    }
+
+    [HttpGet]
+    public CatsModel (int id) {
+        return Cat.find(id);
+    }
+
+    [HttpPost]
+    public CatsModel (object Cat) {
+        return Cat.save(Cat);
+    }
+
+    [HttpPatch]
+    public CatsModel (object Cat) {
+        return Cat.update(Cat);
+    }
+
+    [HttpPut]
+    public CatsModel (object Cat) {
+        return Cat.update(Cat);
+    }
+
+    [HttpDelete]
+    public CatsModel (int id) {
+        return Cat.delete(id);
+    }
+
+}
+</CatsModel></code></pre>
 
                     
                     </section>
@@ -1392,10 +1459,10 @@
         </div>
 
         
-        <a href="../../03_mastering_front_end/d01/Readme.html" class="navigation navigation-prev " aria-label="Previous page: HTTP &amp; Ajax"><i class="fa fa-angle-left"></i></a>
+        <a href="../../08_restful_apis_backbonejs/d01/json_lab.html" class="navigation navigation-prev " aria-label="Previous page: JSON Lab"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../videos/03.html" class="navigation navigation-next " aria-label="Next page: Videos &amp; Source Code"><i class="fa fa-angle-right"></i></a>
+        <a href="../../videos/08.html" class="navigation navigation-next " aria-label="Next page: Videos"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
