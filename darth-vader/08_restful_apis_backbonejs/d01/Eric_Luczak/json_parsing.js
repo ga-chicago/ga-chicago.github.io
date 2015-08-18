@@ -1,0 +1,129 @@
+var Obj = {
+  "Hero" : "Crystal Maiden",
+  "Ability 1" : {
+    "Name" : "Crystal Nova",
+    "level 1" : {
+      "Damage" : 100,
+      "Radius" : 400,
+      "Movement slow" : "-20%",
+      "Attack slow" : -20,
+      "Duration" : 4.5
+    },
+    "level 2" : {
+      "Damage" : 150,
+      "Radius" : 400,
+      "Movement slow" : "-30%",
+      "Attack slow" : -30,
+      "Duration" : 4.5
+    },
+    "level 3" : {
+      "Damage" : 200,
+      "Radius" : 400,
+      "Movement slow" : "-40%",
+      "Attack slow" : -20,
+      "Duration" : 4.5
+    },
+    "level 4" : {
+      "Damage" : 250,
+      "Radius" : 400,
+      "Movement slow" : "-50%",
+      "Attack slow" : -50,
+      "Duration" : 4.5
+    }
+  },
+  "Ability 2" : {
+    "Name" : "Frostbite",
+    "Level 1" : {
+      "Damage per half-second" : 50,
+      "Hero duration" : 1.5,
+      "Hero total damage" : 150,
+      "Creep duration" : 10,
+      "Creep total damage" : 1000
+    },
+    "Level 2" : {
+      "Damage per half-second" : 50,
+      "Hero duration" : 2,
+      "Hero total damage" : 200,
+      "Creep duration" : 10,
+      "Creep total damage" : 1000
+    },
+    "Level 3" : {
+      "Damage per half-second" : 50,
+      "Hero duration" : 2.5,
+      "Hero total damage" : 250,
+      "Creep duration" : 10,
+      "Creep total damage" : 1000
+    },
+    "Level 4" : {
+      "Damage per half-second" : 50,
+      "Hero duration" : 3,
+      "Hero total damage" : 300,
+      "Creep duration" : 10,
+      "Creep total damage" : 1000
+    }
+  },
+  "Ability 3" : {
+    "Name" : "Arcane Aura",
+    "Level 1" : {
+      "Mana regen bonus" : 1.0
+    },
+    "Level 2" : {
+      "Mana regen bonus" : 1.5
+    },
+    "Level 3" : {
+      "Mana regen bonus" : 2.0
+    },
+    "Level 4" : {
+      "Mana regen bonus" : 2.5
+    }
+  },
+  "Ability 4" : {
+    "Name" : "Freezing Field",
+    "Level 1" : {
+      "Radius" : 835,
+      "Explosion radius" : 300,
+      "Movement slow" : "-30%",
+      "Attack slow" : -30,
+      "Damage" : 105,
+      "Scepter damage" : 170,
+      "Scepter movement slow" : "-50%",
+      "Scepter attack slow" : -50
+    },
+    "Level 2" : {
+      "Radius" : 835,
+      "Explosion radius" : 300,
+      "Movement slow" : "-30%",
+      "Attack slow" : -30,
+      "Damage" : 170,
+      "Scepter damage" : 250,
+      "Scepter movement slow" : "-50%",
+      "Scepter attack slow" : -50
+    },
+    "Level 3" : {
+      "Radius" : 835,
+      "Explosion radius" : 300,
+      "Movement slow" : "-30%",
+      "Attack slow" : -30,
+      "Damage" : 250,
+      "Scepter damage" : 310,
+      "Scepter movement slow" : "-50%",
+      "Scepter attack slow" : -50
+    }
+  },
+  "Ability 5" : {},
+  "Ability 6" : {},
+  "Hero attributes" : {
+    "Strength" : 16,
+    "Strength gain" : 1.7,
+    "Agility" : 16,
+    "Agility gain" : 1.6,
+    "Intelligence" : 16,
+    "Intelligence gain" : 2.9,
+    "Movement speed" : 280,
+    "Sight range" :	"1800/800",
+    "Armor" :	1.24,
+    "Base attack time" : 1.7,
+    "Damage" :	"35 - 41",
+    "Attack point" :	0.55
+  }
+}

@@ -1,0 +1,64 @@
+<h1>Hello world!</h1>
+
+<ul>
+<% @idiots.each do |idiot| %>
+
+	<li><%= idiot.to_s %></li>
+
+<% end %>
+</ul>
+
+<ul>
+<% @assholes.each do |asshole| %>
+
+	<li><%= asshole.to_s %></li>
+
+<% end %>
+</ul>
+
+<ul>
+<% @hobos.each do |hobo| %>
+
+	<li><%= hobo.to_s %></li>
+
+<% end %>
+</ul>
+
+<p>
+	<table>
+		<caption>Idiots</caption>
+		<tbody>
+			<% @idiots.sort_by{rand}.each do |idiot| %>
+
+				<td><%= idiot.to_s %></td>
+
+			<% end %>
+		</tbody>
+	</table>
+</p>
+
+<p>
+	<table>
+		<caption>Assholes</caption>
+		<tbody>
+			<% @assholes.sort_by{rand}.each do |asshole| %>
+
+				<td><%= asshole.to_s %></td>
+
+			<% end %>
+		</tbody>
+	</table>
+</p>
+
+<p>
+	<table>
+		<caption>Hobos</caption>
+		<tbody>
+			<% @hobos.sort_by{rand}.each do |hobo| %>
+
+				<td><%= hobo.to_s %></td>
+
+			<% end %>
+		</tbody>
+	</table>
+</p>
