@@ -1,0 +1,53 @@
+{
+    "JSON Validators": {
+        "Site1": "http://jsonlint.com/",
+        "Site2": "http://www.jsoneditoronline.org/"
+    }
+}
+{
+    "Cat": {
+        "Name": "Tom",
+        "breed": "alleycat",
+        "age": 15,
+        "color": "black",
+        "has_microchip": true
+    }
+}
+
+{
+    "MutantNinjaTurtle": {
+        "Name": "Donatello",
+        "Weapon": "Bo Staff",
+        "Color": "Purple",
+        "Master": "Splinter"
+    }
+}
+
+{
+    "NumberFun": {
+        "Favorite_number": 7,
+        "First_prime": 2,
+        "an_array_of_primes": [
+            2,
+            5,
+            7,
+            11
+        ]
+    }
+}
+
+
+{
+    "coord": {
+        "lon": 145.77,
+        "lat": -16.92
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04n"
+        }
+    ]
+}
