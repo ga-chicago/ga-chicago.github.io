@@ -1,0 +1,67 @@
+<h1>Excercise 5</h1>
+
+<h3>Re-Using views</h3>
+
+<section id="list">
+
+</section>
+
+
+
+  <script type="text/javascript">
+
+    var app = app || {};
+    app.data = [
+      { id:1, thing: 'I need to do laundry', date: '8/19/2105'},
+      { id:2, thing: 'I need to study', date: '8/20/2105'},
+      { id:3, thing: 'I need to party', date: '8/21/2105'},
+      { id:4, thing: 'I need to play guitar', date: '8/22/2105'},
+      { id:5, thing: 'I need to smoke a beezy', date: '8/23/2105'},
+     ];
+     app.todoItemView = Backbone.View.extend({
+       initialize: function(data) {
+        console.log(data);
+
+
+
+        //this.render();
+
+
+       },
+       render: function(dataObject) {
+         this.template = _.template($('#listTemplate').html());
+         var compiledTemplate = this.template(dataObject);
+         this.$el.append(compiledTemplate);
+       }
+     });
+
+     $(document).ready(function() {
+       var todoItem = new app.todoItemView({
+         el: $('#list')
+       })
+       for(var i in app.data){
+         if (app.data[i].id % 3 == 1){
+           console.log(i);
+           $('li').css({'background-color': 'rgba(132, 129, 190, 0.71)'});
+         }
+         todoItem.render(app.data[i]);
+
+         $('#list').css('margin-top', '40px');
+         $('li').animate({
+           marginLeft: '10em',
+           width: "-=2em"
+         },2005, 'linear').css('transform', 'rotateZ(5deg)');
+       }
+       $('body').css('background-color', 'rgba(222, 174, 238, 0.74)');
+       $('h1').css('text-align', 'center').css('color', 'rgba(232, 169, 8, 0.74)');
+     });
+  </script>
+
+
+  <script type="text/template" id="listTemplate">
+    <li>
+      #<<%%= id %>:
+      <em><%%= thing %></em>;
+      <strong>Due by:</strong><%%= date%>
+    </li>
+  </script>

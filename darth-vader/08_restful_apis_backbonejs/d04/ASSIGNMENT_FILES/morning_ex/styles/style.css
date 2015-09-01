@@ -1,0 +1,17 @@
+.example {
+  background: black;
+  float: left;
+  width: 200px;
+  margin:1%;
+}
+
+.ex2 {
+  background: skyblue;
+  float: left;
+  width: 100px;
+  height: 300px;
+  margin: .5%;
+}
+p {
+  color:white;
+}

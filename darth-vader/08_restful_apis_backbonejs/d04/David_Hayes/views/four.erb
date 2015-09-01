@@ -1,0 +1,34 @@
+<h1>Exercise 4</h1>
+
+<h3>Hello, Backbone! Views, Views everywhere</h3>
+
+<section id='container'>
+
+</section>
+<section id='meow'>
+
+</section>
+
+<script type="text/javascript">
+
+  var app = app || {};
+  app.listItemView = Backbone.View.extend({
+    initialize: function() {
+      this.render();
+    },
+    render: function() {
+      this.$el.append('<img src="http://buzzsharer.com/wp-content/uploads/2015/07/Yorkshire-Terrier.jpg">');
+      this.$el.append('HEY!!!!');
+    }
+  });
+
+var listItem = new app.listItemView({
+  el: $('#container')
+});
+var listItemTwo = new app.listItemView({
+  el: $('#meow')
+})
+
+
+
+</script>

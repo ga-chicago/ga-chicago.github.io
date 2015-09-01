@@ -1,0 +1,42 @@
+[
+  {
+    "Split": " 1",
+    "Time": "1:46:43.0",
+    "Moving Time": "1:42:37",
+    "Distance": "32.68",
+    "Elevation Gain": "1,348",
+    "Elevation Loss": "1,332",
+    "Avg Speed": "18.4",
+    "Avg Moving Speed": "19.1",
+    "Max Speed": "34.3",
+    "Avg Bike Cadence": "84",
+    "Max Bike Cadence": "116",
+    "Normalized Power (NP)": "213",
+    "Avg Power": "166",
+    "Max Power": "904",
+    "Max Avg Power (20 min)": "--",
+    "Avg Temperature": "69.6",
+    "Calories": "1,059",
+    "": null
+  },
+  {
+    "Split": " Summary",
+    "Time": "1:46:43.0",
+    "Moving Time": "1:42:37.0",
+    "Distance": "32.68",
+    "Elevation Gain": "1,348",
+    "Elevation Loss": "1,332",
+    "Avg Speed": "18.4",
+    "Avg Moving Speed": "19.1",
+    "Max Speed": "34.3",
+    "Avg Bike Cadence": "84",
+    "Max Bike Cadence": "116",
+    "Normalized Power (NP)": "213",
+    "Avg Power": "166",
+    "Max Power": "904",
+    "Max Avg Power (20 min)": "194",
+    "Avg Temperature": "69.6",
+    "Calories": "1,059",
+    "": null
+  }
+]

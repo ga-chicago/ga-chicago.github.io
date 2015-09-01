@@ -10,3 +10,9 @@ CREATE TABLE heros (
   ability_3 VARCHAR(255),
   ability_4 VARCHAR(255)
 );
+
+CREATE TABLE jheros (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255),
+  json_string VARCHAR
+);

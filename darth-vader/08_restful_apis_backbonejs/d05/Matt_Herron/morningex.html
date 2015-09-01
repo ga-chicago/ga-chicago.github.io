@@ -1,0 +1,43 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 canvas</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="700" height="500">Your browser is old and needs to be updated to support this site</canvas>
+	<button id="stop">Stop!</button>
+
+	<script type="text/javascript">
+
+	document.getElementById("stop").addEventListener("click", function() {
+		go = false;
+	});
+
+	var go = true;
+	var canvas = document.getElementById('myCanvas');
+	var ctx = canvas.getContext("2d");
+
+	
+		var xStart = Math.random() * 700
+		var yStart = Math.random() * 500
+		var width = Math.random() * 500
+		var height = Math.random() * 500
+
+		ctx.beginPath();
+		ctx.fillRect(xStart, yStart, width, height);
+
+		ctx.lineWidth = 10;
+		ctx.moveTo(400, 20);
+		ctx.lineTo(400, 200);
+		ctx.stroke();
+
+		ctx.arc(300, 300, 100, 0, Math.PI*2, false);
+
+
+		ctx.closePath();
+
+
+	
+	</script>
+</body>
+</html>

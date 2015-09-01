@@ -1,4 +1,6 @@
 require './app'
-require './Hero'
+require './Models/Hero'
+require './Models/Jhero'
+
 
 run Sinatra::Application

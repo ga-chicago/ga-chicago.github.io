@@ -1,0 +1,1712 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Introduction to Node | WDI Darth Vader</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.2.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../10_node_and_express/node_file_structure.html" />
+    
+    
+    <link rel="prev" href="../../10_node_and_express/setup_environment.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="11.2" data-basepath="../.." data-revision="Tue Sep 01 2015 10:23:01 GMT-0500 (CDT)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction &amp; Syllabus
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="introduction/holidays.html">
+            
+                
+                    <a href="../../introduction/holidays.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        Student Holidays
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2" data-path="introduction/homework_submission.html">
+            
+                
+                    <a href="../../introduction/homework_submission.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        Homework Submission
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3" data-path="introduction/required_software.html">
+            
+                
+                    <a href="../../introduction/required_software.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                        Required Software
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4" data-path="introduction/library.html">
+            
+                
+                    <a href="../../introduction/library.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                        Class Library
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5" data-path="introduction/required_software.html">
+            
+                
+                    <a href="../../introduction/required_software.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                        Required Software
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6" data-path="introduction/course_outline.html">
+            
+                
+                    <a href="../../introduction/course_outline.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.</b>
+                        
+                        Course Outline
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7" data-path="videos/index.html">
+            
+                
+                    <a href="../../videos/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.</b>
+                        
+                        All Videos/Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_front_end_fundamentals/readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Front End Fundamentals
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_front_end_fundamentals/d01/Readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Objects, Command Line, &amp; Git
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_front_end_fundamentals/d02/Readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/d02/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Git, Introduction to Javascript, Data Types
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_front_end_fundamentals/d03/Readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Arrays, Loops, Logic
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01_front_end_fundamentals/d04/Readme.html">
+            
+                
+                    <a href="../../01_front_end_fundamentals/d04/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Function, REPS, Second Pass Friday
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="videos/01.html">
+            
+                
+                    <a href="../../videos/01.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_object_oriented_js_and_jquery/index.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Object-Oriented Javascript
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_object_oriented_js_and_jquery/d01/Readme.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        How the Internet Works, Objects in JS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_object_oriented_js_and_jquery/d02/index.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d02/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Typography, Style Guides, CSS Box Model, Wireframing
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_object_oriented_js_and_jquery/d03/Readme.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Javascript Constructors
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_object_oriented_js_and_jquery/d04/Readme.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d04/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        jQuery
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02_object_oriented_js_and_jquery/d05/Readme.html">
+            
+                
+                    <a href="../../02_object_oriented_js_and_jquery/d05/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Second Pass Friday
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="videos/02.html">
+            
+                
+                    <a href="../../videos/02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_mastering_front_end/readme.html">
+            
+                
+                    <a href="../../03_mastering_front_end/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Project #1
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_mastering_front_end/d01/Readme.html">
+            
+                
+                    <a href="../../03_mastering_front_end/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        HTTP &amp; Ajax
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_mastering_front_end/d03/Readme.html">
+            
+                
+                    <a href="../../03_mastering_front_end/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Responsive Design
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="videos/03.html">
+            
+                
+                    <a href="../../videos/03.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04_ruby/readme.html">
+            
+                
+                    <a href="../../04_ruby/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Ruby
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_ruby/d01/Readme.html">
+            
+                
+                    <a href="../../04_ruby/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Ruby 101: Data Types, Control Flow, and Logic
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_ruby/intro_to_ruby.html">
+            
+                
+                    <a href="../../04_ruby/intro_to_ruby.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Intro to Ruby
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_ruby/enumeration_in_ruby.html">
+            
+                
+                    <a href="../../04_ruby/enumeration_in_ruby.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Enumeration in Ruby
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_ruby/d02/Readme.html">
+            
+                
+                    <a href="../../04_ruby/d02/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Objects, Classes, &amp; Inheritance
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_ruby/classes_in_ruby.html">
+            
+                
+                    <a href="../../04_ruby/classes_in_ruby.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Classes in Depth
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="04_ruby/d03/Readme.html">
+            
+                
+                    <a href="../../04_ruby/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        MVC and Sinatra
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="04_ruby/d04/Readme.html">
+            
+                
+                    <a href="../../04_ruby/d04/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        Second Pass Friday
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="videos/04.html">
+            
+                
+                    <a href="../../videos/04.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_full_stack_sinatra/readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Full Stack Sinatra
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_full_stack_sinatra/d01/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Datbases &amp; SQL
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_full_stack_sinatra/sql_postgres_cheatsheet.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/sql_postgres_cheatsheet.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Postgres Cheatsheet
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05_full_stack_sinatra/d02/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d02/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Models, ORMs and ActiveRecord
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05_full_stack_sinatra/d03/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        CRUD &amp; Controllers
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05_full_stack_sinatra/d04/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d04/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Server Side Authentiation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05_full_stack_sinatra/ruby_crud_controller.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/ruby_crud_controller.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        CRUD Controller Example
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05_full_stack_sinatra/ruby_crud_with_active_record.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/ruby_crud_with_active_record.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        CRUD with Active Record
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="05_full_stack_sinatra/ruby_erb_basics.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/ruby_erb_basics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        ERB (Embedded Ruby) Basics
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="05_full_stack_sinatra/ruby_parsing_json.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/ruby_parsing_json.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        Parsing JSON
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="05_full_stack_sinatra/d05/Readme.html">
+            
+                
+                    <a href="../../05_full_stack_sinatra/d05/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        Second Pass Friday
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="videos/05.html">
+            
+                
+                    <a href="../../videos/05.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06_full_stack_project/index.html">
+            
+                
+                    <a href="../../06_full_stack_project/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Project #2
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06_full_stack_project/project_schedule.html">
+            
+                
+                    <a href="../../06_full_stack_project/project_schedule.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Schedule
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06_full_stack_project/d02/Readme.html">
+            
+                
+                    <a href="../../06_full_stack_project/d02/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Bootstrap
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06_full_stack_project/mandrill.html">
+            
+                
+                    <a href="../../06_full_stack_project/mandrill.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Sending Emails with Mandrill
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06_full_stack_project/d01/Readme.html">
+            
+                
+                    <a href="../../06_full_stack_project/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Authentication
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07_ruby_on_rails/Readme.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Ruby on Rails
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07_ruby_on_rails/d01/dev_workflow.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/dev_workflow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Developer Workflow
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07_ruby_on_rails/d01/digital_ocean.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/digital_ocean.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Digital Ocean/PaaS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07_ruby_on_rails/d01/digital_ocean_lab.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/digital_ocean_lab.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Digital Ocean Lab
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="07_ruby_on_rails/building_servers.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/building_servers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        Building a webserver
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="07_ruby_on_rails/d01/Readme.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        Getting started with Rails
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="07_ruby_on_rails/d01/rails_model_attr_types.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/rails_model_attr_types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        Rails Model Attributes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="07_ruby_on_rails/d01/rails_file_structure.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/rails_file_structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        Rails File Structure
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="07_ruby_on_rails/d01/sinatra_vs_rails.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/sinatra_vs_rails.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        Sinatra vs Rails
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="07_ruby_on_rails/d01/rails_generate_lab.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/rails_generate_lab.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        Rails Generate Lab
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="07_ruby_on_rails/d01/after_hours.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d01/after_hours.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                        Day 1 - After Hours
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="07_ruby_on_rails/d02/rails_form_helpers.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d02/rails_form_helpers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.11.</b>
+                        
+                        Rails Form Helpers
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="07_ruby_on_rails/d02/rails_form_helpers_lab.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d02/rails_form_helpers_lab.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.12.</b>
+                        
+                        Rails Form Helpers Lab
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="07_ruby_on_rails/d04/user_auth.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d04/user_auth.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.13.</b>
+                        
+                        Authentication
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="videos/07.html">
+            
+                
+                    <a href="../../videos/07.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.14.</b>
+                        
+                        Videos &amp; Source Code
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="07_ruby_on_rails/d02/underscore.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d02/underscore.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Underscore.js
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="07_ruby_on_rails/d02/underscore-tpl.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d02/underscore-tpl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Templates
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="07_ruby_on_rails/d02/underscore-lab.html">
+            
+                
+                    <a href="../../07_ruby_on_rails/d02/underscore-lab.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Template Lab
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="08_restful_apis_backbonejs/Readme.html">
+            
+                
+                    <a href="../../08_restful_apis_backbonejs/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Backbone.js
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="08_restful_apis_backbonejs/d01/Readme.html">
+            
+                
+                    <a href="../../08_restful_apis_backbonejs/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        JSON
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="08_restful_apis_backbonejs/d01/json_lab.html">
+            
+                
+                    <a href="../../08_restful_apis_backbonejs/d01/json_lab.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        JSON Lab
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="08_restful_apis_backbonejs/d01/restful.html">
+            
+                
+                    <a href="../../08_restful_apis_backbonejs/d01/restful.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        RESTful APIs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="08_restful_apis_backbonejs/d02/Readme.html">
+            
+                
+                    <a href="../../08_restful_apis_backbonejs/d02/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        Backbone.js Intro
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="08_restful_apis_backbonejs/d02/backbone_views.html">
+            
+                
+                    <a href="../../08_restful_apis_backbonejs/d02/backbone_views.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        Views
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="08_restful_apis_backbonejs/d02/boilerplate_lab.html">
+            
+                
+                    <a href="../../08_restful_apis_backbonejs/d02/boilerplate_lab.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                        Boilerplate Lab
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7" data-path="08_restful_apis_backbonejs/d02/ah.html">
+            
+                
+                    <a href="../../08_restful_apis_backbonejs/d02/ah.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.7.</b>
+                        
+                        After Hours
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8" data-path="08_restful_apis_backbonejs/d04/Readme.html">
+            
+                
+                    <a href="../../08_restful_apis_backbonejs/d04/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.8.</b>
+                        
+                        Models
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.9" data-path="08_restful_apis_backbonejs/d04/collections.html">
+            
+                
+                    <a href="../../08_restful_apis_backbonejs/d04/collections.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.9.</b>
+                        
+                        Collections
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.10" data-path="08_restful_apis_backbonejs/d04/ah.html">
+            
+                
+                    <a href="../../08_restful_apis_backbonejs/d04/ah.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.10.</b>
+                        
+                        After Hours
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.11" data-path="08_restful_apis_backbonejs/d05/Readme.html">
+            
+                
+                    <a href="../../08_restful_apis_backbonejs/d05/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.11.</b>
+                        
+                        Weekend Reps
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.12" data-path="videos/08.html">
+            
+                
+                    <a href="../../videos/08.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.12.</b>
+                        
+                        Videos
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="09_restful_api/Readme.html">
+            
+                
+                    <a href="../../09_restful_api/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Project #3
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="videos/09.html">
+            
+                
+                    <a href="../../videos/09.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        Videos
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="10_node_and_express/Readme.html">
+            
+                
+                    <a href="../../10_node_and_express/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        Node, Express.js, MongoDB
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="10_node_and_express/setup_environment.html">
+            
+                
+                    <a href="../../10_node_and_express/setup_environment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        Setup Development Environment
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="11.2" data-path="10_node_and_express/d01/Readme.html">
+            
+                
+                    <a href="../../10_node_and_express/d01/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        Introduction to Node
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="10_node_and_express/node_file_structure.html">
+            
+                
+                    <a href="../../10_node_and_express/node_file_structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        Node File Structure
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="10_node_and_express/d02/Readme.html">
+            
+                
+                    <a href="../../10_node_and_express/d02/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                        Express.js
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="10_node_and_express/d03/Readme.html">
+            
+                
+                    <a href="../../10_node_and_express/d03/Readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.5.</b>
+                        
+                        NoSQL with MongoDB
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="11_angular/Readme.html">
+            
+            <span><b>12.</b> Angular.js</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="12_captstone/Readme.html">
+            
+            <span><b>13.</b> Portfolio Project</span>
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >WDI Darth Vader</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="introduction-to-node">Introduction to Node</h2>
+<h3>Getting Started</h3>
+
+<p><img src="node_app_workflow.png" alt="Node App Workflow"></p>
+<h3 id="1-package-json">1. <code>package.json</code></h3>
+<p>We&apos;re going to create a <code>package.json</code> file for our new application. This contains information about your app, such as:</p>
+<ul>
+<li>Application&apos;s name</li>
+<li>Author</li>
+<li>Git(hub) repository</li>
+<li>Current version</li>
+<li>License
+And in the future, it will also save any dependancies your application may have.</li>
+</ul>
+<h4 id="let-s-give-it-a-try">Let&apos;s Give it a Try</h4>
+<ul>
+<li>To get started, create a new project folder. <strong>Change directory</strong> to that folder.</li>
+<li>Next, create an empty Javascript file to host our application: <code>touch app.js</code></li>
+<li>Then, enter the following command:</li>
+</ul>
+<p><img src="npm_init.png" alt="npm_init.png"></p>
+<ul>
+<li>That&apos;s right: <code>npm init</code></li>
+</ul>
+<p>You&apos;ll be prompted through a variety of questions, such as:</p>
+<pre><code class="lang-bash">name: an_api
+version: (<span class="hljs-number">1.0</span>.<span class="hljs-number">0</span>) <span class="hljs-number">0.1</span>.<span class="hljs-number">0</span>
+description: My first express api
+entry point: (index.js) app.js
+<span class="hljs-built_in">test</span> <span class="hljs-built_in">command</span>:
+git repository: https://github.com/code-for-coffee/express_api
+keywords:
+author: your-user-name
+license: (ISC) MIT
+</code></pre>
+<p>This generates the following <code>package.json</code> file:</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Tasker&quot;</span>,
+  <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;0.1.0&quot;</span>,
+  <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;The MEAN way to track your Tasks!&quot;</span>,
+  <span class="hljs-string">&quot;main&quot;</span>: <span class="hljs-string">&quot;app.js&quot;</span>,
+  <span class="hljs-string">&quot;scripts&quot;</span>: {
+    <span class="hljs-string">&quot;test&quot;</span>: <span class="hljs-string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span>
+  },
+  <span class="hljs-string">&quot;repository&quot;</span>: {
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;git&quot;</span>,
+    <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://github.com/code-for-coffee/Tasker&quot;</span>
+  },
+  <span class="hljs-string">&quot;author&quot;</span>: <span class="hljs-string">&quot;code-for-coffee&quot;</span>,
+  <span class="hljs-string">&quot;license&quot;</span>: <span class="hljs-string">&quot;MIT&quot;</span>,
+  <span class="hljs-string">&quot;bugs&quot;</span>: {
+    <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://github.com/code-for-coffee/Tasker/issues&quot;</span>
+  },
+  <span class="hljs-string">&quot;homepage&quot;</span>: <span class="hljs-string">&quot;https://github.com/code-for-coffee/Tasker&quot;</span>
+}
+</code></pre>
+<h3 id="2-setting-application-dependancies">2. Setting Application dependancies</h3>
+<p>Use <code>npm install &lt;pkg&gt; --save</code> afterwards to install a package and save it as a dependency in the package.json file.</p>
+<p>We&apos;re going to be using the following dependancies in our <strong>MEAN</strong> application:</p>
+<ul>
+<li>Express.js</li>
+<li>MongoDB</li>
+<li>Angular.js</li>
+</ul>
+<p>To get started, let&apos;s go ahead and add <strong>Express.js</strong> to our project by running the following command:</p>
+<p><code>npm install express --save</code></p>
+<ul>
+<li>Once you run this command, a dependency object will be created inside of your <code>package.json</code>. Go ahead - take a look!</li>
+<li>It looks like this, right?<pre><code class="lang-json"><span class="hljs-string">&quot;dependencies&quot;</span>: {
+<span class="hljs-string">&quot;express&quot;</span>: <span class="hljs-string">&quot;^4.12.4&quot;</span>
+}
+</code></pre>
+</li>
+<li><em>All</em> node package files are saved to <code>node_modules</code>.</li>
+<li>If provided a <code>package.json</code> file from another project, you can run the <code>npm install</code> command to fetch/install the required packages for that app!</li>
+</ul>
+<h3 id="3-installing-the-express-4-0-application-generator">3. Installing the Express 4.0 Application Generator</h3>
+<p>We want to be able to generate applications in the same way that Ruby on Rails can. We&apos;re going to run a command to install an Express.js application generator:</p>
+<p><code>sudo npm install -g express-generator</code></p>
+<p>We&apos;ll touch more on this later.</p>
+<h3 id="4-make-sure-we-re-all-set">4. Make sure we&apos;re all set</h3>
+<p>We&apos;re going to run a few commands to make sure we have the required dependencies for our application:</p>
+<pre><code class="lang-bash">node --version    <span class="hljs-comment">#checks node version</span>
+npm --version     <span class="hljs-comment">#checks npm version</span>
+express --version <span class="hljs-comment">#checks express version</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../10_node_and_express/setup_environment.html" class="navigation navigation-prev " aria-label="Previous page: Setup Development Environment"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../10_node_and_express/node_file_structure.html" class="navigation navigation-next " aria-label="Next page: Node File Structure"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

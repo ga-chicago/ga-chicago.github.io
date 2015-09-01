@@ -1,8 +1,0 @@
-<h4> Login Notices </h4>
-
-<%= @message %>
-
-<% if session[:user].nil? == false %>
-Thanks for using session support, <%= session[:user].name %>
-You may also <a href='/logout'>logout and clear your session</a>.
-<% end %>

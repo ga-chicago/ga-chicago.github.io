@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(151, 97, 184);
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+
+}
+
+li:nth-child(2n+1){
+  background-color: rgba(151, 190, 130, 0.76);
+}
+/*# sourceMappingURL=main.css.map */
+li {
+  color: black;
+  margin-top: 1%;
+}

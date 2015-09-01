@@ -1,0 +1,32 @@
+
+<!-- // 15. Return of the Functions
+//
+// Create a function that draws a rectangle on a canvas element.
+// This function should accept arguments for height, width, and colour.
+// Return a successfully draw rectangle using Canvas. -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Return of the Functions</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+    <script>
+
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas = canvas.getContext("2d");
+
+
+    var createFunction = function create(){
+    ctx.beginPath();
+    ctx.strokeRect(100, 100, 300, 200);
+    ctx.stroke();
+    };
+
+    </script>
+  </body>
+</html>

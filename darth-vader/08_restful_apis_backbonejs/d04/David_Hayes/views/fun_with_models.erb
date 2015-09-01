@@ -1,0 +1,25 @@
+<h1>Fun with Models!</h1>
+
+<h3>Zip Code Info</h3>
+
+<script type="text/javascript">
+
+  var zipApp = zipApp || {};
+
+  zipApp.zipModel = Backbone.Model.extend({
+    url: 'http://api.zippopotam.us/us/68003',
+    initialize: function() {
+      console.log('the model is ready');
+      this.on('change',function(event) {
+        // change event implements a design pattern
+        // called Object.observe()
+        console.log(this.attributes);
+        console.log('the model has changed!');
+      });
+    }
+  });
+
+  var zipcode = new zipApp.zipModel();
+  zipcode.fetch();
+
+</script>

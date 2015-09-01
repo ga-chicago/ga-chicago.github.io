@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <!-- dba_name -->
+      <th>Name</th>
+      <!-- risk -->
+      <th>Risk</th>
+      <!-- address -->
+      <th>Address</th>
+      <!-- results -->
+      <th>Results</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- ajax call here -->
+  </tbody>
+</table>
+
+  <section id='vanilla'>I really like artificial vanilla flavour</section>
+  <!-- 7. Vanilla JS Selectors -->
+  <script>
+  function vanilla(){
+    console.log(document.getElementById('vanilla').innerHTML)
+  };
+  vanilla();
+  </script>
+
+  <!-- 8. jQuery Selectors -->
+  <article id='strawberry'>I really like strawberry milkshakes from McDonalds!</article>
+  <script>
+  $(document).ready(function(){
+    console.log($('#strawberry').html());
+  });
+  </script>
+
+</body>
+</html>

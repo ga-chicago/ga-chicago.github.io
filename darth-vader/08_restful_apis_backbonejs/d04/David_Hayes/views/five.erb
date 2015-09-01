@@ -1,0 +1,51 @@
+<h1>Exercise 5</h1>
+
+<h3>Using Views</h3>
+
+<section id='list'>
+
+</section>
+
+<script type="text/javascript">
+  var app = app || {};
+  app.data = [
+    { id: 1, thing: 'I need to do laundry', date: '8/19/2015' },
+    { id: 2, thing: 'Pick Ryan\'s portrait', date: '8/19/2015'},
+    { id: 3, thing: 'Balance Checking account', date: '8/22/2015'},
+    { id: 4, thing: 'Buy interview outfit', date: '8/25/2015'},
+    { id: 5, thing: 'Finish first project CSS/JavaScript', date: '8/30/2015'},
+    { id: 6, thing: 'Get Ryan\'s birthday gift', date: '9/5/2015'}
+  ];
+  app.todoItemView = Backbone.View.extend({
+    render: function(dataObject) {
+      this.template = _.template($('#list-template').html());
+      var compiledTemplate = this.template(dataObject);
+      this.$el.append(compiledTemplate);
+    }
+  });
+
+  $(document).ready(function() {
+    var todoItem = new app.todoItemView({
+        el: $('#list')
+    });
+
+
+
+    for (var item in app.data) {
+      todoItem.render(app.data[item]);
+
+    }
+
+
+  });
+
+
+</script>
+
+<script type="text/template" id="list-template">
+  <li>
+    #<%%= id %>:
+    <em><%%= thing %></em>;
+    <strong>Due By:</strong> <%%= date %>
+  </li>
+</script>

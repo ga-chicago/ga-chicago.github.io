@@ -1,0 +1,43 @@
+<h1>Exercise 8</h1>
+
+<h3>Rendering Model Attributes with a View</h3>
+
+<div class="Divy">
+
+</div>
+
+<script type="text/javascript">
+
+  var app = app || {};
+
+  app.getDivyView = Backbone.View.extend({
+    initialize: function() {
+      var self = this;
+      console.log('Divy View ready');
+      this.model.on('change', function(){
+        console.log(this.attributes)
+        self.render();
+      })
+    },
+    render: function() {
+      var data = this.model.attributes;
+      this.$el.html('Divy location is at lat:' + data[0].latitude + 'log:' + data[0].longitude)
+    }
+  });// end of app.getDivy
+
+  app.getDivyModel = Backbone.Model.extend({
+    url: 'https://data.cityofchicago.org/resource/bk89-9dk7.json'
+  });
+
+    $(document).ready(function (){
+
+      var divyModel = new app.getDivyModel();
+      var divyView = new app.getDivyView({
+        el: $('.Divy'),
+        model: divyModel
+      });
+      divyModel.fetch();
+    });
+
+    // end of app get Divy Model
+</script>

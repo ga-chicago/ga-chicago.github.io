@@ -1,3 +1,2 @@
-Name: David_Hayes
-Email: davidlynnhayes@att.net
-GitHub: 
+# SinatraBackboneBoilerplate
+A Sinatra-Backbone.js boilerplate

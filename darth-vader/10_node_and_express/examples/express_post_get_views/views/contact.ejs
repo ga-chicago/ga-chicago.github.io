@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title><%= title %></title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <input type="text" id="name" placeholder="<%= namePlaceholder %>">
+    <button><%= submitButtonText %></button>
+    <div id="message"></div>
+    </body>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+            $('button').on('click', function() {
+              $.post("/api/contact",
+                { name: $('#name').val() },
+                function(data) {
+                  console.log(data);
+                  $('#message').html(data);
+                }
+              ); // end $.post
+              /*$.ajax({
+                type: "post",
+                data: {name: $('#name').val()},
+                url: '/api/contact',
+                success: function(data) {
+                  console.log(data);
+                  $('#message').html(data);
+                }
+              })*/
+            }); // end click handler for 'button'
+          }); // end document.ready
+    </script>
+</html>

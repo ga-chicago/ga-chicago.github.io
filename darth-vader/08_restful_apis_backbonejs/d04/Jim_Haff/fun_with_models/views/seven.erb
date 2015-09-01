@@ -1,0 +1,31 @@
+<h1>Exercise 7</h1>
+
+<h3>Making a Model</h3>
+
+<p>
+  Create a namespace of your choosing
+</p>
+
+
+<script type="text/javascript">
+
+  var myMovie = myMovie || {};
+
+  myMovie.movieModel = Backbone.Model.extend({
+    url: 'http://www.omdbapi.com/?t=Sandlot&y=&plot=short&r=json',
+    initialize: function () {
+      console.log('the model is ready');
+
+      this.on('change', function(event) {
+
+        console.log('the model has changed');
+      })
+    }
+  })//end of myMovie
+
+var movie = new myMovie.movieModel
+movie.fetch();
+
+
+console.log(movie.attributes);
+</script>

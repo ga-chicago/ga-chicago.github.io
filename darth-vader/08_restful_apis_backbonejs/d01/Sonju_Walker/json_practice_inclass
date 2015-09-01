@@ -1,0 +1,33 @@
+"cat" = {
+      "name": "Dorky",
+      "breed": "poodle",
+       "age": 5,
+       "color":  "gray",
+      "has_microship": fasle
+      }
+
+"TeenageMutantNinjaTurtle" = {
+                          "name": "D'Angelo",
+                          "weapon": "numchucks",
+                          "color": "blue",
+                          "master": "blah blah",
+                          "favorite_pizza": "Peperoni"
+                          }
+
+"Numberfun" = {
+              "favorite_num": 14,
+              "first_prime": 2,
+              "an_array_of_primes":[2, 3, 5, 7, 9, 11
+              ]
+            }
+
+"Xzibit" = {
+          "hash": {
+          "you can hash",
+          }
+          "yo dawg": {
+          " hey,hey,hey",
+          }
+           "iheard": {
+           "Pimp my ride is back",
+           }

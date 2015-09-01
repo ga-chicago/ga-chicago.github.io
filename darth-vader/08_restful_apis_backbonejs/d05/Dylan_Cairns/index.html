@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+
+	<canvas id="myCanvas" width="800" height="800">Your browser does not support canvas...what are you doing with your life?</canvas>
+
+	
+	<script type="text/javascript">
+	var canvas = document.getElementById("myCanvas");
+	var ctx = canvas.getContext("2d"); 
+
+	// ctx.fillStyle = "hsla(60, 100%, 50%, 0.5)";
+	// ctx.beginPath();
+	// ctx.fillRect(100,100,200,200);
+	// ctx.closePath();
+	// ctx.fill(); 
+	
+	// ctx.fillStyle = "hsla(300, 100%, 50%, 0.5)";
+	// ctx.beginPath();
+	// ctx.fillRect(150,150,200,200);
+	// ctx.closePath();
+	// ctx.fill(); 
+
+	// ctx.fillStyle = "hsla(180, 100%, 50%, 0.5)";
+	// ctx.beginPath();
+	// ctx.fillRect(200,200,200,200);
+	// ctx.closePath();
+	// ctx.fill(); 
+
+	// ctx.lineWidth = 10;
+	// ctx.beginPath(); 
+	// ctx.moveTo(400, 20);
+	// ctx.lineTo(400, 200);
+	// ctx.closePath();
+	// ctx.strokeStyle = "orange";
+	// ctx.stroke();
+
+	// ctx.beginPath();
+ //  ctx.arc(400, 400, 100, 0, Math.PI*2, true); 
+ //  ctx.closePath();
+ //  ctx.fillStyle = "hsla(9, 100%, 64%, .9)";
+ //  ctx.fill();
+
+  // var x = Math.floor(Math.random() * 500 + 1),
+  // 	  y = Math.floor(Math.random() * 500 + 1),
+  // 	  dx = Math.floor(Math.random() * 100 + 1),
+  // 	  dy = Math.floor(Math.random() * 100 + 1),
+  // 	  r = Math.floor(Math.random() * 255 + 1), 
+  // 	  g =  Math.floor(Math.random() * 255 + 1),
+  // 	  b =  Math.floor(Math.random() * 255 + 1); 
+  // 	 var grd=ctx.createLinearGradient(0,0,170,0);
+		// 	grd.addColorStop(0,'rgb(100,100,200)');
+		// 	grd.addColorStop(1,"white");
+
+ 	 function rand() {
+ 	 		x = Math.floor(Math.random() * 800 + 1),
+   	  y = Math.floor(Math.random() * 800 + 1),
+  	  dx = Math.floor(Math.random() * 100 + 1),
+   	  dy = Math.floor(Math.random() * 100 + 1);
+  // 	  r = Math.floor(Math.random() * 255 + 1),
+  // 	  g =  Math.floor(Math.random() * 255 + 1),
+  // 	  b =  Math.floor(Math.random() * 255 + 1),
+  // 	   	  ctx.rotate(dx, dy);
+ 	 };
+
+  function draw() {
+  	rand(); 
+var my_gradient=ctx.createLinearGradient(x,y,y,x);
+my_gradient.addColorStop(0,"yellow");
+my_gradient.addColorStop(0.5,"tomato");
+my_gradient.addColorStop(1,"blue");
+ctx.fillStyle=my_gradient;
+// ctx.rotate(dx*Math.PI/dy);
+ctx.fillRect(0,0,700,700);
+ctx.translate(dx,dy);
+ctx.restore();
+ ctx.translate(-dx,-dy);
+
+
+ 	  // ctx.fillStyle = "rgb(100,100,100)"; 
+ 	  
+  }
+
+  function init() {
+  	window.setInterval(draw, 200); 
+  	//window.setInterval(clear, 6000); 
+  }
+
+  init();
+
+	</script> 
+</body>
+</html>

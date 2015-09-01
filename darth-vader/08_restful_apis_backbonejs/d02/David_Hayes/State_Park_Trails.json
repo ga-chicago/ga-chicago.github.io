@@ -1,0 +1,254 @@
+[
+  {
+    "OBJECTID": "2",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "2",
+    "PROPERTY": "Airline State Park Trail (North Trail)",
+    "SHAPE": "(41.99296041100007, -71.84349132999995)",
+    "SHAPE.area": "476700.271588200004771",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "3",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "3",
+    "PROPERTY": "Airline State Park Trail (Northern Section)",
+    "SHAPE": null,
+    "SHAPE.area": "1467091.468283110065386",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "4",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "4",
+    "PROPERTY": "Airline State Park Trail (Southern Section)",
+    "SHAPE": "(41.714104536000036, -72.23694494499995)",
+    "SHAPE.area": "1497278.233525164891034",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "238",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "107",
+    "PROPERTY": "Connecticut Valley Railroad State Park Trail",
+    "SHAPE": "(41.38490614500006, -72.42630796199995)",
+    "SHAPE.area": "42671.203527865000069",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "239",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "107",
+    "PROPERTY": "Connecticut Valley Railroad State Park Trail",
+    "SHAPE": null,
+    "SHAPE.area": "1024661.858223470044322",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "293",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": null,
+    "SHAPE.area": "65315.391538470001251",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "294",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.42472470400003, -72.90676662999994)",
+    "SHAPE.area": "237571.610952860006364",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "295",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.521757069000046, -72.91059166699995)",
+    "SHAPE.area": "137395.600801950000459",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "296",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.530224642000064, -72.90734785099994)",
+    "SHAPE.area": "27095.461375934999523",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "297",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.535783637000065, -72.90247913399998)",
+    "SHAPE.area": "37054.206578999997873",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "298",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.551633836000065, -72.90113898099997)",
+    "SHAPE.area": "38834.697942794999108",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "299",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.561664214000075, -72.90313661699997)",
+    "SHAPE.area": "60383.457517260001623",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "300",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.566408730000035, -72.90214731199995)",
+    "SHAPE.area": "17830.321778174999054",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "301",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.572915296000076, -72.90015865099997)",
+    "SHAPE.area": "14931.034680394999668",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "302",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.57650088100007, -72.89907901499998)",
+    "SHAPE.area": "4816.532571374999861",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "303",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.57865153300003, -72.89844284199995)",
+    "SHAPE.area": "30954.7909816149986",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "304",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.59139746900007, -72.88938527699997)",
+    "SHAPE.area": "16634.953990674999659",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "305",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.59701937300008, -72.88547026699996)",
+    "SHAPE.area": "26586.796301865000714",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "306",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.60005075000004, -72.88337367999998)",
+    "SHAPE.area": "3678.134120690000145",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "307",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.603535488000034, -72.88095568199998)",
+    "SHAPE.area": "10506.62248146499951",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "308",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.60580190100006, -72.87980892399997)",
+    "SHAPE.area": "17579.47114716500073",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "309",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "150",
+    "PROPERTY": "Farmington Canal Line State Park Trail",
+    "SHAPE": "(41.61064976200004, -72.87830609599996)",
+    "SHAPE.area": "8935.048461680000401",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "420",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "220",
+    "PROPERTY": "Hop River State Park Trail",
+    "SHAPE": "(41.826339003000044, -72.45263652799997)",
+    "SHAPE.area": "882076.131585379946046",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "496",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "264",
+    "PROPERTY": "Larkin State Park Trail",
+    "SHAPE": "(41.48844429800005, -73.11081791499998)",
+    "SHAPE.area": "607787.332605805015191",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "497",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "264",
+    "PROPERTY": "Larkin State Park Trail",
+    "SHAPE": "(41.50226248700005, -73.09670259599994)",
+    "SHAPE.area": "32403.464963949998491",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "498",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "264",
+    "PROPERTY": "Larkin State Park Trail",
+    "SHAPE": "(41.512513014000035, -73.08974117299994)",
+    "SHAPE.area": "109763.385570009995718",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "499",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "264",
+    "PROPERTY": "Larkin State Park Trail",
+    "SHAPE": "(41.51828968700005, -73.05873333699998)",
+    "SHAPE.area": "34717.766517124997335",
+    "SHAPE.len": null
+  },
+  {
+    "OBJECTID": "599",
+    "AV_LEGEND": "State Park Trail",
+    "DEP_ID": "307",
+    "PROPERTY": "Moosup Valley State Park Trail",
+    "SHAPE": "(41.72255868900004, -71.85285945699997)",
+    "SHAPE.area": "447993.938958670012653",
+    "SHAPE.len": null
+  }
+]

@@ -1,15 +1,19 @@
 require 'bundler'
 Bundler.require
 
+set :public_folder, 'Public'
+
 ActiveRecord::Base.establish_connection(
   :adapter => 'postgresql',
   :database => 'simpleheroes'
 )
 
+require './scrape'
+
 get '/' do
   @hero = Hero.create({
     :name => 'Crystal Maiden',
-    :ability_1 => "Crystal Nova",
+    :ability_1 => 'Crystal Nova',
     :ability_2 => 'Frostbite',
     :ability_3 => 'Arcane Aura',
     :ability_4 => 'Freezing Field'

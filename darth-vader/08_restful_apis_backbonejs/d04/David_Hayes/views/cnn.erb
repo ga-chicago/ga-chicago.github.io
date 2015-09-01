@@ -1,0 +1,32 @@
+<h1>CNN</h1>
+
+<h3>Top Stories</h3>
+
+<p id="content">
+</p>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    // declare a template string
+    var template = $('#tpl').html();
+    var stories = [
+      {name: 'Sonju took over the world', priority: 'AWESOME'},
+      {name: 'Brad and Isaac buy out Last.fm', priority: 'BODACIOUS'},
+      {name: 'David Hayes reaches the moon', priority: 'RADICAL'},
+      {name: 'James goes one day without falling', priority: 'WIN'},
+      {name: 'Billionaire Kate buys GChat', priority: 'MOST EXCELLENT'},
+      {name: 'Tim Rourke replaces Slack with RChat', priority: 'KICKASS'}
+    ];
+
+    var tpl = _.template(template); // creates a function
+    // with an argument of a data object (aka a model..soon)
+    var renderedTemplate = tpl(data);
+    console.log(tpl(data));
+
+    $('#content').html(tpl(data));
+  });
+</script>
+
+<script type="text/javascript" id="tpl">
+  <%%= stories[0][name] %><br>(<%%= stories[priority[0][priority] %>).
+</script>

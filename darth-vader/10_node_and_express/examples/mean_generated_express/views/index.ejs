@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <input type="text" id="name" placeholder="Your name, sir/madame?">
+
+    <input type="email" id="email" placeholder="you@somewhere.com">
+
+    <input type="text" id="phone" placeholder="(555) 867-5309">
+
+    <button>Contact me ASAP!</button>
+
+    <div id="message"></div>
+
+  </body>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('button').on('click', function() {
+      var api_data = {
+        name: $('#name').val(),
+        email: $('#email').val(),
+        phone: $('#phone').val()
+      };
+
+      // ajax post to '/contact', send api_data
+      $.post('/contact', api_data, function(data) {
+        console.log(data);
+        $('#message').html(data);
+      });
+
+    });
+  });
+  </script>
+</html>

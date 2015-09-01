@@ -1,0 +1,48 @@
+<h1>Phish API call</h1>
+
+<section class="phishShows">
+
+</section>
+
+
+<script type="text/javascript">
+
+  var phishApp = phishApp || {};
+
+  phishApp.getPhishView = Backbone.View.extend({
+    initialize: function() {
+      var self = this;
+      console.log('Phish view is ready')
+      this.model.on('change', function(){
+        console.log(this.attributes)
+        self.render();
+      })
+    },
+    render: function() {
+      var data = this.model.attributes;
+      console.log(data);
+      for (var i=0; i < data.data.length; i++){
+        console.log(data.data[i]);
+          this.$el.append("<li>This phish show was played on '" + data.data[i].date + "' at '" + data.data[i].venue_name + "' in '" + data.data[i].location + "</li>")
+      }
+
+
+    }
+  });//end of view
+
+  phishApp.getPhishModel = Backbone.Model.extend({
+    url: 'http://phish.in/api/v1/shows.json?per_page=200&page=1&sort_attr=date&sort_dir=desc'
+
+  });//end of phishApp
+
+  $(document).ready(function(){
+    var phishModel = new phishApp.getPhishModel();
+    var phishView = new phishApp.getPhishView({
+      el: $('.phishShows'),
+      model: phishModel
+
+    });
+    phishModel.fetch();
+  });
+
+</script>

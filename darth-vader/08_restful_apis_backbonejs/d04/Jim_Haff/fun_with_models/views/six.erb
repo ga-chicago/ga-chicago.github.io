@@ -1,0 +1,22 @@
+<h1>Exercies 6</h1>
+
+<h3>Backbone Modesl</h3>
+
+<script type="text/javascript">
+ var movieApp = movieApp || {};
+
+ movieApp.movieModel = Backbone.Model.extend({
+   url: 'http://www.omdbapi.com/?t=K-PAX&y=&plot=short&r=json',
+   initialize: function () {
+     console.log('the model is ready');
+
+     this.on('change', function(event) {
+
+       console.log('dude the model has changed');
+     });
+   }
+ });
+
+ var movie = new movieApp.movieModel();
+ movie.fetch();
+</script>

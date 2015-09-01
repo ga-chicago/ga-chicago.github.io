@@ -1,0 +1,47 @@
+<h1>Excercise 4</h1>
+
+<h3>Hello, backbone! Views, views are everywhere</h3>
+
+<section id="container">
+
+</section>
+
+<section id="jimbo">
+
+</section>
+
+<script type="text/javascript">
+
+    var app = app || {};
+    app.listItemView = Backbone.View.extend({
+      initialize: function() {
+        console.log('the view is here dude');
+        this.render();
+        console.log(this.$el);
+      },
+      render: function() {
+        console.log('he is the view and its doing stuff')
+        this.$el.append("<img class='whale' src='https://d15mj6e6qmt1na.cloudfront.net/i/7079484/600.jpg'>");
+        $('.whale').load(function(){
+            $(this).animate({
+              marginLeft: '+=32em',
+              height: 'easeOutBounce'
+            },2000)});
+      }
+
+
+  });//end of backbone
+
+
+
+
+  var listItem = new app.listItemView({
+    el: $('#container')
+  });
+
+  var listItemTwo = new app.listItemView({
+    el: $('#jimbo')
+    //this.$el.append("<img class='whale' src='https://d15mj6e6qmt1na.cloudfront.net/i/7079484/600.jpg'>");
+  })
+
+</script>

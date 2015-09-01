@@ -1,0 +1,24 @@
+<h1>Exercise 7</h1>
+
+<h3>Making a Model</h3>
+
+<script type="text/javascript">
+  var ShowAMovie = ShowAMovie || {};
+
+  ShowAMovie.model = Backbone.Model.extend({
+    url: 'http://www.omdbapi.com/?t=Bad News Bears',
+    initialize: function() {
+      console.log('the model is ready');
+      this.on('change',function(event) {
+        console.log(this.attributes);
+        console.log('the model has changed');
+      });
+    }
+
+  });
+
+  var movie = new ShowAMovie.model();
+  movie.fetch();
+
+
+</script>
