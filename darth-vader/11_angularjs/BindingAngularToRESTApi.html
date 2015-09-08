@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Node File Structure | WDI Darth Vader</title>
+        <title>Binding to a RESTful API | WDI Darth Vader</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,10 +25,10 @@
         
     
     
-    <link rel="next" href="../10_node_and_express/d02/Readme.html" />
+    <link rel="next" href="../12_portfolio/Readme.html" />
     
     
-    <link rel="prev" href="../10_node_and_express/d01/Readme.html" />
+    <link rel="prev" href="../11_angularjs/AngularApp.html" />
     
 
         
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="11.3" data-basepath=".." data-revision="Tue Sep 08 2015 12:15:47 GMT-0500 (CDT)">
+    <div class="book" data-level="12.3" data-basepath=".." data-revision="Tue Sep 08 2015 12:15:47 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -1423,7 +1423,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="11.3" data-path="10_node_and_express/node_file_structure.html">
+        <li class="chapter " data-level="11.3" data-path="10_node_and_express/node_file_structure.html">
             
                 
                     <a href="../10_node_and_express/node_file_structure.html">
@@ -1564,7 +1564,7 @@
             
         </li>
     
-        <li class="chapter " data-level="12.3" data-path="11_angularjs/BindingAngularToRESTApi.html">
+        <li class="chapter active" data-level="12.3" data-path="11_angularjs/BindingAngularToRESTApi.html">
             
                 
                     <a href="../11_angularjs/BindingAngularToRESTApi.html">
@@ -1725,12 +1725,117 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="node-file-structure">Node File structure</h2>
-<p><img src="node_filestructure.png" alt="File Structure"></p>
-<pre><code class="lang-bash">
-~\ProjectDirectory\
-  - package.json
-  - index.js
+                        <h2 id="binding-angular-to-a-restful-api">Binding Angular to a RESTful API</h2>
+<h4 id="binding-our-api-to-an-angular-controller">Binding our API to an Angular controller</h4>
+<ul>
+<li>Brace yourselves ... awesomeness is coming.</li>
+<li>Time to update our TaskListCtrl controller.</li>
+<li>Use dependency injection to inject a scope</li>
+<li>We want our view to have access to items inside <code>$scope</code></li>
+<li>In our view, <code>$scope.tasks</code> is used in <code>task in tasks</code></li>
+</ul>
+<pre><code class="lang-javascript">taskerApp.controller(<span class="hljs-string">&apos;TaskListCtrl&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$scope, $http</span>) </span>{
+  $http.get(<span class="hljs-string">&apos;/api/tasks&apos;</span>).success(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;fetched data&apos;</span>);
+    <span class="hljs-built_in">console</span>.log(data);
+    $scope.tasks = data;
+  });
+});
+</code></pre>
+<ul>
+<li>We&apos;re using the <code>$http</code> in Angular to fetch data.</li>
+<li>$http makes a <em>get</em> request to our specified API path.</li>
+<li>On Success, it logs out the data.</li>
+<li>It also binds the returned data from our API <code>tasks</code> to <strong>$scope</strong></li>
+<li>Pretty cool, eh?</li>
+</ul>
+<h4 id="let-s-clean-up-our-view">Let&apos;s Clean Up Our View</h4>
+<p>Let&apos;s take care of some styling.</p>
+<p><strong>angular.ejs</strong></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;navbar-header&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;navbar-toggle collapsed&quot;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&quot;collapse&quot;</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">&quot;#bs-example-navbar-collapse-1&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sr-only&quot;</span>&gt;</span>Toggle navigation<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;icon-bar&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;icon-bar&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;icon-bar&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;navbar-brand&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;glyphicon glyphicon-list-alt&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">title</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">ng-controller</span>=<span class="hljs-value">&quot;TaskListCtrl&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-12&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">ng-repeat</span>=<span class="hljs-value">&quot;task in tasks&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;glyphicon glyphicon-chevron-right&quot;</span>&gt;</span> {{task.name}}<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">em</span>&gt;</span>{{task.description}}<span class="hljs-tag">&lt;/<span class="hljs-title">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Completed?<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> {{task.completed}}
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
+</code></pre>
+<p><strong>style.css</strong></p>
+<pre><code class="lang-css"><span class="hljs-tag">ul</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">list-style-type</span>:<span class="hljs-value"> none</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> -<span class="hljs-number">20px</span></span></span>;
+}</span>
+</code></pre>
+<p>Now our app looks a little bit more.. professional!</p>
+<h4 id="creating-deleting">Creating/Deleting</h4>
+<p><strong>angular.ejs</strong></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">ng-controller</span>=<span class="hljs-value">&quot;TaskListCtrl&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-4&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Create Task<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">ng-submit</span>=<span class="hljs-value">&quot;createTask(name, description)&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;form-control&apos;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;name&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;name&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;form-control&apos;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">ng-model</span>=<span class="hljs-value">&quot;description&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;description&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;btn btn-primary&apos;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;submit&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;submit&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;Submit&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-8&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">ng-repeat</span>=<span class="hljs-value">&quot;task in tasks&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;glyphicon glyphicon-chevron-right&quot;</span>&gt;</span> {{task.name}}<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">em</span>&gt;</span>{{task.description}}<span class="hljs-tag">&lt;/<span class="hljs-title">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Done?<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">data-task</span>=<span class="hljs-value">&quot;{{task._id}}&quot;</span><span class="hljs-value">class=&quot;glyphicon</span> <span class="hljs-attribute">glyphicon-ok</span>&quot; <span class="hljs-attribute">ng-click</span>=<span class="hljs-value">&quot;completeTask(task)&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
+</code></pre>
+<p><strong>angular-app.js</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> taskerApp = angular.module(<span class="hljs-string">&apos;taskerApp&apos;</span>, []);
+taskerApp.controller(<span class="hljs-string">&apos;TaskListCtrl&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$scope, $http</span>) </span>{
+
+  $scope.fetch = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    $http.get(<span class="hljs-string">&apos;/api/tasks&apos;</span>).success(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;fetched data&apos;</span>)
+      <span class="hljs-built_in">console</span>.log(data);
+      $scope.tasks = data;
+    });
+  };
+
+  $scope.createTask = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">name, description</span>) </span>{
+    $http.post(<span class="hljs-string">&quot;/api/tasks/&quot;</span>, {name : name, description: description}).success(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data, status</span>) </span>{
+        $scope.fetch();
+    });
+  };
+
+  $scope.completeTask = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">task</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(task);
+    <span class="hljs-keyword">var</span> answer = confirm(<span class="hljs-string">&quot;Are you sure you want to complete this task?&quot;</span>);
+    <span class="hljs-keyword">if</span> (answer == <span class="hljs-literal">true</span>) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Deleted Task with _id:&quot;</span> + task[<span class="hljs-string">&quot;_id&quot;</span>]);
+      $http.delete(<span class="hljs-string">&apos;/api/tasks/&apos;</span> + task[<span class="hljs-string">&quot;_id&quot;</span>]);
+      $scope.fetch();
+    }
+
+  };
+
+  $scope.fetch();
+});
 </code></pre>
 
                     
@@ -1742,10 +1847,10 @@
         </div>
 
         
-        <a href="../10_node_and_express/d01/Readme.html" class="navigation navigation-prev " aria-label="Previous page: Introduction to Node"><i class="fa fa-angle-left"></i></a>
+        <a href="../11_angularjs/AngularApp.html" class="navigation navigation-prev " aria-label="Previous page: Building an Angular App"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../10_node_and_express/d02/Readme.html" class="navigation navigation-next " aria-label="Next page: Express.js"><i class="fa fa-angle-right"></i></a>
+        <a href="../12_portfolio/Readme.html" class="navigation navigation-next " aria-label="Next page: Portfolio Project"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

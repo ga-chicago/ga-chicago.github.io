@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Node File Structure | WDI Darth Vader</title>
+        <title>Introduction to Angular | WDI Darth Vader</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,10 +25,10 @@
         
     
     
-    <link rel="next" href="../10_node_and_express/d02/Readme.html" />
+    <link rel="next" href="../11_angularjs/AngularApp.html" />
     
     
-    <link rel="prev" href="../10_node_and_express/d01/Readme.html" />
+    <link rel="prev" href="../11_angularjs/Readme.html" />
     
 
         
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="11.3" data-basepath=".." data-revision="Tue Sep 08 2015 12:15:47 GMT-0500 (CDT)">
+    <div class="book" data-level="12.1" data-basepath=".." data-revision="Tue Sep 08 2015 12:15:47 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -1423,7 +1423,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="11.3" data-path="10_node_and_express/node_file_structure.html">
+        <li class="chapter " data-level="11.3" data-path="10_node_and_express/node_file_structure.html">
             
                 
                     <a href="../10_node_and_express/node_file_structure.html">
@@ -1534,7 +1534,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="12.1" data-path="11_angularjs/Introduction.html">
+        <li class="chapter active" data-level="12.1" data-path="11_angularjs/Introduction.html">
             
                 
                     <a href="../11_angularjs/Introduction.html">
@@ -1725,13 +1725,94 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="node-file-structure">Node File structure</h2>
-<p><img src="node_filestructure.png" alt="File Structure"></p>
-<pre><code class="lang-bash">
-~\ProjectDirectory\
-  - package.json
-  - index.js
+                        <h2 id="an-introduction-to-angularjs">An Introduction to AngularJS</h2>
+<p><strong>AngularJS</strong>: <a href="https://angularjs.org/" target="_blank">https://angularjs.org/</a></p>
+<h4 id="1-setting-up-your-application">1. Setting up your application</h4>
+<p>We need to include Angular.js in our project. We can install it using npm!</p>
+<p><code>npm install angular --save</code></p>
+<p>This will download all of the files associated with Angular.js and save it to our <code>package.json</code> file. Angular is installed to <code>node_modules/</code></p>
+<p>It will include:</p>
+<pre><code class="lang-bash">node_modules/angular on master[!]
+$ tree
+.
+&#x251C;&#x2500;&#x2500; README.md
+&#x251C;&#x2500;&#x2500; angular-csp.css
+&#x251C;&#x2500;&#x2500; angular.js
+&#x251C;&#x2500;&#x2500; angular.min.js      <span class="hljs-comment"># &lt;-- use for production!</span>
+&#x251C;&#x2500;&#x2500; angular.min.js.gzip
+&#x251C;&#x2500;&#x2500; angular.min.js.map  <span class="hljs-comment"># &lt;-- include in same directory as angular.min.js</span>
+&#x251C;&#x2500;&#x2500; bower.json
+&#x251C;&#x2500;&#x2500; index.js
+&#x2514;&#x2500;&#x2500; package.json
 </code></pre>
+<p>From the root of our project&apos;s repository, we can copy the required files over using the <code>cp</code> command.
+<code>cp -r node_modules/angular/angular.min.js public/javascripts</code>
+<code>cp -r node_modules/angular/angular.min.map public/javascripts</code></p>
+<ul>
+<li>Now, we need to open whichever view we want to include Angular in. For our case, we&apos;re going to create a new <em>route</em> in our <code>routes/index.js</code> file:</li>
+</ul>
+<pre><code class="lang-javascript">router.get(<span class="hljs-string">&apos;/angular&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-comment">// response: render the &apos;/views/angular.ejs&apos; template and</span>
+  <span class="hljs-comment">// give it the data of { title: &apos;Tasker&apos;, library: &quot;Angular&quot;}</span>
+  res.render(<span class="hljs-string">&apos;angular&apos;</span>, { title: <span class="hljs-string">&apos;Tasker&apos;</span>, library: <span class="hljs-string">&apos;Angular&apos;</span> });
+});
+</code></pre>
+<ul>
+<li>Create a new EJS view: <code>/views/angular.ejs</code></li>
+<li>Copy the contents of <code>/views/index.ejs</code> into <code>/views/angular.ejs</code></li>
+<li>Include Angular in your <code>&lt;head&gt;</code>: <code>&lt;script type=&quot;text/javascript&quot; src=&quot;/javascripts/angular.min.js&quot;&gt;&lt;/script&gt;</code></li>
+<li>Make sure you include this <strong>after</strong> jQuery!</li>
+<li>Specify where to add your <code>ng-app</code></li>
+<li><code>&lt;div ng-app=&quot;myApp&quot;&gt;..&lt;/div&gt;</code></li>
+<li>This allows us to <em>claim</em> all code inside of this element will be <strong>owned</strong> by Angular.</li>
+</ul>
+<h4 id="testing-testing-1-2-3">Testing.. Testing.. 1..2..3..</h4>
+<p>Inside of your <code>/views/angular.ejs</code> view, let&apos;s add some content.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;container&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-12&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">title</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span>Using <span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">library</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">em</span>&gt;</span>Not yet implemented!<span class="hljs-tag">&lt;/<span class="hljs-title">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<p>Let&apos;s let <strong>Angular</strong> do some work on the front end.
+This will be what is considered the Angular <strong>view</strong> (in their MVC structure).</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;container&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-12&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">title</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span>Using <span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">library</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>{{&quot;AngularJS lets us &quot; + &quot;DYNAMICALLY &quot; + &quot;render data on a page!&quot;}}<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<h4 id="2-dat-angular-template-syntax">2. Dat Angular Template Syntax</h4>
+<p>Let&apos;s take a look at Angular&apos;s template syntax. If you&apos;re familiar with Handlebars, Hogan, or Mustache this will look semi-familiar:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// {{ ALL OF MY CONTENT GOES IN BRACES! HUGGED BY BRACES! }}</span>
+{{<span class="hljs-string">&quot;AngularJS is up in here&quot;</span>}}
+<span class="hljs-comment">// Whoa - I can evaluate expressions.</span>
+{{ <span class="hljs-number">6</span> * <span class="hljs-number">7</span> }}
+<span class="hljs-comment">// I&apos;m able to concatenate strings inside of a template, too!</span>
+{{<span class="hljs-string">&quot;AngularJS lets us &quot;</span> + <span class="hljs-string">&quot;DYNAMICALY &quot;</span> + <span class="hljs-string">&quot;render data on a page!&quot;</span>}}
+</code></pre>
+<h4 id="3-angular-s-mvc">3. Angular&apos;s MVC</h4>
+<ul>
+<li>Angular follows an MVC pattern. It has distinct <em>views</em>, <em>models</em>, and <em>controllers</em>.</li>
+<li>They&apos;re supported by:<ul>
+<li>Dependency injection</li>
+<li>Directives</li>
+<li>Resources</li>
+<li>Factories</li>
+<li>Other modules!</li>
+</ul>
+</li>
+<li>Angular&apos;s magic is in these tools.</li>
+<li>Otherwise we&apos;d just be working with Backbone or plain EJS.</li>
+</ul>
 
                     
                     </section>
@@ -1742,10 +1823,10 @@
         </div>
 
         
-        <a href="../10_node_and_express/d01/Readme.html" class="navigation navigation-prev " aria-label="Previous page: Introduction to Node"><i class="fa fa-angle-left"></i></a>
+        <a href="../11_angularjs/Readme.html" class="navigation navigation-prev " aria-label="Previous page: Angular.js"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../10_node_and_express/d02/Readme.html" class="navigation navigation-next " aria-label="Next page: Express.js"><i class="fa fa-angle-right"></i></a>
+        <a href="../11_angularjs/AngularApp.html" class="navigation navigation-next " aria-label="Next page: Building an Angular App"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

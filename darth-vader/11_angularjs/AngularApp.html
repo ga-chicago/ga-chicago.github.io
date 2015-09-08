@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Node File Structure | WDI Darth Vader</title>
+        <title>Building an Angular App | WDI Darth Vader</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,10 +25,10 @@
         
     
     
-    <link rel="next" href="../10_node_and_express/d02/Readme.html" />
+    <link rel="next" href="../11_angularjs/BindingAngularToRESTApi.html" />
     
     
-    <link rel="prev" href="../10_node_and_express/d01/Readme.html" />
+    <link rel="prev" href="../11_angularjs/Introduction.html" />
     
 
         
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="11.3" data-basepath=".." data-revision="Tue Sep 08 2015 12:15:47 GMT-0500 (CDT)">
+    <div class="book" data-level="12.2" data-basepath=".." data-revision="Tue Sep 08 2015 12:15:47 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -1423,7 +1423,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="11.3" data-path="10_node_and_express/node_file_structure.html">
+        <li class="chapter " data-level="11.3" data-path="10_node_and_express/node_file_structure.html">
             
                 
                     <a href="../10_node_and_express/node_file_structure.html">
@@ -1549,7 +1549,7 @@
             
         </li>
     
-        <li class="chapter " data-level="12.2" data-path="11_angularjs/AngularApp.html">
+        <li class="chapter active" data-level="12.2" data-path="11_angularjs/AngularApp.html">
             
                 
                     <a href="../11_angularjs/AngularApp.html">
@@ -1725,13 +1725,102 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="node-file-structure">Node File structure</h2>
-<p><img src="node_filestructure.png" alt="File Structure"></p>
-<pre><code class="lang-bash">
-~\ProjectDirectory\
-  - package.json
-  - index.js
+                        <h2 id="building-an-angular-app">Building an Angular App</h2>
+<h4 id="1-views">1. Views</h4>
+<h5 id="angular-owns-the-dom">Angular owns the DOM</h5>
+<ul>
+<li>In our <code>/views/angular.ejs</code> file, we&apos;re going to specify which part of the DOM that Angular <strong>owns</strong>.</li>
+<li>We&apos;re going to give it a <strong>name</strong>
+<code>&lt;html ng-app=&quot;taskerApp&quot;&gt;</code></li>
+<li>Angular <strong>owns</strong> this HTML element. That means that it can have full control to modify any DOM element inside of here. This is <em>extremely</em> powerful.</li>
+</ul>
+<h4 id="attaching-an-angular-controller">Attaching an Angular controller</h4>
+<p>Angular allows us to bind a DOM element as a View directly to a controller. We&apos;re going to modify our container:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">ng-controller</span>=<span class="hljs-value">&quot;TaskListCtrl&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-12&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
 </code></pre>
+<p>We&apos;re going to tell our controller to render a list of our tasks:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">ng-controller</span>=<span class="hljs-value">&quot;TaskListCtrl&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-md-12&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">ng-repeat</span>=<span class="hljs-value">&quot;task in tasks&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>{{task.name}}<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{task.description}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{&quot;Completed: &quot; + task.completed}}
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
+</code></pre>
+<p>Take a look at that view syntax. <strong>What do you think is going to happen when Angular processes this Controller?</strong></p>
+<p>Let&apos;s find out!</p>
+<h4 id="2-app-js">2. app.js</h4>
+<ul>
+<li>We need to create an app.js file</li>
+<li>Let&apos;s do it here: <code>/public/javascripts/angular-app.js</code></li>
+<li>In your <code>angular.ejs</code> view, add a link to it:</li>
+<li><code>&lt;script type=&apos;text/javascript&apos; src=&quot;/javascripts/angular-app.js&quot;&gt;&lt;/script&gt;</code></li>
+<li>This should come after <code>angular.min.js</code>!</li>
+<li>Inside of <code>angular-app.js</code>, we&apos;re going to create our application:</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">// namespace: taskerApp</span>
+<span class="hljs-keyword">var</span> taskerApp = angular.module(<span class="hljs-string">&apos;taskerApp&apos;</span>, []);
+</code></pre>
+<p>This <strong>binds</strong> our app to where we declared it in <code>&lt;html ng-app=&quot;taskerApp&quot;&gt;</code>.</p>
+<p>Cool - now we need to bind that View we made to a controller.</p>
+<h4 id="3-controllers">3. Controllers</h4>
+<h5 id="inside-angular-app-js">Inside <strong>angular-app.js</strong>...</h5>
+<ul>
+<li>We&apos;re going to create a controller. To demonstrate Angular&apos;s dynamic rendering, we&apos;re going to create a fake model to represent what we should see from our API...</li>
+</ul>
+<pre><code class="lang-json">[{<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Take out of the trash&apos;</span>,
+<span class="hljs-string">&apos;description&apos;</span>: <span class="hljs-string">&apos;Don\&apos;t forget the recyclables!&apos;</span>,
+<span class="hljs-string">&apos;completed&apos;</span>: <span class="hljs-literal">true</span> },
+{<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Reload ventra card&apos;</span>,
+<span class="hljs-string">&apos;description&apos;</span>: <span class="hljs-string">&apos;Balance is low&apos;</span>,
+<span class="hljs-string">&apos;completed&apos;</span>: <span class="hljs-literal">false</span> },
+{<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Pick up surprise from UPS...&apos;</span>,
+<span class="hljs-string">&apos;description&apos;</span>: <span class="hljs-string">&apos;its a secret to everyone&apos;</span>,
+<span class="hljs-string">&apos;completed&apos;</span>: <span class="hljs-literal">false</span> }]
+</code></pre>
+<ul>
+<li>Now, let&apos;s create a controller:</li>
+</ul>
+<pre><code class="lang-javascript">taskerApp.controller(<span class="hljs-string">&apos;TaskListCtrl&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$scope</span>) </span>{
+});
+</code></pre>
+<ul>
+<li>Let&apos;s <strong>scope</strong> our sample data to the <code>&lt;li ng-repeat=&quot;task in tasks&quot;&gt;</code> in our view.</li>
+</ul>
+<pre><code class="lang-javascript">taskerApp.controller(<span class="hljs-string">&apos;TaskListCtrl&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$scope</span>) </span>{
+  $scope.tasks = [
+    {<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Take out of the trash&apos;</span>,
+    <span class="hljs-string">&apos;description&apos;</span>: <span class="hljs-string">&apos;Don\&apos;t forget the recyclables!&apos;</span>,
+    <span class="hljs-string">&apos;completed&apos;</span>: <span class="hljs-literal">true</span> },
+    {<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Reload ventra card&apos;</span>,
+    <span class="hljs-string">&apos;description&apos;</span>: <span class="hljs-string">&apos;Balance is low&apos;</span>,
+    <span class="hljs-string">&apos;completed&apos;</span>: <span class="hljs-literal">false</span> },
+    {<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Pick up surprise from UPS...&apos;</span>,
+    <span class="hljs-string">&apos;description&apos;</span>: <span class="hljs-string">&apos;its a secret to everyone&apos;</span>,
+    <span class="hljs-string">&apos;completed&apos;</span>: <span class="hljs-literal">false</span> },
+  ];
+});
+</code></pre>
+<ul>
+<li>We&apos;re just giving <code>tasks</code> some objects.</li>
+<li>This is also a for-in loop in our view.</li>
+</ul>
+<h4 id="open-your-view">OPEN YOUR VIEW</h4>
+<ul>
+<li>Seriously, go do it!</li>
+<li>Here&apos;s a link!</li>
+<li><a href="http://localhost:5000/angular" target="_blank">http://localhost:5000/angular</a></li>
+<li>DID YOU SEE THAT? Those TASKS were rendered in a list on our page!</li>
+<li>This is MVC in action using Angular.</li>
+<li><strong>How does this feel?</strong></li>
+</ul>
 
                     
                     </section>
@@ -1742,10 +1831,10 @@
         </div>
 
         
-        <a href="../10_node_and_express/d01/Readme.html" class="navigation navigation-prev " aria-label="Previous page: Introduction to Node"><i class="fa fa-angle-left"></i></a>
+        <a href="../11_angularjs/Introduction.html" class="navigation navigation-prev " aria-label="Previous page: Introduction to Angular"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../10_node_and_express/d02/Readme.html" class="navigation navigation-next " aria-label="Next page: Express.js"><i class="fa fa-angle-right"></i></a>
+        <a href="../11_angularjs/BindingAngularToRESTApi.html" class="navigation navigation-next " aria-label="Next page: Binding to a RESTful API"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
