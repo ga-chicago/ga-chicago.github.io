@@ -1,0 +1,7 @@
+header {
+  width: 600px;
+  height: 300px;
+  background-image: radial-gradient(circle at top right, rgba(255,255,0, 0.6), rgba(255,0,0,0.4) 70%),
+  url("images/rainierLake.jpg");
+  background-size: cover;
+}

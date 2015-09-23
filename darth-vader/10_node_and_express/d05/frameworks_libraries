@@ -1,0 +1,46 @@
+## HTML & CSS Frameworks
+- [Bootstrap](http://getbootstrap.com/)
+- [Foundation](http://foundation.zurb.com/)
+- [Materialize](http://materializecss.com/)
+- [Skeleton](http://getskeleton.com/)
+
+## Web App (MV*)
+- [AngularJS](https://angularjs.org/)
+- [BackboneJS](http://backbonejs.org/)
+- [ReactJS](http://facebook.github.io/react/)
+- [EmberJS](http://emberjs.com/)
+- [MeteorJS](https://www.meteor.com/)
+
+## Visualization & Animations
+- [D3JS](http://d3js.org/)
+- [ThreeJS](http://threejs.org/)
+- [FamousJS](http://famous.org/)
+- [VelocityJS](http://julian.com/research/velocity/)
+
+## Testing
+- [JasmineJS](http://jasmine.github.io/)
+- [MochaJS](https://mochajs.org/)
+- [RSpec](http://rspec.info/)
+
+## Web App to Native App
+- [PhoneGap](http://phonegap.com/)
+- [RubyMotion](http://www.rubymotion.com/)
+
+- #### [Microsoft Universal Apps](https://msdn.microsoft.com/en-us/library/windows/apps/Dn726767.aspx)
+
+
+## Task Handlers
+- [Grunt](http://gruntjs.com/)
+- [Gulp](http://gulpjs.com/)
+- [Task-Manager](https://github.com/menglifang/task-manager)
+
+## [Web Components](https://www.youtube.com/watch?v=fqULJBBEVQE&feature=youtu.be)
+- [Polymer](https://www.polymer-project.org/1.0/)
+- [X-Tags](http://x-tags.org/)
+
+Other Languages
+- Java
+- Asp.NET
+- C#
+- PHP
+- Like... hundreds more
