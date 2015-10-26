@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Welcome | WDI Chicago #3: Dragons</title>
+        <title>Terminal Cheat Sheet | WDI Chicago #3: Dragons</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,10 +25,10 @@
         
     
     
-    <link rel="next" href="../0_onboarding/holidays.html" />
+    <link rel="next" href="../02_oojs_jquery/index.html" />
     
     
-    <link rel="prev" href="../index.html" />
+    <link rel="prev" href="../01_front_end_fundamentals/d01-mac-cheat-sheet.html" />
     
 
         
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="0.1" data-basepath=".." data-revision="Mon Oct 26 2015 08:26:00 GMT-0500 (CDT)">
+    <div class="book" data-level="1.3" data-basepath=".." data-revision="Mon Oct 26 2015 08:26:00 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -67,7 +67,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="0.1" data-path="0_onboarding/welcome.html">
+        <li class="chapter " data-level="0.1" data-path="0_onboarding/welcome.html">
             
                 
                     <a href="../0_onboarding/welcome.html">
@@ -223,7 +223,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="01_front_end_fundamentals/d01-termina-cheat-sheet.html">
+        <li class="chapter active" data-level="1.3" data-path="01_front_end_fundamentals/d01-termina-cheat-sheet.html">
             
                 
                     <a href="../01_front_end_fundamentals/d01-termina-cheat-sheet.html">
@@ -543,15 +543,46 @@
                 
                     <section class="normal" id="section-">
                     
-                        <p><img src="dragons.png" alt="dragons.png"></p>
-<h2 id="welcome-from-your-instructors">Welcome from your instructors</h2>
-<p>Hi there! You&apos;ve no doubt stumbled upon our class Gitbook. This book will be our <strong>living syllabus</strong>. It will grow and become a true study guide throughout the duration of your cohort.</p>
-<h2 id="pre-work">Pre-Work</h2>
-<p>WDI requires for you to complete <a href="https://fundamentals.generalassemb.ly" target="_blank">https://fundamentals.generalassemb.ly</a> prior to the first day of WDI. <strong>If you have not completed thisn by day one, speak to your producer or instructor immediately</strong>.</p>
-<h2 id="recommend-reading">Recommend Reading</h2>
-<p>Prior to starting the course, we highly encourage students to take a look at Shaye Howe&apos;s (product manager at Belly) Learn HTML &amp; CSS book (it is available for <a href="http://learn.shayhowe.com/" target="_blank">free here</a>). Try to read the first three chapters prior to starting class; however read as much as you have time for.</p>
-<h2 id="development-environment">Development Environment</h2>
-<p>WDI has a strict class policy of only supporting Mac OS. Because we teach Ruby and Node, we cannot allow Windows machines into the class as many Ruby libraries will <strong>not work</strong> on Windows. Linux machines may be considered on a case-by-case basis if a student has a strong knowledge of the Linux command line however the instructional staff <strong>will not</strong> support those machines.</p>
+                        <h1 id="terminal-cheatsheet">Terminal Cheatsheet</h1>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><code>pwd</code> print working directory (where am I?)</li>
+<li><code>ls</code> list files in current directory (what is here?)</li>
+<li><code>cd</code> go to home directory.</li>
+<li><code>cd ..</code> goes up a level in the directory hierarchy.</li>
+<li><code>cd ../..</code> go up two directories</li>
+<li><code>cd folder</code> go into that folder</li>
+</ul>
+<h3 id="making-removing-files-and-folders">Making/Removing Files and Folders</h3>
+<ul>
+<li><code>mkdir folder</code> create a folder</li>
+<li><code>rmdir folder</code> deletes an empty directory.</li>
+<li><code>rm -rf folder</code> deletes folder and all files in that folder</li>
+<li><code>rm file-name</code> deletes a file</li>
+<li><code>touch file-name</code> creates a file</li>
+</ul>
+<h3 id="moving-and-copying">Moving and Copying</h3>
+<ul>
+<li><code>mv file-name new-file-name</code> rename a file</li>
+<li><code>mv file-name folder-name/file-name</code> put a file into a subfolder</li>
+<li><code>cp file-name new-file-name</code> copy a file</li>
+<li><code>cp -R folder new-folder</code> copy a folder</li>
+</ul>
+<h3 id="traversing-the-filesystem-using">Traversing the Filesystem using <code>..</code></h3>
+<ul>
+<li>You can traverse the filesystem using <code>..</code> to move to a parent folder.</li>
+<li>If I&#x2019;m in <code>~/Documents</code>, I can move to <code>~/Downloads</code> using the following command: <code>cd ../Downloads</code>.</li>
+<li>Use tab-completion to feel your way around the terminal when using that.</li>
+<li>The <code>/</code> helps denote that you mean you&#x2019;re moving into a parent folder.</li>
+</ul>
+<h3 id="editing">Editing</h3>
+<ul>
+<li><code>atom .</code> in the folder that has the files you wish to edit</li>
+</ul>
+<h3 id="get-out-of-there">Get Out of There</h3>
+<ul>
+<li><code>exit</code> exit the terminal</li>
+</ul>
 
                     
                     </section>
@@ -562,10 +593,10 @@
         </div>
 
         
-        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction &amp; Syllabus"><i class="fa fa-angle-left"></i></a>
+        <a href="../01_front_end_fundamentals/d01-mac-cheat-sheet.html" class="navigation navigation-prev " aria-label="Previous page: Mac Cheat Sheet"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../0_onboarding/holidays.html" class="navigation navigation-next " aria-label="Next page: Student Holidays"><i class="fa fa-angle-right"></i></a>
+        <a href="../02_oojs_jquery/index.html" class="navigation navigation-next " aria-label="Next page: Object Oriented JS &amp; jQuery"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
