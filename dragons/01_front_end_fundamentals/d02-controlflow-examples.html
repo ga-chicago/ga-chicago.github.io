@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Homework: Markdown and Readmes | WDI Chicago #3: Dragons</title>
+        <title>Control Flow | WDI Chicago #3: Dragons</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,10 +25,10 @@
         
     
     
-    <link rel="next" href="../02_oojs_jquery/index.html" />
+    <link rel="next" href="../01_front_end_fundamentals/d02-stringconcat.html" />
     
     
-    <link rel="prev" href="../01_front_end_fundamentals/d02-syntax.html" />
+    <link rel="prev" href="../01_front_end_fundamentals/d02-datatypes-examples.html" />
     
 
         
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="1.13" data-basepath=".." data-revision="Tue Oct 27 2015 16:04:31 GMT-0500 (CDT)">
+    <div class="book" data-level="1.8" data-basepath=".." data-revision="Tue Oct 27 2015 16:04:31 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -298,7 +298,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="01_front_end_fundamentals/d02-controlflow-examples.html">
+        <li class="chapter active" data-level="1.8" data-path="01_front_end_fundamentals/d02-controlflow-examples.html">
             
                 
                     <a href="../01_front_end_fundamentals/d02-controlflow-examples.html">
@@ -373,7 +373,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.13" data-path="01_front_end_fundamentals/d02-ah.html">
+        <li class="chapter " data-level="1.13" data-path="01_front_end_fundamentals/d02-ah.html">
             
                 
                     <a href="../01_front_end_fundamentals/d02-ah.html">
@@ -693,38 +693,224 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="markdown-and-readmes">Markdown and READMEs</h2>
-<p>Popular repositories on Github often have a jazzy introduction to their project that shows right on their Github project&apos;s main page.</p>
-<p>They accomplish this by including a <code>Readme.md</code> file in their repo written in a language called Markdown.</p>
-<p>Check out some examples:</p>
+                        <h2 id="1-2-lesson-examples-logical-operators-and-control-flow">1.2 Lesson Examples: Logical operators and control flow</h2>
+<p>JavaScript supports a compact set of statements, specifically control flow statements, that you can use to incorporate a great deal of interactivity in your application.</p>
+<p><br></p>
+<h4 id="block-statements">Block Statements</h4>
+<p>Statements meant to be executed after a control flow operation will be grouped into what is called a <strong>block statement</strong>. These statements are wrapped into a pair of curly braces:</p>
+<pre><code>{
+  console.log(&quot;hello&quot;);
+  console.log(&quot;roar&quot;);
+}
+</code></pre><h4 id="block-scope">Block scope</h4>
+<p>We&apos;ve seen that the scope in JavaScript changes often. In the case of <strong>block statements</strong>, there is no scope created.</p>
+<pre><code>var name = &quot;james&quot;;
+{
+  var name = &quot;adriana&quot;;
+}
+console.log(x); // outputs gerry
+</code></pre><p>Only functions introduce scope in Javascript.</p>
+<h2 id="conditional-statements">Conditional statements</h2>
+<p>Conditional statements are a way of essentially skipping over a block of code if it does not pass a boolean expression. JavaScript supports two conditional statements: <code>if</code>...<code>else</code> and <code>switch</code>.</p>
+<h4 id="if-else-statement">if...else statement</h4>
+<p><code>if(expr) { code }</code></p>
+<p>... means run the <code>code</code> block if <code>expr</code> is <code>true</code></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-number">1</span> &gt; <span class="hljs-number">0</span>) { <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;hi&quot;</span>) }
+<span class="hljs-comment">//=&gt; hi</span>
+</code></pre>
+<p>When you need to test more than one case, you may use <code>else if</code>:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;kittens&quot;</span>;
+<span class="hljs-keyword">if</span> (name == <span class="hljs-string">&quot;puppies&quot;</span>) {
+  name += <span class="hljs-string">&quot;!&quot;</span>;
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (name == <span class="hljs-string">&quot;kittens&quot;</span>) {
+  name += <span class="hljs-string">&quot;!!&quot;</span>;
+} <span class="hljs-keyword">else</span> {
+  name = <span class="hljs-string">&quot;!&quot;</span> + name;
+}
+name == <span class="hljs-string">&quot;kittens!!&quot;</span>
+<span class="hljs-comment">//=&gt; true</span>
+</code></pre>
+<p><strong>Note</strong>: It is recommended <strong>to not</strong> assign variables in the conditional expression, because the assignment of a value to a variable, like this:</p>
+<pre><code class="lang-javascript">student = <span class="hljs-string">&quot;Jason&quot;</span>;
+<span class="hljs-comment">//=&gt; &quot;Jason&quot;</span>
+</code></pre>
+<p>The expression above will return the value (as shown on the second line), so if you assign a truthy value inside a conditional statement, then this condition will always be true, or if you assign something undefined, it will make the conditional statement false (because undefined is falsy). Another potential issue with this is that it can be confused with equality(<code>==</code>). The example below is the illustration of WHAT NOT TO DO, in general:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (x = <span class="hljs-number">3</span>) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;boo&quot;</span>);
+}
+</code></pre>
+<h2 id="truthy-falsy">Truthy &amp; Falsy</h2>
+<h4 id="all-of-the-following-become-false-when-converted-to-a-boolean">All of the following become false when converted to a Boolean</h4>
 <ul>
-<li><a href="https://github.com/substack/node-browserify" target="_blank">browserify</a></li>
-<li><a href="https://github.com/photonstorm/phaser" target="_blank">phaser</a></li>
-<li><a href="https://github.com/erkin/ponysay" target="_blank">ponysay</a></li>
+<li><code>false</code></li>
+<li><code>0</code></li>
+<li><code>&quot;&quot;</code> (empty string)</li>
+<li><code>NaN</code></li>
+<li><code>null</code></li>
+<li><code>undefined</code></li>
 </ul>
-<h3 id="adding-a-readme-to-a-repo">Adding a Readme to a repo</h3>
-<ol>
-<li>On your terminal, navigate to your <code>yourusername.github.io</code> folder that you created earlier</li>
-<li>Create a new file <code>README.md</code></li>
-<li>Edit <code>README.md</code> in Atom and add a short description of the repo (e.g. &quot;Here are some facts about me...&quot;)</li>
-</ol>
-<h3 id="previewing-markdown-in-atom">Previewing Markdown in Atom</h3>
-<ol>
-<li>In the Atom sidebar ctrl-click (or right-click) on <code>README.md</code> and select <code>Markdown Preview</code> <img src="MarkdownPreview.png" alt=""></li>
-<li>You should see on the right hand side of Atom the rendered markdown <img src="MarkdownPreview2.png" alt=""></li>
-</ol>
-<h3 id="pushing-viewing-on-github">Pushing/Viewing on Github</h3>
-<ol>
-<li>Save all your changes to the git repo and push it up to Github</li>
-<li>Now if you go to your project&apos;s page on Github, you should see the text that you put into the README showing below the list of files in the folder <img src="GithubReadme.png" alt=""></li>
-</ol>
-<h3 id="jazzing-it-up">Jazzing it up</h3>
-<p>You probably don&apos;t yet know Markdown, so this will be one of your first assignments in digging into documentation.</p>
-<h4 id="use-these-resources-as-your-guides-to-markdown">Use these resources as your guides to Markdown:</h4>
+<h4 id="all-other-values-become-true-when-converted-to-a-boolean">All other values become true when converted to a Boolean</h4>
+<p>Do not confuse the primitive boolean values <code>true</code> and <code>false</code> with the true and false values of the Boolean object. For example:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> b = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Boolean</span>(<span class="hljs-literal">false</span>);
+<span class="hljs-keyword">if</span> (b) { <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;true&quot;</span>) }
+<span class="hljs-comment">//=&gt; true</span>
+</code></pre>
+<p>There is a simple way of verifying the thruthyness or falsiness of a value. When you add <code>!</code> in front of a value, the returned value will be the inverse of the value in a boolean. So if you add two <code>!</code> then you&apos;ll get the boolean value of the original one:</p>
+<pre><code class="lang-javascript">!!<span class="hljs-number">1</span>
+<span class="hljs-comment">//=&gt; true</span>
+
+!!<span class="hljs-number">0</span>
+<span class="hljs-comment">//=&gt; false</span>
+
+!!-<span class="hljs-number">1</span>
+<span class="hljs-comment">//=&gt; true</span>
+
+!![]
+<span class="hljs-comment">//=&gt; true</span>
+
+!!{}
+<span class="hljs-comment">//=&gt; true</span>
+
+!!<span class="hljs-literal">null</span>
+<span class="hljs-comment">//=&gt; false</span>
+
+!!<span class="hljs-string">&quot;&quot;</span>
+<span class="hljs-comment">//=&gt; false</span>
+</code></pre>
+<h2 id="boolean-logical-operators">Boolean/Logical Operators</h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators" target="_blank">Logical operators</a></p>
+<p>Logical operators will always return a boolean value <code>true</code> or <code>false</code>.</p>
+<p>There are two &quot;binary&quot; operators that require two values:</p>
 <ul>
-<li><a href="https://help.github.com/articles/markdown-basics/" target="_blank">Markdown Basics</a></li>
-<li><a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Mastering Markdown</a></li>
-<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a></li>
+<li><strong>AND</strong>, denoted <code>&amp;&amp;</code></li>
+<li><strong>OR</strong>, denoted <code>||</code></li>
+</ul>
+<p>A third &quot;unary&quot; operatory requires only one value:</p>
+<ul>
+<li><strong>NOT</strong>, denoted <code>!</code></li>
+</ul>
+<h4 id="-and">&amp;&amp; (AND)</h4>
+<p>The <code>&amp;&amp;</code> operator requires both left and right values to be <code>true</code> in order to return <code>true</code>:</p>
+<pre><code class="lang-javascript"><span class="hljs-literal">true</span> &amp;&amp; <span class="hljs-literal">true</span>
+<span class="hljs-comment">//=&gt; true</span>
+</code></pre>
+<p>Any other combination is false.</p>
+<pre><code class="lang-javascript"><span class="hljs-literal">true</span> &amp;&amp; <span class="hljs-literal">false</span>
+<span class="hljs-comment">//=&gt; false</span>
+
+<span class="hljs-literal">false</span> &amp;&amp; <span class="hljs-literal">false</span>
+<span class="hljs-comment">//=&gt; false</span>
+</code></pre>
+<h4 id="-or">|| (OR)</h4>
+<p>The <code>||</code> operator requires just one of the left or right values to be <code>true</code> in order to return true.</p>
+<pre><code class="lang-javascript"><span class="hljs-literal">true</span> || <span class="hljs-literal">false</span>
+<span class="hljs-comment">//=&gt; true</span>
+
+<span class="hljs-literal">false</span> || <span class="hljs-literal">true</span>
+<span class="hljs-comment">//=&gt; true</span>
+
+<span class="hljs-literal">false</span> || <span class="hljs-literal">false</span>
+<span class="hljs-comment">//=&gt; false</span>
+</code></pre>
+<p>Only <code>false || false</code> will return <code>false</code></p>
+<p>The <code>!</code> takes a value and returns the opposite boolean value, i.e.</p>
+<pre><code class="lang-javascript">!(<span class="hljs-literal">true</span>)
+<span class="hljs-comment">//=&gt; false</span>
+</code></pre>
+<p>The <code>&amp;&amp;</code> and <code>||</code> operators use short-circuit logic, which means whether they will execute their second operand is dependent on the first. This is useful for checking for null objects before accessing their attributes:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> name = o &amp;&amp; o.getName();
+</code></pre>
+<p>In this case, if the first operand <code>o</code> is false, then the second operand <code>o.getName()</code> will not be evaluated. The expression is basically saying &quot;we already know the whole <code>&amp;&amp;</code> expression is false, because <code>o</code> is falsey. Why bother dealing with the second operand?&quot;</p>
+<p>Or for setting default values:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> name = otherName || o.getName();
+</code></pre>
+<p>In this case, if the first operand <code>otherName</code> is false, then we&apos;ll see that <code>&quot;my name&quot;</code> will be returned. If othername is truthy (e.g. it contains a value), it will get returned, and the second expression won&apos;t even be evaluated. The expression is basically saying &quot;we already know the whole <code>||</code> expression is true, because <code>o</code> is truthy. Why bother dealing with the second operand?&quot;</p>
+<h2 id="comparison-operators">Comparison Operators</h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators" target="_blank">Comparisons</a> in JavaScript can be made using <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code> and <code>&gt;=</code>. These work for both strings and numbers. This is both useful, and can be the source of frustration for some developers, since most languages do not implicitly convert strings to numbers the way that JavaScript does.</p>
+<pre><code class="lang-javascript"><span class="hljs-string">&quot;A&quot;</span> &gt; <span class="hljs-string">&quot;a&quot;</span>
+<span class="hljs-comment">//=&gt; false</span>
+
+<span class="hljs-string">&quot;b&quot;</span> &gt; <span class="hljs-string">&quot;a&quot;</span>
+<span class="hljs-comment">//=&gt; true</span>
+
+<span class="hljs-number">12</span> &gt; <span class="hljs-string">&quot;12&quot;</span>
+<span class="hljs-comment">//=&gt; false</span>
+
+<span class="hljs-number">12</span> &gt;= <span class="hljs-string">&quot;12&quot;</span>
+<span class="hljs-comment">//=&gt; true</span>
+</code></pre>
+<h4 id="equality-operator">Equality Operator <code>==</code></h4>
+<p>Equality is a bit more complex. There are 2 ways in JavaScript to verify equality.</p>
+<p>When verifying equality using double equal <code>==</code>, JavaScript does a lot of the &quot;type coercion&quot; in the background. Like we mentioned above, if the operands have a different type (ie: the number <code>1</code> and the string <code>&quot;1&quot;</code>), JavaScript will try to change the type of both operands to check whether they are equal. This means that a lot of times, expressions will return equal more easily than if we were stricter about what things were equivalent. Some examples:</p>
+<pre><code class="lang-javascript"><span class="hljs-string">&quot;dog&quot;</span> == <span class="hljs-string">&quot;dog&quot;</span>;
+<span class="hljs-comment">//=&gt; true</span>
+
+<span class="hljs-number">1</span> == <span class="hljs-literal">true</span>;
+<span class="hljs-comment">//=&gt; true</span>
+</code></pre>
+<h4 id="equality-operator">Equality Operator <code>===</code></h4>
+<p>To avoid type coercion and measure equality more strictly, <strong>use the triple-equals operator</strong>. Because <code>===</code> more truly measures actual equality, we&apos;ll use this far more often when checking whether too things are, in fact, the same thing.</p>
+<blockquote>
+<p><strong>Note:</strong> &quot;Sameness&quot; and &quot;equality&quot; have various definitions and can be somewhat &quot;fuzzy&quot;. They can also differ by programming language. Because you&apos;ll often be measuring whether two things are equal, you should investigate the way this works carefully.</p>
+</blockquote>
+<p>Some examples:</p>
+<pre><code class="lang-javascript"><span class="hljs-number">1</span> === <span class="hljs-literal">true</span>;
+<span class="hljs-comment">//=&gt; false</span>
+
+<span class="hljs-literal">true</span> === <span class="hljs-literal">true</span>;
+<span class="hljs-comment">//=&gt; true</span>
+
+<span class="hljs-string">&quot;hello&quot;</span> === <span class="hljs-string">&quot;hello&quot;</span>
+<span class="hljs-comment">//=&gt; true</span>
+</code></pre>
+<p>However, there are some incidents when it does not do what we expect, for example when working with empty objects or arrays:</p>
+<pre><code class="lang-javascript">{} === {}
+<span class="hljs-comment">//=&gt; Uncaught SyntaxError: Unexpected token ===</span>
+
+[] === []
+<span class="hljs-comment">//=&gt; false</span>
+
+[<span class="hljs-number">1</span>,<span class="hljs-number">7</span>] === [<span class="hljs-number">1</span>,<span class="hljs-number">7</span>]
+<span class="hljs-comment">//=&gt; false</span>
+</code></pre>
+<h2 id="switch-statement">Switch Statement</h2>
+<p>The switch statement can be used for multiple branches based on a number or string:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> food = <span class="hljs-string">&quot;apple&quot;</span>;
+
+<span class="hljs-keyword">switch</span>(food) {
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;pear&apos;</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;I like pears&quot;</span>);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;apple&apos;</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;I like apples&quot;</span>);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">default</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;No favourite&quot;</span>);
+}
+<span class="hljs-comment">//=&gt; I like apples</span>
+</code></pre>
+<p>In this case the <code>switch</code> statement compares <code>food</code> to each of the cases (<code>pear</code> and <code>apple</code>), and evaluates the expressions beneath them if there is a match. It uses <code>===</code> to evaluate equality.</p>
+<p>The default clause is optional.</p>
+<h2 id="iteration">Iteration</h2>
+<p>Iterating is a way of incrementally repeating a task.</p>
+<h4 id="for">for</h4>
+<p>You can iterate over an array with:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; a.length; i++) {
+  <span class="hljs-built_in">console</span>.log(i);
+}
+</code></pre>
+<p>This is slightly inefficient as you are looking up the length property once every loop. An improvement is to chain the <code>var</code> assignment:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, len = a.length; i &lt; len; i++) {
+  <span class="hljs-built_in">console</span>.log(i);
+}
+</code></pre>
+<p>Notice the placement of the comma and semi-colons.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling" target="_blank">Control Flow</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while" target="_blank">While</a></li>
 </ul>
 
                     
@@ -736,10 +922,10 @@
         </div>
 
         
-        <a href="../01_front_end_fundamentals/d02-syntax.html" class="navigation navigation-prev " aria-label="Previous page: Syntax"><i class="fa fa-angle-left"></i></a>
+        <a href="../01_front_end_fundamentals/d02-datatypes-examples.html" class="navigation navigation-prev " aria-label="Previous page: Data Types"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../02_oojs_jquery/index.html" class="navigation navigation-next " aria-label="Next page: Object Oriented JS &amp; jQuery"><i class="fa fa-angle-right"></i></a>
+        <a href="../01_front_end_fundamentals/d02-stringconcat.html" class="navigation navigation-next " aria-label="Next page: String Concatenation"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

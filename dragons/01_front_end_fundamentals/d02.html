@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="1.5" data-basepath=".." data-revision="Tue Oct 27 2015 13:46:11 GMT-0500 (CDT)">
+    <div class="book" data-level="1.5" data-basepath=".." data-revision="Tue Oct 27 2015 16:04:31 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -283,14 +283,44 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="01_front_end_fundamentals/d02-stringconcat.html">
+        <li class="chapter " data-level="1.7" data-path="01_front_end_fundamentals/d02-datatypes-examples.html">
+            
+                
+                    <a href="../01_front_end_fundamentals/d02-datatypes-examples.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        Data Types
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="01_front_end_fundamentals/d02-controlflow-examples.html">
+            
+                
+                    <a href="../01_front_end_fundamentals/d02-controlflow-examples.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        Control Flow
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="01_front_end_fundamentals/d02-stringconcat.html">
             
                 
                     <a href="../01_front_end_fundamentals/d02-stringconcat.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.7.</b>
+                            <b>1.9.</b>
                         
                         String Concatenation
                     </a>
@@ -298,14 +328,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="01_front_end_fundamentals/d02-arrays.html">
+        <li class="chapter " data-level="1.10" data-path="01_front_end_fundamentals/d02-arrays.html">
             
                 
                     <a href="../01_front_end_fundamentals/d02-arrays.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.8.</b>
+                            <b>1.10.</b>
                         
                         Arrays
                     </a>
@@ -313,14 +343,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="01_front_end_fundamentals/d02-loops.html">
+        <li class="chapter " data-level="1.11" data-path="01_front_end_fundamentals/d02-loops.html">
             
                 
                     <a href="../01_front_end_fundamentals/d02-loops.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.9.</b>
+                            <b>1.11.</b>
                         
                         Loops
                     </a>
@@ -328,14 +358,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="01_front_end_fundamentals/d02-syntax.html">
+        <li class="chapter " data-level="1.12" data-path="01_front_end_fundamentals/d02-syntax.html">
             
                 
                     <a href="../01_front_end_fundamentals/d02-syntax.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.10.</b>
+                            <b>1.12.</b>
                         
                         Syntax
                     </a>
@@ -343,14 +373,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="01_front_end_fundamentals/d02-ah.html">
+        <li class="chapter " data-level="1.13" data-path="01_front_end_fundamentals/d02-ah.html">
             
                 
                     <a href="../01_front_end_fundamentals/d02-ah.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.11.</b>
+                            <b>1.13.</b>
                         
                         Homework: Markdown and Readmes
                     </a>
@@ -670,6 +700,7 @@
 <li>Visualize a network</li>
 <li>Draw a network diagram</li>
 </ul>
+<p><img src="network-diagram.jpg" alt="network-diagram.jpg"></p>
 <h4 id="data-types-variables-and-arrays">Data Types, Variables, and Arrays</h4>
 <h5 id="objectives">Objectives</h5>
 <ul>
@@ -680,6 +711,30 @@
 <li>Iterate over and and manipulate values in an array</li>
 <li>Describe how arrays are used to store data</li>
 </ul>
+<h6 id="class-examples">Class Examples</h6>
+<p><img src="data-types.jpg" alt="data-types.jpg"></p>
+<p><img src="variable-declaration.jpg" alt="variable-declaration.jpg"></p>
+<p><img src="data-types-js-java.jpg" alt="data-types-js-java.jpg"></p>
+<p><img src="arrays.jpg" alt="arrays.jpg"></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> cocktails = [<span class="hljs-string">&apos;gin &amp; tonic&apos;</span>, <span class="hljs-string">&apos;white russian&apos;</span>, <span class="hljs-string">&apos;mojito&apos;</span>, <span class="hljs-string">&apos;sangria&apos;</span>, <span class="hljs-string">&apos;grape ape&apos;</span>];
+
+cocktails.pop();  <span class="hljs-comment">// pop() removes the last item in an array</span>
+
+<span class="hljs-comment">// this didn&apos;t work...</span>
+<span class="hljs-comment">//var lengthOfArray = cocktails.length;</span>
+
+<span class="hljs-comment">// this will!</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt;= cocktails.length; i++) {
+
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;i = &apos;</span> + i);
+  <span class="hljs-comment">//console.log(&apos;array length = &apos; + lengthOfArray);&apos;&apos;</span>
+  <span class="hljs-built_in">console</span>.log(cocktails[i]);
+
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;I could use a... &quot;</span> + cocktails[i]);
+
+  cocktails.pop();
+}
+</code></pre>
 <h4 id="mastering-control-flow">Mastering Control Flow</h4>
 <h5 id="objectives">Objectives</h5>
 <ul>
@@ -689,9 +744,75 @@
 <li>Use comparison operators to evaluate and compare statements</li>
 <li>Use boolean logic (!, &amp;&amp;, ||) to combine and manipulate conditionals</li>
 </ul>
+<h5 id="class-examples">Class Examples</h5>
+<p><img src="blocks.jpg" alt="blocks.jpg"></p>
+<p><img src="control-flow-example.jpg" alt="control-flow-example.jpg"></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// block of code</span>
+{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello, world&apos;</span>);
+}
+
+<span class="hljs-keyword">var</span> age = confirm(<span class="hljs-string">&apos;Are you over 21?&apos;</span>);
+<span class="hljs-keyword">if</span> (age === <span class="hljs-literal">true</span>) {
+  alert(<span class="hljs-string">&apos;huzzah&apos;</span>);
+} <span class="hljs-keyword">else</span> {
+  alert(<span class="hljs-string">&apos;soon.jpg&apos;</span>);
+}
+
+<span class="hljs-comment">// &apos;location&apos; is a reserved word</span>
+<span class="hljs-keyword">var</span> somewhere = <span class="hljs-built_in">window</span>.location.host;
+<span class="hljs-keyword">if</span> (somewhere != <span class="hljs-string">&apos;ga-chicago.github.io&apos;</span>) {
+  alert(<span class="hljs-string">&apos;oh no! this is not the right website.&apos;</span>);
+} <span class="hljs-keyword">else</span> {
+  alert(<span class="hljs-string">&apos;awww yeaah u aint hackd&apos;</span>);
+}
+
+<span class="hljs-keyword">var</span> userInput = prompt(<span class="hljs-string">&apos;what is your name?&apos;</span>);
+
+<span class="hljs-keyword">if</span> (userInput.length &lt; <span class="hljs-number">1</span>) {
+  alert(<span class="hljs-string">&apos;hey, you didn\&apos;t give us your name&apos;</span>);
+} <span class="hljs-keyword">else</span> {
+  alert(<span class="hljs-string">&apos;thanks, &apos;</span> + userInput + <span class="hljs-string">&apos;!!!!!@121211212&apos;</span>);
+}
+
+<span class="hljs-comment">// and operator &amp;&amp;</span>
+
+<span class="hljs-keyword">if</span> (age &gt;= <span class="hljs-number">21</span> &amp;&amp; hasMoney == <span class="hljs-literal">true</span>) {
+  <span class="hljs-comment">// you can buy booze</span>
+}
+
+<span class="hljs-keyword">if</span> (<span class="hljs-number">21</span> &gt;= <span class="hljs-number">21</span> &amp;&amp; <span class="hljs-literal">true</span> == <span class="hljs-literal">true</span>) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;you can haz booze&apos;</span>);
+}
+
+
+<span class="hljs-comment">// OR operator ||</span>
+
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span> || <span class="hljs-literal">false</span>) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;boolean party!!@!212&apos;</span>);
+}
+
+<span class="hljs-keyword">var</span> name = <span class="hljs-string">&apos;james&apos;</span>;
+<span class="hljs-keyword">if</span> (name === <span class="hljs-string">&apos;james&apos;</span> || name === <span class="hljs-string">&apos;jim&apos;</span>) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;j names rule&apos;</span>);
+}
+
+
+<span class="hljs-keyword">var</span> car = <span class="hljs-string">&apos;ford&apos;</span>;
+<span class="hljs-keyword">switch</span> (car.toLocaleLowerCase()) {
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;mazda&quot;</span>: alert(<span class="hljs-string">&apos;mazdas zoom zoom&apos;</span>);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;nissan&quot;</span>: alert(<span class="hljs-string">&apos;the leaf is green&apos;</span>);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">default</span>:
+    alert(<span class="hljs-string">&apos;your car is not here..?!@&apos;</span>);
+    <span class="hljs-keyword">break</span>;
+}
+</code></pre>
 <h4 id="lab-introduction-to-git-github">Lab: Introduction to Git &amp; Github</h4>
 <ul>
 <li><img src="Git101.png" alt="Git101.png"></li>
+<li>Slide Deck: <a href="https://presentations.generalassemb.ly/559430358d25e96187c4#/" target="_blank">https://presentations.generalassemb.ly/559430358d25e96187c4#/</a></li>
 </ul>
 <h4 id="homework">Homework</h4>
 <ul>
