@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Front End Fundamentals | WDI Chicago #3: Dragons</title>
+        <title>Loops | WDI Chicago #3: Dragons</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,10 +25,10 @@
         
     
     
-    <link rel="next" href="../01_front_end_fundamentals/d01.html" />
+    <link rel="next" href="../01_front_end_fundamentals/d02-syntax.html" />
     
     
-    <link rel="prev" href="../0_onboarding/videos.html" />
+    <link rel="prev" href="../01_front_end_fundamentals/d02-arrays.html" />
     
 
         
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="1" data-basepath=".." data-revision="Tue Oct 27 2015 13:46:11 GMT-0500 (CDT)">
+    <div class="book" data-level="1.9" data-basepath=".." data-revision="Tue Oct 27 2015 13:46:11 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -177,7 +177,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1" data-path="01_front_end_fundamentals/index.html">
+        <li class="chapter " data-level="1" data-path="01_front_end_fundamentals/index.html">
             
                 
                     <a href="../01_front_end_fundamentals/index.html">
@@ -313,7 +313,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="01_front_end_fundamentals/d02-loops.html">
+        <li class="chapter active" data-level="1.9" data-path="01_front_end_fundamentals/d02-loops.html">
             
                 
                     <a href="../01_front_end_fundamentals/d02-loops.html">
@@ -663,7 +663,118 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="front-end-fundamentals">Front End Fundamentals</h1>
+                        <hr>
+<p><strong>Javascript</strong></p>
+<h3>Loops</h3>
+
+<hr>
+<h2 id="summary">Summary</h2>
+<p>We covered three types of loops: <code>for</code>, <code>while</code>, and <code>for-in</code>. The following example loops through a <strong>kitties</strong> array and then logs each item.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> kitties = [
+  <span class="hljs-string">&quot;magda&quot;</span>,
+  <span class="hljs-string">&quot;grumpy cat&quot;</span>,
+  <span class="hljs-string">&quot;pi&quot;</span>,
+  <span class="hljs-string">&quot;roscoe&quot;</span>,
+  <span class="hljs-string">&quot;adventure kitty&quot;</span>
+];
+</code></pre>
+<p>Each loop below does nearly the exact same thing.</p>
+<ul>
+<li>A <code>for</code> loop should be used when you <strong>know how you want to control</strong> your loop. You have complete control over the condition.<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; kitties.length; i++) {
+  <span class="hljs-built_in">console</span>.log(kitties[i]);
+}
+</code></pre>
+</li>
+<li>A <code>for-in</code> loop will allow you to iterate and access every item in your array but may or may not return everything in the appropriate order. If you need to access all items without concern for order, you should use a <code>for-in</code> loop.<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> cat <span class="hljs-keyword">in</span> kitties) {
+  <span class="hljs-built_in">console</span>.log(kitties[cat]);
+}
+</code></pre>
+</li>
+<li>A <code>while</code> loop is designed to allow you to <strong>do</strong> something without knowing how long it could occur. Remember the <em>b</em> button for Mario running example?<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">while</span> (i &lt; kitties.length) {
+  <span class="hljs-built_in">console</span>.log(kitties[i]);
+  i++;
+}
+</code></pre>
+</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<p><strong>Javascript</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// FIRST, let us create our object</span>
+<span class="hljs-keyword">var</span> myObj = {
+  name: <span class="hljs-string">&quot;James&quot;</span>,
+  students: [
+    <span class="hljs-string">&apos;Jason&apos;</span>, <span class="hljs-string">&apos;Paul&apos;</span>, <span class="hljs-string">&apos;Ruth&apos;</span>, <span class="hljs-string">&apos;Katie&apos;</span>],
+  food: <span class="hljs-string">&apos;soylent&apos;</span>,
+  favouriteMusic: <span class="hljs-string">&apos;indie pop&apos;</span>,
+  favouriteAnimal: <span class="hljs-string">&apos;cat&apos;</span>,
+  colour: <span class="hljs-string">&apos;purple&apos;</span>,
+  phone: <span class="hljs-string">&apos;HTC&apos;</span>,
+  money: <span class="hljs-string">&apos;none, I am broke&apos;</span>,
+  isTired: <span class="hljs-literal">false</span>,
+  isAwake: <span class="hljs-literal">false</span>
+};
+
+<span class="hljs-comment">// for-in loop on an object</span>
+<span class="hljs-comment">// the goal is to log out all values in keys</span>
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Logging keys then values using for-in loop:&quot;</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;---------------------------------&quot;</span>);
+
+
+<span class="hljs-comment">// var key = index</span>
+<span class="hljs-comment">// myObj = object</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> key <span class="hljs-keyword">in</span> myObj) {
+
+  <span class="hljs-comment">// log the key only</span>
+  <span class="hljs-comment">// ie: myObj.name</span>
+  <span class="hljs-comment">// &quot;name&quot; is the key</span>
+
+  <span class="hljs-built_in">console</span>.log(key);
+
+  <span class="hljs-comment">// only logging my values per each</span>
+  <span class="hljs-comment">// myObj.key</span>
+  <span class="hljs-comment">// or myObj[key]</span>
+
+  <span class="hljs-built_in">console</span>.log(myObj[key]);
+
+}
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Only logging keys using for loop:&quot;</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;---------------------------------&quot;</span>);
+<span class="hljs-comment">// create an array of my keys</span>
+<span class="hljs-comment">// Object.keys() returns an array of all</span>
+<span class="hljs-comment">// keys in an Object</span>
+<span class="hljs-keyword">var</span> myKeys = <span class="hljs-built_in">Object</span>.keys(myObj);
+
+<span class="hljs-comment">// now, we will just do a for loop</span>
+<span class="hljs-comment">// for each key to be printed out</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> counter = <span class="hljs-number">0</span>; counter &lt; myKeys.length; counter++) {
+
+  <span class="hljs-built_in">console</span>.log(myKeys[counter]);
+
+}
+
+
+<span class="hljs-comment">// for-in loop on an object</span>
+<span class="hljs-comment">// log the key : value on same line</span>
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Logging keys : values using for-in loop:&quot;</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;---------------------------------&quot;</span>);
+
+
+<span class="hljs-comment">// var key = index</span>
+<span class="hljs-comment">// myObj = object</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> key <span class="hljs-keyword">in</span> myObj) {
+
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Key: &quot;</span> + key + <span class="hljs-string">&quot;, Value: &quot;</span> + myObj[key]);
+
+}
+</code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration" target="_blank">MDN: Loops and Iteration</a></li>
+</ul>
 
                     
                     </section>
@@ -674,10 +785,10 @@
         </div>
 
         
-        <a href="../0_onboarding/videos.html" class="navigation navigation-prev " aria-label="Previous page: All Videos/Source Code"><i class="fa fa-angle-left"></i></a>
+        <a href="../01_front_end_fundamentals/d02-arrays.html" class="navigation navigation-prev " aria-label="Previous page: Arrays"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../01_front_end_fundamentals/d01.html" class="navigation navigation-next " aria-label="Next page: 1.1 Introduction"><i class="fa fa-angle-right"></i></a>
+        <a href="../01_front_end_fundamentals/d02-syntax.html" class="navigation navigation-next " aria-label="Next page: Syntax"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
