@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+  <p> Keep refreshing your page until all the Beatles are in a row!</p>
+  <p> In this case being in a row means being between 50px of each other.</p>
+  <p> You win when you see the Beatles logo! </p>
+  <canvas id = "canvas" width = "500" height = "350" style = "border: 1px solid black"></canvas>
+
+  <script type = "text/javascript">
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    var johnValue = getRandomInt(0,200);
+    var paulValue = getRandomInt(0,200);
+    var georgeValue = getRandomInt(0,200);
+    var ringoValue = getRandomInt(0,200);
+
+    var johnimg = new Image();
+    johnimg.onload = function() {
+    ctx.drawImage(johnimg, 50, johnValue);
+    }
+    johnimg.src = "https://dl.dropboxusercontent.com/u/102602916/john.svg";
+
+    var paulimg = new Image();
+    paulimg.onload = function() {
+    ctx.drawImage(paulimg, 150, paulValue);
+    }
+    paulimg.src = "https://dl.dropboxusercontent.com/u/102602916/paul.svg";
+
+    var georgeimg = new Image();
+    georgeimg.onload = function() {
+    ctx.drawImage(georgeimg, 250, georgeValue);
+    }
+    georgeimg.src = "https://dl.dropboxusercontent.com/u/102602916/george.svg";
+
+    var ringoimg = new Image();
+    ringoimg.onload = function() {
+    ctx.drawImage(ringoimg, 350, ringoValue);
+    }
+    ringoimg.src = "https://dl.dropboxusercontent.com/u/102602916/ringo.svg";
+
+var beatlesMax = Math.max(johnValue, paulValue, georgeValue, ringoValue);
+var beatlesMin = Math.min(johnValue, paulValue, georgeValue, ringoValue);
+  </script>
+  <script>
+if (beatlesMax-beatlesMin<30) {
+  var appleimg = new Image();
+  appleimg.onload = function() {
+  ctx.drawImage(appleimg, 0, 0);
+  }
+  appleimg.src = "https://dl.dropboxusercontent.com/u/102602916/apple.png";;
+}; </script>
+
+
+
+  </body>
+</html>
