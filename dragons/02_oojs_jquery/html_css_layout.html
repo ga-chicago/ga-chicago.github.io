@@ -5,7 +5,7 @@
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Capstone Project | WDI Chicago #3: Dragons</title>
+        <title>HTML &amp; CSS Layouts | WDI Chicago #3: Dragons</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -29,8 +29,10 @@
         
     
     
+    <link rel="next" href="../02_oojs_jquery/d01-hw.html" />
     
-    <link rel="prev" href="../13_capstone_project/index.html" />
+    
+    <link rel="prev" href="../02_oojs_jquery/d01-objects-again.html" />
     
 
         <!-- head:end -->
@@ -38,7 +40,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="14" data-basepath=".." data-revision="Mon Nov 02 2015 15:41:48 GMT-0600 (CST)">
+    <div class="book" data-level="2.1.4" data-basepath=".." data-revision="Mon Nov 02 2015 15:41:48 GMT-0600 (CST)">
     
 
 <div class="book-summary">
@@ -652,7 +654,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.4" data-path="02_oojs_jquery/html_css_layout.html">
+        <li class="chapter active" data-level="2.1.4" data-path="02_oojs_jquery/html_css_layout.html">
             
                 
                     <a href="../02_oojs_jquery/html_css_layout.html">
@@ -842,7 +844,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="13" data-path="13_capstone_project/index.html">
+        <li class="chapter " data-level="13" data-path="13_capstone_project/index.html">
             
                 
                     <a href="../13_capstone_project/index.html">
@@ -857,7 +859,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="14" data-path="13_capstone_project/index.html">
+        <li class="chapter " data-level="14" data-path="13_capstone_project/index.html">
             
                 
                     <a href="../13_capstone_project/index.html">
@@ -977,7 +979,82 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="capstone-project">Capstone Project</h1>
+                        <h2 id="sample-html-css-layout">Sample HTML &amp; CSS Layout</h2>
+<p>This layout uses floats to create a two column (content and sidebar) layout that may be used for any future project!</p>
+<p><em>index.html</em></p>
+<pre><code class="lang-html"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&quot;utf-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Box Model Intro<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&apos;stylesheet&apos;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;style.css&apos;</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;wrapper&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;logo&apos;</span>&gt;</span>
+      Random Website Goes Here
+    <span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;navbar&apos;</span>&gt;</span>
+      Links to places will go here!
+    <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;content&apos;</span>&gt;</span>
+      Lorem Ipsum Text
+    <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">aside</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;sidebar&apos;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>things<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>to<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>do<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">aside</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">footer</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;goodbye&apos;</span>&gt;</span>
+      Copyright nobody 2015...
+    <span class="hljs-tag">&lt;/<span class="hljs-title">footer</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<p><em>style.css</em></p>
+<pre><code class="lang-css"><span class="hljs-comment">/* ids are identifiable using a #name */</span>
+<span class="hljs-id">#wrapper</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">90%</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> auto</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> auto</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative</span></span>;
+  <span class="hljs-comment">/*margin: auto;*/</span>
+}</span>
+<span class="hljs-id">#logo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span class="hljs-number">3em</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> bold</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">3px</span> dashed orange</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">3px</span></span></span>;
+}</span>
+<span class="hljs-id">#navbar</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span class="hljs-number">1.5rem</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> bold</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">3px</span> dashed purple</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">3px</span></span></span>;
+}</span>
+<span class="hljs-id">#sidebar</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> right</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">3px</span> dashed green</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">3px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">25%</span></span></span>;
+}</span>
+<span class="hljs-id">#content</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">3px</span> dashed navy</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">3px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">65%</span></span></span>;
+}</span>
+<span class="hljs-id">#goodbye</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">3px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">3px</span> dashed red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">clear</span>:<span class="hljs-value"> both</span></span>;
+}</span>
+</code></pre>
 
                     
                     </section>
@@ -988,8 +1065,10 @@
         </div>
 
         
-        <a href="../13_capstone_project/index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Captstone Project"><i class="fa fa-angle-left"></i></a>
+        <a href="../02_oojs_jquery/d01-objects-again.html" class="navigation navigation-prev " aria-label="Previous page: this, hasOwnProperty, .keys"><i class="fa fa-angle-left"></i></a>
         
+        
+        <a href="../02_oojs_jquery/d01-hw.html" class="navigation navigation-next " aria-label="Next page: Homework: Layout Challenges"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
