@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500" style="border: 1px solid black"></canvas>
+
+    <script type="text/javascript">
+
+      var canvas = document.getElementById('canvas');
+      var context = canvas.getContext('2d');
+
+      context.fillStyle= 'blue';
+      context.fillRect(100, 100, 100, 100);
+
+      context.beginPath();
+      context.moveTo(200, 200);
+      context.lineWidth = 40;
+      context.lineTo(300, 300);
+      context.strokeStyle = 'green';
+      context.stroke();
+
+
+      function draw() {
+        var canvas = document.getElementById('canvas')
+        if (canvas.getContext) {
+          var ctx = canvas.getContext('2d');
+
+            ctx.beginPath();
+            ctx.moveTo(75,50);
+            ctx.lineTo(100,75);
+            ctx.lineTo(100,25);
+            ctx.fillStyle = 'red';
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.moveTo(400,400);
+            ctx.lineWidth = 15;
+            ctx.lineTo(300,325);
+            ctx.lineTo(300,250);
+            ctx.strokeStyle = 'purple';
+            ctx.stroke();
+
+        var x = Math.random() * 100
+          for (x > 100) {
+            ctx.beginPath();
+            ctx.moveTo(x,300);
+            ctx.lineWidth = 20;
+            ctx.lineTo(200,400);
+            ctx.strokeStyle = 'orange';
+            ctx.stroke();
+          }
+        }
+      }
+    draw();
+    randomNumber();
+}
+
+    </script>
+  </body>
+</html>

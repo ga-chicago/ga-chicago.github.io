@@ -1,0 +1,28 @@
+
+head{
+    color: white;
+  	font-family: PT sans;
+  	font-size: 60px;
+    }
+    header{
+      color: white;
+    	font-family: PT sans;
+    	font-size: 60px;
+
+    }
+
+    body {
+  	text-align: center;
+  	background-color: white;
+  	background-image: url("http://i.imgur.com/cdoTxUM.jpg?1");
+  	color:white;
+  	font-family: PT sans;
+    }
+
+  p {
+  	font-size: 24px;
+  	color: white;
+    }
+  a {
+      color: white;
+      }

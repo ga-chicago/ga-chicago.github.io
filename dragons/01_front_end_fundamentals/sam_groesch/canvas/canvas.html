@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500" style="border: 1px solid black"></canvas>
+
+    <script type="text/javascript">
+
+      var canvas = document.getElementById('canvas');
+      var context = canvas.getContext('2d');
+
+      function randomNumber(){
+        return Math.round(Math.random()*500);
+      }
+      function randomColor(){
+        return Math.round(Math.random()*255);
+      }
+      function randomOpaque() {
+        return Math.round(Math.random() * 10)/10;
+      }
+
+      function randomRGB() {
+        var rgb = 'rgba(';
+        rgb += randomColor();
+        rgb += ',';
+        rgb += randomColor();
+        rgb += ',';
+        rgb += randomColor();
+        rgb += ',';
+        rgb += randomOpaque();
+        rgb += ')';
+        return rgb;
+      }
+
+      function randomLine(){
+        var a = randomNumber();
+        var b = randomNumber();
+        var c = randomNumber()/10;
+        var d = randomNumber();
+        var e = randomNumber();
+        context.beginPath();
+        context.moveTo(a, b);
+        context.lineWidth = c;
+        context.lineTo(d,e);
+        context.strokeStyle = randomRGB();
+        context.stroke();
+      }
+
+      var p = prompt('How many random lines would you like?');
+
+      for (var i = 0; i < p; i++) {
+        randomLine();
+      }
+
+      /*
+            context.fillStyle = 'blue'; //Styles have to come before the object
+            context.fillRect(100, 100, 100, 100);
+
+            context.beginPath();
+            context.moveTo(200, 200); //Will not draw anything, sets beginning point
+            context.lineWidth = 40;
+            context.lineTo(300, 300);
+            context.strokeStyle = "rgba(255, 0, 120, .3)";
+            context.stroke(); //Actually draws the line
+      */
+
+    </script>
+
+  </body>
+</html>

@@ -43,11 +43,11 @@ for (var prop in stephen) {
   console.log(stephen[prop])
 }
 
-var arr = ['Rachel', 'Monica', 'Phoebe']
+/* var arr = ['Rachel', 'Monica', 'Phoebe']
 for (var friends in arr) {
   console.log(friends);
   console.log(arr[friends])
-}
+} */
 
 
 // 4. Elementary School

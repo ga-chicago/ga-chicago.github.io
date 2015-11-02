@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+<!--This creates the canvas. Needs to have a border to see it.-->
+    <canvas id="canvas" width="500" height="500" style='border: 15px dotted blue'></canvas>
+<script type="text/javascript">
+<!--This grabs the canvas. And the second line says it will be 2d. 3d is experimental right now. Make sure everything is now in between script tags.-->
+
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+
+function rgb(r, g, b){
+  return "rgb("+r+","+g+","+b+")";
+}
+circle()
+function circle() {
+  for (var i = 0; i < 10; i++) {
+
+var gradient = ctx.createRadialGradient(getRandomInt(0,300),100,100,100,100,0);
+gradient.addColorStop(0,"white");
+gradient.addColorStop(1,rgb(getRandomInt(0, 255), getRandomInt(0, 255), getRandomInt(0, 255)));
+ctx.fillStyle = gradient;
+ctx.fillRect(0,0,200,200);}}
+
+function getRandomInt(min, max) {
+return Math.floor(Math.random() * (max - min)) + min;
+}
+
+square()
+function square() {
+ctx.rotate(45 * Math.PI / 180);
+ctx.fillStyle = "#0a1057";
+ctx.fillRect(300, 20, 100, 100);
+ctx.setTransform(1, 0, 0, 1, 0, 0);}
+
+
+</script>
+
+  </body>
+</html>

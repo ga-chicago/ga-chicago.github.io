@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="250" height="250" style="border: 1px solid black"></canvas>
+
+    <script type="text/javascript">
+      var canvas = document.getElementById("canvas");
+      var context = canvas.getContext("2d");
+
+      //context.fillStyle= "rgba(219, 83, 188, 0.5)"; //style must go BEFORE
+      //context.fillRect(100, 100, 100, 100);
+
+      for (var i = 0; i < 1000; i++) {
+        context.beginPath();
+        context.moveTo(0, 0);
+        context.lineWidth = getRandom(10); //no units
+        context.lineTo(getRandom(250), getRandom(250));
+        context.strokeStyle= getRandomRGB(0,0,255,0.2);
+        context.stroke();
+      }
+
+      for (var i = 0; i < 1000; i++) {
+        context.beginPath();
+        context.moveTo(250, 0);
+        context.lineWidth = getRandom(10); //no units
+        context.lineTo(getRandom(250), getRandom(250));
+        context.strokeStyle= getRandomRGB(0,255,0,0.2);
+        context.stroke();
+      }
+
+for (var i = 0; i < 500; i++) {
+  context.beginPath();
+  context.moveTo(125, 250);
+  context.lineWidth = getRandom(10); //no units
+  context.lineTo(getRandom(250), getRandom(250));
+  context.strokeStyle= getRandomRGB(255,0,0,0.2);
+  context.stroke();
+}
+
+function getRandom(scale) {
+  return parseInt(scale * Math.random());
+}
+
+function getRandomAlpha(scale) {
+  return (scale*Math.random());
+}
+
+function getRandomRGB(r,g,b,a) {
+  //console.log('rgb(' + getRandom(255) + ',' + getRandom(255) + ',' + getRandom(255) + ')');
+  var str = 'rgba(' + getRandom(r) + ',' + getRandom(g) + ',' + getRandom(b) + ',' + getRandomAlpha(a) + ')';
+  //console.log(str);
+  return str
+}
+
+</script>
+</body>
+</html>

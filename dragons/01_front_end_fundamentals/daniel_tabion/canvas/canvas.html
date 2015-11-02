@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500" style="border: 1px solid  black"></canvas>
+
+    <script type="text/javascript">
+      var canvas = document.getElementById("canvas");
+      var context = canvas.getContext('2d');
+
+      context.fillStyle = 'blue';
+      context.fillRect(100, 100, 100, 100);
+
+    /*  context.beginPath();
+      context.moveTo(110, 200);
+      context.lineWidth = 40;
+      context.lineTo(300, 300);
+
+      context.strokeStyle = 'green';
+      context.stroke();
+*/
+      function randPosition() {
+        return parseInt(Math.random()*500);
+      }
+
+      function randColor() {
+        return 'rgb('
+         + Number.parseInt(Math.random()* 255)+','
+         + Number.parseInt(Math.random()* 255)+','
+         + Number.parseInt(Math.random()* 255)+')'
+      }
+
+      function drawRandomLine() {
+        x1=randPosition();
+        y1=randPosition();
+        x2=randPosition();
+        y2=randPosition();
+        context.beginPath();
+        context.moveTo(x1, y1);
+        context.lineWidth =parseInt(Math.random()*2);
+        context.lineTo(x2, y2);
+
+        context.strokeStyle = randColor();
+        context.stroke();
+      }
+
+      for (var i=0; i<1000; i++)
+      {
+        drawRandomLine();
+      }
+
+    </script>
+  </body>
+</html>

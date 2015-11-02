@@ -1,0 +1,10 @@
+body {
+  background: rgba(132, 84, 153, 0.65);
+  font-size: 2em;
+  font-family: fantasy;
+}
+
+#content {
+  text-align: center;
+  color: rgb(74, 23, 157);
+}

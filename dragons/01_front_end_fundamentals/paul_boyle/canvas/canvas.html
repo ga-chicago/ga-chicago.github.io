@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas</title>
+</head>
+<body>
+  <canvas id='canvas' width='500' height='500' style='border: 1px solid black'></canvas>
+  <script type="text/javascript">
+
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+
+    var randomColor=function(){
+      red=Math.floor(255*Math.random());
+      green=Math.floor(255*Math.random());
+      blue=Math.floor(255*Math.random());
+      return 'rgb('+red+','+green+','+blue+')';
+    }
+
+
+  for (var i = 0; i < 300; i++) {
+
+    var randomPoint1=400*(Math.random());
+    var randomPoint2=400*(Math.random());
+    var randomPoint3=100*(Math.random());
+    var randomPoint4=-100*(Math.random());
+
+
+
+
+    context.beginPath();
+    context.moveTo(250,250);
+    context.lineTo(randomPoint1,randomPoint2);
+    context.lineTo(randomPoint1+randomPoint3,randomPoint2+randomPoint4);
+    context.lineWidth=2;
+    context.strokeStyle=randomColor();
+    context.stroke();
+}
+
+
+
+  </script>
+</body>
+</html>

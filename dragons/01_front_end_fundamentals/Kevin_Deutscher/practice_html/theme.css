@@ -1,0 +1,23 @@
+.ALPHA{
+  color: #ADD8E6;
+}
+
+.BETA{
+  color: #FF0000;
+}
+
+.LINKS{
+  color: #90EE90;
+}
+
+h1.center-children {
+  color: #90EE90;
+}
+
+h2 {
+  color: #DA90EE;
+}
+
+body{
+  background: #CF6D46;
+}

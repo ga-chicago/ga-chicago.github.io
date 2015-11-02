@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <canvas id="canvas" width="300" height="300" style="border: 1px solid black"></canvas>
+
+    <script type="text/javascript">
+
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+
+    function randomNumber() {
+        return Math.random();
+        }
+
+
+
+function format(){
+      context.fillStyle= 'red';
+      context.fillRect(100, 100, 100, 100);
+      context.beginPath();
+      context.moveTo(randomNumber()*500, randomNumber()*500);
+      context.lineWidth = 40;
+      context.lineTo(randomNumber()*500, randomNumber()*500);
+      context.strokeStyle = ("'"+'rgb' + '(' + colorRange + ',' + colorRange + ',' + colorRange + ")" +"'");
+      context.stroke();
+}
+
+
+
+function colorRange() {
+    var max = 250;
+    var min = 0;
+    var random = Math.floor(Math.random() * (max - min + 1)) + min;
+    console.log(random)
+  }
+
+
+setInterval(function() {
+  format()
+}, 1000);
+
+      </script>
+  </body>
+</html>
+
+
+
+
+<!--file:///Users/user/dragons/wdi_chi_dragons/01_front_end_fundamentals/Kevin_Deutscher/canvas/canvas.html-->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500" style="border: 1px solid black"></canvas>
+
+    <script type="text/javascript">
+      var canvas = document.getElementById("canvas");
+      var context = canvas.getContext("2d");
+
+      //context.fillStyle= "rgba(219, 83, 188, 0.5)"; //style must go BEFORE
+      //context.fillRect(100, 100, 100, 100);
+
+      for (var i = 0; i < 2000; i++) {
+      context.beginPath();
+      context.moveTo(getRandom(500), getRandom(500));
+      context.lineWidth = getRandom(10); //no units
+      context.lineTo(getRandom(500), getRandom(500));
+      context.strokeStyle= getRandomRGB();
+      context.stroke();
+      }
+
+      function getRandom(scale) {
+        return parseInt(scale*Math.random());
+      }
+      function getRandomAlpha(scale) {
+        return (scale*Math.random());
+      }
+
+      function getRandomRGB() {
+        //console.log('rgb(' + getRandom(255) + ',' + getRandom(255) + ',' + getRandom(255) + ')');
+        var str = 'rgba(' + getRandom(0) + ',' + getRandom(0) + ',' + getRandom(100) + ',' + getRandomAlpha(1) + ')';
+        //console.log(str);
+        return str
+      }
+
+    </script>
+  </body>
+</html>

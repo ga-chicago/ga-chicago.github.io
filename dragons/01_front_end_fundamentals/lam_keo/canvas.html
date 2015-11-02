@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500" style="border: 1px solid black"></canvas>
+
+    <script type="text/javascript">
+
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+
+    context.fillStyle= 'blue';
+    context.fillRect(randomNumber(), randomNumber(), randomNumber(), randomNumber());
+
+  function drawLine(){
+    context.beginPath()
+    context.moveTo(randomNumber(), randomNumber());
+    context.lineWidth = (randomNumber());
+    context.lineTo(randomNumber(), randomNumber());
+
+    context.strokeStyle = 'random';
+    context.stroke();
+  }
+  for ([z = 0]; [z <= 100]; [z++]){
+    drawLine();
+  }
+    var x = function randomNumber(){
+      randomNumber()
+      return Math.random() * 500;
+    }
+
+    </script>
+
+
+  </body>
+</html>

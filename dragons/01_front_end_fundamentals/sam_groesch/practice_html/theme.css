@@ -1,0 +1,31 @@
+body {
+  background-image: url("http://7-themes.com/data_images/out/27/6859514-beach-background.jpg");
+}
+p{
+  background-color: rgb(111, 26, 140);
+  color: yellow;
+}
+h2{
+  background-color: rgba(0, 0, 200, 0.5);;
+  color: red;
+  font-size: 72px;
+  text-align: center;
+}
+h1{
+  background-color: black;
+  color: white;
+  font-size: 150;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  text-align: center;
+}
+h3{
+  font-size: 36;
+  color: pink;
+}
+img {
+  border: 10px solid green;
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

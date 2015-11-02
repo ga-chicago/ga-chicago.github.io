@@ -1,0 +1,58 @@
+//var ranColor = function(){
+//  r = 256*Math.random();
+//  g = 256*Math.random();
+//  b = 256*Math.random();
+//  var colors = r.toString + ',' +g.toString + ',' +b.toString;
+//  console.log('rgb('+colors+')');
+//}
+
+// function rando(scope){
+//   x = scope*Math.random();
+//   console.log(x);
+//   return x;
+// }
+//
+// rando(5);
+
+
+// function cakeRecipe(eggs, flour, flavor) {
+//   return "yum we made a " + flavor + " cake. It was great," + name; 
+// }
+//
+// var name = 'Jim'
+// cakeRecipe(3, 'wheat', 'strawberry');
+
+// var autoMake = "Ford";
+// var autoModel = "LTD";
+// ​
+// function showAuto(year){
+//   function autoInfo(){
+//     var price = 124;
+//     console.log("Auto is a " + year + " " + autoMake + " " + autoModel + ", it's price is " + price + "$");
+//   }
+// ​
+//   autoInfo();
+// };
+// ​
+// showAuto(1969);
+
+// var autoMake = "Ford";
+// var autoModel = "LTD";
+//
+// function showAuto(year){
+// function autoInfo(){
+// var price = 124;
+// console.log("Auto is a " + year + " " + autoMake + " " + autoModel + ", it's price is " + price + "$");
+// }
+// autoInfo();
+// };
+// showAuto(1969);
+
+
+function sayHello(words) {
+  return name + ' says ' + words;
+}
+
+var name = 'Anna';
+
+sayHello('baller');

@@ -52,8 +52,8 @@ for (var prop in hamburger) {
 //You will need to use the / and the % operators.
   var x = 10
   var y = 3
-  function divideremain (x , y) {
-  console.log (x / y)
-  console.log (x%y)
-  console.log('The result is ' + (x / y) ' and ' (x%y));
+  function divideRemain (x , y) {
+  console.log (x / y);
+  console.log (x%y);
+  console.log('The result is ' + (x/y) + ' and ' +(x%y));
 }

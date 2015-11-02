@@ -1,0 +1,27 @@
+body {
+  background-image: url("http://static6.businessinsider.com/image/55918b77ecad04a3465a0a63/nbc-fires-donald-trump-after-he-calls-mexicans-rapists-and-drug-runners.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bodyCopy {
+  font-family: 'Open Sans', sans-serif;
+  font-size: large;
+  color: rgb(168, 198, 25);
+}
+
+/*.headerImage {
+  width: 80%;
+}*/
+
+.otherImage {
+  width: 30%;
+  col
+}
+
+.pageTitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 150px;
+  color: rgb(158, 175, 56)
+}

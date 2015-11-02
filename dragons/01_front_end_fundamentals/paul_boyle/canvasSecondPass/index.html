@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas second Pass</title>
+
+</head>
+<body>
+  <canvas id='canvas' width='500' height='500' style='border: 15px dotted blue'></canvas>
+  <script type='text/javascript'>
+
+      var c = document.getElementById('canvas');
+      var ctx = c.getContext('2d');
+
+      ctx.fillStyle = randomColor(); // picking the crayon randomly
+      ctx.fillRect(250,250, 100, 100); // filling the rectange (origin,origin,length,length)
+
+      function randomColor() {
+        var r = parseInt(255*(Math.random()));
+        var g = parseInt(255*(Math.random()));
+        var b = parseInt(255*(Math.random()));
+        var a = parseInt(255*(Math.random()));
+
+        return 'rgba('+r+','+g+','+b+','+a+')';
+
+
+      }//end randomColor function
+
+      var pointX=function() {
+        return Math.random() * 500;
+      }
+
+
+      for(var i = 0 ; i<30; i++) {
+        ctx.beginPath();//take out the pen
+        ctx.moveTo(pointX(),40);//specify where we are starting from
+        ctx.lineWidth=10;//specify the width of the line
+        ctx.lineTo(pointX(), 80); // specify where we are movin to
+        ctx.strokeStyle = randomColor(); //get color
+        ctx.stroke();// actually draw
+}
+
+  </script>
+</body>
+</html>

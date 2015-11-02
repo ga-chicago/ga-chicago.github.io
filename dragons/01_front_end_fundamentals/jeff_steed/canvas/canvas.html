@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500" style="border: 1px solid black"></canvas>
+    <script type="text/javascript">
+      var canvas = document.getElementById('canvas');
+      var context = canvas.getContext('2d');
+
+      context.fillStyle = 'turquoise';
+      context.fillRect(100, 100, 100, 100);
+
+      context.beginPath();
+      context.moveTo(200, 200);
+      context.lineWidth = 40;
+      context.lineTo(300, 300);
+      context.strokeStyle = 'turquoise';
+      context.stroke();
+
+      function randLine(x, y) {
+        context.beginPath();
+        context.moveTo(250, 250);
+        context.lineWidth = 1;
+        context.lineTo(x, y);
+        context.strokeStyle = getColor();
+        context.stroke();
+      }
+
+      function getColor() {
+        var red = parseInt(Math.random() * 256);
+        var green = parseInt(Math.random() * 256);
+        var blue = parseInt(Math.random() * 256);
+        return 'rgb(' + red + ',' + green + ',' + blue + ')';
+      }
+
+      var x = 0;
+      var y = 500;
+      for (var i = 0; i < 10000; i++) {
+        if (i <= 500) {
+          randLine(x, y);
+        } else if (i <= 10000) {
+          y--;
+          randLine(x, y);
+        }
+        x++;
+      }
+
+      console.log(getColor());
+
+    </script>
+  </body>
+</html>

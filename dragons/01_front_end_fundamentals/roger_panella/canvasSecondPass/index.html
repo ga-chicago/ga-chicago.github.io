@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+
+
+  <canvas id="canvas" width="500" height="500" style='border: 15px dotted blue'></canvas>
+  <script type="text/javascript"> // to write JS in html - first line is to set up canvas
+
+  var c = document.getElementById('canvas');
+  var ctx = c.getContext('2d');  // sets 2d or 3d
+
+
+  ctx.fillStyle = randomColor(); // color has to be picked before the fill in line below
+  ctx.fillRect(250, 250, 100, 100); // creates rectangle with coordinates
+
+  function randomColor(){   //random color function
+
+    var r = Math.floor(Math.random() * 255 + 1);   //Math.random gives between 0-1. * makes it between one and 255. Math.floor removes decimals
+    var g = Math.floor(Math.random() * 255 + 1);
+    var b = Math.floor(Math.random() * 255 + 1);
+    var a = Math.random(); // alpha (a) is for opacity.  It's only between zero and 1, so don't need math.floor
+    return 'rgba('+r +','+ g + ',' + b + ',' + a +')';
+ }
+
+    var pointX = function(){
+      var random = Math.random() * 500;
+      return random;
+    }
+
+    for (var i = 0;i < 30; i++){
+    ctx.beginPath();   //starts drawing
+    ctx.moveTo(pointX(),40);  //moves pencil to coordinate
+    ctx.lineWidth = 10; //sets width of line
+    ctx.lineTo(pointX(), 80); //sets stopping part of line (x,y)
+    ctx.strokeStyle = randomColor();
+    ctx.stroke(); //actually writes
+}
+
+  </script>
+
+
+
+
+  </body>
+</html>

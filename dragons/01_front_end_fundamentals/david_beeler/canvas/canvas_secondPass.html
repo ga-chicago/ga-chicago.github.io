@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas Second Pass</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="500px" height="500px" style="border: 10px dotted blue" ></canvas>
+    <script type="text/javascript">
+      var canvas = document.getElementById("canvas");
+      var context = canvas.getContext("2d");
+      var canvasWidth = canvas.width;
+      var canvasHeight = canvas.height;
+      console.log(canvasWidth);
+
+      context.fillStyle = randomRGBA(255,255,255,1);
+      context.fillRect(500/2 - 100/2, 500/2 - 100/2, 100, 100);
+
+      for (var i = 0; i < 256; i++) {
+        context.beginPath();
+        context.moveTo(0, 0);
+        context.lineWidth = 10;
+        context.lineTo(i,500);
+        context.strokeStyle= 'rgba(' + i + ',255,255,.9)';
+        context.stroke();
+        context.closePath();
+      }
+      for (var i = 0; i < 256; i++) {
+        context.beginPath();
+        context.moveTo(0, 0);
+        context.lineWidth = 1;
+        context.lineTo(255+i,500);
+        context.strokeStyle= 'rgba(255,' + (255-i) + ',255,.9)';
+        context.stroke();
+        context.closePath();
+      }
+      // context.beginPath();
+      // context.moveTo(0, 0);
+      // context.lineWidth = 10;
+      // context.lineTo(randPoint(),100);
+      // context.strokeStyle= randomRGBA(255,255,255,1);
+      // context.stroke();
+      // context.closePath();
+
+      function randPoint() {
+        var output = Math.random() * 500;
+        return output;
+      }
+
+      function randomRGBA(r, g, b, a) {
+        var output = 'rgba(' + randInt(r) + ',' + randInt(g) +
+                      ',' + randInt(b) + ',' + randFloat(a) + ')';
+        return output;
+      };
+
+      function randInt(scale) {
+        return parseInt(Math.random() * scale);
+      }
+
+      function randFloat(scale) {
+        return Math.random() * scale;
+      }
+
+    </script>
+  </body>
+</html>

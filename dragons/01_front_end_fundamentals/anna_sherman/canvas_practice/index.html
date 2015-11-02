@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+
+    <canvas id="canvas" width=600em height=600em style='border: 15px dotted blue'></canvas>
+    <script type="text/javascript">
+
+      //step 1 above: create a section in the body with the id canvas. give it a size and border with html.
+      //step 1.1 above: begin javascript
+      //step 2 below: allows you to grab the canvas and manipulate it -- it is a selector.
+      //you set it equal to a variable so you dont have to typ eit over and over.
+      var canvas = document.getElementById('canvas');
+      //step 3: get context. 3d is still experimental.
+      var ctx = canvas.getContext('2d')
+
+      //use context to draw.
+      //you have to choose your color before you draw.
+      ctx.fillStyle = randColor();
+      ctx.fillRect(150,150,300,300);
+
+//cmd L will highlight the whole line
+
+
+      function randColor(){
+
+        var r = parseInt(255 * Math.random());
+        var g = parseInt(255 * Math.random());
+        var b = parseInt(255 * Math.random());
+        var a = Math.random();
+//R G B A. RGBA. RGBA!!!! :(
+        return 'rgba(' + r + ',' + g + ',' + b + ',' + a + ')';
+      }
+
+      var pointX = function() {
+        x = Math.random() * canvas.width ;
+        return x;
+      }
+
+
+
+      //begin path starts your drawing. then you have to move the pencil to the paper using move to.
+
+      for (var i = 0; i < 30; i++) {
+        for (var j = 0; j < 60; j++) {
+      ctx.beginPath();
+      //dont forget to call the function.
+      ctx.strokeStyle = randColor();
+       ctx.lineWidth = 5;
+      ctx.moveTo(0,0);
+      ctx.lineTo(500, 0 + (j * 10));
+      // ctx.moveTo(0,0);
+      //ctx.lineTo(pointX(),j);
+      //use stroke to make the line actually show up/begin
+      ctx.stroke();
+    }
+
+    }
+
+    </script>
+
+  </body>
+</html>

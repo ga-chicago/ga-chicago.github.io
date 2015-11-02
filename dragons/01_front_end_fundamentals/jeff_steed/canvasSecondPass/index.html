@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas Second Pass</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500" "style=""border: 15px dotted blue"></canvas>
+    <script type="text/javascript">
+      var canvas = document.getElementById('canvas');
+      var context = canvas.getContext('2d');
+      context.fillStyle = getColor();
+      context.fillRect(250, 250, 100, 100);
+
+      for (var i = 0; i < 30; i++) {
+        context.beginPath();
+        context.moveTo(getPoint(), getPoint());
+        context.lineWidth = 10;
+        context.lineTo(getPoint(), getPoint());
+        context.strokeStyle = getColor();
+        context.stroke();
+      }
+
+      function getPoint() {
+        return Math.floor(Math.random() * 500 + 1);
+      }
+
+      function getColor() {
+        var red = Math.floor(Math.random() * 256 + 1);
+        var green = Math.floor(Math.random() * 256 + 1);
+        var blue = Math.floor(Math.random() * 256 + 1);
+        var opac = Math.random();
+        console.log("rgba(" + red + ", " + green + ", " + blue + ", " + opac + ")");
+        return "rgba(" + red + ", " + green + ", " + blue + ", " + opac + ")";
+      }
+    </script>
+  </body>
+</html>

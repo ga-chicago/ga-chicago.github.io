@@ -1,0 +1,51 @@
+.wrapper {
+height: 100%;
+width: 100%;
+background-color: #ccc;
+margin: 0;
+padding: 0;
+background-image: url("http://images7.alphacoders.com/437/437679.jpg");
+background-size: cover;
+}
+.title {
+  height: 75px;
+  width: 100%;
+  background: #000;
+  margin: 0;
+  padding: 0;
+}
+.titlebox {
+  padding: 10px;
+}
+.title h1 {
+  text-align: right;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  height: 100px;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+}
+.footer h3 {
+  padding: 5px;
+  color: #ccc;
+}
+.middle {
+  height: 100%;
+  margin: 0;
+  text-align: center;
+
+}
+body, html {
+height: 100%;
+margin: 0;
+font-family: verdana;
+
+}
+.about li{
+  list-style: none;
+}

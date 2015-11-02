@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500" style="border: 1px solid black"></canvas>
+
+    <script type="text/javascript">
+
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+
+
+
+  /*  context.fillStyle = 'blue';
+    context.fillRect(100, 100, 100, 100);*/
+
+    function randomNumber() {
+        return parseInt(Math.random() * 500);
+    }
+
+    function randomCol() {
+        var r = parseInt(Math.random() * 255);
+        var g = parseInt(Math.random() * 255);
+        var b = parseInt(Math.random() * 255);
+        var color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+        console.log(color);
+        return color;
+    }
+
+    for (i = 0; i < 75; i++) {
+        function randomLines() {
+            context.beginPath();
+            context.moveTo(randomNumber(), randomNumber());
+            context.lineWidth = 10;
+            context.lineTo(randomNumber(), randomNumber());
+            context.strokeStyle = randomCol();
+            context.stroke();
+        }
+        randomLines();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+///LEGIT ONE////
+/*     for (i = 0; i < 75; i++) {
+      function randomLines() {
+            context.beginPath();
+            context.moveTo(randomNumber(), randomNumber());
+            context.lineWidth = 10;
+            context.lineTo(randomNumber(), randomNumber());
+            context.strokeStyle = randomCol();
+            context.stroke();
+        }
+        randomLines();
+    }     */
+
+//var y = randomNumber();
+//console.log(x,y);
+
+/*function randomLine(){
+      for (i = 0; i < 3; i++) {
+      var x = function randomNumber(){
+      parseInt(Math.random() * 500)
+      }
+      var y = randomNumber(y);
+      context.beginPath();
+      context.moveTo(x, y);
+      context.lineWidth = 20;
+      context.LineTo(x,y);
+      context.strokeStyle = 'red';
+      context.stroke();
+    }
+  } */
+
+
+
+     //numObj.toString(r);
+  /*  context.beginPath();
+    context.moveTo(400, 400);
+    context.lineWidth = 20;
+    for (i = 400; i <= 500; i++){
+      context.lineTo([i],[i]);
+    }
+    context.strokeStyle = 'yellow';
+    context.stroke();               */
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+
+    <canvas id="canvas" width="5000em" height="5000em" style='border: 1px solid white'></canvas>
+
+    <script type="text/javascript">
+
+      var c = document.getElementById('canvas');//Allows you to grab and manipulate the canvas
+      var ctx = c.getContext('2d');//2d vs. 3d, 3d is pretty experimental
+
+      /*
+      var img = new Image();
+      img.src = 'http://content.sportslogos.net/logos/7/169/thumbs/354.gif';
+
+
+      img.onload = function() {
+      var pat = ctx.createPattern(img, 'repeat');
+      ctx.beginPath();
+      ctx.moveTo(rand(), rand());
+      ctx.lineWidth = 200;
+      ctx.lineTo(rand(), rand());
+      ctx.strokeStyle = pat;
+      ctx.stroke();
+      }
+      */
+
+      //var interval = window.setInterval(,10);
+
+
+      function rand(){
+        return Math.round(Math.random()*500);
+      }
+
+/*
+        ctx.fillStyle = pat;
+        ctx.fillRect(0, 0, 500, 500);//Top left corner is starting point
+*/
+        function randomColor() {
+          var r = Math.round(Math.random() * 255);
+          var g = Math.round(Math.random() * 255);
+          var b = Math.round(Math.random() * 255);
+          var a = Math.random();
+          return 'rgba('+r+', '+g+', '+b+', '+a+')'
+      }
+
+      var yx = setInterval(drawCircle, 2000);
+      var xy = setInterval(drawLine, 1000);
+
+      function drawing() {
+        drawLine();
+        drawCircle();
+      }
+
+      function drawCircle() {
+      ctx.beginPath();
+      ctx.arc(rand(), rand(), rand()/2, 0, 2*Math.PI);
+      ctx.fillStyle = randomColor();
+      ctx.fill();
+      ctx.strokeStyle = rgb(255, 255, 255, 0);
+      ctx.stroke();
+    }
+      function drawLine() {
+      ctx.beginPath();
+      ctx.moveTo(rand(), rand());
+      ctx.lineWidth = rand();
+      ctx.lineTo(rand(), rand());
+      ctx.strokeStyle = randomColor();
+      ctx.stroke();
+    }
+
+    /*
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.lineWidth = 100;
+      ctx.lineTo(500, 500);
+      ctx.strokeStyle = randomColor();
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.moveTo(0, 500);
+      ctx.lineWidth = 100;
+      ctx.lineTo(500, 0);
+      ctx.strokeStyle = randomColor();
+      ctx.stroke();
+      */
+
+    </script>
+
+
+  </body>
+</html>

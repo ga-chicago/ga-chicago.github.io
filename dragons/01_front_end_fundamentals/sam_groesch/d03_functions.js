@@ -1,6 +1,11 @@
 //
 // Cats are alright. Like not a huge fan or anything but there are some nice ones. Dogs are definitely better though
 //
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f19fd7c7dcf2f88daa8075e77725b62fb2a88f3b
 
 function likeCats(){
   return "I like cats. Meow."
@@ -45,3 +50,7 @@ var colors = ['green', 'blue', 'purple'];
 colors.map(function(key) { //anonymous function has no name but it still runs as a function
   return key + " is a cool color.";
 });
+<<<<<<< HEAD
+=======
+>>>>>>> 669804fbfd7c21e415039dbe57a943027913747c
+>>>>>>> f19fd7c7dcf2f88daa8075e77725b62fb2a88f3b

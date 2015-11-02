@@ -12,7 +12,14 @@ function max(a, b) {
   }
 }
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 51936a62fc91b975527854601003fbfa0038c777
+>>>>>>> f19fd7c7dcf2f88daa8075e77725b62fb2a88f3b
 var vowels = ['a','e','i','o','u'];
 function evalVowel(char) {
     for (var i = 0; i < vowels.length; i++) {

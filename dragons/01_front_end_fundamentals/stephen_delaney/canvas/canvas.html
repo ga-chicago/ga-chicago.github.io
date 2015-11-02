@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+        <meta http-equiv="refresh" content="1" />
+    <title>My Canvas</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500" style="border: 1px solid black">
+    </canvas>
+    <script type="text/javascript">
+      var canvas = document.getElementById('canvas');
+      var context = canvas.getContext('2d')
+
+      make_base();
+
+      function make_base()
+      {
+        base_image = new Image();
+        base_image.src = 'http://image.funscrape.com/images/b/britney_spears-1341.gif';
+        base_image.onload = function(){
+          context.drawImage(base_image, getRandomInt(0, 400), getRandomInt(0, 400));
+        }
+      }
+
+      context.fillStyle = "blue";
+      context.fillRect(100, 100, 100, 100);
+
+  for (var i = 0; i < 10; i++) {
+    context.beginPath();
+    context.moveTo(getRandomInt(0, 500), getRandomInt(0, 500));
+    context.lineTo(getRandomInt(0, 500), getRandomInt(0, 500));
+    context.strokeStyle = rgb(getRandomInt(0, 255), getRandomInt(0, 255), getRandomInt(0, 255));
+    context.lineWidth = 40;
+    context.stroke();
+  }
+
+
+      function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function rgb(r, g, b){
+  return "rgb("+r+","+g+","+b+")";
+}
+
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+img {
+	margin: 10px 0px 0px 0px;
+	border: 6px solid black;
+	border-radius: 20px;
+}
+body{
+  text-align: center;
+  background-image: url("http://www.artic.edu/aic/collections/citi/images/standard/WebLarge/WebImg_000205/120994_2290579.jpg");
+}
+p {
+  background-color: #0B0B3B;
+  color: #A4A4A4;
+  margin: 10px 10px 10px 10px;
+}
+a {
+  text-decoration: none;
+  color: #A4A4A4;
+}
+a:hover {
+  color: red;
+}
+h1 {
+  color: #2E2E2E;
+}
+#ski:hover {
+	
+}

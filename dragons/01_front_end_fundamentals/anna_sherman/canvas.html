@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+      <canvas id="canvas" width="500" height="500" style="border: 1px solid black"></canvas>
+
+      <script type = "Text/javascript">
+      var canvas = document.getElementById('canvas');
+      var context = canvas.getContext('2d');
+
+      //var rando(scope){
+      //  var x = scope*Math.random();
+      //  return x;
+      //}
+      function rando(scope){
+        x = scope*Math.random();
+        console.log(x);
+        return x;
+      }
+
+      var ranColor = function(){
+        r = parseInt(256*Math.random());
+        g = parseInt(256*Math.random());
+        b = parseInt(256*Math.random());
+        a = (Math.random());
+        var colors = 'rgba(' + 0 + ',' + g + ',' + b + ',' + a + ')';
+        console.log(colors);
+        return colors;
+      }
+//for (var i = 0; i < 2000; i++) {
+
+    //  context.fillStyle = 'rgb(40, 190, 172)';
+    //  context.fillRect(100,100,100,100);
+
+    //  context.beginPath();
+    //  context.moveTo(500*Math.random(),500*Math.random());
+    //  context.lineWidth = 40*Math.random();
+    //  context.lineTo((500*Math.random()),(500*Math.random()));
+    //  context.strokeStyle = ranColor();
+    //  context.stroke();
+var intervalID = window.setInterval(makeCircle, 100);
+
+function makeCircle(){
+      context.beginPath();
+      context.arc(rando(500), rando(500), rando(50), 0, 2 * Math.PI, false);
+      context.fillStyle = ranColor();
+      context.fill();
+      context.lineWidth = 5;
+      context.strokeStyle = '#003300';
+      context.stroke();
+}
+
+//}
+
+
+
+      </script>
+
+  </body>
+</html>

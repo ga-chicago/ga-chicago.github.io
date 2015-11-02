@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+
+    <canvas id="canvas" width="500" height="500" style="border: 15px dotted black"></canvas>
+    <script type="text/javascript">
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+    context.fillStyle = 'green';
+    context.fillRect(100,100,100,100);
+
+    context.beginPath();
+    context.moveTo(200, 200);
+    context.lineTo(300, 300);
+    context.strokeStyle ='red';
+    context.stroke();
+
+    function getRandomIntInclusive(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function drawline(){
+      context.beginPath();
+      context.moveTo(getRandomIntInclusive(0,500), getRandomIntInclusive(0,500));
+      context.lineTo(getRandomIntInclusive(0,500), getRandomIntInclusive(0,500));
+      context.strokeStyle ='red';
+      context.stroke();
+    }
+
+    function drawbox(){
+      context.fillStyle = 'green';
+      context.fillRect(getRandomIntInclusive(0,500), getRandomIntInclusive(0,500), getRandomIntInclusive(0,500), getRandomIntInclusive(0,500));
+    }
+
+    function drawimg() {
+      var img = new Image();
+      img.onload = function(){
+        context.drawImage(img,getRandomIntInclusive(0,400), getRandomIntInclusive(0,400));
+      };
+      img.src = 'http://piq.codeus.net/static/media/userpics/piq_208506.png';
+    }
+
+    for (var i = 0; i < 5; i++) {
+      drawline();
+      drawbox();
+      drawimg();
+    }
+    </script>
+  </body>
+</html>

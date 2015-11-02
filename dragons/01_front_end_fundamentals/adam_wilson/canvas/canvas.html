@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+    <!-- canvas html tag creates a canvas to draw on -->
+    <canvas id="canvas" width="500" height="500" style="border: 10px solid pink"></canvas>
+
+    <script type="text/javascript">
+
+      // get id canvas from document and assign to var canvas
+      var canvas = document.getElementById('canvas');
+
+      // get a 2d context for canvas and assign this as "context"
+      var context = canvas.getContext('2d');
+      // pull pen before put to paper with fillstyle
+
+     function randomNumber() {
+        return Math.random() * 500;
+      }
+
+      //these run properties on the (2d) context (canvas)
+
+      // the rectangle and its color and position, size
+      context.fillStyle = 'blue';
+      context.fillRect(100, 100, 200, 200);
+
+      // line pickup pencil, start and endpts, etc..
+      context.beginPath();
+      context.moveTo(200, 200); // x and y start line
+      context.lineTo(300, 300); // x and y line ends
+      context.strokeStyle = 'green'; //pen color to use
+      context.stroke(); // now draw w pen per above
+      context.lineTo(100, 500);
+      context.stroke();
+      context.lineTo(randomNumber(), randomNumber());
+      context.stroke();
+      // context.lineTo(Math.random * 500, Math.random * 500)
+      // context.stroke();
+
+      function rgbPiece() {
+        return Math.floor(Math.random() * 255) +1;
+      }
+
+      function randomRGB() {
+          var rgb = 'rgb(';
+          rgb += rgbPiece();
+          rgb += ',';
+          rgb += rgbPiece();
+          rgb += ',';
+          rgb += rgbPiece();
+          rgb += ')';
+          return rgb;
+      }
+
+      function tenRandom() {
+        for (var i = 0; i < 25; i++) {
+          context.beginPath();
+          context.moveTo(randomNumber(), randomNumber());
+          context.lineTo(randomNumber(), randomNumber());
+          context.lineWidth = '10';
+          context.strokeStyle = randomRGB(); //pen color to use
+          context.stroke(); // now draw w pen per above
+        }
+      }
+      tenRandom();
+
+      // unicorn farts canvas animation from slack ////////
+      // var lolExplosion2 = 0;
+      // while (lolExplosion2 < 1000) {
+      //   context.beginPath();
+      //   var x = Math.random() * lolExplosion2; // x coordinate
+      //   var y = Math.random() * lolExplosion2; // y coordinate
+      //   var radius = Math.random() * 100; // Arc radius
+      //   var startAngle = 0; // Starting point on circle
+      //   var endAngle = Math.PI * 2; // End point on circle
+      //   var anticlockwise = false; // clockwise or anticlockwise
+      //   context.arc(x, y, radius, startAngle, endAngle, anticlockwise);
+      //   context.lineWidth = 3;
+      //   var r = parseInt(Math.random() * 1000);
+      //   var g = parseInt(Math.random() * 1000);
+      //   var b = parseInt(Math.random() * 1000);
+      //   var a = Math.random();
+      //   alert(r + ', ' + g + ', ' + b + ', ' + a);
+      //   context.strokeStyle = 'rgba(' + r + ', ' + g + ', ' + b + ', ' + a + ')';
+      //   context.stroke();
+      //
+      //   lolExplosion2 += 1;
+      // }
+      // end of unicorn farts /////////////////////////////
+
+    </script>
+  </body>
+</html>

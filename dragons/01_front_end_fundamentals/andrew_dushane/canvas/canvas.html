@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script type="text/javascript">
+      var viewportWidth = window.innerWidth;
+      var viewportHeight = window.innerHeight;
+      document.getElementById("canvas").setAttribute('width', viewportWidth);
+      document.getElementById("canvas").setAttribute('height', viewportHeight);
+      function randomX() {
+        return Math.floor(Math.random() * viewportWidth);
+      }
+      function randomY() {
+        return Math.floor(Math.random()  * viewportHeight);
+      }
+      function randomColor() {
+        var r = Math.floor(Math.random() * 255);
+        var g = Math.floor(Math.random() * 255);
+        var b = Math.floor(Math.random() * 255);
+        var color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+        return color;
+      }
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+
+      // ctx.fillStyle = "#4766ac";
+      // ctx.fillRect(100,100,100,100);
+      // ctx.beginPath();
+      // ctx.moveTo(200,200);
+      // ctx.lineWidth = 20;
+      // ctx.lineTo(300,300);
+      // ctx.strokeStyle = 'blue';
+      // ctx.stroke();
+      // ctx.closePath();
+
+      function drawRandomLines() {
+        var i = 1000;
+        (function line() {
+          ctx.beginPath();
+          var color = randomColor();
+          var x1 = randomX();
+          var y1 = randomY();
+          var x2 = randomX();
+          var y2 = randomY();
+          ctx.moveTo( x1 , y1 );
+          ctx.lineWidth = 2;
+          ctx.lineTo(x1 , y2);
+          ctx.strokeStyle = color;
+          ctx.stroke();
+          ctx.closePath();
+          i--;
+          if( i ) {
+            setTimeout(line,10);
+          }
+        })();
+      }
+      drawRandomLines();
+
+      function drawRandomCircle() {
+
+      }
+
+      // for(i = 0; i < 100; i++ ) {
+      //   drawRandomLine();
+      // }
+
+
+    </script>
+  </body>
+</html>

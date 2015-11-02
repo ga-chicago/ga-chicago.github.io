@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  /*background-color: #fffffe;*/
+  background: url("http://www.blastr.com/sites/blastr/files/styles/rectangle_960x480/public/Totally-Awesome-Hulk-1-Preview-5_0.jpg?itok=Rci8g_c2&timestamp=1446057126") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+  font-size: 6em;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}

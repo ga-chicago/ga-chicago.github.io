@@ -1,0 +1,37 @@
+// 1. Return greater of two values.  If same, then return the number
+function max(x,y) {
+  if (x>y) {
+    return x;
+  }
+  else {
+    return y;
+  }
+}
+
+// 2. True if x is vowel.  False if not a vowel
+function isVowel(x) {
+  if (x==='a' || x==='e' || x==='i' || x==='o' || x==='u') {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+// sum all numbers in array x
+function sumArray(x) {
+    var sum =0;
+    for(var i in x) {
+    sum = sum + x[i];
+   }
+   return sum;
+}
+
+// 3. multiplies all nubmers in array x
+function muliplyArray(x) {
+    var prod =1;
+    for(var i in x) {
+    prod = prod * x[i];
+   }
+   return prod;
+}

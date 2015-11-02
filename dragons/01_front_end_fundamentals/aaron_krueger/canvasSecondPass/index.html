@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+
+    <canvas id="canvas" width="600" height="600" style="border: dashed 5px black"></canvas>
+
+
+
+
+    <script type="text/javascript">
+
+      var c = document.getElementById('canvas');
+      var ctx = c.getContext('2d');
+
+      ctx.fillStyle = randColour();
+      ctx.fillRect(300,300,100,100);
+
+      var pX = function (){
+        var random = Math.floor(Math.random()*600);
+        return random;
+      }
+      var pY = function (){
+        var random = Math.floor(Math.random()*600);
+        return random;
+      }
+
+      function randColour(){
+        var cma = ',';
+        var r = Math.floor(Math.random()*256),
+            g = Math.floor(Math.random()*256),
+            b = Math.floor(Math.random()*256),
+            a = Math.random();
+        return 'rgba('+r+cma+g+cma+b+cma+a+')';
+      }
+
+      for (var i = 0; i < 30; i++) {
+        ctx.beginPath();
+        ctx.moveTo(pX(), 100);
+        ctx.lineWidth= Math.random()*10;
+        ctx.lineTo(pX(),pY());
+        ctx.lineTo(pX(),pY());
+        ctx.lineTo(pX(),pY());
+        ctx.stroke();
+        }
+        for (var i = 0; i < 30; i++) {
+          ctx.beginPath();
+          ctx.moveTo(pX(), 100);
+          ctx.lineWidth= Math.random()*10;
+          ctx.lineTo(pX(),pY());
+          ctx.lineTo(pX(),pY());
+          ctx.lineTo(pX(),pY());
+          ctx.strokeStyle = randColour();
+          ctx.stroke();
+          }
+
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="1000" height="1000" style="border: 1px solid black"></canvas>
+    <script type="text/javascript">
+
+      var canvas = document.getElementById('canvas');
+      var context = canvas.getContext('2d');
+
+      // var lolExplosion = 0;
+      // while (lolExplosion < 1000) {
+      //   context.beginPath();
+      //   context.moveTo(Math.random() * lolExplosion, Math.random() * lolExplosion);
+      //   context.lineTo(Math.random() * lolExplosion, Math.random() * lolExplosion);
+        // context.lineWidth = 3;
+        // var r = parseInt(Math.random() * 1000);
+        // var g = parseInt(Math.random() * 1000);
+        // var b = parseInt(Math.random() * 1000);
+        // var a = Math.random();
+        // alert(r + ', ' + g + ', ' + b + ', ' + a);
+        // context.strokeStyle = 'rgba(' + r + ', ' + g + ', ' + b + ', ' + a + ')';
+      //   context.stroke();
+      //   lolExplosion += 1;
+      // }
+
+      var lolExplosion2 = 0;
+      while (lolExplosion2 < 1000) {
+        context.beginPath();
+        var x = Math.random() * lolExplosion2; // x coordinate
+        var y = Math.random() * lolExplosion2; // y coordinate
+        var radius = Math.random() * 100; // Arc radius
+        var startAngle = 0; // Starting point on circle
+        var endAngle = Math.PI * 2; // End point on circle
+        var anticlockwise = false; // clockwise or anticlockwise
+        context.arc(x, y, radius, startAngle, endAngle, anticlockwise);
+        context.lineWidth = 3;
+        var r = parseInt(Math.random() * 1000);
+        var g = parseInt(Math.random() * 1000);
+        var b = parseInt(Math.random() * 1000);
+        var a = Math.random();
+        alert(r + ', ' + g + ', ' + b + ', ' + a);
+        context.strokeStyle = 'rgba(' + r + ', ' + g + ', ' + b + ', ' + a + ')';
+        context.stroke();
+
+        lolExplosion2 += 1;
+      }
+    </script>
+  </body>
+</html>

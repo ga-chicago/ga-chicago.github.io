@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+  </head>
+  <body>
+<canvas id="canvas" width="500" height="500" style="border: 1px solid #000"></canvas>
+<script type="text/javascript">
+//  var a = randomLines() {
+//    return Math.random() * 100;
+//  }
+//  var b = randomLines() {
+//    return Math.random() * 100;
+//  }
+
+  function ra() {
+    return Math.random() * 100;
+  }
+
+ function randomColor() {
+ var red = Math.floor(Math.random() * 255);
+ var blue = Math.floor(Math.random() * 255);
+ var green = Math.floor(Math.random() * 255);
+ var color = 'rgb(' + red + ',' + blue + ',' + green + ')';
+ return color;
+}
+
+  var canvas = document.getElementById('canvas');
+  var context = canvas.getContext('2d');
+  context.fillStyle= randomColor();
+  context.fillRect(100, 100, 100, 100);
+  context.beginPath();
+  context.moveTo(ra(),ra());
+  context.lineWidth = (ra());
+  context.lineTo(ra(),ra());
+  context.strokeStyle = randomColor();
+  context.stroke();
+
+  var box = canvas.getContext('2d');
+  box.fillStyle='red';
+  box.fillRect(ra(), ra(), ra(), ra());
+  box.beginPath();
+
+</script>
+  </body>
+</html>

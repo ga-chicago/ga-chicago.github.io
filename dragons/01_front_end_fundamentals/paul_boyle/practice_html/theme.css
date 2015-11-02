@@ -1,0 +1,19 @@
+p {
+  color:black
+}
+
+body {
+  background-color: gray;
+  text-align: center;
+}
+
+button:hover {
+  background-color: red;
+  text-align: center;
+}
+
+button{
+  width:25%;
+  height:5em;
+  text-align: center;
+};
