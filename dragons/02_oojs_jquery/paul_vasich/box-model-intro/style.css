@@ -1,0 +1,61 @@
+header {
+  background: lime;
+  color: purple;
+  /* margin == "moat" */
+  margin: 50px;
+  /* border == "fence"? */
+  border: 5px dashed;
+  /* padding == "courtyard"? */
+  padding: 50px;
+
+}
+
+section {
+  color: beige;
+  background: salmon;
+  border: 2px dashed;
+  margin: 15px;
+  padding: 15px;
+  width: 400px;
+  text-align: center;
+}
+
+#wrapper {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+}
+#logo {
+  font-size: 3em;
+  font-weight: bold;
+  border: 3px dashed orange;
+  margin: 3px;
+}
+#navbar {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 3px dashed purple;
+  margin: 3px;
+  background-color: hotpink;
+}
+#sidebar {
+  float: right;
+  border: 3px dashed green;
+  margin: 3px;
+  width: 25%;
+  background-color: lightblue;
+}
+#content {
+  float: left;
+  border: 3px dashed navy;
+  margin: 3px;
+  width: 65%;
+  color: black;
+  background-color:lightgray;
+}
+#goodbye {
+  margin: 3px;
+  border: 3px dashed red;
+  clear: both;
+  background-color: darkorange;
+}

@@ -1,3 +1,5 @@
+// see http://processingjs.org/learning/topic/flocking
+
 //  randomSquare(int canvasSize) => random square-like object
 function randomSquare(sz) {
 
