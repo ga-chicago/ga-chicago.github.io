@@ -5,7 +5,7 @@
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>this, hasOwnProperty, .keys | WDI Chicago #3: Dragons</title>
+        <title>Style Guides | WDI Chicago #3: Dragons</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -29,10 +29,10 @@
         
     
     
-    <link rel="next" href="../02_oojs_jquery/d01-hw.html" />
+    <link rel="next" href="../02_oojs_jquery/d02-hw.html" />
     
     
-    <link rel="prev" href="../02_oojs_jquery/d01-object-methods.html" />
+    <link rel="prev" href="../02_oojs_jquery/d02-fonts.html" />
     
 
         <!-- head:end -->
@@ -40,7 +40,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.1.3" data-basepath=".." data-revision="Tue Nov 03 2015 16:03:43 GMT-0600 (CST)">
+    <div class="book" data-level="2.2.5" data-basepath=".." data-revision="Tue Nov 03 2015 16:03:43 GMT-0600 (CST)">
     
 
 <div class="book-summary">
@@ -639,7 +639,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.3" data-path="02_oojs_jquery/d01-objects-again.html">
+        <li class="chapter " data-level="2.1.3" data-path="02_oojs_jquery/d01-objects-again.html">
             
                 
                     <a href="../02_oojs_jquery/d01-objects-again.html">
@@ -757,7 +757,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.5" data-path="02_oojs_jquery/d02-style-guide.html">
+        <li class="chapter active" data-level="2.2.5" data-path="02_oojs_jquery/d02-style-guide.html">
             
                 
                     <a href="../02_oojs_jquery/d02-style-guide.html">
@@ -1082,37 +1082,35 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="object-methods-this">Object Methods &amp; &apos;this&apos;</h2>
-<h4 id="hasownproperty">hasOwnProperty</h4>
+                        <h2 id="style-guide-fonts">Style Guide &amp; Fonts</h2>
+<h4 id="rule-of-thumb-for-style-guides">Rule of Thumb for Style Guides</h4>
+<p>Note that every style guide is unique. This is just a good starting point.</p>
 <ul>
-<li><code>Object.hasOwnProperty(&apos;name-of-key&apos;);</code></li>
-<li>Allows you to check an object for a specific key</li>
-<li>Returns true/false</li>
+<li>Headline Text: 300%<ul>
+<li>B-Head (sub) text: 150%</li>
+<li>Nav Item: 100%</li>
+<li>Body copy (text): 100% - starting point could be <code>body { font-size: 16px }</code></li>
 </ul>
-<p><em>Example:</em></p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> obj = {
-  kittens: <span class="hljs-string">&apos;aww&apos;</span>;
-};
-obj.hasOwnProperty(<span class="hljs-string">&apos;kittens&apos;</span>); <span class="hljs-comment">// true</span>
+</li>
+<li>Byline: 75%</li>
+</ul>
+<h4 id="examples-with-sass-variables">Examples with Sass variables</h4>
+<ul>
+<li><code>1rem</code> = 100%</li>
+<li><code>rem</code> is responsive and related to the <code>root</code> of the page.</li>
+</ul>
+<pre><code class="lang-scss"><span class="hljs-comment">// style guide variables</span>
+
+<span class="hljs-variable">$headline-text</span><span class="hljs-value">: <span class="hljs-number">3rem</span>;</span> <span class="hljs-comment">// 300%</span>
+<span class="hljs-variable">$body-text</span><span class="hljs-value">: <span class="hljs-number">1rem</span>;</span>   <span class="hljs-comment">// 100%</span>
+<span class="hljs-variable">$nav-item</span><span class="hljs-value">: <span class="hljs-number">1.25rem</span>;</span> <span class="hljs-comment">// 125%</span>
+<span class="hljs-variable">$sub-header</span><span class="hljs-value">: <span class="hljs-number">1.50rem</span>;</span> <span class="hljs-comment">// 150%</span>
+<span class="hljs-variable">$byline</span><span class="hljs-value">: <span class="hljs-number">0.75rem</span>;</span> <span class="hljs-comment">// 75%</span>
+
+<span class="hljs-tag">body</span> {
+  <span class="hljs-attribute">font-size</span><span class="hljs-value">: <span class="hljs-number">16px</span>;</span>
+}
 </code></pre>
-<h4 id="object-keys">Object.keys()</h4>
-<ul>
-<li><code>Object.keys(nameOfObject);</code></li>
-<li>Returns an array of every key that an Object has</li>
-</ul>
-<p><em>Example:</em></p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> obj = {
-  kittens: <span class="hljs-string">&apos;aww&apos;</span>,
-  puppies: <span class="hljs-string">&apos;adorable&apos;</span>
-};
-<span class="hljs-built_in">Object</span>.keys(obj); <span class="hljs-comment">// [&apos;kittens&apos;, &apos;puppies&apos;]</span>
-</code></pre>
-<h4 id="-this">&apos;this&apos;</h4>
-<ul>
-<li>&apos;this&apos; allows us to reference a base object</li>
-<li>Think of <code>this</code> as being able to jump up a root level in an object</li>
-<li>Further reading: <a href="http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/" target="_blank">http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/</a></li>
-</ul>
 
                     
                     </section>
@@ -1123,10 +1121,10 @@ obj.hasOwnProperty(<span class="hljs-string">&apos;kittens&apos;</span>); <span 
         </div>
 
         
-        <a href="../02_oojs_jquery/d01-object-methods.html" class="navigation navigation-prev " aria-label="Previous page: Object Methods"><i class="fa fa-angle-left"></i></a>
+        <a href="../02_oojs_jquery/d02-fonts.html" class="navigation navigation-prev " aria-label="Previous page: Fonts"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../02_oojs_jquery/d01-hw.html" class="navigation navigation-next " aria-label="Next page: Homework: Layout Challenges"><i class="fa fa-angle-right"></i></a>
+        <a href="../02_oojs_jquery/d02-hw.html" class="navigation navigation-next " aria-label="Next page: Homework"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
