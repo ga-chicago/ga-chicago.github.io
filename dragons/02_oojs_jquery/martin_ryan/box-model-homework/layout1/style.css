@@ -1,0 +1,40 @@
+#wrapper {
+  width: 90%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#topNav {
+  /*width: 90%;*/
+  /*margin-left: auto;
+  margin-right: auto;
+  margin: 20px;*/
+  margin-bottom: 10px;
+  height: 20%;
+  background-color: grey;
+}
+
+#colLeft {
+  float: left;
+  width: 63%;
+  height: 60%;
+  background-color: grey;
+  margin-bottom: 10px;
+}
+
+#colRight {
+  float: right;
+  width: 35%;
+  height: 60%;
+  background-color: grey;
+  margin-bottom: 10px;
+}
+
+#botNav {
+  clear: both;
+  /*width: 90%;
+  margin: 20px;*/
+  height: 20%;
+  background-color: grey;
+}

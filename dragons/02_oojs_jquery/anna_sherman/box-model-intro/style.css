@@ -1,0 +1,97 @@
+/*ids are identifiable using a name */
+
+#wrapper {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  border: 3px dashed black;
+}
+
+#logo{
+  border: 3px dashed orange;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 3px;
+}
+
+#navbar{
+  border: 3px dashed purple;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 3px;
+  margin: 3px;
+}
+
+#sidebar {
+  border: 3px dashed green;
+  margin: auto 0px;
+  float: left;
+  width:30%;
+}
+
+#content{
+  border: 3px dashed navy;
+  margin: auto 0px;
+  width:30%;
+}
+
+#content2{
+  float:right;
+  border:3px dashed black;
+  margin: auto 0px;
+  width:30%;
+}
+
+
+#goodbye{
+  margin: 3px;
+  border: 3px dashed red;
+  clear: both; /*clear floats*/
+}
+
+/*li{
+  display: inline;
+}*/
+
+/*elements are WRAPPED */
+/*you should only ever use exact pixels if your content needs a specific height. aka never.*/
+/*we use a wrapper to contain b/c things mess up */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header {
+  background-color: rgb(100, 252, 120);
+  border: 10px dashed;
+  padding: 20px;
+  margin-top: 20px;
+}
+img{
+  height: 50%;
+  width: 50%;
+}
+/*moat = margin */
+/*border = courtyard helps define */
+/*padding expands the courtyard. takes the edge of it and pushes it back*/
+
+
+/*section {
+  background-color: rgb(105, 171, 171);
+  border: 10px dashed;
+  padding: 20px;
+  margin: 20px;
+}*/

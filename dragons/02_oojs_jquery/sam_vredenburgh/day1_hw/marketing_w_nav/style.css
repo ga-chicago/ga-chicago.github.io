@@ -1,0 +1,106 @@
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#top {
+  margin: 10px;
+  float: left;
+  border: 2px solid black;
+  width: 25%;
+  height: 8em;
+  background: rgb(30, 54, 59);
+}
+
+#one {
+  border: 2px solid black;
+  float: right;
+  display: inline-block;
+  width: 15%;
+  height: 4em;
+  background: red;
+  margin: 5px;
+  margin-top: 25px;
+}
+
+#two {
+border: 2px solid black;
+float: right;
+display: inline-block;
+width: 15%;
+height: 4em;
+background: black;
+margin: 5px;
+margin-top: 25px;
+}
+
+#three {
+border: 2px solid black;
+float: right;
+display: inline-block;
+width: 15%;
+height: 4em;
+background: blue;
+margin: 5px;
+margin-top: 25px;
+}
+
+#four {
+  border: 2px solid black;
+  float: right;
+  display: inline-block;
+  width: 15%;
+  height: 4em;
+  background: orange;
+  margin: 5px;
+  margin-top: 25px;
+}
+
+#content {
+  height: 20em;
+  width:auto;
+  margin: 10px;
+  background: rgb(86, 116, 129);
+  clear: both;
+  margin-top: 20px;
+  border: 5px solid black;
+}
+
+#five{
+display: inline-block;
+margin: 10px;
+height: 10em;
+border: 3px solid black;
+width: 30%;
+background: rgb(79, 142, 38);
+}
+
+#six {
+  display: inline-block;
+  margin: 10px;
+  height: 10em;
+  border: 3px solid black;
+  width: 30%;
+  background:rgb(184, 163, 91);
+}
+
+#seven {
+  display: inline-block;
+  margin: 10px;
+  height: 10em;
+  border: 3px solid black;
+  width: 30%;
+  background:rgb(151, 86, 152);
+}
+
+#end {
+  clear: both;
+  margin: 5px;
+  border: 2px solid black;
+  background: rgb(108, 95, 207);
+  color: white;
+  text-align: center;
+  height: 5em;
+}

@@ -12,14 +12,14 @@ function lengths(array) {
 lengths(arr);
 
 
-// Round 2
+// Round 2 ----------------------------------------------------------------------------------------------
 function transmogrifier(a, b, c) {
   return Math.pow((a * b), c);
 }
 
 transmogrifier(2, 4, 2);
 
-// Round 3
+// Round 3 ----------------------------------------------------------------------------------------------
 function toonify(accent, sentence) {
   switch (accent) {
     case 'daffy':
@@ -35,7 +35,7 @@ function toonify(accent, sentence) {
 
 toonify('elmer', 'There really is no reason for it.');
 
-// Round 4
+// Round 4 ----------------------------------------------------------------------------------------------
 var str = 'This is a string.';
 function wordReverse(string) {
   var arr = string.split(/ /);
@@ -44,7 +44,7 @@ function wordReverse(string) {
 }
 wordReverse(str);
 
-// Round 5
+// Round 5 ----------------------------------------------------------------------------------------------
 function letterReverse(string) {
   var words = string.split(/ /);
   var revWords = [];
@@ -55,7 +55,7 @@ function letterReverse(string) {
 }
 letterReverse(str);
 
-// Round 6
+// Round 6 ----------------------------------------------------------------------------------------------
 var arrOfStrs = ['these', 'are', 'words', 'or', 'strings'];
 function longest(array) {
   var longest = array[0];
@@ -68,7 +68,7 @@ function longest(array) {
 }
 longest(arrOfStrs);
 
-// Final Round
+// Final Round ------------------------------------------------------------------------------------------
 function repMaster(input, yourFunction) {
   return yourFunction(input) + ' Proves that I am the rep MASTER!';
 }

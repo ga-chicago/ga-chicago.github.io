@@ -1,3 +1,6 @@
+
+
+
 var flowers = ['daisy','rose','daffodil', 'tulip', 'sunflower'];
 function lengths(arrayOfStrings) {
 
@@ -35,6 +38,8 @@ function toonify(accent, sentence){
 }
 
 
+
+
 var wordReverse = function(string){
     arr= string.split(' ');
     arr.reverse();
@@ -47,6 +52,33 @@ var wordReverse = function(string){
 console.log(wordReverse("now I know what a TV dinner feels like"));
 
 ========> "like feels dinner TV a what know I now"
+
+var topic= 'today we will cover css';
+function wordReverse(words){
+
+}
+
+//5.
+
+funciton letterReverse(someStuff){
+
+  var tempArray = someStuff.split(' ');
+  var finalSentence;
+  for (var inc in tempAray);
+  var word= tempArray[inc];
+console.log(word);
+var splitWord = word.split(' ');
+splitWord.reverse();
+word = splitWord.join(' ');
+console.log(word);
+finalSentence = finalSentence + ' ' + word;
+console.log(finalSentence);
+}
+  return finalSentence;
+}
+
+
+
 
 
 

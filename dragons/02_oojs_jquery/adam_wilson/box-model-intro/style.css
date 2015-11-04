@@ -1,0 +1,71 @@
+/*3 columns
+
+*/
+
+#wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo {
+    font-size: 3em;
+    font-weight: bold;
+    border: 3px dashed orange;
+    margin: 3px;
+    /*postion: absolute; in relation to parent = wrapper */
+}
+#navbar {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 3px dashed purple;
+    margin: 3px;
+}
+#sidebar {
+    border: 3px dashed green;
+    margin: 3px;
+    width: 20%;
+    float: right;
+}
+#content {
+    margin: 3px;
+    border: 3px dashed navy;
+    float: left;
+    width: 65%;
+}
+#goodbye {
+    margin: 3px;
+    border: 3px dashed red;
+    clear: both; /* clears floated elements above */
+}
+
+
+
+
+
+
+/*header {
+    font-size: 2em;
+    font-family: impact;
+    color: red;
+    background: limegreen;
+    margin: 10px auto;
+    width: 80%;
+    border: 20px dashed darkblue;
+}
+
+section {
+    margin: 10px;
+    font-size: 1em;
+    padding: 10px;
+    border: 20px dashed red;
+    font-family: georgia;
+    font-weight: bold;
+    background: yellow;
+    float: left;
+    width: 20%;
+}*/
+
+
+
+
+}

@@ -1,0 +1,123 @@
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#header {
+  border: 1px solid black;
+  height: 150px;
+  width: 25%;
+  margin: 1%;
+  float: left;
+  background-color: #ccc;
+}
+
+#nav {
+  margin-top: 50px;
+  padding: 0;
+  width: 56%;
+  float: right;
+}
+
+#nav li {
+  margin-left: 14px;
+  padding: 0;
+  display: inline-block;
+  border: 1px solid black;
+  width: 22%;
+  height: 50px;
+  background-color: #ccc;
+}
+
+#topcol {
+  height: 150px;
+  width: 97.2%;
+  border: 1px solid black;
+  margin: 1%;
+  background-color: #ccc;
+}
+
+#maincolumn {
+  border: 1px solid black;
+  height: 692px;
+  width: 21.5%;
+  margin: 1%;
+  float: left;
+  background-color: #ccc;
+}
+
+#secondCol {
+  width: 76%;
+  float: right;
+}
+
+#maincontain {
+  clear: both;
+}
+
+#container {
+  clear: both;
+}
+
+#midleft {
+  border: 1px solid black;
+  height: 300px;
+  width: 72.5%;
+  float: left;
+  margin: 1%;
+  background-color: #ccc;
+}
+
+#midright {
+  border: 1px solid black;
+  height: 300px;
+  width: 22.5%;
+  float: left;
+  margin: 1%;
+  background-color: #ccc;
+}
+
+#leftcol {
+  border: 1px solid black;
+  height: 200px;
+  width: 22.7%;
+  float: left;
+  margin: 1%;
+  background-color: #ccc;
+}
+
+#centerleft {
+  border: 1px solid black;
+  height: 200px;
+  width: 22.7%;
+  float: left;
+  margin: 1%;
+  background-color: #ccc;
+}
+
+#centerright {
+  border: 1px solid black;
+  height: 200px;
+  width: 22.7%;
+  float: left;
+  margin: 1%;
+  background-color: #ccc;
+}
+
+#rightcol {
+  border: 1px solid black;
+  height: 200px;
+  width: 22.7%;
+  float: left;
+  margin: 1%;
+  background-color: #ccc;
+}
+
+#footer {
+  position: relative;
+  border: 1px solid black;
+  height: 150px;
+  clear: both;
+  margin: 19% 1% 1% 1%;
+  background-color: #ccc;
+}

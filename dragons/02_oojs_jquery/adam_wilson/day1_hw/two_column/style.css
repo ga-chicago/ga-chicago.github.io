@@ -1,0 +1,79 @@
+body {
+}
+#wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+header {
+    font-weight: bold;
+    border: .2em solid black;
+    margin: .2em;
+    padding: .2em;
+    background-color: lightgrey;
+    text-align: center;
+    /*postion: absolute; in relation to parent = wrapper */
+}
+#content {
+    border: .2em solid black;
+    margin: .2em;
+    padding: .2em;
+    width: 74%;
+    float: left;
+    background-color: lightgrey;
+    min-height: 200px;
+
+}
+nav {
+    font-size: 1em;
+    font-weight: bold;
+    border: .2em solid black;
+    margin: .2em;
+    padding: .2em;
+    width: 20%;
+    float: left;
+    background-color: lightgrey;
+    min-height: 200px;
+    overflow: hidden;
+}
+#goodbye {
+    border: .2em solid black;
+    margin: .2em;
+    padding: .2em;
+    clear: both; /* clears floated elements above */
+    background-color: lightgrey;
+    text-align: center;
+}
+
+
+
+
+
+
+/*header {
+    font-size: 2em;
+    font-family: impact;
+    color: red;
+    background: limegreen;
+    margin: 10px auto;
+    width: 80%;
+    border: 20px dashed darkblue;
+}
+
+section {
+    margin: 10px;
+    font-size: 1em;
+    padding: 10px;
+    border: 20px dashed red;
+    font-family: georgia;
+    font-weight: bold;
+    background: yellow;
+    float: left;
+    width: 20%;
+}*/
+
+
+
+
+}

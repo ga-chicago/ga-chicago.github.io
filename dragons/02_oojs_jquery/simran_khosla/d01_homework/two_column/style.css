@@ -1,0 +1,28 @@
+
+
+body { margin: 0; }
+
+.columnsContainer, footer, header { position:
+  relative; margin: .5em; }
+
+.leftColumn, .rightColumn, footer, header {
+  border: 8px solid  #ccc; padding: 1.25em; }
+
+.leftColumn {
+  margin-bottom: .5em;
+  float: left;
+  position: relative;
+  height: 10em;
+  width: 50%;
+  }
+
+.rightColumn {
+  float: right;
+  position: relative;
+  height: 10em;
+  width: 40%;
+  }
+
+footer {
+  clear: both;
+  }

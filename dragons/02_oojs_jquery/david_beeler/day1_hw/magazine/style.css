@@ -1,0 +1,173 @@
+#wrapper {
+  width: 90%; /* percentages, em, rem, are better RESPONSIVE */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#logo {
+  background-image: url(http://www.freeliquidtemplates.com/free-headers-for-websites/header11.jpg);
+  font-size: 1em;
+  width: 25%;
+  padding: 2% 0 1% 0;
+  float: left;
+}
+
+#nav1 {
+  background-image: url(http://screenrant.com/wp-content/uploads/star-wars-episode-7-image.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  float: right;
+  width: 12%;
+  padding: 2% 0 2% 0;
+  margin: 2% 0 2% 1%;
+}
+
+#nav2 {
+  background-image: url(http://screenrant.com/wp-content/uploads/star-wars-episode-7-image.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  float: right;
+  width: 12%;
+  padding: 2% 0 2% 0;
+  margin: 2% 0 2% 1%;
+}
+
+#nav3 {
+  background-image: url(http://screenrant.com/wp-content/uploads/star-wars-episode-7-image.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  float: right;
+  width: 12%;
+  padding: 2% 0 2% 0;
+  margin: 2% 0 2% 1%;
+}
+
+#nav4 {
+  background-image: url(http://screenrant.com/wp-content/uploads/star-wars-episode-7-image.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  float: right;
+  width: 12%;
+  padding: 2% 0 2% 0;
+  margin: 2% 0 2% 1%;
+}
+
+#nav5 {
+  background-image: url(http://screenrant.com/wp-content/uploads/star-wars-episode-7-image.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  float: right;
+  width: 12%;
+  padding: 2% 0 2% 0;
+  margin: 2% 0 2% 11%;
+}
+
+#header-image {
+  background-image: url(http://screenrant.com/wp-content/uploads/star-wars-episode-7-image.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x; 
+  clear: both;
+  float: right;
+  width: 80%;
+  padding: 13% 0 0 0;
+  margin: 3% 0 0 0;
+}
+
+#sidebar-image {
+  background-image: url(http://screenrant.com/wp-content/uploads/star-wars-episode-7-image.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-y;
+  float: left;
+  width: 17%;
+  height: 540px;
+  padding: 10% 0 0 0;
+  margin: 3% 0 3% 0;;
+}
+
+#primary-main {
+  background-image: url(http://screenrant.com/wp-content/uploads/star-wars-episode-7-image.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+  float: left;
+  width: 60%;
+  padding: 50% 0 0 0;
+  margin: 3% 3% 3% 3%;
+}
+
+#primary-right {
+  background-image: url(http://screenrant.com/wp-content/uploads/star-wars-episode-7-image.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+  float: left;
+  width: 17%;
+  padding: 50% 0 0 0;
+  margin: 3% 0 3% 0;
+}
+
+#secondary1 {
+  background-image: url(http://cdn.playbuzz.com/cdn/ab04513b-810f-40ef-81a4-f9a8352af4a9/81d6ef6f-617a-4028-8460-23426d2a7e0f.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  float: left;
+  text-align: left;
+  width: 17%;
+  padding: 8% 0 8% 0;
+  margin: 0 0 3% 3%;
+}
+
+#secondary2 {
+  background-image: url(http://cdn.playbuzz.com/cdn/ab04513b-810f-40ef-81a4-f9a8352af4a9/81d6ef6f-617a-4028-8460-23426d2a7e0f.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  float: left;
+  text-align: left;
+  width: 17%;
+  padding: 8% 0 8% 0;
+  margin: 0 0 3% 4.5%;
+}
+
+#secondary3 {
+  background-image: url(http://cdn.playbuzz.com/cdn/ab04513b-810f-40ef-81a4-f9a8352af4a9/81d6ef6f-617a-4028-8460-23426d2a7e0f.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  float: left;
+  text-align: left;
+  width: 17%;
+  padding: 8% 0 8% 0;
+  margin: 0 0 3% 4.5%;
+}
+
+#secondary4 {
+  background-image: url(http://cdn.playbuzz.com/cdn/ab04513b-810f-40ef-81a4-f9a8352af4a9/81d6ef6f-617a-4028-8460-23426d2a7e0f.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  float: left;
+  text-align: left;
+  width: 17%;
+  padding: 8% 0 8% 0;
+  margin: 0 0 3% 3%;
+}
+
+#legal {
+  background-image: url(http://www.freeliquidtemplates.com/free-headers-for-websites/header11.jpg);
+  clear: both;
+  font-size: 1.25em;
+  font-style: italic;
+  padding: 1.5em;
+
+}

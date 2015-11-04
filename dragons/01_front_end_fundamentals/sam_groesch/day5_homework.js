@@ -45,7 +45,6 @@ function wordReverse(x) {
     var a = [ ];
   for (var i = 0; i < x.length; i++) {
     z[i] = x.substr(i, 1);
-    //z[i] = y;
   }
   z.reverse();
   a = z.join();
@@ -70,7 +69,7 @@ function letterReverse(x) {
     var a = y[j];
     b[j] = wordReverse(a);
     }
-    c = b.join();
+    c = b.join('');
     for (var i = 0; i < c.length; i++) {
       c = c.replace(',', ' ');
     }

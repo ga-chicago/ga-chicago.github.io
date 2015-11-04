@@ -23,12 +23,15 @@ function lengths(x) {
   return newArray;
 } //end function lengths
 lengths(strings);
+// OR IN A FOR EACH LOOP create temp var to put a lenght in each loop run in, THEN push it onto end of array
+
+
 
 
 
 // ROUND 2
 function transmogrifier(num1, num2, num3) {
-   return Math.pow((num1 * num2), num3)
+   return Math.pow((num1 * num2), num3) //Math.pow (takes two args)
 }
 transmogrifier(5, 4, 3) // result 8000
 transmogrifier(13, 12, 5 // result 92389579776
@@ -37,10 +40,10 @@ transmogrifier(42, 13, 7) //result 14466001271480793000
 
 // ROUND 3
 function toonify(accent, sentence) {
-  if (accent = 'daffy') {
-    var newSentence = sentence.replace(/s/gi, 'th');
+  if (accent == 'daffy') {
+    var newSentence = sentence.replace(/s/gi, 'th'); //.replace(current/g, replace with)
   }
-  if (accent = 'elmer') {
+  if (accent == 'elmer') {
     var newSentence = sentence.replace(/r/gi, 'w');
   }
   console.log(newSentence);
@@ -48,6 +51,7 @@ function toonify(accent, sentence) {
 toonify('elmer', 'dangnabbit, that rascally rabbit!');
 toonify('daffy', 'say, I suspect something fishy');
 
+// ADD********* else return sentence (always retrun in f)
 
 // ROUND 4
 var helloWorld = "have wars clone the begin";
@@ -55,7 +59,7 @@ var helloWorld = "have wars clone the begin";
 function wordReverse(string){
   var array = string.split(" ");  // string > array separting by empty spaces (" ")
   array.reverse(); // reverses order of array items
-
+  //return array.join(" ");
   var newString = " "; //empty string declared
   for (var i = 0; i < array.length; i++) {
     newString += array[i] + " ";
@@ -76,7 +80,7 @@ function letterReverse(string) { // hello world > olleh dlrow
 
   for (i = 0; i < wordArray.length; i++ ) {
   //split word into array of letters
-     arrayOfLetters = wordArray[i].split("");
+    arrayOfLetters = wordArray[i].split("");
     //reverse the letter order in array
     arrayOfLetters.reverse();
     //add array to a string

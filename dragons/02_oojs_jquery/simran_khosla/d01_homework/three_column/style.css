@@ -1,0 +1,42 @@
+
+
+body { margin: 0; }
+
+.columnsContainer, footer, header { position:
+  relative; margin: .5em; }
+
+.leftColumn, .middlecolumn, .rightColumn, footer, header {
+  border: 8px solid  #ccc; padding: 1em; }
+
+.leftColumn {
+  margin-bottom: .5em;
+  float: left;
+  position: relative;
+  width: 15%;
+  height: 4em;
+  margin-right: 1em;
+  }
+
+.middlecolumn {
+  margin-bottom: .5em;
+  float: left;
+  position: relative;
+  height: 4em;
+  width: 56%;
+      }
+
+.rightColumn {
+  float: right;
+  position: relative;
+  width: 15%;
+  height: 4em;
+  margin-bottom: 1em;
+  }
+
+footer {
+  clear: both;
+  }
+
+header {
+  margin-bottom: 1em;
+}

@@ -1,0 +1,67 @@
+#header{
+  width:100%;
+  background-color: lightgrey;
+  margin-bottom: 2%;
+  height: 100px;
+}
+
+#upper-left{
+  width: 45%;
+  background-color: lightgrey;
+  height: 400px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+#upper-right{
+  width: 45%;
+  float: right;
+  height: 400px;
+  background-color: lightgrey;
+}
+
+
+#body {
+  min-width: 630px;      /* 2x LC width + RC width */
+}
+#container {
+  padding-left: 200px;   /* LC width */
+  padding-right: 190px;  /* RC width */
+}
+#container .column {
+  position: relative;
+  float: left;
+  height: 80px;
+}
+#center {
+  padding: 10px 20px;
+  width: 100%;
+  background-color: lightgrey;
+}
+#left {
+  width: 180px;          /* LC width */
+  padding: 0 10px white;
+  right: 240px;          /* LC width */
+  margin-left: -100%;
+  background-color: grey;;
+}
+#right {
+  width: 130px;          /* RC width */
+  padding: 0 10px white;
+  margin-right: -190px;  /* RC width */
+  background-color: grey;
+}
+#footer {
+  clear: both;
+  width:100%;
+  background-color: lightgrey;
+  margin-top: 35%;
+  height: 100px;
+}
+
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}

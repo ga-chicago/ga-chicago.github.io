@@ -1,0 +1,50 @@
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border: 3px solid grey;
+  height: 600px;
+}
+
+#tiptop {
+  border: 3px solid grey;
+  margin: 3px;
+  height: 120px;
+  background: lightgrey
+}
+
+#column1 {
+  float: left;
+  margin: 10px;
+  width: 19%;
+  border: 3px solid grey;
+  background: lightgrey;
+  height: 280px;
+}
+
+#column2 {
+  float: left;
+  margin: 10px;
+  width: 55%;
+  border: 3px solid grey;
+  background: lightgrey;
+  height: 280px;
+}
+
+#column3 {
+  float: left;
+  margin: 10px;
+  width: 19%;
+  border: 3px solid grey;
+  background: lightgrey;
+  height: 280px;
+}
+
+#so_long{
+  clear: both;
+  background:lightgrey;
+  height: 120px;
+  margin: 3px;
+  border: 3px solid grey;
+}

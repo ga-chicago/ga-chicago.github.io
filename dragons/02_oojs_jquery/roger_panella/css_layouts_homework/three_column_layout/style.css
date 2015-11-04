@@ -1,0 +1,63 @@
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo {
+  float: center;
+  border: 3px solid black;
+  padding: 20px;
+  height: 100px;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 3px;
+  font-family: helvetica;
+  background-color: grey;
+  text-align: center;
+
+}
+
+#contentleft {
+  float: left;
+  height: 700px;
+  border: 3px solid navy;
+  margin: 10px 0px 10px 0px;
+  width: 15%;
+  padding: 1em;
+  font-family: helvetica;
+  background-color: grey;
+}
+
+#contentcenter {
+  float: left;
+  height: 700px;
+  border: 3px solid black;
+  margin: 10px 0px 10px 15px;
+  width: 60%;
+  padding: 1em;
+  font-family: helvetica;
+  background-color: grey;
+
+}
+
+#contentright{
+  float: right;
+  height: 700px;
+  border: 3px solid green;
+  margin: 10px 0px 10px 5px;
+  width: 15%;
+  padding: 1em;
+  font-family: helvetica;
+  background-color: grey;
+}
+
+#footer {
+  clear: both;
+  height: 100px;
+  margin: 100px 0px 0px 0px;
+  border: 3px solid black;
+  text-align: center;
+  background-color: grey;
+  font-family: helvetica;
+}

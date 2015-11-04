@@ -7,11 +7,13 @@ var pizzaTop = ['mozarella','pepperoni','sausage','pineapple','fancyfeast'];
 var pizzaSize = ['small','medium','large'];
 var stringLengths = [];
 
+
 function getLengths(arr) {
   stringLengths = [];
   for (var i = 0; i < arr.length; i++) {
     stringLengths.push(arr[i].length);
   }
+  return stringLengths;
 }
 getLengths(pizzaTop);
 console.log(pizzaTop);
@@ -52,7 +54,7 @@ function toonify(accent, sentence) {
 console.log(toonify('daffy', 'sassafras!'));
 console.log(toonify('elmer', 'Be very very quiet we\'re hunting rabbits!'));
 console.log(toonify('mid-western', 'I heart cheese'));
-console.log('A pirate with a steering wheel in his crotch walks into a bar and says ' + toonify('pirate', '"\Gimme a drink!\"') + '. The bartender says \"Wait, wait, wait! First, what\'s the deal with the wheel!?\"' + ' The pirate looks at him and says...' + toonify('pirate', '"\Yar, it\'s driving me nuts!\"'));
+console.log('A pirate with a steering wheel in his crotch walks into a bar and says ' + toonify('pirate', '\"Gimme a drink!\"') + '. The bartender replies \"Wait, wait, wait! First, what\'s the deal with the wheel!?\"' + ' The pirate looks at him and says...' + toonify('pirate', '"\Yar, it\'s driving me nuts!\"'));
 
 //-----------------------------------------------------------//
 // ROUND 4
@@ -82,9 +84,12 @@ function letterReverse(str) {
   var arrLetters = [];
   var newStr = '';
   for (var i = 0; i < arrWords.length; i++) {
+    //  sep every letter and space into array
     arrLetters.push(arrWords[i].split(""));
+    //  rev letter array
     arrLetters[i].reverse();
   }
+  //  save each element of array to string and put a space between each word
   for (var i = 0; i < arrLetters.length; i++) {
     for (var j = 0; j < arrLetters[i].length; j++) {
       newStr += arrLetters[i][j];
@@ -94,6 +99,23 @@ function letterReverse(str) {
   console.log(newStr);
 }
 letterReverse('Put Hans back on the line');
+
+function letterReverse(someStuff) {
+  var tempArray = someStuff.split(' ');
+  var finalSentence = '';
+
+  for (var inc in tempArray) {
+    var word = tempArray[inc];
+    console.log(word);
+    var splitWord = word.split('');
+    splitWord.reverse();
+    word = splitWord.join('');
+    console.log(word);
+    finalSentence = finalSentence + ' ' + word;
+  }
+  
+  return finalSentence;
+}
 
 
 //-----------------------------------------------------------//
@@ -114,7 +136,6 @@ function longest(arr) {
 longest(["Nothing" , "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"]);
 
 
-
 //-----------------------------------------------------------//
 // FINAL ROUND
 
@@ -126,8 +147,12 @@ function myFunction(str) {
   return str.toUpperCase();
 }
 
+function goBlue(str) {
+  return 'blue';
+}
+
 function repMaster(input, myFunction) {
   return myFunction(input) + ' proves that I am the rep MASTER!';
 }
 
-repMaster("I finished this practice", myFunction);
+repMaster("I finished this practice", goBlue);

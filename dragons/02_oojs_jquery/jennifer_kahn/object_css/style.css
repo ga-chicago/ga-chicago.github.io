@@ -1,0 +1,66 @@
+
+
+// ids are identifiable using a #name
+
+
+#wrapper{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+#content{
+  float: left;
+  border: 3px dashed navy;
+  margin: 3px
+  width: 65%
+}
+
+#sidebar {
+  border: 3px dashed green;
+  margin: 3px;
+  width: 25%;
+  }
+
+#goodbye{
+  margin: 3px;
+  border: 3px dashed red;
+  clear: both;
+}
+
+
+#logo {
+  font-size: 3em;
+  font-weight: bold;
+  border: 3px dashed orange;
+
+}
+
+
+#navbar{
+  border: 3px dashed purple;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 30px;
+
+
+
+}
+header{
+
+  background: orange;
+  margin: 50px;
+  border: 10px DASHED;
+  padding: 50px;
+
+
+}
+
+section{
+  background: pink;
+  margin: 100px;
+  border: 15px DASHED;
+  padding: 10px;
+
+}

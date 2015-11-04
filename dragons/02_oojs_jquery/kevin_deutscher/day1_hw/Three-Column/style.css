@@ -1,0 +1,49 @@
+#header{
+  width:100%;
+  background-color: lightgrey;
+  margin-bottom: 2%;
+  height: 100px;
+}
+
+#body {
+  min-width: 550px;      /* 2x LC width + RC width */
+}
+#container {
+  padding-left: 200px;   /* LC width */
+  padding-right: 150px;  /* RC width */
+}
+#container .column {
+  position: relative;
+  float: left;
+  height: 400px;
+}
+#center {
+  width: 100%;
+  font-style: ;
+  background-color: lightgrey;
+}
+#left {
+  width: 150px;          /* LC width */
+  right: 200px;          /* LC width */
+  margin-left: -100%;
+  background-color: grey;;
+}
+#right {
+  width: 150px;          /* RC width */
+  margin-right: -150px;  /* RC width */
+  background-color: grey;
+}
+#footer {
+  clear: both;
+  width:100%;
+  background-color: lightgrey;
+  margin-top: 35%;
+  height: 100px;
+}
+
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}

@@ -1,0 +1,111 @@
+html{
+  height: 98%;
+}
+
+body{
+  height: 98%;
+}
+
+#topwrapper {
+  width: 90%;
+  height: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#midwrapper{
+  width: 90%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#bottomwrapper {
+  width: 90%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contentleft {
+  float: left;
+  border: 3px dashed navy;
+  margin: 3px;
+  width: 49%;
+  height: 98%;
+}
+
+#contentright {
+  float: right;
+  border: 3px dashed navy;
+  margin: 3px;
+  width: 49%;
+  height: 98%;
+}
+
+#topleft{
+  float: left;
+  border: 3px dashed orange;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 3px;
+  width: 25%;
+  height: 90%;
+}
+
+#topright{
+  float: right;
+  margin: 3px;
+  font-size: 1em;
+  height: 90%;
+  width: 65%;
+}
+
+#nav{
+  float: right;
+  border: 3px dashed yellow;
+  margin: 3px;
+  width: 23%;
+  height: 60%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#bottom{
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px dashed green;
+  margin: 3px;
+  height: 69%;
+  width: 32%;
+}
+
+#bottommiddle{
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px dashed green;
+  margin: 3px;
+  height: 69%;
+  width: 33.1%;
+}
+
+#bottomright{
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px dashed green;
+  margin: 3px;
+  height: 69%;
+  width: 32%;
+}
+
+#foot {
+  border: 3px dashed blue;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 3px;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}

@@ -1,0 +1,21 @@
+div {
+  border-right: solid 1px;
+  display: inline-block;
+  width: 30%;
+}
+
+p {
+  background-color: blue;
+}
+
+.red{
+  background-color:red;
+}
+
+.red:hover {
+  background-color: blue;
+}
+
+div:nth-child(even){
+  background-color: blue;
+}

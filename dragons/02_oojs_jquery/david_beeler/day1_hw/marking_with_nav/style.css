@@ -1,0 +1,117 @@
+#wrapper {
+  width: 90%; /* percentages, em, rem, are better RESPONSIVE */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#logo {
+  background-image: url(http://www.freeliquidtemplates.com/free-headers-for-websites/header11.jpg);
+  font-size: 1em;
+  width: 25%;
+  padding: 5% 0 5% 0;
+  float: left;
+}
+
+#nav1 {
+  background-image: url(http://screenrant.com/wp-content/uploads/star-wars-episode-7-image.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  width: 13%;
+  padding: 5% 0 5% 0;
+  margin: 2% 2% 2% 11%;
+}
+
+#nav2 {
+  background-image: url(http://screenrant.com/wp-content/uploads/star-wars-episode-7-image.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  width: 13%;
+  padding: 5% 0 5% 0;
+  margin: 2% 2% 2% 2%;
+}
+
+#nav3 {
+  background-image: url(http://screenrant.com/wp-content/uploads/star-wars-episode-7-image.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  width: 13%;
+  padding: 5% 0 5% 0;
+  margin: 2% 2% 2% 2%;
+}
+
+#nav4 {
+  background-image: url(http://screenrant.com/wp-content/uploads/star-wars-episode-7-image.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  width: 13%;
+  padding: 5% 0 5% 0;
+  margin: 2% 0 2% 2%;
+}
+
+
+#primary {
+  background-image: url(http://screenrant.com/wp-content/uploads/star-wars-episode-7-image.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  clear: both;
+  float: left;
+  width: 100%;
+  padding: 55% 0 0 0;
+  margin: 0 auto;
+}
+
+#secondary-left {
+  background-image: url(http://cdn.playbuzz.com/cdn/ab04513b-810f-40ef-81a4-f9a8352af4a9/81d6ef6f-617a-4028-8460-23426d2a7e0f.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  text-align: left;
+  width: 23%;
+  padding: 10% 0 10% 0;
+  margin: 0 5% 2% 5%;
+}
+
+#secondary-center {
+  background-image: url(http://cdn.playbuzz.com/cdn/ab04513b-810f-40ef-81a4-f9a8352af4a9/81d6ef6f-617a-4028-8460-23426d2a7e0f.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  text-align: left;
+  width: 23%;
+  padding: 10% 0 10% 0;
+  margin: 0 5% 2% 5%;
+}
+
+#secondary-right {
+  background-image: url(http://cdn.playbuzz.com/cdn/ab04513b-810f-40ef-81a4-f9a8352af4a9/81d6ef6f-617a-4028-8460-23426d2a7e0f.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  text-align: left;
+  width: 23%;
+  padding: 10% 0 10% 0;
+  margin: 0 5% 2% 5%;
+}
+
+#legal {
+  background-image: url(http://www.freeliquidtemplates.com/free-headers-for-websites/header11.jpg);
+  clear: both;
+  font-size: 1.25em;
+  font-style: italic;
+  padding: 1.5em;
+
+}

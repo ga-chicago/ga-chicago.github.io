@@ -1,0 +1,145 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  background: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+#body-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#section1, #section2, aside, #logo, footer, #features section, nav ul li {
+  background: #EFEFEF;
+  padding: 2%;
+}
+
+header {
+  margin: 3% 0;
+  clear: both;
+  overflow: hidden;
+}
+
+#logo {
+  width: 25%;
+  float: left;
+  padding: 2%;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  float: right;
+  margin-left: 3%;
+  padding: 2% 3%;
+}
+
+#main {
+  width: 77%;
+  padding: 0;
+  float: right;
+  margin: 0;
+  clear: both;
+}
+
+#section1 {
+  margin-bottom: 3%;
+}
+
+#column-wrapper {
+  float: none;
+  clear: both;
+  margin-bottom: 3%;
+}
+
+#section2 {
+  width: 70.25%;
+  float: left;
+}
+
+#main aside {
+  width: 18.75%;
+  float: right;
+}
+
+#column-wrapper, #features {
+  overflow: hidden;
+  padding: 0 0 3%;
+  margin: 0 0 3%;
+}
+
+#main #section2, #main aside, #features section {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+#features section {
+  width: 18.75%;
+  float: left;
+  margin-right: 3%;
+}
+
+#features section:last-child {
+  margin-right: 0;
+}
+
+header, footer {
+  text-align: center;
+  width: 96%;
+  clear: both;
+}
+
+#left-sidebar {
+  width: 16%;
+  float: left;
+}
+
+footer {
+  margin: 0 0 3%;
+}
+
+@media only screen and (max-width: 767px) {
+  #body-wrapper {
+    width: 96%;
+    padding: 2%;
+    margin: 0;
+  }
+  header, #features, #main, #column-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #logo, #section1, #main #section2, #main aside, #left-sidebar, #features section, nav ul li, footer {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 3%;
+    padding: 3% 2%;
+    width: 96%;
+    float: none;
+    clear: both;
+  }
+  nav ul li {
+    float: none;
+    display: block;
+    margin-left: 0;
+  }
+  #features {
+    padding-bottom: 0;
+  }
+  footer {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,49 @@
+.title {
+  font-family: Open Sans;
+  font-style: condensed;
+  font-size: 20px;
+}
+
+.gray-box {
+  background-color: lightgrey;
+  border: 2px solid darkgrey;
+  margin: 10px 0px 10px;
+}
+
+#content-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+#headline {
+  padding: 8% 0px 8%;
+}
+
+.column-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+#content-left {
+  width: 16%;
+  padding: 20% 0px 20%;
+  float: left;
+}
+
+#content-center {
+  width: 60%;
+  margin: 10 auto 10;
+  padding: 20% 0px 20%;
+  display: inline-block;
+}
+
+#content-right {
+  width: 16%;
+  padding: 20% 0px 20%;
+  float: right;
+}
+
+#boot {
+  clear: both;
+  padding: 8% 0px 8%;
+}

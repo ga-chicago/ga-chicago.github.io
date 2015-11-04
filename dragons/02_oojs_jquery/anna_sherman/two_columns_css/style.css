@@ -1,0 +1,36 @@
+#wrapper {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+#banner {
+  border: 3px solid black;
+  background-color: rgb(137, 244, 124);
+  margin-bottom: 10px;
+}
+
+#sidebar {
+  border: 3px solid green;
+  float: left;
+  width: 37%;
+  display: inline-block;
+  height: 30em;
+  margin-bottom: 1em;
+}
+
+#content {
+  border: 3px dashed green;
+  float: right;
+  width: 57%;
+  display: inline-block;
+  height:30em;
+  margin-bottom: 1em;
+}
+
+#footer{
+  clear: both;
+  border: 3px dashed black;
+  text-align: left;
+  padding-left: 10px;
+}

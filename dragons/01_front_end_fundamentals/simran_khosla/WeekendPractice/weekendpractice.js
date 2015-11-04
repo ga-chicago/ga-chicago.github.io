@@ -24,26 +24,36 @@ Feel free to add your own accents as well!
 If the accent is not recognized, just return the sentence as-is. */
 
 function toonify(accent,sentence) {
+
   if (accent === "daffy") {
     return sentence.replace(/s/g,"th");
-  }
+    }
+
     else if (accent === "elmer") {
-    return sentence.replace(/r/g,"w");
-  } else {
+        return sentence.replace(/r/g,"w");
+    }
+
+    else {
     return sentence;
-  }
+    }
 
 }
 
 toonify("daffy","sup sup sup");
+toonify("elmer", "hello how are you");
 
 // this WORKS according to stack overflow -- not sure EXACTLY why it works -- would like RegEx explained =]
 
 // Round 4
 function wordReverse(stringToSplit) {
+
   var arrayOfStrings = stringToSplit.split("");
+
   return arrayOfStrings.reverse();
 };
+
+wordReverse("hello how are you");
+
 //WOOT! DID IT! and kept it pretty DRY no?
 
 // Round 5
@@ -66,6 +76,7 @@ function letterReverse(stringToSplit) {
       return result;
     }
 
+letterReverse("hello how are you");
 
 //Round 6
 var newArray = [];

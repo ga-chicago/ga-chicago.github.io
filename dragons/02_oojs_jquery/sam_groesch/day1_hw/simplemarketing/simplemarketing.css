@@ -1,0 +1,74 @@
+#wrapper {
+  margin: 75px;
+}
+
+#header {
+  margin: 25px;
+  width: 90%;
+  height: 50px;
+  font-weight: bold;
+  font size: 100px;
+}
+
+#content {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  width: 90%;
+  height: 150px;
+  
+}
+
+#simpleone {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 45%;
+  height: 425px;
+}
+
+#simpletwo {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 45%;
+  height: 425px;
+}
+
+#morecontent {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 27%;
+  height: 200px;
+}
+
+#evenmorecontent {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 27%;
+  height: 200px;
+}
+
+#thirdcontent {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 27%;
+  height: 200px;
+}
+
+#footer {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  clear: both;
+  width: 95%;
+  height: 150px;
+}

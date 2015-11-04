@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+  color:green;
+  margin:0;
+  padding: 0;
+  text-align:center;
+}
+
+#navbar  {
+  margin:1%;
+  background-color: gray;
+  text-align:center;
+  font-size: 1eem;;
+}
+
+#content {
+  background-color:gray;
+  margin:1%;
+  text-align: center;
+  font-size: 1rem;
+  float:left;
+  width:48%;
+  height:40%;
+
+}
+
+#content2 {
+
+  background-color: gray;
+  margin: 1%;
+  text-align: center;
+  font-size: 1rem;
+  float: right;
+  width:48%;
+  height: 40%;
+  padding:70%,0;
+}
+
+#contentWrapper {
+  background-color: red;
+
+}
+
+#foot {
+  background-color: gray;
+  text-align: center;
+  font-size: 1rem;
+  clear:both;
+  margin: 1%;
+}

@@ -1,0 +1,89 @@
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hello {
+  border: 3px solid black;
+  margin: 10px;
+  text-align: center;
+  height: 5em;
+  width: 20%;
+  float: left;
+}
+
+#quadboxone {
+  border: 3px solid black;
+  margin: 10px;
+  margin-top: 25px;
+  height: 2em;
+  width: 10%;
+  float: right;
+}
+
+#quadboxtwo {
+  border: 3px solid black;
+  margin: 10px;
+  margin-top: 25px;
+  height: 2em;
+  width: 10%;
+  float: right;
+}
+
+#quadboxthree {
+  border: 3px solid black;
+  margin: 10px;
+  margin-top: 25px;
+  height: 2em;
+  width: 10%;
+  float: right;
+}
+
+#quadboxfour {
+  border: 3px solid black;
+  margin: 10px;
+  margin-top: 25px;
+  height: 2em;
+  width: 10%;
+  float: right;
+}
+
+#content {
+  clear: both;
+  border: 3px solid black;
+  margin: 3px;
+  height: 20em;
+}
+
+#triboxone {
+clear: both;
+  float: left;
+  border: 3px solid black;
+  margin: 3px;
+  width: 31%;
+  height: 10em;}
+
+  #triboxtwo {
+    float: left;
+    border: 3px solid black;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 11px;
+    margin-right: 11px;
+    width: 31%;
+    height: 10em;}
+
+    #triboxthree {
+      float: left;
+      border: 3px solid black;
+      margin: 3px;
+      width: 31%;
+      height: 10em;}
+
+#goodbye {
+  margin: 3px;
+  border: 3px solid black;
+  clear: both;
+  height: 5em;
+}

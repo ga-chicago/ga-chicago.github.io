@@ -1,0 +1,84 @@
+/*/ids are identifiable by using a name
+*/
+#wrapper{
+  width: 85%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#logo {
+  font: Verdana;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 3px;
+  height: 70px;
+
+}
+#navbar {
+  border: 2px solid gray;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 3px;
+  height: 120px;
+  background-color: lightgray;
+}
+#sidebar {
+    float: right;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 0px;
+    width: 47%;
+    height: 200px;
+    background-color: lightgray;
+}
+
+element.style {
+    border-left-width: 3px;
+    margin-left: 2px;
+    background-color: lightgray;
+
+}
+#content {
+    border: 2px solid gray;
+    float: left;
+    margin-left: 4px;
+    width: 47%;
+    height: 200px;
+    background-color: lightgray;
+}
+
+ #column1 {
+    float: left;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 6px;
+    width: 31%;
+    height: 100px;
+    background-color: lightgray;
+}
+  #column2 {
+    float: left;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-left: 0px;
+    margin-left: 6px;
+    width: 31%;
+    height: 100px;
+    background-color: lightgray;
+  }
+  #column3 {
+    float: right;
+    border: 2px solid gray;
+    margin: 3px;
+    width: 31%;
+    height: 100px;
+    background-color: lightgray;
+  }
+
+#goodbye {
+  margin: 3px;
+  border: 2px solid gray;
+  clear: both;
+  height: 100px;
+  background-color: lightgray;
+}

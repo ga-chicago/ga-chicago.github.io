@@ -1,0 +1,62 @@
+.title {
+  font-family: Open Sans;
+  font-style: condensed;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.gray-box {
+  background-color: lightgrey;
+  border: 2px solid darkgrey;
+  margin: 7px 0px 7px;
+}
+
+#content-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+#headline {
+  padding: 8% 0px 8%;
+}
+
+.column-wrapper {
+  clear: both;
+  width: 100%;
+  text-align: center;
+}
+
+#content-left {
+  width: 48%;
+  padding: 20% 0px 20%;
+  float: left;
+}
+
+#content-right {
+  width: 48%;
+  padding: 20% 0px 20%;
+  float: right;
+}
+
+#cell-right {
+  width: 32%;
+  padding: 10% 0px 10%;
+  float: right;
+}
+
+#cell-left {
+  width: 32%;
+  padding: 10% 0px 10%;
+  float: left;
+}
+
+#cell-center {
+  width: 32%;
+  margin: 7 auto 7;
+  padding: 10% 0px 10%;
+  display: inline-block;
+}
+#boot {
+  clear: both;
+  padding: 8% 0px 8%;
+}

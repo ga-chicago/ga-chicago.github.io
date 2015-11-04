@@ -1,0 +1,46 @@
+#wrapper {
+  margin: 75px;
+}
+
+#header {
+  margin: 25px;
+  width: 90%;
+  height: 50px;
+  font-weight: bold;
+  font size: 50px;
+}
+
+#content {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  width: 95%;
+  height: 175px;
+}
+
+#morecontent {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 55%;
+  height: 460px;
+}
+
+#evenmorecontent {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 35%;
+  height: 460px;
+}
+
+#footer {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  clear: both;
+  width: 95%;
+  height: 200px;
+}

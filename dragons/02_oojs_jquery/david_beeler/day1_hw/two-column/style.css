@@ -1,0 +1,34 @@
+#wrapper {
+  width: 90%; /* percentages, em, rem, are better RESPONSIVE */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#logo {
+  background-image: url(http://www.freeliquidtemplates.com/free-headers-for-websites/header11.jpg);
+  font-size: 5em;
+}
+
+#content {
+  float:left;
+  text-align: left;
+  width: 60%;
+  padding-bottom: 2em;
+}
+
+#sidebar {
+  float:right;
+  text-align: left;
+  width: 30%;
+}
+
+#legal {
+  background-image: url(http://www.freeliquidtemplates.com/free-headers-for-websites/header11.jpg);
+  clear: both;
+  font-size: 1.25em;
+  font-style: italic;
+  padding: 1.5em;
+
+}

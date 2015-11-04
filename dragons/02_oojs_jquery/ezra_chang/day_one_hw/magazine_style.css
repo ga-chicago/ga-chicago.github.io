@@ -1,0 +1,71 @@
+#header {
+  float: left;
+  margin-bottom: 1%;
+  padding: 1%;
+  border: 1px solid;
+}
+
+#wrapper {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#title {
+  margin-bottom: 1%;
+  padding: 1%;
+  float: right;
+  border: 1px solid;
+  width: 77.5%;
+}
+
+#leftColumn {
+  margin-bottom: 1%;
+  padding: 1%;
+  float: left;
+  border: 1px solid;
+  clear: both;
+  width: 17%;
+}
+
+#content {
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  border: 1px solid;
+  padding: 1%;
+  float: right;
+  width: 57.3%;
+}
+
+#rightColumn {
+  margin-bottom: 1%;
+  padding: 1%;
+  float: right;
+  border: 1px solid;
+  width: 17%;
+}
+
+.small {
+  margin-bottom: 1%;
+  margin-left: 1%;
+  border: 1px solid;
+  padding: 1%;
+  float: right;
+  width: 17%;
+}
+
+#footer {
+  margin: 1%;
+  padding: 1%;
+  border: 1px solid;
+  clear: both;
+}
+
+.tiny {
+  margin-bottom: 1%;
+  margin-left: 1%;
+  padding: 1%;
+  border: 1px solid;
+  float: right;
+  width: 10%;
+}

@@ -1,0 +1,33 @@
+header {
+  margin: 1%;
+  padding: 1%;
+  border: 1px solid;
+}
+
+#wrapper {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#content {
+  margin-bottom: 1%;
+  border: 1px solid;
+  padding: 1%;
+  float: left;
+  width: 60%;
+}
+
+#sidebar {
+  margin-bottom: 1%;
+  border: 1px solid;
+  padding: 1%;
+  float: right;
+  width: 35%;
+}
+
+#footer {
+  margin: 1%;
+  padding: 1%;
+  border: 1px solid;
+  clear: both;
+}

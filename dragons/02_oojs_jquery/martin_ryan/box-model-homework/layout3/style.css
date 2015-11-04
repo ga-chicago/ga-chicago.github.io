@@ -1,0 +1,58 @@
+#wrapper {
+  width: 90%;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#topNav {
+  margin-bottom: 10px;
+  height: 20%;
+  background-color: grey;
+}
+
+#feature1 {
+  float: left;
+  width: 49%;
+  height: 40%;
+  background-color: grey;
+  margin-bottom: 10px;
+}
+#feature2 {
+  float: right;
+  width: 49%;
+  height: 40%;
+  background-color: grey;
+  margin-bottom: 10px;
+}
+
+#colLeft {
+  display: inline-block;
+  width: 33%;
+  height: 20%;
+  background-color: grey;
+  margin-bottom: 10px;
+}
+
+#colMiddle {
+  display: inline-block;
+  width: 33%;
+  height: 20%;
+  background-color: grey;
+  margin-bottom: 10px;
+}
+
+#colRight {
+  display: inline-block;
+  float: right;
+  width: 33%;
+  height: 20%;
+  background-color: grey;
+  margin-bottom: 10px;
+}
+
+#botNav {
+  clear: both;
+  height: 20%;
+  background-color: grey;
+}

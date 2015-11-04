@@ -1,0 +1,82 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  background: #FFFFFF;
+}
+
+#body-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+header, footer, #main section, #features section {
+  background: #EFEFEF;
+  padding: 2%;
+}
+
+header {
+  margin-bottom: 3%;
+}
+
+#main, #features {
+  overflow: hidden;
+  padding: 0 0 3%;
+  margin: 0 0 3%;
+}
+
+#main section, #features section {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+#main section {
+  width: 44.5%;
+  float: left;
+}
+
+#main section:first-child {
+  margin-right: 3%;
+}
+
+#features section {
+  width: 27.3%;
+  float: left;
+  margin-right: 3%;
+}
+
+#features section:last-child {
+  margin-right: 0;
+}
+
+header, footer {
+  text-align: center;
+  width: 96%;
+  clear: both;
+}
+
+footer {
+  margin-top: 3%;
+}
+
+@media only screen and (max-width: 767px) {
+  #main section, #features section {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 3%;
+    padding: 3% 5%;
+    width: 90%;
+    float: none;
+  }
+  #main, #features {
+    padding-bottom: 0;
+  }
+  footer {
+    margin-top: 0;
+  }
+}

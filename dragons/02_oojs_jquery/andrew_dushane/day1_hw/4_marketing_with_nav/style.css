@@ -1,0 +1,118 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  background: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+#body-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#logo, footer, #main, #features section, nav ul li {
+  background: #EFEFEF;
+  padding: 2%;
+}
+
+header {
+  margin: 3% 0;
+  clear: both;
+  overflow: hidden;
+}
+
+#logo {
+  width: 25%;
+  float: left;
+  padding: 2%;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  float: right;
+  margin-left: 3%;
+  padding: 2% 5%;
+}
+
+#main {
+  width: 96%;
+  float: none;
+  margin: 0 0 3%;
+  clear: both;
+}
+
+
+#features {
+  overflow: hidden;
+  padding: 0 0 3%;
+  margin: 0 0 3%;
+}
+
+#features section {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+#features section {
+  width: 27.3%;
+  float: left;
+  margin-right: 3%;
+}
+
+#features section:last-child {
+  margin-right: 0;
+}
+
+header, footer {
+  text-align: center;
+  width: 96%;
+  clear: both;
+}
+
+footer {
+  margin-top: 3%;
+}
+
+@media only screen and (max-width: 767px) {
+  #body-wrapper {
+    width: 96%;
+    padding: 2%;
+    margin: 0;
+  }
+  header, #features {
+    width: 100%;
+  }
+  #logo, #features section, nav ul li, footer {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 3%;
+    padding: 3% 2%;
+    width: 96%;
+    float: none;
+    clear: both;
+  }
+  nav ul li {
+    float: none;
+    display: block;
+    margin-left: 0;
+  }
+  #features {
+    padding-bottom: 0;
+  }
+  footer {
+    margin-top: 0;
+  }
+}

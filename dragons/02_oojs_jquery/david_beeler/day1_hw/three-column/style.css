@@ -1,0 +1,52 @@
+#wrapper {
+  width: 90%; /* percentages, em, rem, are better RESPONSIVE */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#logo {
+  background-image: url(http://www.tlb.de/uploads/tx_mmtlbfieldextensions/header2_01.jpg);
+  background-size: cover;
+  font-size: 5em;
+}
+
+#sidebar-left {
+  float:left;
+  margin: 0 1% 0 1%;
+  text-align: left;
+  width: 20%;
+}
+
+#content {
+  float:left;
+  margin: 1% 0 1% 0;
+  padding: 0 2% 0 2%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: left;
+  width: 51%;
+  padding-bottom: 2em;
+}
+
+#sidebar-right {
+  float:left;
+  margin: 0 1% 0 1%;
+  text-align: left;
+  width: 20%;
+}
+
+#legal {
+  background-image: url(http://www.tlb.de/uploads/tx_mmtlbfieldextensions/header2_01.jpg);
+  background-size: cover;
+  clear: both;
+  font-size: 1.25em;
+  font-style: italic;
+  padding: 1.5em;
+
+}
+
+h2 {
+  text-align: center;
+}

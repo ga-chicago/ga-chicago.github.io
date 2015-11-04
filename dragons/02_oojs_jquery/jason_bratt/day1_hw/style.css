@@ -1,0 +1,159 @@
+
+/***** General styling ****/
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 0;
+}
+
+#wrapper {
+  margin-top: 20px;
+  width: 1300px;
+  overflow: hidden;
+  height: 100%;
+}
+
+header, section, footer, sidebar {
+  background: rgb(166, 166, 166);
+  border: 1px solid rgb(56, 56, 56);
+}
+
+/***** TWO COLUMN ****/
+
+#twocol-head {
+  width: 100%;
+  height: 20%;
+  margin-bottom: 20px;
+}
+
+#twocol-side {
+  float: right;
+  margin-left: 20px;
+  width: 25%;
+  height: 50%;
+}
+
+#twocol-sec {
+  width: 73%;
+  height: 50%;
+}
+
+#twocol-foot {
+  margin-top: 20px;
+  clear: both;
+  height: 20%;
+  width: 100%;
+}
+
+/***** THREE COLUMN *******/
+
+#threecol-sec {
+  margin-left: 23px;
+  margin-right: 23px;
+  float: left;
+  width: 56%;
+  height: 50%;
+}
+
+.threecol-side  {
+  margin-bottom: 20px;
+  float: left;
+  width: 20%;
+  height: 50%;
+}
+
+/**** SIMPLE MAREKTING ******/
+
+.market-sec {
+  float: left;
+  width: 49%;
+  height: 35%;
+  margin-bottom: 20px;
+}
+
+.market-item {
+  float: left;
+  width: 32.1%;
+  height: 20%;
+  margin-bottom: 20px;
+}
+
+/****** MARKET WITH NAV *******/
+
+
+#navcol-head {
+  margin-bottom: 20px;
+  width: 18%;
+  height: 18%;
+  float: left;
+}
+
+#nav-sec {
+  clear: both;
+  width: 100%;
+  height: 30%;
+  margin-bottom: 20px;
+}
+
+#nav-wrap {
+  float: right;
+  width: 70%;
+  height: 10%;
+  margin-bottom: 10px;
+}
+
+.nav-navitem {
+  position: relative;
+  top: 50%;
+  display: inline-block;
+  float: right;
+  margin-left: 10px;
+  width: 23%;
+  height: 80%;
+}
+
+/***** MAGAZINE ******/
+
+.clear {
+  clear: both;
+}
+
+.mag {
+  width: 18.5%;
+}
+
+#mag-left-side {
+  float: left;
+  width: 15%;
+  height: 66%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#mag-sec-head {
+  float: left;
+  width: 83%;
+  height: 10%;
+  margin-bottom: 20px;
+}
+
+#mag-right-side {
+  float: right;
+  width: 15%;
+  height: 35%;
+}
+
+#mag-sec {
+  float: left;
+  height: 35%;
+  width: 65%;
+  margin-bottom: 20px;
+}
+
+.mag-item {
+  float: left;
+  width: 19.52%;
+  height: 15%;
+}

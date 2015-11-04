@@ -1,0 +1,82 @@
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border: 3px solid grey;
+  height: 940px;
+}
+
+#main_square {
+  border: 3px solid grey;
+  margin: 10px;
+  height: 120px;
+  background: lightgrey;
+  width: 22%
+}
+
+.small_rectangle {
+  float: right;
+  margin: 10px;
+  width: 10%;
+  border: 3px solid grey;
+  background: lightgrey;
+  height: 54px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+}
+
+#left_rectangle {
+  border: 3px solid grey;
+  margin: 10px;
+  height: 620px;
+  background: lightgrey;
+  float: left;
+  width: 18%;
+}
+
+#horiz_rectangle {
+  border: 3px solid grey;
+  margin: 10px;
+  background: lightgrey;
+  width: 72%;
+  height: 120px;
+  float: right;
+}
+
+#mid_rectangle {
+  border: 3px solid grey;
+  margin: 10px;
+  margin-left: 65px;
+  background: lightgrey;
+  width: 53%;
+  height: 240px;
+  float: left;
+}
+
+#right_rectangle {
+  border: 3px solid grey;
+  margin: 10px;
+  background: lightgrey;
+  width: 15%;
+  height: 240px;
+  float: right;
+}
+
+.small_square {
+  float: right;
+  margin: 17px;
+  width: 15%;
+  border: 3px solid grey;
+  background: lightgrey;
+  height: 160px;
+}
+
+#so_long{
+  clear: both;
+  background:lightgrey;
+  height: 120px;
+  margin: 10px;
+  border: 3px solid grey;
+}

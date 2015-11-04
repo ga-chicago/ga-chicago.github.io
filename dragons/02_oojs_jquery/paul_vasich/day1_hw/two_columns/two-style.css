@@ -1,0 +1,37 @@
+.title {
+  font-family: Open Sans;
+  font-style: condensed;
+  font-size: 20px;
+}
+
+.gray-box {
+  background-color: lightgrey;
+  border: 2px solid darkgrey;
+  margin: 10px 0px 10px;
+}
+
+#content-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+#headline {
+  padding: 8% 0px 8%;
+}
+
+#content-left {
+  width: 68%;
+  float: left;
+  padding: 20% 0px 20%;
+}
+
+#content-right {
+  width: 29%;
+  float: right;
+  padding: 20% 0px 20%;
+}
+
+#boot {
+  clear: both;
+  padding: 8% 0px 8%;
+}

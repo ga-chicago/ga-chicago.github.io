@@ -1,0 +1,43 @@
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 1em;
+  border: 1px solid black;
+}
+
+nav {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+#content, #sidebar-left, #sidebar-right {
+  border: 1px solid black;
+  margin: 1em;
+  padding: 1em;
+}
+
+#content {
+  margin: 0 auto;
+  float: left;
+  width: 40%;
+}
+
+#sidebar-left, #sidebar-right {
+  float: left;
+  width: 15%;
+}
+
+#sidebar-right {
+  float: right;
+}
+
+#goodbye {
+  margin: 1em auto;
+  clear: both;
+  padding: 1em;
+  border: 1px solid black;
+}

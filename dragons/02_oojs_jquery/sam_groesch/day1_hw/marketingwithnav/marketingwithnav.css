@@ -1,0 +1,82 @@
+#wrapper {
+  margin: 75px;
+}
+
+#header {
+  margin: 25px;
+  width: 90%;
+  height: 50px;
+  font-weight: bold;
+  font size: 100px;
+}
+
+#topleft {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 250px;
+  height: 125px;
+}
+#simpleone {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 40%;
+  height: 425px;
+  clear: both;
+}
+
+#simpletwo {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 40%;
+  height: 425px;
+}
+
+#morecontent {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 27%;
+  height: 200px;
+}
+
+nav {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: right;
+  width: 10%;
+  height: 75px;
+}
+#evenmorecontent {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 27%;
+  height: 200px;
+}
+
+#thirdcontent {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 27%;
+  height: 200px;
+}
+
+#footer {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  clear: both;
+  width: 95%;
+  height: 150px;
+}

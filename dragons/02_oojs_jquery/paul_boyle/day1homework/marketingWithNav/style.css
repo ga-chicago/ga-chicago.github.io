@@ -1,0 +1,145 @@
+body {
+  background-color: black;
+  color:green;
+  margin:0;
+  padding: 0;
+  text-align:center;
+}
+
+#navbar  {
+  margin:1%;
+
+  text-align:center;
+  font-size: 1rem;
+  width: 70%;
+  float:right;
+
+
+}
+
+#content {
+  background-color:gray;
+  margin:1%;
+  text-align: center;
+  font-size: 1rem;
+  float:left;
+  width:31%;
+  height:40%;
+
+}
+
+#content2 {
+
+  background-color: gray;
+  margin: 1%;
+  text-align: center;
+  font-size: 1rem;
+  float: right;
+  width:31%;
+  height: 40%;
+  padding:70%,0;
+}
+
+#content3 {
+
+  background-color: gray;
+  margin: 1%;
+  text-align: center;
+  font-size: 1rem;
+  float: right;
+  width:31%;
+  height: 40%;
+  padding:70%,0;
+}
+
+#contentWrapper {
+  background-color: red;
+  clear:both;
+
+}
+
+#foot {
+  background-color: gray;
+  text-align: center;
+  font-size: 1rem;
+  clear:both;
+  margin: 1%;
+}
+
+#singleBlock {
+  background-color:gray;
+  margin:1%;
+  text-align: center;
+  font-size: 1rem;
+  float:left;
+  width: 98%;
+  height:40%;
+  clear:right;
+
+}
+
+#topBar {
+
+  margin:1%;
+  text-align: center;
+  font-size: 1rem;
+  float:left;
+  width: 98%;
+  height:40%;
+
+}
+
+#logo {
+  background-color:gray;
+  margin:0;
+  text-align: center;
+  font-size: 1rem;
+  float:left;
+  width: 24%;
+  height:40%;
+
+}
+
+#nav1 {
+  float: left;
+  background-color:gray;
+  margin:2%;
+  text-align: center;
+  font-size: 2rem;
+  float:left;
+  width: 20%;
+  height:40%;
+}
+
+#nav2{
+  float: right;
+  background-color:gray;
+  margin:2%;
+  text-align: center;
+  font-size: 2rem;
+  float:left;
+  width: 20%;
+  height:40%;
+}
+
+#nav3{
+  float: right;
+  background-color:gray;
+  margin:2%;
+  text-align: center;
+  font-size: 2rem;
+  float:left;
+  width: 20%;
+  height:40%;
+}
+
+#nav4 {
+  float: right;
+  background-color:gray;
+  margin:2%;
+  text-align: center;
+  font-size: 2rem;
+  float:left;
+  width: 20%;
+  height:40%;
+}

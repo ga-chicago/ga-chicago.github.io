@@ -1,0 +1,136 @@
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hello {
+  border: 3px solid black;
+  margin: 10px;
+  text-align: center;
+  height: 5em;
+  width: 20%;
+  float: left;
+}
+
+#pentaboxfive {
+  border: 3px solid black;
+  margin: 10px;
+  margin-top: 25px;
+  height: 2em;
+  width: 10%;
+  float: right;
+}
+
+#pentaboxfour {
+  border: 3px solid black;
+  margin: 10px;
+  margin-top: 25px;
+  height: 2em;
+  width: 10%;
+  float: right;
+}
+
+#pentaboxthree {
+  border: 3px solid black;
+  margin: 10px;
+  margin-top: 25px;
+  height: 2em;
+  width: 10%;
+  float: right;
+}
+
+#pentaboxtwo {
+  border: 3px solid black;
+  margin: 10px;
+  margin-top: 25px;
+  height: 2em;
+  width: 10%;
+  float: right;
+}
+
+#pentaboxone {
+  border: 3px solid black;
+  margin: 10px;
+  margin-top: 25px;
+  height: 2em;
+  width: 10%;
+  float: right;
+}
+
+#wb {
+clear: both;
+float:left;
+width: 15%;
+  border: 3px solid black;
+  margin: 10px;
+  height: 23em;
+}
+
+#bomt {
+  float: left;
+  border: 3px solid black;
+  margin: 3px;
+  margin-top: 10px;
+  height: 5em;
+  width: 80%;
+}
+
+#oidia{
+  clear: right;
+  float: left;
+  border: 3px solid black;
+  margin: 3px;
+  height: 11.5em;
+  width: 60%;
+}
+
+
+#dwad{
+  clear: right;
+  float: right;
+  border: 3px solid black;
+  margin: 3px;
+  height: 11.5em;
+  width: 18%;
+}
+
+#quadboxfour {
+clear: right;
+  float: right;
+  border: 3px solid black;
+  margin: 3px;
+  width: 18%;
+  height: 5em;}
+
+  #quadboxthree {
+    float: left;
+    border: 3px solid black;
+    margin: 3px;
+    margin-left: 16px;
+    width: 18%;
+    height: 5em;}
+
+    #quadboxtwo {
+    clear: right;
+      float: left;
+      border: 3px solid black;
+      margin: 3px;
+      margin-left: 11px;
+      width: 18%;
+      height: 5em;}
+
+      #quadboxone {
+      clear: right;
+        float: left;
+        border: 3px solid black;
+        margin: 3px;
+        width: 18%;
+        height: 5em;}
+
+#goodbye {
+  margin: 3px;
+  border: 3px solid black;
+  clear: both;
+  height: 5em;
+}

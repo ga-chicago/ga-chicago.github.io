@@ -1,0 +1,197 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+#wrapper{
+  width: 90%;
+  margin: 0 auto;
+  background-color: grey;
+}
+header{
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  margin-bottom: 20px;
+  display: block;
+}
+section{
+  display: block;
+  background-color: red;
+  width: 60%;
+  height: 400px;
+  margin-bottom: 20px;
+  float: left;
+}
+#two-column-as{
+  display: block;
+  float: right;
+  background-color: yellow;
+  width: 35%;
+  height: 400px;
+}
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: purple;
+  clear: both;
+}
+
+
+/* three-column-css */
+
+#three-column-ol{
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+}
+.three-column-list{
+  display: inline-block;
+  width: 80%;
+  height: 600px;
+  background-color: red;
+  float: left;
+  margin-bottom: 20px;
+
+}
+#first, #third{
+  width: 10%;
+  background-color: yellow;
+}
+
+
+
+/* Simple Marketing */
+
+#sm-two-coloumn-ul{
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.sm-two-coloumn-list{
+  width: 45%;
+  background-color: yellow;
+  float: left;
+  height: 300px
+}
+.sm-two-coloumn-list:nth-child(2){
+  float: right;
+}
+#sm-three-column-ol{
+  clear: both;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 20px 0 20px 0;
+}
+.sm-three-column-list{
+  width: 30%;
+  float: left;
+  background-color: red;
+  height: 200px;
+  margin: 20px 0 20px 0;
+}
+#sm-second, #sm-third{
+  margin-left: 5%;
+}
+
+
+/*Marketing w/ Nav */
+
+nav{
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+
+}
+.m-ancs{
+  float: right;
+  width: 10%;
+  height: 30px;
+  margin: 35px 0;
+  margin-left: 20px;
+  background-color: blue;
+}
+#marketing-link-one{
+  float: left;
+  width: 15%;
+  margin: 20px 0;
+  height: 60px;
+  background-color: orange;
+}
+#marketing-column-section{
+  width: 100%;
+  background-color: tan;
+}
+
+
+
+
+/* Magazine */
+
+.mag-ancs{
+  float: right;
+  width: 10%;
+  height: 30px;
+  margin: 50px 0;
+  margin-left: 20px;
+  background-color: blue;
+}
+#mag-link-one{
+  float: left;
+  width: 20%;
+  margin: 20px 0;
+  height: 80px;
+  background-color: orange;
+}
+#mag-aside{
+  margin-top: 10px;
+  width: 15%;
+  height: 600px;
+  float: left;
+  background-color: teal;
+}
+#mag-two-column-ul{
+  width: 83%;
+  float: left;
+  padding: 0;
+  margin: 0;
+  margin-left: 2%;
+  list-style: none;
+}
+#mag-first2c{
+  width: 75%;
+  height: 350px;
+  background-color: yellow;
+  float: left;
+
+}
+#mag-second2c{
+  width: 15%;
+  height: 350px;
+  background-color: yellow;
+  float: right;
+}
+#mag-four-column-ol{
+  width: 83%;
+  height: 202px;
+  float: right;
+  list-style: none;
+  padding: 0;
+  padding-top: 30px;
+}
+.mag-four-column-list{
+  float: left;
+  width: 20%;
+  height: 175px;
+  background-color: pink;
+  margin-right: 7.5%;
+}
+.mag-four-column-list:first-child{
+  width: 15%;
+  float: right;
+  margin-right: 0;
+}

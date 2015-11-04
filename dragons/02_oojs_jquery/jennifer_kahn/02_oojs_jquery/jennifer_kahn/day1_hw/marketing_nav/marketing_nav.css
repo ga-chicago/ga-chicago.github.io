@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+#logo{
+border: 2px solid black;
+background-color: teal;
+width: 700px;
+height: 100px;
+margin-bottom: 18px;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+
+
+
+
+
+
+
+
+
+#col4 {
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 700px;
+  height: 100px;
+  background-color: green;
+  float: middle;
+}

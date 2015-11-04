@@ -1,0 +1,23 @@
+#sidebar {
+  border: 3px dashed green;
+  margin: 3px;
+  float: left;
+  /*padding: 3px;*/
+  width: 25%;
+}
+​
+#content {
+  /*border: 1px dashed navy;*/
+  /*padding: 3px;*/
+  /*margin: 3px;*/
+  float: left;
+  width: 25%;
+}
+​
+#content2 {
+  float: left;
+  /*border: 3px dashed black;*/
+  /*margin: 3px;*/
+  /*padding: 3px;*/
+  width: 25%;
+}

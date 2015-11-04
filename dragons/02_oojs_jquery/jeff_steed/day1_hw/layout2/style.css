@@ -1,0 +1,47 @@
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#header {
+  border: 1px solid black;
+  height: 150px;
+  margin: 1%;
+  background-color: #ccc;
+}
+
+#leftcol {
+  border: 1px solid black;
+  height: 400px;
+  width: 21%;
+  float: left;
+  margin: 1%;
+  background-color: #ccc;
+}
+
+#centercol {
+  border: 1px solid black;
+  height: 400px;
+  width: 51.5%;
+  float: left;
+  margin: 1%;
+  background-color: #ccc;
+}
+
+#rightcol {
+  border: 1px solid black;
+  height: 400px;
+  width: 21%;
+  float: left;
+  margin: 1%;
+  background-color: #ccc;
+}
+
+#footer {
+  position: relative;
+  border: 1px solid black;
+  height: 150px;
+  clear: both;
+  margin: 35% 1% 1% 1%;
+  background-color: #ccc;
+}

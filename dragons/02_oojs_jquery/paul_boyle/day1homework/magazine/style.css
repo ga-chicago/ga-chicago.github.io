@@ -1,0 +1,185 @@
+#nav5 {
+  float:left;
+
+  background-color:gray;
+  margin:.5%;
+  text-align: center;
+  font-size: 2rem;
+
+  width: 15%;
+  height:40%;
+}
+
+body {
+  background-color: black;
+  color:green;
+  margin:0;
+  padding: 0;
+  text-align:center;
+}
+
+#navbar  {
+  margin:1%;
+
+  text-align:center;
+  font-size: 1rem;
+  width: 70%;
+  float:right;
+
+
+}
+
+#content {
+  background-color:gray;
+  margin:1%;
+  text-align: center;
+  font-size: 1rem;
+  float:right;
+  width:15%;
+  height:15%;
+
+
+}
+
+#content2 {
+
+  background-color: gray;
+  margin: 1%;
+  text-align: center;
+  font-size: 1rem;
+  float: right;
+  width:15%;
+  height: 15%;
+  padding:70%,0;
+}
+
+#content3 {
+
+  background-color: gray;
+  margin: 1%;
+  text-align: center;
+  font-size: 1rem;
+  float: right;
+  width:15%;
+  height: 15%;
+  padding:70%,0;
+}
+
+#content4 {
+
+  background-color: gray;
+  margin: 1%;
+  text-align: center;
+  font-size: 1rem;
+  float: right;
+  width:15%;
+  height: 15%;
+  padding:70%,0;
+}
+
+
+#contentWrapper {
+  margin:1%;
+  clear:both;
+  text-align: center;
+  height:60%;
+  width:98%;
+
+}
+
+#foot {
+  background-color: gray;
+  text-align: center;
+  font-size: 1rem;
+  clear:both;
+  margin: 1%;
+}
+
+#sidebar {
+  background-color:gray;
+  margin:1%;
+  text-align: center;
+  font-size: 1rem;
+  float:left;
+  width: 98%;
+  height:98%;
+  clear:right;
+
+}
+
+#topBar {
+
+  margin:1%;
+  text-align: center;
+  font-size: 1rem;
+  float:left;
+  width: 98%;
+  height:40%;
+
+}
+
+#logo {
+  background-color:gray;
+  margin:0;
+  text-align: center;
+  font-size: 1rem;
+  float:left;
+  width: 24%;
+  height:40%;
+
+}
+
+#nav1 {
+  float: left;
+  background-color:gray;
+  margin:.5%;
+  text-align: center;
+  font-size: 2rem;
+  float:left;
+  width: 15%;
+  height:40%;
+}
+
+#nav2{
+  float: right;
+  background-color:gray;
+  margin:.5%;
+  text-align: center;
+  font-size: 2rem;
+  float:left;
+  width: 15%;
+  height:40%;
+}
+
+#nav3{
+  float: right;
+  background-color:gray;
+  margin:.5%;
+  text-align: center;
+  font-size: 2rem;
+  float:left;
+  width: 15%;
+  height:40%;
+}
+
+#nav4 {
+  float: right;
+  background-color:gray;
+  margin:.5%;
+  text-align: center;
+  font-size: 2rem;
+  float:left;
+  width: 15%;
+  height:40%;
+}
+
+#sidebarDiv {
+  background-color:gray;
+  margin:1%;
+  text-align: center;
+  font-size: 1rem;
+  float:left;
+  width: 24%;
+  height:60%;
+  clear:right;
+}

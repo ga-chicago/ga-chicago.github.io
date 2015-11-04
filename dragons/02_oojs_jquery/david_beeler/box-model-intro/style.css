@@ -1,0 +1,81 @@
+/* ids are identifiable using a name */
+
+#wrapper {
+  width: 90%; /* percentages, em, rem, are better RESPONSIVE */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#logo {
+  border: 3px dashed orange;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 3px;
+}
+
+#navbar {
+  border: 3px dashed purple;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 3px;
+}
+
+#sidebar {
+  /*border: 3px dashed green;*/
+  margin: 1%;
+  text-align: left;
+  width: 23%;
+  float: left;
+}
+
+#content {
+  /*border: 3px dashed navy;*/
+  margin: 1%;
+  text-align: left;
+  width: 23%;
+  float: left;
+}
+
+#midcolumn {
+  /*border: 3px dashed yellow;*/
+  margin: 1%;
+  text-align: left;
+  width: 23%;
+  float:left;
+  background: red;
+}
+
+#midcolumn2 {
+  /*border: 3px dashed yellow;*/
+  margin: 1%;
+  text-align: left;
+  width: 23%;
+  float:left;
+  background: red;
+}
+
+#goodbye {
+  margin: 3px;
+  border: 3px dashed red;
+  clear: both /* clearing the floating elements */
+}
+
+/*header {
+  background: limegreen;
+  border: 20px dashed;
+  padding: 30px;
+  margin: 50px;
+}
+
+img {
+  height: 20em;
+  width: 20em;
+}
+
+section {
+  border: 10px dashed;
+  padding: 10px;
+  margin: 10px;
+}*/

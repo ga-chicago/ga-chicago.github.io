@@ -1,0 +1,147 @@
+/*/ids are identifiable by using a name
+*/
+#wrapper{
+  width: 85%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#logo {
+  font: Verdana;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 3px;
+  height: 70px;
+
+}
+#navbar {
+  position: relative;
+  border: 2px solid gray;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 3px;
+  height: 120px;
+  width: 200px;
+  background-color: lightgray;
+}
+#sidebar {
+  position: relative;
+    float: top-right;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 0px;
+    width: 150px;
+    height: 100px;
+    background-color: lightgray;
+}
+
+element.style {
+  position: relative;
+    border-left-width: 3px;
+    margin-left: 2px;
+    background-color: lightgray;
+
+}
+ #column {
+  position: relative;
+    float: left;
+    border: 2px solid gray;
+    margin: 3px;
+    width: 25%;
+    height: 75px;
+    background-color: lightgray;
+  }
+   #column1 {
+    position: relative;
+    float: left;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 6px;
+    margin-left: 27px;
+    width: 15%;
+    height: 50px;
+    background-color: lightgray;
+  }
+ #column2 {
+  position: relative;
+    float: left;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 6px;
+    width: 15%;
+    height: 50px;
+    background-color: lightgray;
+  }
+   #column3 {
+    position: relative;
+    float: left;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 6px;
+    width: 15%;
+    height: 50px;
+    background-color: lightgray;
+  }
+     #column4 {
+      position: relative;
+    float: left;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 6px;
+    width: 15%;
+    height: 50px;
+    background-color: lightgray;
+  }
+
+
+#content {
+  position: relative;
+    border: 2px solid gray;
+    float: left;
+    margin-left: 4px;
+    width: 98%;
+    height: 200px;
+    background-color: lightgray;
+}
+
+ #column5 {
+  position: relative;
+    float: left;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 6px;
+    width: 31%;
+    height: 100px;
+    background-color: lightgray;
+}
+  #column6 {
+    position: relative;
+    float: left;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 6px;
+    margin-left: 9px;
+    width: 31%;
+    height: 100px;
+    background-color: lightgray;
+  }
+  #column7 {
+    position: relative;
+    float: right;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top:6px;
+    margin-right: 7px;
+    width: 31%;
+    height: 100px;
+    background-color: lightgray;
+  }
+
+#goodbye {
+
+  margin: 3px;
+  border: 2px solid gray;
+  clear: both;
+  height: 100px;
+  background-color: lightgray;
+}

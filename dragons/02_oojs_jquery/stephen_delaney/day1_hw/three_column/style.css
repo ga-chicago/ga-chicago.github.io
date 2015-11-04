@@ -1,0 +1,43 @@
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hello {
+  border: 3px solid black;
+  margin: 10px;
+  text-align: center;
+  height: 5em;
+}
+
+#content {
+  float: left;
+  border: 3px solid black;
+  margin: 3px;
+  width: 15%;
+  height: 20em;
+}
+
+#centerbar {
+  float: left;
+  border: 3px solid black;
+  margin: 3px;
+  width: 65%;
+  height: 20em;
+}
+
+#sidebar {
+  float: left;
+  border: 3px solid black;
+  margin: 3px;
+  width: 15%;
+  height: 20em;
+}
+
+#goodbye {
+  margin: 3px;
+  border: 3px solid black;
+  clear: both;
+  height: 5em;
+}

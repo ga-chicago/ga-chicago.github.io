@@ -1,0 +1,38 @@
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#header {
+  border: 1px solid black;
+  height: 150px;
+  margin: 10px;
+  background-color: #ccc;
+}
+
+#content {
+  border: 1px solid black;
+  height: 400px;
+  width: 65%;
+  float: left;
+  margin: 10px;
+  background-color: #ccc;
+}
+
+#sidebar {
+  border: 1px solid black;
+  height: 400px;
+  width: 30%;
+  float: right;
+  margin: 10px;
+  background-color: #ccc;
+}
+
+#footer {
+  position: relative;
+  border: 1px solid black;
+  height: 150px;
+  clear: both;
+  margin: 445px 10px 10px 10px;
+  background-color: #ccc;
+}

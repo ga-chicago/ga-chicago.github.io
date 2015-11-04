@@ -1,0 +1,53 @@
+/*header {
+  background: #65ff49;
+}
+
+section {
+  background: rgb(37, 125, 193);
+  border: 5px dashed;
+  padding: 10px;
+  margin: 10px;
+}
+section.different {
+  background: rgb(228, 50, 64);
+}*/
+#logo {
+  border: 3px dashed orange;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 3px;
+}
+
+#navbar {
+  border: 3px dashed purple;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 3px;
+}
+
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sidebar {
+  float: right;
+  border: 3px dashed green;
+  margin: 3px;
+  width: 25%;
+}
+
+#content {
+  float: left;
+  border: 3px dashed navy;
+  margin: 3px;
+  width: 65%;
+}
+
+#goodbye {
+  margin: 3px;
+  border: 3px dashed red;
+  clear: both;
+  clear
+}

@@ -1,0 +1,99 @@
+#headerAndNav {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  /*margin: auto;*/
+}
+
+#wrapper {
+  clear: both;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  /*margin: auto;*/
+}
+
+
+#header {
+  float: left;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: #E5E4E2;
+  padding: 5px;
+  border: 1px solid grey;
+  margin: 5px;
+  height: 100px;
+  width: 40%;
+}
+
+#navbar {
+  text-align: center;
+  float: right;
+  font-weight: bold;
+  background-color: #E5E4E2;
+  padding: 5px;
+  border: 1px solid grey;
+  margin: 40px 9px 5px 5px;
+  width: 50%;
+}
+
+#navbar li {
+display: inline;
+padding: 40px;
+}
+
+
+#section1 {
+  float: left;
+  background-color: #E5E4E2;
+  padding: 5px;
+  border: 1px solid grey;
+  margin: 5px 5px 5px 5px;
+  height: 300px;
+  width: 97.7%;
+}
+
+
+
+#section2-1 {
+  clear: both;
+  float: left;
+  background-color: #E5E4E2;
+  padding: 5px;
+  border: 1px solid grey;
+  margin: 5px 5px 5px 5px;
+  height: 120px;
+  width: 30%;
+}
+
+#section2-2 {
+  float: left;
+  background-color: #E5E4E2;
+  padding: 5px;
+  border: 1px solid grey;
+  margin: 5px 0px 5px 12px;
+  height: 120px;
+  width: 33%;
+}
+
+
+#section2-3 {
+  float: right;
+  background-color: #E5E4E2;
+  padding: 5px;
+  border: 1px solid grey;
+  margin: 5px 12px 5px 0px;
+  height: 120px;
+  width: 30%;
+}
+
+#footer {
+  clear: both;
+  background-color: #E5E4E2;
+  padding: 30px;
+  border: 1px solid grey;
+  margin: 5px;
+  width: 93.6%;
+}

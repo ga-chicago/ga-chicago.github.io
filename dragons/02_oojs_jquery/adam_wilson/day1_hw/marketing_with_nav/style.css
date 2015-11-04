@@ -1,0 +1,93 @@
+body {
+}
+#wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+header {
+    font-weight: bold;
+    border: .1em solid black;
+    margin: .4em;
+    margin-bottom: .9em;
+    padding: .2em;
+    background-color: lightgrey;
+    text-align: center;
+    min-height: 75px;
+    float: left;
+    width: 25%;
+
+    /*postion: absolute; in relation to parent = wrapper */
+}
+.topnav {
+    border: .1em solid black;
+    margin: .2em;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    padding: .2em;
+    background-color: lightgrey;
+    min-height: 31px;
+    float: right;
+    width: 10%;
+}
+#oneColumnDiv {
+    border: .1em solid black;
+    margin: .4em;
+    padding: .2em;
+    background-color: lightgrey;
+    min-height: 200px;
+    clear: both;
+}
+#threeColumnDiv {
+    border: .1em solid black;
+    margin: .4em;
+    margin-bottom: .9em;
+    padding: .2em;
+    width: 30%;
+    float: left;
+    background-color: lightgrey;
+    min-height: 100px;
+}
+#goodbye {
+    border: .1em solid black;
+    margin: .4em;
+    margin-top: .4em;
+    padding: .2em;
+    clear: both; /* clears floated elements above */
+    background-color: lightgrey;
+    min-height: 75px;
+
+}
+
+
+
+
+
+
+/*header {
+    font-size: 2em;
+    font-family: impact;
+    color: red;
+    background: limegreen;
+    margin: 10px auto;
+    width: 80%;
+    border: 20px dashed darkblue;
+}
+
+section {
+    margin: 10px;
+    font-size: 1em;
+    padding: 10px;
+    border: 20px dashed red;
+    font-family: georgia;
+    font-weight: bold;
+    background: yellow;
+    float: left;
+    width: 20%;
+}*/
+
+
+
+
+}

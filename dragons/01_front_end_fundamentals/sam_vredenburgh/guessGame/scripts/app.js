@@ -1,7 +1,8 @@
 window.onload = function() {
 
-  //var randomNumber = Math.floor((Math.random() * 10));
-  //var userNumber = prompt("Guess a number between 1 and 10");
+  var randomNumber = Math.floor((Math.random() * 10));
+  var userNumber = prompt("Guess a number between 1 and 10");
+
 
   /*function playGame() {
   if (userNumber < randomNumber) {
@@ -15,18 +16,30 @@ window.onload = function() {
     winnerContainer.innerHTML = "Congrats, you totally nailed it!"
   }
 }*/
-/*while (userNumber != randomNumber) {
+while (userNumber != randomNumber) {
+function askNumber() {
+  return userNumber;
+}
   if (userNumber < randomNumber) {
-    return userNumber = prompt("You are too low, guess again.");
+    prompt("You are too low, guess again.");
+    return askNumber();
   } else if (userNumber > randomNumber) {
-    return userNumber = prompt("You went over, guess again.");
+    prompt("You went over, guess again.");
+    return askNumber();
+    }
+  }
+  if(userNumber === randomNumber) {
+    document.write = "got it"
+  } else {
+    document.write="<p>loser<p>"
   }
 }
-if (userNumber === randomNumber){
-  document.write = "Congrats, you totally nailed it!"
-}*/
 
-var range = 10;
+
+
+
+// below is correct response from classmate
+/*var range = 10;
 var n = parseInt(Math.random() * range);
 var attempts = 2;
 var win = false;
@@ -54,10 +67,10 @@ var guess = parseInt(prompt("Guess a number [0-9]"));
 if (isNaN(guess) || guess < 0 || guess > range-1)
   getGuess();
 ​
-return guess;
+return guess;*/
 
 
 
 
 
-} // end of window.onLoad
+// end of window.onLoad

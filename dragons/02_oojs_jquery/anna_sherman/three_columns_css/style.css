@@ -1,0 +1,43 @@
+#wrapper {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+#banner {
+  border: 3px solid black;
+  background-color: rgb(137, 244, 124);
+  margin-bottom: 10px;
+}
+
+#sidebar {
+  border: 3px solid green;
+  float: left;
+  width: 20%;
+  display: inline-block;
+  height: 30em;
+  margin-bottom: 1em;
+}
+
+#content-center {
+  border: 3px dashed green;
+  width: 50%;
+  display: inline-block;
+  height:30em;
+  margin-bottom: 1em;
+}
+
+#content-right{
+  border: 3px dashed black;
+  width: 20%;
+  height: 30em;
+  margin-bottom: 1em;
+  float:right;
+}
+
+#footer{
+  clear: both;
+  border: 3px dashed black;
+  text-align: left;
+  padding-left: 10px;
+}

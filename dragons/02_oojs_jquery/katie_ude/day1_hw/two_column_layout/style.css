@@ -1,0 +1,49 @@
+/*
+How to set the proper perameters for adjusting size in my html file
+html, body {
+  width: 100%
+  height: auto;
+}
+margin: zero auto; -- awesome for centering things in the middle of the page
+*/
+
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border: 3px solid grey;
+  height: 540px;
+}
+
+#tiptop {
+  border: 3px solid grey;
+  margin: 3px;
+  height: 120px;
+  background: grey
+}
+
+#content {
+  float: left;
+  margin: 10px;
+  width: 60%;
+  border: 3px solid grey;
+  background: grey;
+  height: 240px;
+}
+
+#sidebar {
+  float: right;
+  margin: 10px;
+  width: 30%;
+  border: 3px solid grey;
+  background: grey;
+  height: 240px;
+}
+
+#so_long{
+  clear: both;
+  background:grey;
+  height: 120px;
+  margin: 3px;
+}

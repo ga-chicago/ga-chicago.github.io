@@ -1,0 +1,76 @@
+
+
+body { margin: 0; }
+
+.columnsContainer, footer, header, { position:
+  relative; margin: .5em; }
+
+.leftColumn, .middlecolumn, .rightColumn, .leftHalf, .middleChunk, footer, header {
+  border: 8px solid  #ccc; padding: 1em; }
+
+.middleChunk {
+  clear: both;
+  margin-top: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.leftHalf {
+  float: left;
+  position: relative;
+  width: 44%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  }
+
+.rightHalf {
+  float: right;
+  position: relative;
+  width: 44%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  }
+
+.leftColumn {
+  margin-bottom: .5em;
+  float: left;
+  position: relative;
+  width: 27%;
+  height: 4em;
+  margin: 1em;  }
+
+.middlecolumn {
+  margin-bottom: .5em;
+  float: left;
+  position: relative;
+  height: 4em;
+  width: 27%;
+  margin: 1em;
+      }
+
+.rightColumn {
+  float: right;
+  position: relative;
+  width: 27%;
+  height: 4em;
+  margin: 1em;
+  }
+
+footer {
+  clear: both;
+  margin-left: 1em;
+  margin-right: 1em;
+  }
+
+header {
+  margin-bottom: 1em;
+}
+
+li {
+  display:inline-block;
+  border: 3px solid  #ccc; padding: 1em;
+  margin-top: 1em;
+
+
+}

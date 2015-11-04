@@ -1,0 +1,10 @@
+#eat {
+  border: 5px dashed;
+  color: green;
+  border-radius: 5px;
+}
+
+.div1 {
+  left: 50%;
+  top: 50%;
+}

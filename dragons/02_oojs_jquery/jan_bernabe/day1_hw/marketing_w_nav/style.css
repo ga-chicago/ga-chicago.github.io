@@ -1,0 +1,72 @@
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#header {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  border: 1px dotted orange;
+  margin: 3px;
+  padding: 5px;
+  width: 20%;
+  float: left;
+}
+
+#bar {
+  font-family: Helvetica, Arial, sans-serif;
+  border: 1px dotted navy;
+  margin: 50px 3px;
+  padding: 5px;
+  width: 15%;
+  float: right;
+}
+
+#content {
+  font-family: Helvetica, Arial, sans-serif;
+  border: 1px dotted navy;
+  margin: 3px;
+  padding: 5px;
+  width: 98.5%;
+  clear: both;
+}
+
+#mini-left {
+  font-family: Helvetica, Arial, sans-serif;
+  border: 1px dotted navy;
+  margin: 3px;
+  padding: 5px;
+  width: 25%;
+  float: left;
+}
+
+#mini-center {
+  font-family: Helvetica, Arial, sans-serif;
+  border: 1px dotted navy;
+  padding: 5px;
+  margin: 3px 130px;
+  width: 25%;
+  float: left;
+}
+
+#mini-right {
+  font-family: Helvetica, Arial, sans-serif;
+  border: 1px dotted navy;
+  margin: 3px;
+  padding: 5px;
+  width: 25%;
+  float: right;
+}
+
+#footer {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  border: 1px dotted purple;
+  margin: 3px;
+  padding: 5px;
+  clear: both;
+}

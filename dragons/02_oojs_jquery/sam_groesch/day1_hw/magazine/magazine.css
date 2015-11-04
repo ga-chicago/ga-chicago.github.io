@@ -1,0 +1,100 @@
+#wrapper {
+  margin: 75px;
+}
+
+#header {
+  margin: 25px;
+  width: 90%;
+  height: 50px;
+  font-weight: bold;
+  font size: 100px;
+}
+
+#topleft {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 250px;
+  height: 125px;
+}
+#simpleone {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 70%;
+  height: 175px;
+}
+
+#simpletwo {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 40%;
+  height: 275px;
+}
+
+#morecontent {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 27%;
+  height: 275px;
+}
+
+nav {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: right;
+  width: 10%;
+  height: 75px;
+}
+
+#leftlist {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 20%;
+  height: 700px;
+  clear: both;
+}
+#evenmorecontent {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 19%;
+  height: 150px;
+}
+
+#content {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 19%;
+  height: 150px;
+}
+
+#thirdcontent {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  float: left;
+  width: 19%;
+  height: 150px;
+}
+
+#footer {
+  border: 1px solid black;
+  background: rgb(134, 136, 138);
+  margin: 25px;
+  clear: both;
+  width: 95%;
+  height: 150px;
+}

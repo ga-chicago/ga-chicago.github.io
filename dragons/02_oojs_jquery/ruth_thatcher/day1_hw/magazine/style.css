@@ -1,0 +1,157 @@
+/*/ids are identifiable by using a name
+*/
+#wrapper{
+  width: 85%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+#logo {
+  font: Verdana;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 3px;
+  height: 70px;
+}
+
+element.style {
+    border-left-width: 3px;
+    margin-left: 2px;
+    background-color: lightgray;
+
+}
+ #column {
+    float: left;
+    border: 2px solid gray;
+    margin: 3px;
+    width: 10%;
+    height: 75px;
+    background-color: lightgray;
+  }
+   #column1{
+    float: right;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 6px;
+    margin-left: 27px;
+    width: 10%;
+    height: 50px;
+    background-color: lightgray;
+  }
+ #column2 {
+    float: right;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 6px;
+    width: 10%;
+    height: 50px;
+    background-color: lightgray;
+  }
+   #column3 {
+    float: right;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 6px;
+    width: 10%;
+    height: 50px;
+    background-color: lightgray;
+  }
+     #column4 {
+    float: right;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 6px;
+    width: 10%;
+    height: 50px;
+    background-color: lightgray;
+  }
+   #column5 {
+    float: right;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 6px;
+    width: 10%;
+    height: 50px;
+    background-color: lightgray;
+  }
+
+
+#content {
+    border: 2px solid gray;
+    float: middle;
+    margin-left: 4px;
+    margin-top: 20px;
+    width: 60%;
+    height: 200px;
+    background-color: lightgray;
+}
+
+ #column6 {
+    float: left;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-top: 6px;
+    width: 10%;
+    height: 100px;
+    background-color: lightgray;
+}
+  #column7 {
+    float: left;
+    border: 2px solid gray;
+    margin: 3px;
+    margin-left: 0px;
+    margin-left: 6px;
+    width: 10%;
+    height: 100px;
+    background-color: lightgray;
+  }
+  #column8 {
+    float: right;
+    border: 2px solid gray;
+    margin: 3px;
+    width: 10%;
+    height: 100px;
+    background-color: lightgray;
+  }
+  #column9 {
+    float: bottom-right;
+    border: 2px solid gray;
+    margin: 3px;
+    width: 15%;
+    height: 100px;
+    background-color: lightgray;
+  }
+  #column10 {
+    float: right;
+    border: 2px solid gray;
+    margin: 3px;
+    width: 15%;
+    height: 100px;
+    background-color: lightgray;
+  }
+  #column11 {
+    float: bottom-right;
+    border: 2px solid gray;
+    margin: 3px;
+    width: 15%;
+    height: 100px;
+    background-color: lightgray;
+  }
+  #column12 {
+    float: right;
+    border: 2px solid gray;
+    margin: 3px;
+    width: 15%;
+    height: 100px;
+    background-color: lightgray;
+  }
+
+
+#goodbye {
+  margin: 3px;
+  border: 2px solid gray;
+  clear: both;
+  height: 100px;
+  background-color: lightgray;
+}

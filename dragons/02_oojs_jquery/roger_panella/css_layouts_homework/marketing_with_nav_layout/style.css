@@ -1,0 +1,138 @@
+/*html,body {
+  width: 100%;
+  height: auto;ß
+} */
+
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo {
+  border: 3px solid black;
+  font-family: helvetica;
+  background-color: grey;
+  float:left;
+  width: 25%;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 1px 25px 1px 25px;
+  padding: 0px;
+}
+
+#navbox1 {
+float:right;
+background-color: grey;
+font-family: helvetica;
+text-align: center;
+font-weight: bold;
+margin: 75px 25px 90px 10px;
+height: 50px;
+width: 12%;
+border: 3px solid black;
+}
+
+#navbox2 {
+  float:right;
+  background-color: grey;
+  font-family: helvetica;
+  font-weight: bold;
+  text-align: center;
+  margin: 75px 5px 90px 5px;
+  height: 50px;
+  border: 3px solid black;
+  width: 12%;
+  border: 3px solid black;
+}
+
+#navbox3 {
+  float:right;
+  background-color: grey;
+  font-family: helvetica;
+  text-align: center;
+  font-weight: bold;
+  margin: 75px 10px 90px 15px;
+  height: 50px;
+  border: 3px solid black;
+  width: 12%;
+  border: 3px solid black;
+}
+
+#navbox4 {
+  float:right;
+  background-color: grey;
+  font-family: helvetica;
+  text-align: center;
+  font-weight: bold;
+  margin: 75px 0px 90px 0px;
+  height: 50px;
+  border: 3px solid black;
+  width: 12%;
+  border: 3px solid black;
+}
+
+
+
+#leftbody {
+  height: 500px;
+  font-family: helvetica;
+  background-color: grey;
+  float: left;
+  border: 3px solid black;
+  margin: 25px 5px 0px 22px;
+  width: 97%;
+}
+
+
+/*#rightbody {
+  height: 500px;
+  float: right;
+  font-family: helvetica;
+  background-color: grey;
+  border: 3px solid black;
+  margin: 25px 5px auto 2em;
+  width: 47%;
+}*/
+
+#leftsmall{
+  float:left;
+  font-family: helvetica;
+  background-color: grey;
+  padding: 15px;
+  border: 3px solid black;
+  margin: 25px 15px 25px 22px;
+  width: 28%;
+}
+
+#middlesmall {
+  border: 3px solid black;
+  font-family: helvetica;
+  background-color: grey;
+  padding: 15px;
+  float:left;
+  margin: 25px 15px 25px 25px;
+  width: 28%;
+}
+
+#rightsmall {
+  border: 3px solid black;
+  font-family: helvetica;
+  background-color: grey;
+  padding: 15px;
+  float:right;
+  margin: 25px 15px 25px 5px;
+  width: 28%;
+}
+
+#thefooter {
+  clear: both;
+  border: 3px solid black;
+  font-size: 3em;
+  background-color:grey;
+  text-align: center;
+  font-family: helvetica;
+  font-weight: bold;
+  margin: 1px 15px 1px 22px;
+  padding: 1em;
+}

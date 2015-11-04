@@ -1,0 +1,9 @@
+#button {
+  border: 3px solid rgb(25, 175, 163);
+  background: rgb(30, 179, 64);
+}
+
+#holder {
+  align-content: center;
+  margin: 45%;
+}
