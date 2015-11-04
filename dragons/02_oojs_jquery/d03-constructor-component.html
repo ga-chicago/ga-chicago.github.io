@@ -5,7 +5,7 @@
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Syntax | WDI Chicago #3: Dragons</title>
+        <title>Component Constructor Boilerplate | WDI Chicago #3: Dragons</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -29,10 +29,10 @@
         
     
     
-    <link rel="next" href="../01_front_end_fundamentals/d02-ah.html" />
+    <link rel="next" href="../02_oojs_jquery/d03-videos.html" />
     
     
-    <link rel="prev" href="../01_front_end_fundamentals/d02-loops.html" />
+    <link rel="prev" href="../02_oojs_jquery/d03-constructors.html" />
     
 
         <!-- head:end -->
@@ -40,7 +40,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.2.7" data-basepath=".." data-revision="Wed Nov 04 2015 17:32:51 GMT-0600 (CST)">
+    <div class="book" data-level="2.3.5" data-basepath=".." data-revision="Wed Nov 04 2015 17:32:51 GMT-0600 (CST)">
     
 
 <div class="book-summary">
@@ -369,7 +369,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.7" data-path="01_front_end_fundamentals/d02-syntax.html">
+        <li class="chapter " data-level="1.2.7" data-path="01_front_end_fundamentals/d02-syntax.html">
             
                 
                     <a href="../01_front_end_fundamentals/d02-syntax.html">
@@ -876,7 +876,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.5" data-path="02_oojs_jquery/d03-constructor-component.html">
+        <li class="chapter active" data-level="2.3.5" data-path="02_oojs_jquery/d03-constructor-component.html">
             
                 
                     <a href="../02_oojs_jquery/d03-constructor-component.html">
@@ -1216,77 +1216,18 @@
                 
                     <section class="normal" id="section-">
                     
-                        <hr>
-<p><strong>Javascript</strong></p>
-<h3>Syntax</h3>
-
-<hr>
-<h2 id="syntax-overview">Syntax Overview</h2>
-<pre><code class="lang-javascript">
-<span class="hljs-comment">// This quick Javascript file is designed to walk you through</span>
-<span class="hljs-comment">// the basic syntax of Javascript!</span>
-<span class="hljs-comment">// Let us get started!</span>
-
-<span class="hljs-comment">// we use &apos;var&apos; to declare a variable.</span>
-<span class="hljs-comment">// always, always, always use &apos;var&apos;.</span>
-<span class="hljs-keyword">var</span> myVariable;
-
-<span class="hljs-comment">// we&apos;ve just created a brand new variable with an &apos;undefined&apos; value.</span>
-<span class="hljs-comment">// we want to &apos;assign&apos; a value to a variable. You use &apos;=&apos; to assign values.</span>
-<span class="hljs-keyword">var</span> myVariable = <span class="hljs-string">&quot;I have a value!&quot;</span>;
-
-<span class="hljs-comment">// let&apos;s break that down:</span>
-<span class="hljs-comment">// var declares our variable called &apos;myVariable&apos;. we then use &apos;=&apos; to *assign* it</span>
-<span class="hljs-comment">// a *string* value of &quot;I have a value!&quot;. Finally, we &apos;end&apos; that statement with a &apos;;&apos;.</span>
-<span class="hljs-comment">// always, always, always end your statements with a &apos;;&apos;.</span>
-<span class="hljs-comment">// the &apos;;&apos; tells Javascript &quot;HEY! WE&apos;RE DONE, MOVE ON TO THE NEXT STATEMENT!&quot;</span>
-<span class="hljs-comment">// let&apos;s do this again! We&apos;ll make a number:</span>
-<span class="hljs-comment">// I am *declaring a variable* called &apos;myNumber&apos; and *assigning* it a value of 42. end statement.</span>
-<span class="hljs-keyword">var</span> myNumber = <span class="hljs-number">42</span>;
-
-<span class="hljs-comment">// let&apos;s make a few more!</span>
-<span class="hljs-keyword">var</span> myArray = [myVariable, myNumber, <span class="hljs-string">&quot;some text&quot;</span>];
-<span class="hljs-keyword">var</span> myFloat = <span class="hljs-number">3.14</span>;
-
-<span class="hljs-comment">// you should practice creating variables. Remember how to &quot;build&quot; your statements.</span>
-<span class="hljs-comment">// So what about &apos;conditionals&apos; and &apos;loops&apos;? These braces (&apos;{&apos; * &apos;}&apos;) are confusing, right?</span>
-<span class="hljs-comment">// The braces are designed to let you *organize* your code into &apos;blocks&apos;.</span>
-<span class="hljs-comment">// They are basically the walls of your code. They keep things contained - neat and tidy.</span>
-<span class="hljs-comment">// Let us inspect a basic &apos;if&apos; statement:</span>
-<span class="hljs-keyword">if</span> (myNumber == <span class="hljs-number">42</span>) {  <span class="hljs-comment">// &lt;-- this brace starts a new block of code!</span>
-  <span class="hljs-comment">// you could have some code in here</span>
-} <span class="hljs-comment">// this brace ends this block of code!</span>
-
-<span class="hljs-comment">// Notice how we encased that &apos;condition&apos; inside of ()?</span>
-<span class="hljs-comment">// That allows us to define a condition.</span>
-<span class="hljs-comment">// We&apos;re going to now build a new condition.</span>
-<span class="hljs-comment">// How would we write out &apos;if myAge &gt; 65 then I am retired&apos;?</span>
-<span class="hljs-keyword">if</span> (myAge &gt; <span class="hljs-number">65</span>) {
-  alert(<span class="hljs-string">&quot;retired!&quot;</span>);
+                        <h2 id="component-constructor-boilerplate">Component Constructor Boilerplate</h2>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">component</span>(<span class="hljs-params">domElement</span>) </span>{
+&#x200B;
+  <span class="hljs-keyword">this</span>.domElement = domElement;
+  <span class="hljs-keyword">this</span>.initialize = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;init&apos;</span>);
+  };
+  <span class="hljs-keyword">this</span>.render = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;render&apos;</span>);
+  }
+&#x200B;
 }
-
-<span class="hljs-comment">// notice how we put our &apos;condition&apos; inside of the ()?</span>
-<span class="hljs-comment">// They should always be wrapped inside of () when using if/else/loops/etc.</span>
-<span class="hljs-comment">// And we can run code inside of that block.</span>
-<span class="hljs-comment">// But what if we aren&apos;t retired? How do I use the braces appropriately?</span>
-<span class="hljs-keyword">if</span> (myAge &gt; <span class="hljs-number">65</span>) {
-  alert(<span class="hljs-string">&quot;retired&quot;</span>);
-} <span class="hljs-keyword">else</span> { <span class="hljs-comment">// notice how &apos;else&apos; is between different braces? this allows us to divide the blocks</span>
-  alert(<span class="hljs-string">&quot;not retired&quot;</span>);
-} <span class="hljs-comment">// end second block</span>
-
-<span class="hljs-comment">// if you want to add another condition (if else), it would be built the same way:</span>
-<span class="hljs-keyword">if</span> (myAge &gt; <span class="hljs-number">65</span>) {
-  alert(<span class="hljs-string">&quot;retired!&quot;</span>);
-} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (myAge &lt; <span class="hljs-number">18</span>) { <span class="hljs-comment">// see how we () to &quot;wrap&quot; another condition? and add a new block of code?</span>
-  alert(<span class="hljs-string">&quot;not an adult yet&quot;</span>);
-} <span class="hljs-keyword">else</span> { <span class="hljs-comment">// new &apos;block&apos; of code</span>
-  alert(<span class="hljs-string">&quot;not retired&quot;</span>);
-}
-
-<span class="hljs-comment">// So braces allow us to organize our code.</span>
-<span class="hljs-comment">// Keep in mind - &apos;conditions&apos; must be inside of (). If they&apos;re not, your code will error out.</span>
-<span class="hljs-comment">// This has been a quick and dirty intro to JS Syntax. If you have any questions, please feel free to ask!</span>
 </code></pre>
 
                     
@@ -1298,10 +1239,10 @@
         </div>
 
         
-        <a href="../01_front_end_fundamentals/d02-loops.html" class="navigation navigation-prev " aria-label="Previous page: Loops"><i class="fa fa-angle-left"></i></a>
+        <a href="../02_oojs_jquery/d03-constructors.html" class="navigation navigation-prev " aria-label="Previous page: Constructors"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../01_front_end_fundamentals/d02-ah.html" class="navigation navigation-next " aria-label="Next page: Homework: Markdown and Readmes"><i class="fa fa-angle-right"></i></a>
+        <a href="../02_oojs_jquery/d03-videos.html" class="navigation navigation-next " aria-label="Next page: Videos"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
