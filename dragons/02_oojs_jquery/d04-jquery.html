@@ -5,7 +5,7 @@
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Sass &amp; CSS Variables | WDI Chicago #3: Dragons</title>
+        <title>jQuery | WDI Chicago #3: Dragons</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -29,10 +29,10 @@
         
     
     
-    <link rel="next" href="../02_oojs_jquery/d02-colourtheory.html" />
+    <link rel="next" href="../02_oojs_jquery/d04-jquery-boilerplate.html" />
     
     
-    <link rel="prev" href="../02_oojs_jquery/d02-me.html" />
+    <link rel="prev" href="../02_oojs_jquery/d04-components-recap.html" />
     
 
         <!-- head:end -->
@@ -40,7 +40,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.2.2" data-basepath=".." data-revision="Thu Nov 05 2015 11:37:43 GMT-0600 (CST)">
+    <div class="book" data-level="2.4.2" data-basepath=".." data-revision="Thu Nov 05 2015 11:37:43 GMT-0600 (CST)">
     
 
 <div class="book-summary">
@@ -720,7 +720,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2.2" data-path="02_oojs_jquery/d02-sass.html">
+        <li class="chapter " data-level="2.2.2" data-path="02_oojs_jquery/d02-sass.html">
             
                 
                     <a href="../02_oojs_jquery/d02-sass.html">
@@ -957,7 +957,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4.2" data-path="02_oojs_jquery/d04-jquery.html">
+        <li class="chapter active" data-level="2.4.2" data-path="02_oojs_jquery/d04-jquery.html">
             
                 
                     <a href="../02_oojs_jquery/d04-jquery.html">
@@ -1297,48 +1297,105 @@
                 
                     <section class="normal" id="section-">
                     
-                        <hr>
-<p><strong>HTML &amp; CSS</strong></p>
-<h3>Sass with SCSS</h3>
-
-<hr>
-<h2 id="installing-sass">Installing Sass</h2>
-<p>To globally install Sass on your computer, run <code>gem install sass</code>.</p>
-<h2 id="watching-a-file">Watching a File</h2>
-<p>We can watch our Sass files so they are automatically converted to usuable CSS. To do so, we run the following command in the same folder as our SCSS files:</p>
-<p><code>sass -w your_file.scss</code> <strong>or</strong>  <code>sass --watch your_file.scss:compiled_css_file.css</code>
-Where we say <strong>sass</strong> please listen for changes in <strong>your_file.scss</strong> and output the changes to <em>*compiled_css_file.css</em></p>
-<h2 id="variables">Variables</h2>
-<p>To create and re-use variables:</p>
-<pre><code class="lang-scss"><span class="hljs-variable">$my_variable</span><span class="hljs-value">: <span class="hljs-number">0px</span>;</span>
-<span class="hljs-variable">$my_other_variable</span><span class="hljs-value">: black;</span>
-
-<span class="hljs-tag">body</span> {
-  <span class="hljs-attribute">font-size</span><span class="hljs-value">: <span class="hljs-variable">$my_variable</span>;</span>
-  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-variable">$my_other_variable</span>;</span>
-}
-</code></pre>
-<h2 id="importing-other-scss-files">Importing other SCSS files</h2>
-<p>We can import other SCSS files for code organization!</p>
-<p><strong>variables.scss</strong></p>
-<pre><code class="lang-scss"><span class="hljs-variable">$my_variable</span><span class="hljs-value">: <span class="hljs-number">0px</span>;</span>
-<span class="hljs-variable">$my_other_variable</span><span class="hljs-value">: black;</span>
-</code></pre>
-<p><strong>style.scss</strong></p>
-<pre><code class="lang-scss"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;variables.scss&apos;</span>;</span>
-
-<span class="hljs-tag">body</span> {
-  <span class="hljs-attribute">font-size</span><span class="hljs-value">: <span class="hljs-variable">$my_variable</span>;</span>
-  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-variable">$my_other_variable</span>;</span>
-}
-</code></pre>
-<h2 id="comments">Comments</h2>
-<pre><code class="lang-scss"><span class="hljs-comment">// sass allows us to use JS style comments... these won&apos;t be compiled into the CSS file</span>
-</code></pre>
-<h2 id="references">References</h2>
+                        <h2 id="jquery">jQuery</h2>
+<p><img src="http://upload.wikimedia.org/wikipedia/en/9/9e/JQuery_logo.svg" alt="jQuery"></p>
+<p><br></p>
 <ul>
-<li>Sass Guide: <a href="http://sass-lang.com/guide" target="_blank">http://sass-lang.com/guide</a></li>
-<li>Sass Meister (validator): <a href="http://sassmeister.com/" target="_blank">http://sassmeister.com/</a></li>
+<li><strong>jQuery</strong>&apos;s motto is <em>write less, do more</em></li>
+<li>jQuery was originally written by John Rezig</li>
+<li>It is now maintained by a strong community</li>
+<li>There is even a yearly jQuery conference in Toronto</li>
+<li><a href="http://jquery.com" target="_blank">http://jquery.com</a></li>
+</ul>
+<h4 id="define-what-a-library-vs-framework-is">Define what a library vs framework is</h4>
+<ul>
+<li><strong>Library</strong> is set of methods to be utilized</li>
+<li><strong>framework</strong> is a combination of multiple libraries and tools.</li>
+<li>Various libraries include:<ul>
+<li>jQuery: <a href="http://jquery.com" target="_blank">http://jquery.com</a></li>
+<li>Zepto: <a href="http://zeptojs.com/" target="_blank">http://zeptojs.com/</a></li>
+<li>Prototype: <a href="http://prototypejs.org/" target="_blank">http://prototypejs.org/</a></li>
+<li>Modernizr: <a href="http://modernizr.com/" target="_blank">http://modernizr.com/</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="list-primary-components-of-jquery">List primary components of jQuery</h4>
+<ul>
+<li>DOM traversal</li>
+<li>Event Handling</li>
+<li>Ajax interactions</li>
+<li>Event Handling</li>
+</ul>
+<h4 id="how-to-include-jquery-into-an-app">How to include jQuery into an app</h4>
+<ul>
+<li>Include using CDN or local file</li>
+<li>See the <strong>Installing jQuery with NPM</strong> section below</li>
+<li>CDNS:<ul>
+<li><a href="http://cdnjs.com" target="_blank">http://cdnjs.com</a></li>
+<li><a href="http://googleapis.com" target="_blank">http://googleapis.com</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="select-existing-dom-nodes">Select existing DOM nodes</h4>
+<table style="border: 1px dashed black;">
+<thead>
+  <tr>
+    <td><strong>Example</strong></td>
+    <td><strong>... in jQuery</strong></td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Elements</td>
+    <td>$(&quot;element&quot;)`, `$(&quot;#id&quot;)` or `$(&quot;.class&quot;)</td>
+  </tr>
+  <tr>
+    <td>Descendants</td>
+    <td>$(&quot;#id descendant&quot;)</td>
+  </tr>
+  <tr>
+    <td>Children</td>
+    <td>$(&quot;.class &gt; child&quot;)</td>
+  </tr>
+  <tr>
+    <td>Multiple</td>
+    <td>$(&quot;#id1, #id2, #id3&quot;)</td>
+  </tr>
+  <tr>
+    <td>Pseudo-selectors</td>
+    <td>$(&quot;li :first&quot;)</td>
+  </tr>
+</tbody>
+</table>
+
+<h4 id="build-and-append-custom-dom-nodes">Build and append custom DOM nodes</h4>
+<ul>
+<li><code>.append()</code></li>
+<li><code>.appendTo()</code></li>
+<li><code>.text()</code></li>
+<li><code>.prepend()</code></li>
+<li><code>.prependTo()</code></li>
+<li><code>.html()</code></li>
+</ul>
+<h4 id="trigger-and-listen-to-events">Trigger and listen to events</h4>
+<pre><code class="lang-javascript">$(selector).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// your code</span>
+});
+</code></pre>
+<ul>
+<li><a href="https://api.jquery.com/category/events/" target="_blank">https://api.jquery.com/category/events/</a></li>
+</ul>
+<h4 id="using-jquery-in-your-html-head-element">Using jQuery in your html head element</h4>
+<ul>
+<li>In your index.html file, add: <code>&lt;script type=&apos;text/javascript&apos; src=&apos;scripts/jquery.js&apos;&gt;&lt;/script&gt;</code></li>
+</ul>
+<h4 id="resources-further-reading">Resources &amp; Further Reading</h4>
+<ul>
+<li><a href="https://api.jquery.com/category/selectors/" target="_blank">jQuery Selector Reference</a></li>
+<li><a href="http://overapi.com/jquery/" target="_blank">jQuery Cheat Sheet Reference</a></li>
+<li><a href="http://weeklymirror.com.np/files/download/jQuery_Succinctly.pdf" target="_blank">jQuery Succinctly</a></li>
+<li><a href="http://jqfundamentals.com/chapter/jquery-basics" target="_blank">jQuery Basics</a></li>
+<li><a href="http://try.jquery.com/" target="_blank">Try jQuery (Interactive)</a></li>
 </ul>
 
                     
@@ -1350,10 +1407,10 @@ Where we say <strong>sass</strong> please listen for changes in <strong>your_fil
         </div>
 
         
-        <a href="../02_oojs_jquery/d02-me.html" class="navigation navigation-prev " aria-label="Previous page: Morning Exercise"><i class="fa fa-angle-left"></i></a>
+        <a href="../02_oojs_jquery/d04-components-recap.html" class="navigation navigation-prev " aria-label="Previous page: Component Recap"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../02_oojs_jquery/d02-colourtheory.html" class="navigation navigation-next " aria-label="Next page: Colour Theory 101"><i class="fa fa-angle-right"></i></a>
+        <a href="../02_oojs_jquery/d04-jquery-boilerplate.html" class="navigation navigation-next " aria-label="Next page: jQuery Boilerplate"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

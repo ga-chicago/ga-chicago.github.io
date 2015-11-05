@@ -5,7 +5,7 @@
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Sass &amp; CSS Variables | WDI Chicago #3: Dragons</title>
+        <title>Component Recap | WDI Chicago #3: Dragons</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -29,10 +29,10 @@
         
     
     
-    <link rel="next" href="../02_oojs_jquery/d02-colourtheory.html" />
+    <link rel="next" href="../02_oojs_jquery/d04-jquery.html" />
     
     
-    <link rel="prev" href="../02_oojs_jquery/d02-me.html" />
+    <link rel="prev" href="../02_oojs_jquery/d04.html" />
     
 
         <!-- head:end -->
@@ -40,7 +40,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.2.2" data-basepath=".." data-revision="Thu Nov 05 2015 11:37:43 GMT-0600 (CST)">
+    <div class="book" data-level="2.4.1" data-basepath=".." data-revision="Thu Nov 05 2015 11:37:43 GMT-0600 (CST)">
     
 
 <div class="book-summary">
@@ -720,7 +720,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2.2" data-path="02_oojs_jquery/d02-sass.html">
+        <li class="chapter " data-level="2.2.2" data-path="02_oojs_jquery/d02-sass.html">
             
                 
                     <a href="../02_oojs_jquery/d02-sass.html">
@@ -942,7 +942,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.4.1" data-path="02_oojs_jquery/d04-components-recap.html">
+        <li class="chapter active" data-level="2.4.1" data-path="02_oojs_jquery/d04-components-recap.html">
             
                 
                     <a href="../02_oojs_jquery/d04-components-recap.html">
@@ -1297,48 +1297,11 @@
                 
                     <section class="normal" id="section-">
                     
-                        <hr>
-<p><strong>HTML &amp; CSS</strong></p>
-<h3>Sass with SCSS</h3>
-
-<hr>
-<h2 id="installing-sass">Installing Sass</h2>
-<p>To globally install Sass on your computer, run <code>gem install sass</code>.</p>
-<h2 id="watching-a-file">Watching a File</h2>
-<p>We can watch our Sass files so they are automatically converted to usuable CSS. To do so, we run the following command in the same folder as our SCSS files:</p>
-<p><code>sass -w your_file.scss</code> <strong>or</strong>  <code>sass --watch your_file.scss:compiled_css_file.css</code>
-Where we say <strong>sass</strong> please listen for changes in <strong>your_file.scss</strong> and output the changes to <em>*compiled_css_file.css</em></p>
-<h2 id="variables">Variables</h2>
-<p>To create and re-use variables:</p>
-<pre><code class="lang-scss"><span class="hljs-variable">$my_variable</span><span class="hljs-value">: <span class="hljs-number">0px</span>;</span>
-<span class="hljs-variable">$my_other_variable</span><span class="hljs-value">: black;</span>
-
-<span class="hljs-tag">body</span> {
-  <span class="hljs-attribute">font-size</span><span class="hljs-value">: <span class="hljs-variable">$my_variable</span>;</span>
-  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-variable">$my_other_variable</span>;</span>
-}
-</code></pre>
-<h2 id="importing-other-scss-files">Importing other SCSS files</h2>
-<p>We can import other SCSS files for code organization!</p>
-<p><strong>variables.scss</strong></p>
-<pre><code class="lang-scss"><span class="hljs-variable">$my_variable</span><span class="hljs-value">: <span class="hljs-number">0px</span>;</span>
-<span class="hljs-variable">$my_other_variable</span><span class="hljs-value">: black;</span>
-</code></pre>
-<p><strong>style.scss</strong></p>
-<pre><code class="lang-scss"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;variables.scss&apos;</span>;</span>
-
-<span class="hljs-tag">body</span> {
-  <span class="hljs-attribute">font-size</span><span class="hljs-value">: <span class="hljs-variable">$my_variable</span>;</span>
-  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-variable">$my_other_variable</span>;</span>
-}
-</code></pre>
-<h2 id="comments">Comments</h2>
-<pre><code class="lang-scss"><span class="hljs-comment">// sass allows us to use JS style comments... these won&apos;t be compiled into the CSS file</span>
-</code></pre>
-<h2 id="references">References</h2>
+                        <h2 id="components-recap">Components Recap</h2>
+<p><img src="ui_component_diagram.png" alt="ui_component_diagram.png"></p>
 <ul>
-<li>Sass Guide: <a href="http://sass-lang.com/guide" target="_blank">http://sass-lang.com/guide</a></li>
-<li>Sass Meister (validator): <a href="http://sassmeister.com/" target="_blank">http://sassmeister.com/</a></li>
+<li>Video: <a href="https://www.youtube.com/watch?v=CpVz9Z7mqQA" target="_blank">https://www.youtube.com/watch?v=CpVz9Z7mqQA</a></li>
+<li>Source Code: <a href="https://jsfiddle.net/qf8tsy3y/1/" target="_blank">https://jsfiddle.net/qf8tsy3y/1/</a></li>
 </ul>
 
                     
@@ -1350,10 +1313,10 @@ Where we say <strong>sass</strong> please listen for changes in <strong>your_fil
         </div>
 
         
-        <a href="../02_oojs_jquery/d02-me.html" class="navigation navigation-prev " aria-label="Previous page: Morning Exercise"><i class="fa fa-angle-left"></i></a>
+        <a href="../02_oojs_jquery/d04.html" class="navigation navigation-prev " aria-label="Previous page: Write Less &amp; Do More avec jQuery"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../02_oojs_jquery/d02-colourtheory.html" class="navigation navigation-next " aria-label="Next page: Colour Theory 101"><i class="fa fa-angle-right"></i></a>
+        <a href="../02_oojs_jquery/d04-jquery.html" class="navigation navigation-next " aria-label="Next page: jQuery"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
