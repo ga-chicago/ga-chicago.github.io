@@ -5,7 +5,7 @@
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Loops | WDI Chicago #3: Dragons</title>
+        <title>Fellowship Solution | WDI Chicago #3: Dragons</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -29,10 +29,10 @@
         
     
     
-    <link rel="next" href="../01_front_end_fundamentals/d02-syntax.html" />
+    <link rel="next" href="../04_frontend_project/index.html" />
     
     
-    <link rel="prev" href="../01_front_end_fundamentals/d02-arrays.html" />
+    <link rel="prev" href="../03_advanced_front_end/d01_ajax_in_depth.html" />
     
 
         <!-- head:end -->
@@ -40,7 +40,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.2.6" data-basepath=".." data-revision="Mon Nov 09 2015 08:51:11 GMT-0600 (CST)">
+    <div class="book" data-level="3.3" data-basepath=".." data-revision="Mon Nov 09 2015 08:51:11 GMT-0600 (CST)">
     
 
 <div class="book-summary">
@@ -354,7 +354,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.6" data-path="01_front_end_fundamentals/d02-loops.html">
+        <li class="chapter " data-level="1.2.6" data-path="01_front_end_fundamentals/d02-loops.html">
             
                 
                     <a href="../01_front_end_fundamentals/d02-loops.html">
@@ -1088,7 +1088,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="03_advanced_front_end/d01_fellowship.html">
+        <li class="chapter active" data-level="3.3" data-path="03_advanced_front_end/d01_fellowship.html">
             
                 
                     <a href="../03_advanced_front_end/d01_fellowship.html">
@@ -1384,118 +1384,189 @@
                 
                     <section class="normal" id="section-">
                     
-                        <hr>
-<p><strong>Javascript</strong></p>
-<h3>Loops</h3>
-
-<hr>
-<h2 id="summary">Summary</h2>
-<p>We covered three types of loops: <code>for</code>, <code>while</code>, and <code>for-in</code>. The following example loops through a <strong>kitties</strong> array and then logs each item.</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> kitties = [
-  <span class="hljs-string">&quot;magda&quot;</span>,
-  <span class="hljs-string">&quot;grumpy cat&quot;</span>,
-  <span class="hljs-string">&quot;pi&quot;</span>,
-  <span class="hljs-string">&quot;roscoe&quot;</span>,
-  <span class="hljs-string">&quot;adventure kitty&quot;</span>
-];
-</code></pre>
-<p>Each loop below does nearly the exact same thing.</p>
-<ul>
-<li>A <code>for</code> loop should be used when you <strong>know how you want to control</strong> your loop. You have complete control over the condition.<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; kitties.length; i++) {
-  <span class="hljs-built_in">console</span>.log(kitties[i]);
-}
-</code></pre>
-</li>
-<li>A <code>for-in</code> loop will allow you to iterate and access every item in your array but may or may not return everything in the appropriate order. If you need to access all items without concern for order, you should use a <code>for-in</code> loop.<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> cat <span class="hljs-keyword">in</span> kitties) {
-  <span class="hljs-built_in">console</span>.log(kitties[cat]);
-}
-</code></pre>
-</li>
-<li>A <code>while</code> loop is designed to allow you to <strong>do</strong> something without knowing how long it could occur. Remember the <em>b</em> button for Mario running example?<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;
-<span class="hljs-keyword">while</span> (i &lt; kitties.length) {
-  <span class="hljs-built_in">console</span>.log(kitties[i]);
-  i++;
-}
-</code></pre>
-</li>
-</ul>
-<h2 id="examples">Examples</h2>
-<p><strong>Javascript</strong></p>
-<pre><code class="lang-javascript"><span class="hljs-comment">// FIRST, let us create our object</span>
-<span class="hljs-keyword">var</span> myObj = {
-  name: <span class="hljs-string">&quot;James&quot;</span>,
-  students: [
-    <span class="hljs-string">&apos;Jason&apos;</span>, <span class="hljs-string">&apos;Paul&apos;</span>, <span class="hljs-string">&apos;Ruth&apos;</span>, <span class="hljs-string">&apos;Katie&apos;</span>],
-  food: <span class="hljs-string">&apos;soylent&apos;</span>,
-  favouriteMusic: <span class="hljs-string">&apos;indie pop&apos;</span>,
-  favouriteAnimal: <span class="hljs-string">&apos;cat&apos;</span>,
-  colour: <span class="hljs-string">&apos;purple&apos;</span>,
-  phone: <span class="hljs-string">&apos;HTC&apos;</span>,
-  money: <span class="hljs-string">&apos;none, I am broke&apos;</span>,
-  isTired: <span class="hljs-literal">false</span>,
-  isAwake: <span class="hljs-literal">false</span>
-};
-
-<span class="hljs-comment">// for-in loop on an object</span>
-<span class="hljs-comment">// the goal is to log out all values in keys</span>
-
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Logging keys then values using for-in loop:&quot;</span>);
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;---------------------------------&quot;</span>);
-
-
-<span class="hljs-comment">// var key = index</span>
-<span class="hljs-comment">// myObj = object</span>
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> key <span class="hljs-keyword">in</span> myObj) {
-
-  <span class="hljs-comment">// log the key only</span>
-  <span class="hljs-comment">// ie: myObj.name</span>
-  <span class="hljs-comment">// &quot;name&quot; is the key</span>
-
-  <span class="hljs-built_in">console</span>.log(key);
-
-  <span class="hljs-comment">// only logging my values per each</span>
-  <span class="hljs-comment">// myObj.key</span>
-  <span class="hljs-comment">// or myObj[key]</span>
-
-  <span class="hljs-built_in">console</span>.log(myObj[key]);
-
-}
-
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Only logging keys using for loop:&quot;</span>);
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;---------------------------------&quot;</span>);
-<span class="hljs-comment">// create an array of my keys</span>
-<span class="hljs-comment">// Object.keys() returns an array of all</span>
-<span class="hljs-comment">// keys in an Object</span>
-<span class="hljs-keyword">var</span> myKeys = <span class="hljs-built_in">Object</span>.keys(myObj);
-
-<span class="hljs-comment">// now, we will just do a for loop</span>
-<span class="hljs-comment">// for each key to be printed out</span>
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> counter = <span class="hljs-number">0</span>; counter &lt; myKeys.length; counter++) {
-
-  <span class="hljs-built_in">console</span>.log(myKeys[counter]);
-
-}
-
-
-<span class="hljs-comment">// for-in loop on an object</span>
-<span class="hljs-comment">// log the key : value on same line</span>
-
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Logging keys : values using for-in loop:&quot;</span>);
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;---------------------------------&quot;</span>);
-
-
-<span class="hljs-comment">// var key = index</span>
-<span class="hljs-comment">// myObj = object</span>
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> key <span class="hljs-keyword">in</span> myObj) {
-
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Key: &quot;</span> + key + <span class="hljs-string">&quot;, Value: &quot;</span> + myObj[key]);
-
-}
-</code></pre>
-<h2 id="references">References</h2>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration" target="_blank">MDN: Loops and Iteration</a></li>
-</ul>
+                        <h2 id="fellowship-journey-to-mordomr-solution">Fellowship (Journey to MorDOMr) Solution</h2>
+<p>Below is one of <em>many</em> solutions to this weekend&apos;s homework.</p>
+<p>```javascript$(function() {</p>
+<p>  console.log(&quot;Linked.&quot;);</p>
+<p>  // Dramatis Personae
+  var hobbits = [
+    &apos;Frodo Baggins&apos;,
+    &apos;Samwise \&apos;Sam\&apos; Gamgee&apos;,
+    &apos;Meriadoc \&apos;Merry\&apos; Brandybuck&apos;,
+    &apos;Peregrin \&apos;Pippin\&apos; Took&apos;
+  ];</p>
+<p>  var buddies = [
+    &apos;Gandalf the Grey&apos;,
+    &apos;Legolas&apos;,
+    &apos;Gimli&apos;,
+    &apos;Strider&apos;,
+    &apos;Boromir&apos;
+  ];</p>
+<p>  var lands = [&apos;The Shire&apos;, &apos;Rivendell&apos;, &apos;Mordor&apos;];</p>
+<p>  // we don&apos;t need a var to hold body with jQuery.<br>  // var body = document.querySelector(&apos;body&apos;);</p>
+<p>  // Chapter 1
+  function makeMiddleEarth() {
+      // create a section tag with an id of middle-earth
+      var middleEarth = $(&apos;<section>&apos;);
+      for(var i = 0; i &lt; lands.length; i++) {
+        // add each land as an article tag
+        var land = $(&apos;<article>&apos;);
+        // inside each article tag include an h1 with the name of the land
+        var landName = $(&apos;<h1>&apos;);
+        landName.text(lands[i]);
+        land.append(landName);
+        middleEarth.append(land);
+      }
+      // append middle-earth to your document body
+      $(&apos;body&apos;).append(middleEarth);
+  }</h1></article></section></p>
+<p>  makeMiddleEarth();</p>
+<p>  var theShire = $(&apos;article&apos;).eq(0);
+  var rivendell = $(&apos;article&apos;).eq(1);
+  var mordor = $(&apos;article&apos;).eq(2);;</p>
+<p>  // Chapter 2
+  function makeHobbits() {
+    // display an unordered list of hobbits in the shire (which is the first article tag on the page)
+    var hobbitList = $(&apos;<ul>&apos;);
+    for(var i = 0; i &lt; hobbits.length; i++) {
+    // give each hobbit a class of hobbit
+      var hobbit = $(&apos;<li>&apos;);
+      hobbit.addClass(&apos;hobbit&apos;);
+      hobbit.text(hobbits[i]);
+      hobbitList.append(hobbit);
+    }
+    theShire.append(hobbitList);
+  }</li></ul></p>
+<p>  makeHobbits();</p>
+<p>  var frodo = $(&apos;li&apos;).eq(0);</p>
+<p>  // Chapter 3
+  function keepItSecretKeepItSafe() {
+    // create a div with an id of &apos;the-ring&apos;
+    var theRing = $(&apos;<div>&apos;);
+    theRing.attr(&apos;id&apos;, &apos;the-ring&apos;);
+    // give the div a class of &apos;magic-imbued-jewelry&apos;
+    theRing.addClass(&apos;magic-imbued-jewelry&apos;);
+    // add an event listener so that when a user clicks on the ring, the nazgulScreech function (provided) is invoked
+    // theRing.addEventListener(&apos;click&apos;, nazgulScreech);
+    // add the ring as a child of Frodo
+    frodo.append(theRing);
+  }</div></p>
+<p>  keepItSecretKeepItSafe();</p>
+<p>  // Chapter 4
+  function makeBuddies() {
+    // create an aside tag
+    var aside = $(&apos;<aside>&apos;);
+    var buddyList = $(&apos;<ul>&apos;);
+    for(var i = 0; i &lt; buddies.length; i++) {
+      // attach an unordered list of the &apos;buddies&apos; in the aside
+      var buddy = $(&apos;<li>&apos;);
+      buddy.text(buddies[i]);
+      buddyList.append(buddy);
+    }
+    // insert your aside as a child element of rivendell
+    aside.append(buddyList);
+    rivendell.append(aside);
+  }
+  makeBuddies();</li></ul></aside></p>
+<p>  var strider = rivendell.find(&apos;li&apos;).eq(3);</p>
+<p>  // Chapter 5
+  function beautifulStranger() {
+    // change the &apos;Strider&apos; text to &apos;Aragorn&apos;
+    strider.text(&apos;Aragorn&apos;);
+  }</p>
+<p>  beautifulStranger();</p>
+<p>  var hobbits = theShire.find(&apos;ul&apos;).eq(0);</p>
+<p>  // Chapter 6
+  function leaveTheShire() {
+    // assemble the hobbits and move them to Rivendell
+    rivendell.append(hobbits);
+  }
+  leaveTheShire();</p>
+<p>  var fellowshipMembers = rivendell.find(&apos;li&apos;);</p>
+<p>  // Chapter 7
+  function forgeTheFellowShip() {
+    // create a new div called &apos;the-fellowship&apos; within rivendell
+    var theFellowship = $(&apos;<div>&apos;);
+    theFellowship.attr(&apos;id&apos;, &apos;the-fellowship&apos;);
+    for(var i = 0; i &lt; fellowshipMembers.length; i++) {
+      theFellowship.append(fellowshipMembers.eq(i));
+      alert(fellowshipMembers.eq(i).text() + &apos; has joined the fellowship!&apos;);
+    }
+    // add each hobbit and buddy one at a time to &apos;the-fellowship&apos;
+    // after each character is added make an alert that they have joined your party
+    rivendell.append(theFellowship);
+  }</div></p>
+<p>  forgeTheFellowShip();</p>
+<p>  var gandalf = fellowshipMembers.eq(0);</p>
+<p>  // Chapter 8
+  function theBalrog() {
+    // change the &apos;Gandalf&apos; textNode to &apos;Gandalf the White&apos;
+    gandalf.text(&apos;Gandalf the White&apos;);
+    // apply style to the element
+    gandalf.css(&apos;border&apos;, &apos;3px solid slategrey&apos;);
+    // make the background &apos;white&apos;, add a grey border
+    gandalf.css(&apos;backgroundColor&apos;, &apos;white&apos;);
+  }</p>
+<p>  theBalrog();</p>
+<p>  var boromir = fellowshipMembers.eq(4);</p>
+<p>  // Chapter 9
+  function hornOfGondor() {
+    alert(&apos;the horn of gondor has blown&apos;);
+    // pop up an alert that the horn of gondor has been blown
+    // put a linethrough on boromir&apos;s name
+    boromir.css(&apos;text-decoration&apos;, &apos;line-through&apos;);
+    alert(&apos;Boromir\&apos;s been killed by the Uruk-hai!&apos;);
+    // Remove Boromir from the Fellowship
+    rivendell.append(boromir);
+  }</p>
+<p>  hornOfGondor();</p>
+<p>  var sam = fellowshipMembers.eq(6);</p>
+<p>  // Chapter 10
+  function itsDangerousToGoAlone() {
+    // take Frodo and Sam out of the fellowship and move them to Mordor
+    mordor.append(frodo);
+    mordor.append(sam);
+    // add a div with an id of &apos;mount-doom&apos; to Mordor
+    var mountDoom = $(&apos;<div>&apos;);
+    mountDoom.attr(&apos;id&apos;, &apos;mount-doom&apos;);
+    mordor.append(mountDoom);
+  }</div></p>
+<p>  itsDangerousToGoAlone();</p>
+<p>  var gollum, theRing;</p>
+<p>  // Chapter 11
+  function weWantsIt() {
+    // Create a div with an id of &apos;gollum&apos; and add it to Mordor
+    gollum = $(&apos;<div>&apos;);
+    gollum.attr(&apos;id&apos;, &apos;gollum&apos;);
+    theRing = frodo.find(&apos;#the-ring&apos;).eq(0);
+    gollum.append(theRing);
+    // Remove the ring from Frodo and give it to Gollum
+    // Move Gollum into Mount Doom
+    var mountDoom = mordor.find(&apos;#mount-doom&apos;).eq(0);
+    mountDoom.append(gollum);
+  }</div></p>
+<p>  weWantsIt();</p>
+<p>  // Chapter 12
+  function thereAndBackAgain() {
+    gollum.remove();
+    // remove Gollum and the Ring from the document
+    var hobbitUL = $(&apos;<ul>&apos;);
+    var hobbits = $(&apos;.hobbit&apos;);
+    for(var i = 0; i &lt; hobbits.length; i++){
+      hobbitUL.append(hobbits.eq(i));
+    }
+    theShire.append(hobbitUL);
+    // Move all the hobbits back to the shire</ul></p>
+<p>  }</p>
+<p>  thereAndBackAgain();</p>
+<p>  function golemGotCash() {
+    var bling = $(&apos;<div>&apos;);
+    bling.attr(&apos;id&apos;, &apos;lord-of-the-bling&apos;);
+    $(&apos;body&apos;).append(bling);
+  }</div></p>
+<p>  golemGotCash();</p>
+<p>});
+```</p>
 
                     
                     </section>
@@ -1506,10 +1577,10 @@
         </div>
 
         
-        <a href="../01_front_end_fundamentals/d02-arrays.html" class="navigation navigation-prev " aria-label="Previous page: Arrays"><i class="fa fa-angle-left"></i></a>
+        <a href="../03_advanced_front_end/d01_ajax_in_depth.html" class="navigation navigation-prev " aria-label="Previous page: Ajax in Depth"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../01_front_end_fundamentals/d02-syntax.html" class="navigation navigation-next " aria-label="Next page: Syntax"><i class="fa fa-angle-right"></i></a>
+        <a href="../04_frontend_project/index.html" class="navigation navigation-next " aria-label="Next page: Project #1"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
